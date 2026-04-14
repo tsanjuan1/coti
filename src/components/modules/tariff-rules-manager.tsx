@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import Link from "next/link";
 import { Plus, Save } from "lucide-react";
 
+import { PercentageInput } from "@/components/inputs/percentage-input";
 import type { QuoteProductRule } from "@/modules/cotizador/domain/types";
 import { formatPercentage, slugify, toNumber } from "@/lib/utils";
 
@@ -218,15 +219,13 @@ export function TariffRulesManager({
                     "internalTaxRate"
                   ].map((field) => (
                     <td key={field} className="px-2 py-2">
-                      <input
-                        className="w-28 rounded-xl border border-[var(--line)] px-3 py-2"
-                        type="number"
-                        step="0.0001"
+                      <PercentageInput
+                        className="w-28"
                         value={rule[field as keyof QuoteProductRule] as number}
                         disabled={!canEdit}
-                        onChange={(event) =>
+                        onValueChange={(value) =>
                           updateRule(rule.localId, {
-                            [field]: toNumber(event.target.value)
+                            [field]: value
                           } as Partial<EditableQuoteProductRule>)
                         }
                       />

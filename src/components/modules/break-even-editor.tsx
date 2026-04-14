@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import { Save } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+import { PercentageInput } from "@/components/inputs/percentage-input";
 import { calculateBreakEvenScenario } from "@/modules/break-even/domain/calculate-break-even";
 import type { BreakEvenScenarioInput } from "@/modules/break-even/domain/types";
 import { formatCurrency, formatPercentage, toNumber } from "@/lib/utils";
@@ -173,15 +174,12 @@ export function BreakEvenEditor({
                     Se calcula sobre la facturacion del escenario.
                   </div>
                 </div>
-                <input
-                  className="rounded-xl border border-[var(--line)] px-3 py-2"
-                  type="number"
-                  step="0.0001"
+                <PercentageInput
                   value={line.rate}
-                  onChange={(event) =>
+                  onValueChange={(rate) =>
                     setScenario((current) => {
                       const variableCosts = current.variableCosts.slice();
-                      variableCosts[index] = { ...line, rate: toNumber(event.target.value) };
+                      variableCosts[index] = { ...line, rate };
                       return { ...current, variableCosts };
                     })
                   }

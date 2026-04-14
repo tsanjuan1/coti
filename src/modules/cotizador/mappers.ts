@@ -1,7 +1,10 @@
+import { Prisma } from "@prisma/client";
 import type { QuoteCostProfile, QuoteItem, QuoteScenario } from "@prisma/client";
 
 import { defaultQuoteScenario } from "@/modules/cotizador/defaults";
+import { calculateQuoteScenario } from "@/modules/cotizador/domain/calculate-quote";
 import type {
+  QuoteScenarioHistoryEntry,
   QuoteProductRule,
   QuoteScenarioInput,
   QuoteScenarioSummary
@@ -27,6 +30,22 @@ function readCompactCostLine(
   }
 
   return (costLine.mode === "rate" ? costLine.rate : costLine.amount) ?? compactCostLineDefaults[lineKey];
+}
+
+function readSnapshotMetadata<T>(costLines: QuoteCostProfile[], lineKey: string) {
+  const costLine = costLines.find(
+    (entry) => entry.section === "snapshot" && entry.lineKey === lineKey
+  );
+
+  if (!costLine?.metadataJson || typeof costLine.metadataJson !== "object") {
+    return null;
+  }
+
+  return costLine.metadataJson as T;
+}
+
+function toJsonValue(value: unknown) {
+  return JSON.parse(JSON.stringify(value)) as Prisma.InputJsonValue;
 }
 
 export function quoteScenarioFromRecord(args: {
@@ -57,6 +76,63 @@ export function quoteScenarioFromRecord(args: {
 }
 
 export function quoteScenarioToCreatePayload(input: QuoteScenarioInput) {
+  const result = calculateQuoteScenario(input);
+  const costLines = [
+    {
+      section: "compact",
+      lineKey: "freightRatePerKgUsd",
+      label: "Costo flete x kg",
+      mode: "amount",
+      amount: input.freightRatePerKgUsd,
+      rate: 0
+    },
+    {
+      section: "compact",
+      lineKey: "miscellaneousRate",
+      label: "Gastos varios",
+      mode: "rate",
+      amount: 0,
+      rate: input.miscellaneousRate
+    },
+    {
+      section: "compact",
+      lineKey: "transferRate",
+      label: "Transferencia",
+      mode: "rate",
+      amount: 0,
+      rate: input.transferRate
+    },
+    {
+      section: "compact",
+      lineKey: "exchangeRateArsUsd",
+      label: "TC",
+      mode: "amount",
+      amount: input.exchangeRateArsUsd,
+      rate: 0
+    },
+    {
+      section: "snapshot",
+      lineKey: "calculationResult",
+      label: "Resultado de la cotizacion",
+      mode: "metadata",
+      amount: 0,
+      rate: 0,
+      metadataJson: toJsonValue(result)
+    }
+  ];
+
+  if (result.selectedRule) {
+    costLines.push({
+      section: "snapshot",
+      lineKey: "selectedRule",
+      label: "Regla arancelaria aplicada",
+      mode: "metadata",
+      amount: 0,
+      rate: 0,
+      metadataJson: toJsonValue(result.selectedRule)
+    });
+  }
+
   return {
     scenario: {
       name: input.name,
@@ -80,40 +156,7 @@ export function quoteScenarioToCreatePayload(input: QuoteScenarioInput) {
         lineMarkup: input.saleFactor
       }
     ],
-    costLines: [
-      {
-        section: "compact",
-        lineKey: "freightRatePerKgUsd",
-        label: "Costo flete x kg",
-        mode: "amount",
-        amount: input.freightRatePerKgUsd,
-        rate: 0
-      },
-      {
-        section: "compact",
-        lineKey: "miscellaneousRate",
-        label: "Gastos varios",
-        mode: "rate",
-        amount: 0,
-        rate: input.miscellaneousRate
-      },
-      {
-        section: "compact",
-        lineKey: "transferRate",
-        label: "Transferencia",
-        mode: "rate",
-        amount: 0,
-        rate: input.transferRate
-      },
-      {
-        section: "compact",
-        lineKey: "exchangeRateArsUsd",
-        label: "TC",
-        mode: "amount",
-        amount: input.exchangeRateArsUsd,
-        rate: 0
-      }
-    ]
+    costLines
   };
 }
 
@@ -129,5 +172,35 @@ export function quoteScenarioSummaryFromRecord(args: {
     productTypeKey: primaryItem?.productTypeKey ?? defaultQuoteScenario.productTypeKey,
     supplierUnitPriceUsd: primaryItem?.fobUnitCost ?? defaultQuoteScenario.supplierUnitPriceUsd,
     updatedAt: args.scenario.updatedAt.toISOString()
+  };
+}
+
+export function quoteScenarioHistoryEntryFromRecord(args: {
+  scenario: QuoteScenario;
+  items: QuoteItem[];
+  costLines: QuoteCostProfile[];
+  productRules: QuoteProductRule[];
+}): QuoteScenarioHistoryEntry {
+  const scenario = quoteScenarioFromRecord({
+    scenario: args.scenario,
+    items: args.items,
+    costLines: args.costLines,
+    productRules: args.productRules
+  });
+  const summary = quoteScenarioSummaryFromRecord({
+    scenario: args.scenario,
+    items: args.items
+  });
+  const storedResult =
+    readSnapshotMetadata<QuoteScenarioHistoryEntry["result"]>(
+      args.costLines,
+      "calculationResult"
+    ) ?? calculateQuoteScenario(scenario);
+
+  return {
+    id: args.scenario.id,
+    summary,
+    scenario,
+    result: storedResult
   };
 }

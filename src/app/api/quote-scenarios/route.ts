@@ -5,6 +5,7 @@ import { z } from "zod";
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
 import {
+  quoteScenarioHistoryEntryFromRecord,
   quoteScenarioSummaryFromRecord,
   quoteScenarioToCreatePayload
 } from "@/modules/cotizador/mappers";
@@ -38,21 +39,33 @@ export async function POST(request: Request) {
     data: {
       ...payload.scenario,
       createdById: user.id,
-      items: { createMany: { data: payload.items } },
-      costLines: { createMany: { data: payload.costLines } }
+      items: { create: payload.items },
+      costLines: { create: payload.costLines }
     }
   });
 
-  const savedScenario = await prisma.quoteScenario.findUniqueOrThrow({
-    where: { id: created.id },
-    include: { items: { orderBy: { lineNumber: "asc" } } }
-  });
+  const [savedScenario, productRules] = await Promise.all([
+    prisma.quoteScenario.findUniqueOrThrow({
+      where: { id: created.id },
+      include: {
+        items: { orderBy: { lineNumber: "asc" } },
+        costLines: true
+      }
+    }),
+    prisma.quoteProductRule.findMany({ orderBy: { productTypeKey: "asc" } })
+  ]);
 
   return NextResponse.json({
     id: created.id,
     summary: quoteScenarioSummaryFromRecord({
       scenario: savedScenario,
       items: savedScenario.items
+    }),
+    detail: quoteScenarioHistoryEntryFromRecord({
+      scenario: savedScenario,
+      items: savedScenario.items,
+      costLines: savedScenario.costLines,
+      productRules
     })
   });
 }

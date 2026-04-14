@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import { Save } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+import { PercentageInput } from "@/components/inputs/percentage-input";
 import { calculateOperationProfit } from "@/modules/operation-profit/domain/calculate-operation-profit";
 import type { OperationProfitScenarioInput } from "@/modules/operation-profit/domain/types";
 import { formatCurrency, formatPercentage, toNumber } from "@/lib/utils";
@@ -142,15 +143,12 @@ export function OperationProfitEditor({
                   Se calcula sobre la facturacion de la operacion.
                 </div>
               </div>
-              <input
-                className="rounded-xl border border-[var(--line)] px-3 py-2"
-                type="number"
-                step="0.0001"
+              <PercentageInput
                 value={line.rate}
-                onChange={(event) =>
+                onValueChange={(rate) =>
                   setScenario((current) => {
                     const variableCosts = current.variableCosts.slice();
-                    variableCosts[index] = { ...line, rate: toNumber(event.target.value) };
+                    variableCosts[index] = { ...line, rate };
                     return { ...current, variableCosts };
                   })
                 }

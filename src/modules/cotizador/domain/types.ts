@@ -35,6 +35,13 @@ export interface QuoteScenarioSummary {
   updatedAt: string;
 }
 
+export interface QuoteScenarioHistoryEntry {
+  id: string;
+  summary: QuoteScenarioSummary;
+  scenario: QuoteScenarioInput;
+  result: QuoteScenarioResult;
+}
+
 export interface QuoteScenarioResult {
   selectedRule?: QuoteProductRule;
   warnings: string[];

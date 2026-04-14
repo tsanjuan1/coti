@@ -6,6 +6,7 @@ import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
 import { defaultQuoteScenario } from "@/modules/cotizador/defaults";
 import {
+  quoteScenarioHistoryEntryFromRecord,
   quoteScenarioFromRecord,
   quoteScenarioSummaryFromRecord
 } from "@/modules/cotizador/mappers";
@@ -46,6 +47,14 @@ export default async function CourierQuotePage({
   const savedScenarios = scenarios.map((scenario) =>
     quoteScenarioSummaryFromRecord({ scenario, items: scenario.items })
   );
+  const historyEntries = scenarios.map((scenario) =>
+    quoteScenarioHistoryEntryFromRecord({
+      scenario,
+      items: scenario.items,
+      costLines: scenario.costLines,
+      productRules
+    })
+  );
 
   return (
     <AppShell currentPath="/cotizador/courier" userLabel={user.fullName}>
@@ -53,6 +62,7 @@ export default async function CourierQuotePage({
         initialScenario={initialScenario}
         scenarioId={selectedScenario?.id}
         initialSavedScenarios={savedScenarios}
+        initialHistoryEntries={historyEntries}
       />
     </AppShell>
   );
