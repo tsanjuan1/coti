@@ -8,6 +8,8 @@ import {
 } from "lucide-react";
 
 import { LogoutButton } from "@/components/auth/logout-button";
+import { AppNavLink } from "@/components/navigation/app-nav-link";
+import { RoutePrefetch } from "@/components/navigation/route-prefetch";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -28,8 +30,18 @@ export function AppShell({
   currentPath: string;
   userLabel: string;
 }) {
+  const warmedRoutes = [
+    ...navItems.map((item) => item.href),
+    "/cotizador/courier",
+    "/cotizador/despacho",
+    "/cotizador/china",
+    "/cotizador/europa",
+    "/cotizador/tasas-arancelarias"
+  ];
+
   return (
     <div className="min-h-screen">
+      <RoutePrefetch routes={warmedRoutes} />
       <div className="mx-auto flex max-w-[1600px] gap-6 px-4 py-4 md:px-6">
         <aside className="hidden w-72 shrink-0 rounded-[28px] border border-[var(--line)] bg-[color:var(--surface)] p-5 shadow-sm lg:block">
           <div className="mb-8 rounded-[22px] bg-[color:var(--surface-alt)] p-4">
@@ -45,7 +57,7 @@ export function AppShell({
               const active =
                 currentPath === item.href || currentPath.startsWith(`${item.href}/`);
               return (
-                <Link
+                <AppNavLink
                   key={item.href}
                   href={item.href}
                   className={cn(
@@ -57,7 +69,7 @@ export function AppShell({
                 >
                   <Icon className="h-4 w-4" />
                   <span>{item.label}</span>
-                </Link>
+                </AppNavLink>
               );
             })}
           </nav>
@@ -89,7 +101,7 @@ export function AppShell({
                 const active =
                   currentPath === item.href || currentPath.startsWith(`${item.href}/`);
                 return (
-                  <Link
+                  <AppNavLink
                     key={item.href}
                     href={item.href}
                     className={cn(
@@ -101,7 +113,7 @@ export function AppShell({
                   >
                     <Icon className="h-4 w-4" />
                     <span>{item.label}</span>
-                  </Link>
+                  </AppNavLink>
                 );
               })}
             </nav>
