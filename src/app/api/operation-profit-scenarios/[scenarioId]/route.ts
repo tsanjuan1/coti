@@ -7,7 +7,7 @@ import { prisma } from "@/lib/prisma";
 import { operationScenarioToCreatePayload } from "@/modules/operation-profit/mappers";
 
 const schema = z.object({
-  name: z.string(),
+  name: z.string().trim().min(1),
   exchangeRate: z.number(),
   billingAmount: z.number(),
   markup: z.number(),
@@ -15,14 +15,6 @@ const schema = z.object({
     lineKey: z.string(),
     label: z.string(),
     rate: z.number()
-  })),
-  fixedCosts: z.array(z.object({
-    lineKey: z.string(),
-    label: z.string(),
-    formulaMode: z.enum(["manual", "usd_to_ars", "usd_to_ars_monthly"]),
-    amount: z.number().optional(),
-    inputA: z.number().optional(),
-    inputB: z.number().optional()
   }))
 });
 

@@ -2,15 +2,9 @@ import type { BreakEvenScenarioInput } from "@/modules/break-even/domain/types";
 
 export const defaultBreakEvenScenario: BreakEvenScenarioInput = {
   name: "Punto de equilibrio base",
-  salesAmount: 375458930.2222,
+  salesAmount: 375458930.22,
   markup: 1.2,
   exchangeRate: 1375,
-  realBillingPesos: 500000000,
-  realBillingMarkup: 1.28,
-  realBillingExchangeRate: 1420,
-  altBillingPesos: 500000000,
-  altBillingMarkup: 1.2,
-  altBillingExchangeRate: 1420,
   fixedCosts: [
     { lineKey: "cargas_sociales", label: "Cargas sociales", formulaMode: "manual", amount: 1681258.59 },
     { lineKey: "extra_sueldos", label: "Extra sueldos", formulaMode: "sales_rate", inputA: 0.01 },
@@ -36,14 +30,11 @@ export const defaultBreakEvenScenario: BreakEvenScenarioInput = {
     { lineKey: "swiss_medical", label: "Swiss Medical", formulaMode: "manual", amount: 2000000 },
     { lineKey: "vituallas", label: "Vituallas", formulaMode: "manual", amount: 150000 },
     { lineKey: "abogado", label: "Abogado", formulaMode: "manual", amount: 250000 },
-    { lineKey: "consultoria", label: "Consultoria", formulaMode: "sales_rate", inputA: 0.01 },
+    { lineKey: "consultoria", label: "Consultoria fija", formulaMode: "sales_rate", inputA: 0.01 },
     { lineKey: "oppen", label: "Oppen", formulaMode: "usd_to_ars", inputA: 750 },
     { lineKey: "estudio_contable", label: "Estudio contable", formulaMode: "manual", amount: 450000 },
     { lineKey: "pipedrive", label: "Pipedrive", formulaMode: "usd_to_ars", inputA: 350 },
     { lineKey: "tango", label: "Tango", formulaMode: "manual", amount: 0 },
-    { lineKey: "fletes", label: "Fletes", formulaMode: "sales_rate", inputA: 0.011873663059851627 },
-    { lineKey: "iibb", label: "IIBB", formulaMode: "sales_rate", inputA: 0.05 },
-    { lineKey: "imp_al_cheque", label: "Impuesto al cheque", formulaMode: "sales_rate", inputA: 0.012 },
     { lineKey: "intereses", label: "Intereses", formulaMode: "manual", amount: 0 },
     { lineKey: "licencias_microsoft", label: "Licencias Microsoft", formulaMode: "usd_to_ars_monthly", inputA: 600, inputB: 12 }
   ],
@@ -53,10 +44,5 @@ export const defaultBreakEvenScenario: BreakEvenScenarioInput = {
     { lineKey: "fletes", label: "Fletes", rate: 0.0119 },
     { lineKey: "consultoria", label: "Consultoria", rate: 0.01 },
     { lineKey: "comisiones", label: "Comisiones", rate: 0.015 }
-  ],
-  salespersonProfiles: [
-    { label: "Vendedor 1", salaryAmount: 1500000, burdenAmount: 567697.2281, contributionMargin: 0.13159 },
-    { label: "Vendedor 2", salaryAmount: 1160000, burdenAmount: 439019.1898, contributionMargin: 0.13659 },
-    { label: "Vendedor 3", salaryAmount: 0, burdenAmount: 0, contributionMargin: 0.13159 }
   ]
 };

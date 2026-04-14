@@ -9,5 +9,7 @@ describe("break even calculator", () => {
 
     expect(result.breakEvenPesos).toBeGreaterThan(0);
     expect(result.contributionMarginRate).toBeGreaterThan(0);
+    expect(result.totalFixedCosts).toBeGreaterThan(0);
+    expect(result.totalVariableCosts).toBeGreaterThan(0);
   });
 });

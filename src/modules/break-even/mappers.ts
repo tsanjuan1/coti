@@ -20,12 +20,6 @@ export function breakEvenScenarioFromRecord(args: {
     salesAmount: args.scenario.salesAmount,
     markup: args.scenario.markup,
     exchangeRate: args.scenario.exchangeRate,
-    realBillingPesos: args.scenario.realBillingPesos,
-    realBillingMarkup: args.scenario.realBillingMarkup,
-    realBillingExchangeRate: args.scenario.realBillingExchangeRate,
-    altBillingPesos: args.scenario.altBillingPesos,
-    altBillingMarkup: args.scenario.altBillingMarkup,
-    altBillingExchangeRate: args.scenario.altBillingExchangeRate,
     fixedCosts: args.fixedCosts.map((line) => ({
       lineKey: line.lineKey,
       label: line.label,
@@ -38,12 +32,6 @@ export function breakEvenScenarioFromRecord(args: {
       lineKey: line.lineKey,
       label: line.label,
       rate: line.rate
-    })),
-    salespersonProfiles: args.salespersonProfiles.map((profile) => ({
-      label: profile.label,
-      salaryAmount: profile.salaryAmount,
-      burdenAmount: profile.burdenAmount ?? undefined,
-      contributionMargin: profile.contributionMargin
     }))
   };
 }
@@ -55,12 +43,12 @@ export function breakEvenScenarioToCreatePayload(input: BreakEvenScenarioInput) 
       salesAmount: input.salesAmount,
       markup: input.markup,
       exchangeRate: input.exchangeRate,
-      realBillingPesos: input.realBillingPesos,
-      realBillingMarkup: input.realBillingMarkup,
-      realBillingExchangeRate: input.realBillingExchangeRate,
-      altBillingPesos: input.altBillingPesos,
-      altBillingMarkup: input.altBillingMarkup,
-      altBillingExchangeRate: input.altBillingExchangeRate
+      realBillingPesos: input.salesAmount,
+      realBillingMarkup: input.markup,
+      realBillingExchangeRate: input.exchangeRate,
+      altBillingPesos: input.salesAmount,
+      altBillingMarkup: input.markup,
+      altBillingExchangeRate: input.exchangeRate
     },
     fixedCosts: input.fixedCosts.map((line) => ({
       lineKey: line.lineKey,
@@ -75,11 +63,6 @@ export function breakEvenScenarioToCreatePayload(input: BreakEvenScenarioInput) 
       label: line.label,
       rate: line.rate
     })),
-    salespersonProfiles: input.salespersonProfiles.map((profile) => ({
-      label: profile.label,
-      salaryAmount: profile.salaryAmount,
-      burdenAmount: profile.burdenAmount ?? 0,
-      contributionMargin: profile.contributionMargin
-    }))
+    salespersonProfiles: []
   };
 }

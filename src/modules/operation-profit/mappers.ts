@@ -18,14 +18,6 @@ export function operationScenarioFromRecord(args: {
     exchangeRate: args.scenario.exchangeRate,
     billingAmount: args.scenario.billingAmount,
     markup: args.scenario.markup,
-    fixedCosts: args.fixedCosts.map((line) => ({
-      lineKey: line.lineKey,
-      label: line.label,
-      formulaMode: line.formulaMode as "manual" | "usd_to_ars" | "usd_to_ars_monthly",
-      amount: line.amount ?? undefined,
-      inputA: line.inputA ?? undefined,
-      inputB: line.inputB ?? undefined
-    })),
     variableCosts: args.variableCosts.map((line) => ({
       lineKey: line.lineKey,
       label: line.label,
@@ -42,14 +34,7 @@ export function operationScenarioToCreatePayload(input: OperationProfitScenarioI
       billingAmount: input.billingAmount,
       markup: input.markup
     },
-    fixedCosts: input.fixedCosts.map((line) => ({
-      lineKey: line.lineKey,
-      label: line.label,
-      formulaMode: line.formulaMode,
-      amount: line.amount ?? 0,
-      inputA: line.inputA ?? 0,
-      inputB: line.inputB ?? 0
-    })),
+    fixedCosts: [],
     variableCosts: input.variableCosts
   };
 }

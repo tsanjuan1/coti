@@ -7,16 +7,10 @@ import { prisma } from "@/lib/prisma";
 import { breakEvenScenarioToCreatePayload } from "@/modules/break-even/mappers";
 
 const schema = z.object({
-  name: z.string(),
+  name: z.string().trim().min(1),
   salesAmount: z.number(),
   markup: z.number(),
   exchangeRate: z.number(),
-  realBillingPesos: z.number(),
-  realBillingMarkup: z.number(),
-  realBillingExchangeRate: z.number(),
-  altBillingPesos: z.number(),
-  altBillingMarkup: z.number(),
-  altBillingExchangeRate: z.number(),
   fixedCosts: z.array(z.object({
     lineKey: z.string(),
     label: z.string(),
@@ -29,12 +23,6 @@ const schema = z.object({
     lineKey: z.string(),
     label: z.string(),
     rate: z.number()
-  })),
-  salespersonProfiles: z.array(z.object({
-    label: z.string(),
-    salaryAmount: z.number(),
-    burdenAmount: z.number().optional(),
-    contributionMargin: z.number()
   }))
 });
 

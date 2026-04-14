@@ -9,26 +9,20 @@ import { quoteScenarioFromRecord } from "@/modules/cotizador/mappers";
 
 export default async function QuotePage() {
   const user = await requireModuleAccess(ModuleKey.QUOTE);
-  const [rules, latestScenario] = await Promise.all([
-    prisma.quoteProductRule.findMany({ orderBy: { productTypeKey: "asc" } }),
-    prisma.quoteScenario.findFirst({
-      where: { createdById: user.id },
-      include: { items: { orderBy: { lineNumber: "asc" } }, costLines: true },
-      orderBy: { updatedAt: "desc" }
-    })
-  ]);
+  const latestScenario = await prisma.quoteScenario.findFirst({
+    where: { createdById: user.id },
+    include: { items: { orderBy: { lineNumber: "asc" } }, costLines: true },
+    orderBy: { updatedAt: "desc" }
+  });
 
   const initialScenario = latestScenario
     ? quoteScenarioFromRecord({
         scenario: latestScenario,
         items: latestScenario.items,
         costLines: latestScenario.costLines,
-        productRules: rules.length > 0 ? rules : defaultQuoteScenario.productRules
+        productRules: defaultQuoteScenario.productRules
       })
-    : {
-        ...defaultQuoteScenario,
-        productRules: rules.length > 0 ? rules : defaultQuoteScenario.productRules
-      };
+    : defaultQuoteScenario;
 
   return (
     <AppShell currentPath="/cotizador" userLabel={user.fullName}>

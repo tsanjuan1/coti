@@ -5,18 +5,40 @@ import { requireAdmin } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
 import { createSupabaseAdminClient } from "@/lib/supabase/admin";
 
+const moduleKeys = ["QUOTE", "BREAK_EVEN", "OPERATION_PROFIT", "ADMIN"] as const;
+
 const schema = z.object({
-  email: z.string().email(),
-  fullName: z.string().min(1),
+  email: z.string().trim().email(),
+  fullName: z.string().trim().min(1),
   role: z.enum(["ADMIN", "SELLER"]),
   isActive: z.boolean(),
   password: z.union([z.string().min(8), z.literal("")]).optional(),
   permissions: z.array(z.object({
-    moduleKey: z.enum(["QUOTE", "BREAK_EVEN", "OPERATION_PROFIT", "ADMIN"]),
+    moduleKey: z.enum(moduleKeys),
     canAccess: z.boolean(),
-    canManage: z.boolean()
-  }))
+    canManage: z.boolean().optional()
+  })).default([])
 });
+
+function normalizePermissions(
+  role: "ADMIN" | "SELLER",
+  permissions: Array<{
+    moduleKey: (typeof moduleKeys)[number];
+    canAccess: boolean;
+    canManage?: boolean;
+  }>
+) {
+  return moduleKeys.map((moduleKey) => {
+    const permission = permissions.find((entry) => entry.moduleKey === moduleKey);
+    const canAccess = role === "ADMIN" ? true : Boolean(permission?.canAccess);
+
+    return {
+      moduleKey,
+      canAccess,
+      canManage: role === "ADMIN"
+    };
+  });
+}
 
 export async function PUT(
   request: Request,
@@ -45,6 +67,8 @@ export async function PUT(
     return NextResponse.json({ error: authUpdate.error.message }, { status: 400 });
   }
 
+  const permissions = normalizePermissions(parsed.data.role, parsed.data.permissions);
+
   await prisma.$transaction([
     prisma.modulePermission.deleteMany({ where: { userId } }),
     prisma.appUser.update({
@@ -56,7 +80,7 @@ export async function PUT(
         isActive: parsed.data.isActive,
         mustChangePassword: parsed.data.password ? true : current.mustChangePassword,
         permissions: {
-          createMany: { data: parsed.data.permissions }
+          createMany: { data: permissions }
         }
       }
     })

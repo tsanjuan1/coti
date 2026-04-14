@@ -1,5 +1,3 @@
-export type QuoteItemStatus = "COTIZACION" | "COMPRAS" | "VENCIDO";
-
 export interface QuoteProductRule {
   productTypeKey: string;
   dutyRate: number;
@@ -13,137 +11,58 @@ export interface QuoteProductRule {
   description?: string | null;
 }
 
-export interface QuoteItemInput {
-  lineNumber: number;
-  status: QuoteItemStatus;
-  quoteDate?: string | null;
-  sellerName?: string | null;
-  quantity: number;
-  partNumber: string;
-  description: string;
-  productTypeKey: string;
-  fobUnitCost: number;
-  weightKg: number;
-  lineMarkup: number;
-}
-
-export interface QuoteOriginCosts {
-  shipperDeclarationUsd: number;
-  handlingFeeUsd: number;
-  deliveryAirportRatePerKg: number;
-  deliveryAirportMinimumUsd: number;
-  internationalFreightRatePerKg: number;
-  internationalFreightMinimumUsd: number;
-  originDocumentHandlingUsd: number;
-  afipResolutionArs: number;
-  exchangeRateArsUsd: number;
-  vatRate: number;
-}
-
-export interface QuoteDestinationCosts {
-  custodyArs: number;
-  storageAdminRate: number;
-  digitizationUsd: number;
-  internalHaulArs: number;
-  operationalExpensesArs: number;
-  feesRate: number;
-  minimumFeesUsd: number;
-  destinationInsuranceRate: number;
-  storageRate: number;
-  miscellaneousUsd: number;
-  grossIncomeCabaRate: number;
-  grossIncomePbaRate: number;
-  destinationDocumentHandlingUsd: number;
-  exchangeRateArsUsd: number;
-  vatRate: number;
-}
-
-export interface QuoteRemnantCosts {
-  feesRate: number;
-  minimumFeesUsd: number;
-  operationalExpensesArs: number;
-  digitizationUsd: number;
-  miscellaneousUsd: number;
-  custodyArs: number;
-  destinationInsuranceRate: number;
-  internalHaulArs: number;
-  storageAdminRate: number;
-  storageRate: number;
-  afipResolutionArs: number;
-  originDocumentHandlingUsd: number;
-  internationalFreightRatePerKg: number;
-  internationalFreightMinimumUsd: number;
-  grossIncomeCabaRate: number;
-  grossIncomePbaRate: number;
-  destinationDocumentHandlingUsd: number;
-  exchangeRateArsUsd: number;
-  vatRate: number;
-}
-
 export interface QuoteScenarioInput {
   name: string;
-  globalMarkupFactor: number;
+  productTypeKey: string;
+  supplierUnitPriceUsd: number;
+  priceFactor: number;
   insuranceRate: number;
-  advanceVatEnabled: boolean;
+  freightRatePerKgUsd: number;
+  freightWeightKg: number;
+  miscellaneousRate: number;
+  transferRate: number;
   countryTaxRate: number;
-  originCosts: QuoteOriginCosts;
-  destinationCosts: QuoteDestinationCosts;
-  remnantCosts: QuoteRemnantCosts;
+  exchangeRateArsUsd: number;
+  saleFactor: number;
   productRules: QuoteProductRule[];
-  items: QuoteItemInput[];
-}
-
-export interface QuoteLineResult {
-  input: QuoteItemInput;
-  rule?: QuoteProductRule;
-  fobUnitPrice: number;
-  fobTotal: number;
-  valueShare: number;
-  weightTotal: number;
-  weightShare: number;
-  insurance: number;
-  freightAndExpenses: number;
-  cifCip: number;
-  duties: number;
-  statistics: number;
-  vat: number;
-  advanceVat: number;
-  grossIncome: number;
-  advanceIncomeTax: number;
-  internalTax: number;
-  destinationExpenses: number;
-  countryTax: number;
-  totalLine: number;
-  landedUnitCost: number;
-  salesUnitPrice: number;
-  salesTotal: number;
-  warnings: string[];
 }
 
 export interface QuoteScenarioResult {
-  activeQuoteItems: QuoteLineResult[];
-  inactiveItems: QuoteLineResult[];
-  totals: {
-    quantity: number;
-    fobUnitTotal: number;
-    fobTotal: number;
-    weightTotal: number;
-    cifTotal: number;
-    landedUnitTotal: number;
-    salesUnitAverage: number;
-    salesTotal: number;
-    originTotal: number;
-    destinationTotal: number;
-    remnantTotal: number;
-    remnantAllocationBase: number;
-  };
-  costBreakdown: {
-    originAdmin: number;
-    originFreight: number;
-    originTotal: number;
-    destinationTotal: number;
-    remnantTotal: number;
-    remnantAllocationBase: number;
-  };
+  selectedRule?: QuoteProductRule;
   warnings: string[];
+  rates: {
+    dutyRate: number;
+    statisticsRate: number;
+    vatRate: number;
+    internalTaxRate: number;
+    miscellaneousRate: number;
+    transferRate: number;
+    countryTaxRate: number;
+    priceFactor: number;
+    saleFactor: number;
+    costVariationRate: number;
+    profitMarginRate: number;
+  };
+  amounts: {
+    supplierUnitPriceUsd: number;
+    adjustedSupplierPriceUsd: number;
+    insuranceUsd: number;
+    freightUsd: number;
+    cifUsd: number;
+    dutiesUsd: number;
+    statisticsUsd: number;
+    vatUsd: number;
+    internalTaxUsd: number;
+    miscellaneousUsd: number;
+    transferUsd: number;
+    countryTaxUsd: number;
+    totalCostUsd: number;
+    totalCostArs: number;
+    courierInvoiceUsd: number;
+    courierInvoiceArs: number;
+    salePriceUsd: number;
+    salePriceArs: number;
+    profitUsd: number;
+    profitArs: number;
+  };
 }

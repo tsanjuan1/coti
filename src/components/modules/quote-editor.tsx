@@ -1,27 +1,12 @@
 "use client";
 
 import { useMemo, useState, useTransition } from "react";
-import { Plus, Save, Trash2 } from "lucide-react";
+import { Save } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { calculateQuoteScenario } from "@/modules/cotizador/domain/calculate-quote";
-import type { QuoteItemInput, QuoteScenarioInput } from "@/modules/cotizador/domain/types";
+import type { QuoteScenarioInput } from "@/modules/cotizador/domain/types";
 import { formatCurrency, formatPercentage, toNumber } from "@/lib/utils";
-
-function emptyQuoteItem(nextLineNumber: number, sellerName?: string): QuoteItemInput {
-  return {
-    lineNumber: nextLineNumber,
-    status: "COTIZACION",
-    sellerName: sellerName ?? "PABLO",
-    quantity: 1,
-    partNumber: "",
-    description: "",
-    productTypeKey: "SFP",
-    fobUnitCost: 0,
-    weightKg: 0,
-    lineMarkup: 1.47
-  };
-}
 
 export function QuoteEditor({
   initialScenario,
@@ -35,32 +20,7 @@ export function QuoteEditor({
   const [persistedScenarioId, setPersistedScenarioId] = useState(scenarioId);
   const [message, setMessage] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
-  const results = useMemo(() => calculateQuoteScenario(scenario), [scenario]);
-
-  function updateItem(index: number, patch: Partial<QuoteItemInput>) {
-    setScenario((current) => {
-      const items = current.items.slice();
-      items[index] = { ...items[index], ...patch };
-      return { ...current, items };
-    });
-  }
-
-  function addItem() {
-    setScenario((current) => ({
-      ...current,
-      items: [...current.items, emptyQuoteItem(current.items.length + 1, current.items[0]?.sellerName ?? "PABLO")]
-    }));
-  }
-
-  function removeItem(index: number) {
-    setScenario((current) => ({
-      ...current,
-      items: current.items.filter((_, itemIndex) => itemIndex !== index).map((item, itemIndex) => ({
-        ...item,
-        lineNumber: itemIndex + 1
-      }))
-    }));
-  }
+  const result = useMemo(() => calculateQuoteScenario(scenario), [scenario]);
 
   function saveScenario() {
     startTransition(async () => {
@@ -99,9 +59,10 @@ export function QuoteEditor({
             <div className="text-sm uppercase tracking-[0.2em] text-[color:var(--muted)]">
               Modulo
             </div>
-            <h1 className="mt-2 text-3xl font-semibold">Cotizador</h1>
-            <p className="mt-2 text-sm text-[color:var(--muted)]">
-              Replica estructurada del `COTIZADOR ACTUAL`, con formulas desacopladas y trazabilidad por linea.
+            <h1 className="mt-2 text-3xl font-semibold">Cotizador compacto</h1>
+            <p className="mt-2 max-w-3xl text-sm text-[color:var(--muted)]">
+              Esta version sigue la variante compacta del Excel: producto, costo proveedor,
+              seguro, flete por kilo, tasas del padron y salida en USD/ARS.
             </p>
           </div>
           <button
@@ -110,120 +71,284 @@ export function QuoteEditor({
             className="inline-flex items-center gap-2 rounded-2xl bg-[color:var(--brand)] px-4 py-3 font-medium text-white"
           >
             <Save className="h-4 w-4" />
-            {isPending ? "Guardando..." : "Guardar escenario"}
+            {isPending ? "Guardando..." : "Guardar cotizacion"}
           </button>
         </div>
         {message ? <div className="mt-4 text-sm text-[color:var(--brand)]">{message}</div> : null}
       </section>
 
+      <section className="grid gap-4 xl:grid-cols-[1.2fr_1fr]">
+        <div className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
+          <div className="grid gap-4 md:grid-cols-2">
+            <label className="md:col-span-2">
+              <span className="text-sm font-medium">Nombre del escenario</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                value={scenario.name}
+                onChange={(event) => setScenario({ ...scenario, name: event.target.value })}
+              />
+            </label>
+
+            <label className="md:col-span-2">
+              <span className="text-sm font-medium">Producto</span>
+              <select
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                value={scenario.productTypeKey}
+                onChange={(event) => setScenario({ ...scenario, productTypeKey: event.target.value })}
+              >
+                {scenario.productRules.map((rule) => (
+                  <option key={rule.productTypeKey} value={rule.productTypeKey}>
+                    {rule.productTypeKey}
+                  </option>
+                ))}
+              </select>
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Precio unitario proveedor</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.01"
+                value={scenario.supplierUnitPriceUsd}
+                onChange={(event) =>
+                  setScenario({ ...scenario, supplierUnitPriceUsd: toNumber(event.target.value) })
+                }
+              />
+              <p className="mt-2 text-xs text-[color:var(--muted)]">
+                Nota operativa: si el producto tiene trafo, sumalo en este precio base.
+              </p>
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Precio</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.01"
+                value={scenario.priceFactor}
+                onChange={(event) =>
+                  setScenario({ ...scenario, priceFactor: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Seguro</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.0001"
+                value={scenario.insuranceRate}
+                onChange={(event) =>
+                  setScenario({ ...scenario, insuranceRate: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Costo flete x kg</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.01"
+                value={scenario.freightRatePerKgUsd}
+                onChange={(event) =>
+                  setScenario({ ...scenario, freightRatePerKgUsd: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Peso facturable kg</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.01"
+                value={scenario.freightWeightKg}
+                onChange={(event) =>
+                  setScenario({ ...scenario, freightWeightKg: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Gastos varios</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.0001"
+                value={scenario.miscellaneousRate}
+                onChange={(event) =>
+                  setScenario({ ...scenario, miscellaneousRate: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Transferencia</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.0001"
+                value={scenario.transferRate}
+                onChange={(event) =>
+                  setScenario({ ...scenario, transferRate: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Imp. pais</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.0001"
+                value={scenario.countryTaxRate}
+                onChange={(event) =>
+                  setScenario({ ...scenario, countryTaxRate: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">TC</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.01"
+                value={scenario.exchangeRateArsUsd}
+                onChange={(event) =>
+                  setScenario({ ...scenario, exchangeRateArsUsd: toNumber(event.target.value) })
+                }
+              />
+            </label>
+
+            <label>
+              <span className="text-sm font-medium">Venta</span>
+              <input
+                className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
+                type="number"
+                step="0.01"
+                value={scenario.saleFactor}
+                onChange={(event) =>
+                  setScenario({ ...scenario, saleFactor: toNumber(event.target.value) })
+                }
+              />
+            </label>
+          </div>
+        </div>
+
+        <aside className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
+          <h2 className="text-lg font-semibold">Padron arancelario aplicado</h2>
+          <div className="mt-4 space-y-3 text-sm">
+            <div className="rounded-2xl border border-[var(--line)] bg-slate-50 p-4">
+              <div className="font-medium">{scenario.productTypeKey}</div>
+              <div className="mt-1 text-[color:var(--muted)]">
+                {result.selectedRule?.description || "Sin descripcion adicional"}
+              </div>
+              <div className="mt-2 text-[color:var(--muted)]">
+                NCM: {result.selectedRule?.ncmCode || "No informado"}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-[var(--line)] p-4">
+              <div className="grid gap-2">
+                <div className="flex items-center justify-between">
+                  <span>Derechos</span>
+                  <strong>{formatPercentage(result.rates.dutyRate)}</strong>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Estadistica</span>
+                  <strong>{formatPercentage(result.rates.statisticsRate)}</strong>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>IVA</span>
+                  <strong>{formatPercentage(result.rates.vatRate)}</strong>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Imp. interno</span>
+                  <strong>{formatPercentage(result.rates.internalTaxRate)}</strong>
+                </div>
+              </div>
+            </div>
+
+            {result.warnings.length > 0 ? (
+              <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+                {result.warnings.join(" ")}
+              </div>
+            ) : null}
+          </div>
+        </aside>
+      </section>
+
       <section className="grid gap-4 lg:grid-cols-4">
-        <label className="rounded-[22px] border border-[var(--line)] bg-white p-4">
-          <span className="text-sm font-medium">Nombre</span>
-          <input
-            className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
-            value={scenario.name}
-            onChange={(event) => setScenario({ ...scenario, name: event.target.value })}
-          />
-        </label>
-        <label className="rounded-[22px] border border-[var(--line)] bg-white p-4">
-          <span className="text-sm font-medium">Markup global</span>
-          <input
-            className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
-            type="number"
-            step="0.01"
-            value={scenario.globalMarkupFactor}
-            onChange={(event) => setScenario({ ...scenario, globalMarkupFactor: toNumber(event.target.value) })}
-          />
-        </label>
-        <label className="rounded-[22px] border border-[var(--line)] bg-white p-4">
-          <span className="text-sm font-medium">Seguro</span>
-          <input
-            className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
-            type="number"
-            step="0.001"
-            value={scenario.insuranceRate}
-            onChange={(event) => setScenario({ ...scenario, insuranceRate: toNumber(event.target.value) })}
-          />
-        </label>
-        <label className="rounded-[22px] border border-[var(--line)] bg-white p-4">
-          <span className="text-sm font-medium">Impuesto pais</span>
-          <input
-            className="mt-2 w-full rounded-xl border border-[var(--line)] px-3 py-2"
-            type="number"
-            step="0.001"
-            value={scenario.countryTaxRate}
-            onChange={(event) => setScenario({ ...scenario, countryTaxRate: toNumber(event.target.value) })}
-          />
-        </label>
+        <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
+          <div className="text-sm text-[color:var(--muted)]">CIF</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatCurrency(result.amounts.cifUsd)}
+          </div>
+        </div>
+        <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
+          <div className="text-sm text-[color:var(--muted)]">Costo total</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatCurrency(result.amounts.totalCostUsd)}
+          </div>
+          <div className="mt-1 text-sm text-[color:var(--muted)]">
+            {formatCurrency(result.amounts.totalCostArs, "ARS")}
+          </div>
+        </div>
+        <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
+          <div className="text-sm text-[color:var(--muted)]">Factura courier</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatCurrency(result.amounts.courierInvoiceUsd)}
+          </div>
+          <div className="mt-1 text-sm text-[color:var(--muted)]">
+            {formatCurrency(result.amounts.courierInvoiceArs, "ARS")}
+          </div>
+        </div>
+        <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
+          <div className="text-sm text-[color:var(--muted)]">Venta</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatCurrency(result.amounts.salePriceUsd)}
+          </div>
+          <div className="mt-1 text-sm text-[color:var(--muted)]">
+            {formatCurrency(result.amounts.salePriceArs, "ARS")}
+          </div>
+        </div>
       </section>
 
       <section className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-lg font-semibold">Items</h2>
-          <button onClick={addItem} className="inline-flex items-center gap-2 rounded-2xl border border-[var(--line)] px-4 py-2">
-            <Plus className="h-4 w-4" />
-            Agregar linea
-          </button>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="min-w-[1200px] text-sm">
+        <h2 className="text-lg font-semibold">Desglose del costo</h2>
+        <div className="mt-4 overflow-x-auto">
+          <table className="min-w-full text-sm">
             <thead className="text-left text-[color:var(--muted)]">
               <tr>
-                {["#", "Status", "Vendedor", "Cantidad", "Part number", "Descripcion", "Tipo", "FOB", "Peso", "Markup", "Acciones"].map((header) => (
-                  <th key={header} className="px-2 py-2">{header}</th>
+                {["Concepto", "Tasa", "USD", "ARS"].map((header) => (
+                  <th key={header} className="px-2 py-2">
+                    {header}
+                  </th>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {scenario.items.map((item, index) => (
-                <tr key={item.lineNumber} className="border-t border-[var(--line)]">
-                  <td className="px-2 py-2">{item.lineNumber}</td>
-                  <td className="px-2 py-2">
-                    <select
-                      className="rounded-xl border border-[var(--line)] px-2 py-2"
-                      value={item.status}
-                      onChange={(event) => updateItem(index, { status: event.target.value as QuoteItemInput["status"] })}
-                    >
-                      <option value="COTIZACION">COTIZACION</option>
-                      <option value="COMPRAS">COMPRAS</option>
-                      <option value="VENCIDO">VENCIDO</option>
-                    </select>
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="rounded-xl border border-[var(--line)] px-2 py-2" value={item.sellerName ?? ""} onChange={(event) => updateItem(index, { sellerName: event.target.value })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="w-24 rounded-xl border border-[var(--line)] px-2 py-2" type="number" value={item.quantity} onChange={(event) => updateItem(index, { quantity: toNumber(event.target.value) })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="rounded-xl border border-[var(--line)] px-2 py-2" value={item.partNumber} onChange={(event) => updateItem(index, { partNumber: event.target.value })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="min-w-72 rounded-xl border border-[var(--line)] px-2 py-2" value={item.description} onChange={(event) => updateItem(index, { description: event.target.value })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <select className="min-w-56 rounded-xl border border-[var(--line)] px-2 py-2" value={item.productTypeKey} onChange={(event) => updateItem(index, { productTypeKey: event.target.value })}>
-                      {scenario.productRules.map((rule) => (
-                        <option key={rule.productTypeKey} value={rule.productTypeKey}>
-                          {rule.productTypeKey}
-                        </option>
-                      ))}
-                    </select>
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="w-28 rounded-xl border border-[var(--line)] px-2 py-2" type="number" step="0.01" value={item.fobUnitCost} onChange={(event) => updateItem(index, { fobUnitCost: toNumber(event.target.value) })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="w-24 rounded-xl border border-[var(--line)] px-2 py-2" type="number" step="0.01" value={item.weightKg} onChange={(event) => updateItem(index, { weightKg: toNumber(event.target.value) })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <input className="w-24 rounded-xl border border-[var(--line)] px-2 py-2" type="number" step="0.01" value={item.lineMarkup} onChange={(event) => updateItem(index, { lineMarkup: toNumber(event.target.value) })} />
-                  </td>
-                  <td className="px-2 py-2">
-                    <button onClick={() => removeItem(index)} className="rounded-xl border border-[var(--line)] p-2 text-red-600">
-                      <Trash2 className="h-4 w-4" />
-                    </button>
-                  </td>
+              {[
+                ["Precio ajustado", formatPercentage(result.rates.priceFactor - 1), result.amounts.adjustedSupplierPriceUsd, result.amounts.adjustedSupplierPriceUsd * scenario.exchangeRateArsUsd],
+                ["Seguro", formatPercentage(scenario.insuranceRate), result.amounts.insuranceUsd, result.amounts.insuranceUsd * scenario.exchangeRateArsUsd],
+                ["Flete", "-", result.amounts.freightUsd, result.amounts.freightUsd * scenario.exchangeRateArsUsd],
+                ["Derechos", formatPercentage(result.rates.dutyRate), result.amounts.dutiesUsd, result.amounts.dutiesUsd * scenario.exchangeRateArsUsd],
+                ["Estadistica", formatPercentage(result.rates.statisticsRate), result.amounts.statisticsUsd, result.amounts.statisticsUsd * scenario.exchangeRateArsUsd],
+                ["IVA", formatPercentage(result.rates.vatRate), result.amounts.vatUsd, result.amounts.vatUsd * scenario.exchangeRateArsUsd],
+                ["Imp. interno", formatPercentage(result.rates.internalTaxRate), result.amounts.internalTaxUsd, result.amounts.internalTaxUsd * scenario.exchangeRateArsUsd],
+                ["Gastos varios", formatPercentage(result.rates.miscellaneousRate), result.amounts.miscellaneousUsd, result.amounts.miscellaneousUsd * scenario.exchangeRateArsUsd],
+                ["Transferencia", formatPercentage(result.rates.transferRate), result.amounts.transferUsd, result.amounts.transferUsd * scenario.exchangeRateArsUsd],
+                ["Imp. pais", formatPercentage(result.rates.countryTaxRate), result.amounts.countryTaxUsd, result.amounts.countryTaxUsd * scenario.exchangeRateArsUsd]
+              ].map(([label, rate, usd, ars]) => (
+                <tr key={label as string} className="border-t border-[var(--line)]">
+                  <td className="px-2 py-2">{label}</td>
+                  <td className="px-2 py-2">{rate}</td>
+                  <td className="px-2 py-2">{formatCurrency(usd as number)}</td>
+                  <td className="px-2 py-2">{formatCurrency(ars as number, "ARS")}</td>
                 </tr>
               ))}
             </tbody>
@@ -233,48 +358,22 @@ export function QuoteEditor({
 
       <section className="grid gap-4 lg:grid-cols-3">
         <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
-          <div className="text-sm text-[color:var(--muted)]">FOB total cotizacion</div>
-          <div className="mt-2 text-3xl font-semibold">{formatCurrency(results.totals.fobTotal)}</div>
+          <div className="text-sm text-[color:var(--muted)]">Variacion % en costos</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatPercentage(result.rates.costVariationRate)}
+          </div>
         </div>
         <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
-          <div className="text-sm text-[color:var(--muted)]">Costo origen</div>
-          <div className="mt-2 text-3xl font-semibold">{formatCurrency(results.totals.originTotal)}</div>
+          <div className="text-sm text-[color:var(--muted)]">Beneficio USD</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatCurrency(result.amounts.profitUsd)}
+          </div>
         </div>
         <div className="rounded-[24px] border border-[var(--line)] bg-white p-5 shadow-sm">
-          <div className="text-sm text-[color:var(--muted)]">Venta total</div>
-          <div className="mt-2 text-3xl font-semibold">{formatCurrency(results.totals.salesTotal)}</div>
-        </div>
-      </section>
-
-      <section className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
-        <h2 className="text-lg font-semibold">Desglose por linea activa</h2>
-        <div className="mt-4 overflow-x-auto">
-          <table className="min-w-[1100px] text-sm">
-            <thead className="text-left text-[color:var(--muted)]">
-              <tr>
-                {["Linea", "Tipo", "Share valor", "Share peso", "CIF/CIP", "Derechos", "IVA", "Gastos destino", "Costo unitario", "Venta unit.", "Venta total"].map((header) => (
-                  <th key={header} className="px-2 py-2">{header}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {results.activeQuoteItems.map((line) => (
-                <tr key={line.input.lineNumber} className="border-t border-[var(--line)]">
-                  <td className="px-2 py-2">{line.input.lineNumber}</td>
-                  <td className="px-2 py-2">{line.input.productTypeKey}</td>
-                  <td className="px-2 py-2">{formatPercentage(line.valueShare)}</td>
-                  <td className="px-2 py-2">{formatPercentage(line.weightShare)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.cifCip)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.duties)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.vat)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.destinationExpenses)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.landedUnitCost)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.salesUnitPrice)}</td>
-                  <td className="px-2 py-2">{formatCurrency(line.salesTotal)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="text-sm text-[color:var(--muted)]">Margen</div>
+          <div className="mt-2 text-3xl font-semibold">
+            {formatPercentage(result.rates.profitMarginRate)}
+          </div>
         </div>
       </section>
     </div>
