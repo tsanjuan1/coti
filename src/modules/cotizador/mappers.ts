@@ -1,7 +1,11 @@
 import type { QuoteCostProfile, QuoteItem, QuoteScenario } from "@prisma/client";
 
 import { defaultQuoteScenario } from "@/modules/cotizador/defaults";
-import type { QuoteProductRule, QuoteScenarioInput } from "@/modules/cotizador/domain/types";
+import type {
+  QuoteProductRule,
+  QuoteScenarioInput,
+  QuoteScenarioSummary
+} from "@/modules/cotizador/domain/types";
 
 const compactCostLineDefaults = {
   freightRatePerKgUsd: defaultQuoteScenario.freightRatePerKgUsd,
@@ -110,5 +114,20 @@ export function quoteScenarioToCreatePayload(input: QuoteScenarioInput) {
         rate: 0
       }
     ]
+  };
+}
+
+export function quoteScenarioSummaryFromRecord(args: {
+  scenario: QuoteScenario;
+  items: QuoteItem[];
+}): QuoteScenarioSummary {
+  const primaryItem = args.items[0];
+
+  return {
+    id: args.scenario.id,
+    name: args.scenario.name,
+    productTypeKey: primaryItem?.productTypeKey ?? defaultQuoteScenario.productTypeKey,
+    supplierUnitPriceUsd: primaryItem?.fobUnitCost ?? defaultQuoteScenario.supplierUnitPriceUsd,
+    updatedAt: args.scenario.updatedAt.toISOString()
   };
 }

@@ -42,7 +42,8 @@ export function AppShell({
           <nav className="space-y-2">
             {navItems.map((item) => {
               const Icon = item.icon;
-              const active = currentPath === item.href;
+              const active =
+                currentPath === item.href || currentPath.startsWith(`${item.href}/`);
               return (
                 <Link
                   key={item.href}
@@ -85,7 +86,8 @@ export function AppShell({
             <nav className="mt-4 flex gap-2 overflow-x-auto pb-1 lg:hidden">
               {navItems.map((item) => {
                 const Icon = item.icon;
-                const active = currentPath === item.href;
+                const active =
+                  currentPath === item.href || currentPath.startsWith(`${item.href}/`);
                 return (
                   <Link
                     key={item.href}

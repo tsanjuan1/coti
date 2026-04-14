@@ -4,7 +4,10 @@ import { z } from "zod";
 
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
-import { quoteScenarioToCreatePayload } from "@/modules/cotizador/mappers";
+import {
+  quoteScenarioSummaryFromRecord,
+  quoteScenarioToCreatePayload
+} from "@/modules/cotizador/mappers";
 
 const quoteScenarioSchema = z.object({
   name: z.string().trim().min(1),
@@ -56,5 +59,16 @@ export async function PUT(
     })
   ]);
 
-  return NextResponse.json({ id: scenarioId });
+  const savedScenario = await prisma.quoteScenario.findUniqueOrThrow({
+    where: { id: scenarioId },
+    include: { items: { orderBy: { lineNumber: "asc" } } }
+  });
+
+  return NextResponse.json({
+    id: scenarioId,
+    summary: quoteScenarioSummaryFromRecord({
+      scenario: savedScenario,
+      items: savedScenario.items
+    })
+  });
 }

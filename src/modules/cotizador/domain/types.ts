@@ -27,6 +27,14 @@ export interface QuoteScenarioInput {
   productRules: QuoteProductRule[];
 }
 
+export interface QuoteScenarioSummary {
+  id: string;
+  name: string;
+  productTypeKey: string;
+  supplierUnitPriceUsd: number;
+  updatedAt: string;
+}
+
 export interface QuoteScenarioResult {
   selectedRule?: QuoteProductRule;
   warnings: string[];

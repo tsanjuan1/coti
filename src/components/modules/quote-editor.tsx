@@ -1,26 +1,45 @@
 "use client";
 
-import { useMemo, useState, useTransition } from "react";
+import Link from "next/link";
+import { useEffect, useMemo, useState, useTransition } from "react";
 import { Save } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import { calculateQuoteScenario } from "@/modules/cotizador/domain/calculate-quote";
-import type { QuoteScenarioInput } from "@/modules/cotizador/domain/types";
+import type {
+  QuoteScenarioInput,
+  QuoteScenarioSummary
+} from "@/modules/cotizador/domain/types";
 import { formatCurrency, formatPercentage, toNumber } from "@/lib/utils";
 
 export function QuoteEditor({
   initialScenario,
-  scenarioId
+  scenarioId,
+  initialSavedScenarios
 }: {
   initialScenario: QuoteScenarioInput;
   scenarioId?: string;
+  initialSavedScenarios: QuoteScenarioSummary[];
 }) {
   const router = useRouter();
   const [scenario, setScenario] = useState(initialScenario);
   const [persistedScenarioId, setPersistedScenarioId] = useState(scenarioId);
+  const [savedScenarios, setSavedScenarios] = useState(initialSavedScenarios);
   const [message, setMessage] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
   const result = useMemo(() => calculateQuoteScenario(scenario), [scenario]);
+
+  useEffect(() => {
+    setScenario(initialScenario);
+  }, [initialScenario]);
+
+  useEffect(() => {
+    setPersistedScenarioId(scenarioId);
+  }, [scenarioId]);
+
+  useEffect(() => {
+    setSavedScenarios(initialSavedScenarios);
+  }, [initialSavedScenarios]);
 
   function saveScenario() {
     startTransition(async () => {
@@ -42,12 +61,23 @@ export function QuoteEditor({
         return;
       }
 
-      if (!persistedScenarioId && payload.id) {
+      if (payload.id) {
         setPersistedScenarioId(payload.id);
-        router.refresh();
       }
 
-      setMessage("Cotizacion guardada correctamente.");
+      if (payload.summary) {
+        setSavedScenarios((current) => {
+          const next = current.filter((entry) => entry.id !== payload.summary.id);
+          return [payload.summary, ...next];
+        });
+      }
+
+      if (!persistedScenarioId && payload.id) {
+        router.replace(`/cotizador/courier?scenarioId=${payload.id}`);
+      }
+
+      router.refresh();
+      setMessage("Cotizacion guardada y registrada en el historial.");
     });
   }
 
@@ -57,7 +87,7 @@ export function QuoteEditor({
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="text-sm uppercase tracking-[0.2em] text-[color:var(--muted)]">
-              Modulo
+              Courier
             </div>
             <h1 className="mt-2 text-3xl font-semibold">Cotizador compacto</h1>
             <p className="mt-2 max-w-3xl text-sm text-[color:var(--muted)]">
@@ -65,16 +95,78 @@ export function QuoteEditor({
               seguro, flete por kilo, tasas del padron y salida en USD/ARS.
             </p>
           </div>
-          <button
-            onClick={saveScenario}
-            disabled={isPending}
-            className="inline-flex items-center gap-2 rounded-2xl bg-[color:var(--brand)] px-4 py-3 font-medium text-white"
-          >
-            <Save className="h-4 w-4" />
-            {isPending ? "Guardando..." : "Guardar cotizacion"}
-          </button>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/cotizador"
+              className="inline-flex items-center rounded-2xl border border-[var(--line)] px-4 py-3 text-sm font-medium"
+            >
+              Volver al hub
+            </Link>
+            <Link
+              href="/cotizador/tasas-arancelarias"
+              className="inline-flex items-center rounded-2xl border border-[var(--line)] px-4 py-3 text-sm font-medium"
+            >
+              Tasas arancelarias
+            </Link>
+            <button
+              onClick={saveScenario}
+              disabled={isPending}
+              className="inline-flex items-center gap-2 rounded-2xl bg-[color:var(--brand)] px-4 py-3 font-medium text-white"
+            >
+              <Save className="h-4 w-4" />
+              {isPending ? "Guardando..." : "Guardar cotizacion"}
+            </button>
+          </div>
         </div>
         {message ? <div className="mt-4 text-sm text-[color:var(--brand)]">{message}</div> : null}
+      </section>
+
+      <section className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
+        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-lg font-semibold">Historial de cotizaciones guardadas</h2>
+            <p className="text-sm text-[color:var(--muted)]">
+              Cada guardado queda registrado aca. Podes volver a abrir cualquier escenario.
+            </p>
+          </div>
+          <div className="rounded-full border border-[var(--line)] px-3 py-1 text-sm">
+            {savedScenarios.length} guardadas
+          </div>
+        </div>
+
+        {savedScenarios.length === 0 ? (
+          <div className="mt-4 rounded-2xl border border-dashed border-[var(--line)] px-4 py-6 text-sm text-[color:var(--muted)]">
+            Todavia no hay cotizaciones registradas para este usuario.
+          </div>
+        ) : (
+          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {savedScenarios.map((savedScenario) => {
+              const active = savedScenario.id === persistedScenarioId;
+              return (
+                <Link
+                  key={savedScenario.id}
+                  href={`/cotizador/courier?scenarioId=${savedScenario.id}`}
+                  className={`rounded-2xl border p-4 transition ${
+                    active
+                      ? "border-[color:var(--brand)] bg-slate-50"
+                      : "border-[var(--line)] bg-white hover:-translate-y-0.5"
+                  }`}
+                >
+                  <div className="text-sm text-[color:var(--muted)]">
+                    {new Date(savedScenario.updatedAt).toLocaleString("es-AR")}
+                  </div>
+                  <div className="mt-2 text-lg font-semibold">{savedScenario.name}</div>
+                  <div className="mt-2 text-sm text-[color:var(--muted)]">
+                    {savedScenario.productTypeKey}
+                  </div>
+                  <div className="mt-3 text-sm font-medium">
+                    {formatCurrency(savedScenario.supplierUnitPriceUsd)}
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        )}
       </section>
 
       <section className="grid gap-4 xl:grid-cols-[1.2fr_1fr]">
