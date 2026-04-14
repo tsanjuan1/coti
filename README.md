@@ -122,12 +122,15 @@ SEED_ADMIN_PASSWORD="ChangeMe123!"
 2. Obtener `Project URL`, `anon key` y `service_role key`.
 3. Ir a `Authentication > Providers` y habilitar `Email`.
 4. Completar `.env` con las credenciales.
-5. Usar las cadenas de conexion de Postgres de Supabase para `DATABASE_URL` y `DIRECT_URL`.
+5. Abrir el boton `Connect` en el dashboard del proyecto para copiar las cadenas de conexion de Postgres.
+6. Usar:
+   `DATABASE_URL`: transaction pooler / serverless string para Vercel, agregando `?pgbouncer=true&connection_limit=1`
+   `DIRECT_URL`: direct connection string
 
 Sugerencia para Prisma:
 
-- `DATABASE_URL`: cadena pooled o con `pgbouncer=true`
-- `DIRECT_URL`: cadena directa sin pooler
+- `DATABASE_URL`: cadena del pooler transaccional para serverless
+- `DIRECT_URL`: cadena directa sin pooler, usada para migraciones
 
 ## Instalacion local
 

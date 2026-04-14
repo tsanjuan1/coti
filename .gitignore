@@ -6,8 +6,11 @@ node_modules
 .vercel
 coverage
 dist
+.npm-cache/
 *.log
 __pycache__/
 *.pyc
 prisma/dev.db
 prisma/dev.db-journal
+
+.vercel
