@@ -1,0 +1,473 @@
+== Cotizador GDC ==
+A1		Producto
+C1	Producto	NOTEBOOK
+E1	NOTEBOOK	libras
+F1	libras	20.7
+E2	libras	kg
+A3	Producto	Precio unitario proveedor
+C3	Precio unitario proveedor	500
+D3	Precio unitario proveedor	´+35 si tiene trafo´
+A4	Precio unitario proveedor	Precio 
+B4	Precio	1.05
+F4		Largo x Ancho x Alto = YY
+G4	Largo x Ancho x Alto = YY	Por ejemplo, si tienes un paquete con dimensiones de 1 metro de largo, 0.5 metros de ancho y 0.4 metros de alto, el cálculo sería:
+A5	Precio	Seguro
+B5	Seguro	0.01
+F5	Largo x Ancho x Alto = YY	YY x 167 = Peso vol.
+G5	YY x 167 = Peso vol.	Peso Volumetrico (kg)=1×0.5×0.4×167=33.4 kgPeso Volumeˊtrico (kg)=1×0.5×0.4×167=33.4 kg
+A6	Seguro	Costo flete  x kg
+B6	Costo flete  x kg	2.5
+D6	Costo flete  x kg	2.5
+G6	Peso Volumetrico (kg)=1×0.5×0.4×167=33.4 kgPeso Volumeˊtrico (kg)=1×0.5×0.4×167=33.4 kg	 
+A7	Costo flete  x kg	CIF
+G7		Si el peso del producto es inferior a 33.4kg el envio se paga por 33.4kg
+A8	CIF	FLETE
+B8	FLETE	13.5
+G8	Si el peso del producto es inferior a 33.4kg el envio se paga por 33.4kg	Si el peso del producto es superior a los 33.4kg el envio se paga por el PESO del Producto
+A10	FLETE	Derechos
+A11	Derechos	Estadistica
+D11	Estadistica	0
+A12	Estadistica	IVA
+D12	IVA	93444.35100000001
+A13	IVA	Imp. interno
+D13	Imp. interno	0
+A14	Imp. interno	Gastos varios
+B14	Gastos varios	0.06
+D14	Gastos varios	46031.7
+E14	Gastos varios	en gastos varios se incluye el seguro REAL (~2%)
+A15	Gastos varios	Transferencia
+B15	Transferencia	0.01
+D15	Transferencia	7507.5
+E15	Transferencia	el peso de transferencia depende del paquete de ordenes pagadas (USD 60+10 a traves de banco galicia paquete de 5 facturas independiente del monto). el TDC al que se paga por ser aprox. 30 dias despues puede ser diferente al del día que paso por aduana (ambos divisa)
+A18	Transferencia	COSTO TOTAL
+A19	COSTO TOTAL	TDC aduana (divisa)
+B19	TDC aduana (divisa)	1430
+E19	TDC aduana (divisa)	este TDC es el de aduana (divisa)
+A21	TDC aduana (divisa)	TDC LHS (billete)
+B21	TDC LHS (billete)	1078
+E21	TDC LHS (billete)	este TDC es el que utiliza LHS a la hora de facturar (billete)
+G21	este TDC es el que utiliza LHS a la hora de facturar (billete)	El peso volumetrico es una unidad de medida que se usa para calcular el espacio que un paquete ocupa en relación con su peso real. Se usa para determinar el costo de envio teniendo en cuenta que un paquete livianopero muy voluminoso puede ocupar mucho espacio en relacion con su peso.
+A22	TDC LHS (billete)	Factura courier
+E23	este TDC es el que utiliza LHS a la hora de facturar (billete)	gasto varios flete y seguro...le agregamos el iva???
+A24	Factura courier	VENTA
+B24	VENTA	1.2
+J24		pulgadas
+K24	pulgadas	2.54
+J25	pulgadas	13
+A26	VENTA	Margen $
+F26		largo
+G26	largo	alto
+H26	alto	ancho
+I26	ancho	YY
+K26	YY	metros=kg
+F27	largo	0.13300000000000001
+G27	alto	0.107
+H27	ancho	0.13
+K27	metros=kg	cm=gr
+F30	largo	YY
+G30	YY	universal
+H30	universal	 
+I30		PESO VOLUMETRICO (despacho)
+K30	PESO VOLUMETRICO (despacho)	13
+G31	universal	167
+H31		 
+I33	PESO VOLUMETRICO (despacho)	COSTO x PESO (despacho)
+K33	COSTO x PESO (despacho)	Atlas kg
+L33	Atlas kg	LAN kg
+M33	LAN kg	ANYX kg
+K34	Atlas kg	3.8
+L34	LAN kg	3.5
+M34	ANYX kg	4.5
+E38		DHL
+G38	DHL	5.0000000000000001E-3
+A46		PRODUCTO
+B46	PRODUCTO	DERECHO
+C46	DERECHO	ESTADISTICA
+D46	ESTADISTICA	IVA
+E46	IVA	AD IVA
+F46	AD IVA	IIBB
+G46	IIBB	AD GAN
+H46	AD GAN	IMP INTERNO
+I46	IMP INTERNO	NCM
+J46	NCM	Columna1
+K46	Columna1	DESCRIPCION
+F47	IIBB	1.8550000000000001E-2
+G47	1.8550000000000001E-2	0.06
+E48	AD IVA	20%
+F48	20%	1.8550000000000001E-2
+G48	1.8550000000000001E-2	0.06
+E49	20%	20%
+F49	20%	1.8550000000000001E-2
+G49	1.8550000000000001E-2	0.06
+E50	20%	20%
+F50	20%	1.8550000000000001E-2
+G50	1.8550000000000001E-2	0.06
+E51	20%	20%
+F51	20%	1.8550000000000001E-2
+G51	1.8550000000000001E-2	0.06
+A52		ACCESS POINT
+B52	ACCESS POINT	0.02
+C52	ACCESS POINT	0
+D52	ACCESS POINT	0.105
+E52	ACCESS POINT	10%
+F52	10%	1.9E-2
+G52	1.9E-2	0.06
+A53	ACCESS POINT	AIR TAG
+B53	AIR TAG	0.18
+C53	AIR TAG	0.03
+D53	AIR TAG	0.21
+E53	AIR TAG	20%
+F53	20%	1.8550000000000001E-2
+G53	1.8550000000000001E-2	0.06
+FORMULAS
+C4	Precio	+C3*B4
+C5	Seguro	C4*B5
+C6	Costo flete  x kg	+B6*D6
+C7	CIF	SUM(C4:C6)
+C8	FLETE	+B8*D6
+D8	FLETE	+C8/C7
+B10	Derechos	VLOOKUP(C1,AUXILIAR!K6:V187,2,0)
+C10	Derechos	$C$7*B10
+D10	Derechos	C10*$B$19
+B11	Estadistica	VLOOKUP(C1,AUXILIAR!K6:V187,3,0)
+C11	Estadistica	$C$7*B11
+B12	IVA	VLOOKUP(C1,AUXILIAR!K6:V187,4,0)
+C12	IVA	($C$7+C10+C11)*B12
+B13	Imp. interno	VLOOKUP(C1,AUXILIAR!K6:V187,8,0)
+C13	Imp. interno	$C$7*B13
+C14	Gastos varios	$C$7*B14
+C15	Transferencia	$C$4*B15
+C18	COSTO TOTAL	SUM(C8:C17)+C7
+D18	COSTO TOTAL	C18*B19
+E18	COSTO TOTAL	+C18-C7
+C19	TDC aduana (divisa)	+C18-C12
+C22	Factura courier	+SUM(C8:C14)
+D22	Factura courier	+C22*B21
+C24	VENTA	+C18*B24
+D24	VENTA	+C24*B21
+K25		J25*K24
+C26	Margen $	C24-C18
+D26	Margen $	D24-D18
+C27		+C26/C24
+D27		+D26/D24
+I27	YY	+F27*G27*H27
+F31	YY	I27
+I31		+F31*G31
+K31		+I31/K30
+I34	COSTO x PESO (despacho)	+I31*M34
+F38	DHL	+I27
+I38	5.0000000000000001E-3	+F38/G38
+E47	AD IVA	IF(D47=10.5%,"10%","20%")
+E79	CONECTOR DE EMPALME TIPO ADAPTADOR	IF(D79=10.5%,"10%","20%")
+E111	MEDIA CONVERTER	IF(D111=10.5%,"10%","20%")
+E138	SFP	IF(D138=10.5%,"10%","20%")
+== Cotizador EG ==
+A1		Producto
+C1	Producto	PARLANTE (ECHO DOT)
+A3	Producto	Precio unitario proveedor
+C3	Precio unitario proveedor	219
+D3	Precio unitario proveedor	´+35 si tiene trafo´
+A4	Precio unitario proveedor	Precio 
+B4	Precio	1.05
+A5	Precio	Seguro
+B5	Seguro	0.01
+A6	Seguro	Costo flete  x kg
+B6	Costo flete  x kg	15
+D6	Costo flete  x kg	0.5
+B7		CIF
+A10	Costo flete  x kg	Derechos
+A11	Derechos	Estadistica
+D11	Estadistica	10177.366275
+A12	Estadistica	IVA
+D12	IVA	71241.563924999995
+A13	IVA	imp. interno
+A14	imp. interno	Gastos varios
+B14	Gastos varios	0.06
+D14	Gastos varios	20354.732550000001
+A15	Gastos varios	Transferencia
+B15	Transferencia	1.4999999999999999E-2
+D15	1.4999999999999999E-2	4880.6887500000003
+A16	Transferencia	imp pais
+D16	imp pais	0
+A18	imp pais	COSTO TOTAL
+A19	COSTO TOTAL	TC
+B19	TC	1415
+A22	TC	Factura courier
+A24	Factura courier	VENTA
+B24	VENTA	1.25
+A26	VENTA	Beneficio
+A46		PRODUCTO
+B46	PRODUCTO	DERECHO
+C46	DERECHO	ESTADISTICA
+D46	ESTADISTICA	IVA
+E46	IVA	AD IVA
+F46	AD IVA	IIBB
+G46	IIBB	AD GAN
+H46	AD GAN	IMP INTERNO
+I46	IMP INTERNO	NCM
+J46	NCM	Columna1
+K46	Columna1	DESCRIPCION
+A47	PRODUCTO	 
+F47	IIBB	1.8550000000000001E-2
+G47	1.8550000000000001E-2	0.06
+A48		 
+E48		20%
+F48	20%	1.8550000000000001E-2
+G48	1.8550000000000001E-2	0.06
+A49		 
+E49		20%
+F49	20%	1.8550000000000001E-2
+G49	1.8550000000000001E-2	0.06
+A50		 
+E50		20%
+F50	20%	1.8550000000000001E-2
+G50	1.8550000000000001E-2	0.06
+A51		 
+E51		20%
+F51	20%	1.8550000000000001E-2
+G51	1.8550000000000001E-2	0.06
+A52		ACCESS POINT
+B52	ACCESS POINT	0.02
+C52	ACCESS POINT	0
+D52	ACCESS POINT	0.105
+E52	ACCESS POINT	10%
+F52	10%	1.9E-2
+G52	1.9E-2	0.06
+A53	ACCESS POINT	AIR TAG
+B53	AIR TAG	0.18
+C53	AIR TAG	0.03
+D53	AIR TAG	0.21
+E53	AIR TAG	20%
+F53	20%	1.8550000000000001E-2
+G53	1.8550000000000001E-2	0.06
+I53	1.8550000000000001E-2	8531.80.00.900V 
+K53	8531.80.00.900V	 Las demás
+A54	AIR TAG	ALL IN ONE
+B54	ALL IN ONE	0
+C54	ALL IN ONE	0
+D54	ALL IN ONE	0.105
+E54	ALL IN ONE	10%
+F54	10%	1.9E-2
+G54	1.9E-2	0.06
+A55	ALL IN ONE	ANTENAS
+B55	ANTENAS	0.14000000000000001
+C55	ANTENAS	0.03
+D55	ANTENAS	0.21
+E55	ANTENAS	20%
+F55	20%	1.8550000000000001E-2
+G55	1.8550000000000001E-2	0.06
+A56	ANTENAS	AURICULAR / CON CABLE
+B56	AURICULAR / CON CABLE	0.35
+C56	AURICULAR / CON CABLE	0.03
+D56	AURICULAR / CON CABLE	0.21
+E56	AURICULAR / CON CABLE	20%
+F56	20%	1.8550000000000001E-2
+G56	1.8550000000000001E-2	0.06
+I56	1.8550000000000001E-2	8518.30.00.100U 
+A57	AURICULAR / CON CABLE	AUXILIAR (0-0-10,5)
+B57	AUXILIAR (0-0-10,5)	0
+C57	AUXILIAR (0-0-10,5)	0
+D57	AUXILIAR (0-0-10,5)	0.105
+E57	AUXILIAR (0-0-10,5)	10%
+F57	10%	1.8550000000000001E-2
+G57	1.8550000000000001E-2	0.06
+A58	AUXILIAR (0-0-10,5)	AUXILIAR (35-3-21)
+B58	AUXILIAR (35-3-21)	0.35
+C58	AUXILIAR (35-3-21)	0.03
+D58	AUXILIAR (35-3-21)	0.21
+E58	AUXILIAR (35-3-21)	20%
+F58	20%	1.8550000000000001E-2
+G58	1.8550000000000001E-2	0.06
+A59	AUXILIAR (35-3-21)	BANDEJA DISCO DURO 
+B59	BANDEJA DISCO DURO	0
+C59	BANDEJA DISCO DURO	0
+D59	BANDEJA DISCO DURO	0.105
+FORMULAS
+C4	Precio	+C3*B4
+C5	Seguro	C4*B5
+C6	Costo flete  x kg	+B6*D6
+C7	CIF	SUM(C4:C6)
+B10	Derechos	VLOOKUP(C1,AUXILIAR!K6:V187,2,0)
+C10	Derechos	$C$7*B10
+D10	Derechos	C10*$B$19
+B11	Estadistica	VLOOKUP(C1,AUXILIAR!K6:V187,3,0)
+C11	Estadistica	$C$7*B11
+B12	IVA	VLOOKUP(C1,AUXILIAR!K6:V188,4,0)
+C12	IVA	$C$7*B12
+B13	imp. interno	VLOOKUP(C1,AUXILIAR!K6:V187,8,0)
+C13	imp. interno	$C$7*B13
+C14	Gastos varios	$C$7*B14
+C15	1.4999999999999999E-2	$C$4*B15
+C16	imp pais	$C$4*B16
+C18	COSTO TOTAL	SUM(C7:C17)
+D18	COSTO TOTAL	C18*B19
+E18	COSTO TOTAL	+C18/C3-1
+B22	Factura courier	SUM(C5:C6,C10:C14)*B19
+C22	Factura courier	+B22/B19
+C24	VENTA	+C18*B24
+D24	VENTA	+C24*B19
+B26	Beneficio	-1+B24
+C26	Beneficio	C24-C18
+D26	Beneficio	D24-D18
+E47		IF(D47=10.5%,"10%","20%")
+E79	Conector de empalme tipo adaptador	IF(D79=10.5%,"10%","20%")
+E111	MEDIA CONVERTER	IF(D111=10.5%,"10%","20%")
+E138	SFP	IF(D138=10.5%,"10%","20%")
+== Cotizador TS ==
+A1		Producto
+A3	Producto	Precio unitario proveedor
+C3	Precio unitario proveedor	190
+D3	Precio unitario proveedor	´+35 si tiene trafo´
+A4	Precio unitario proveedor	Precio 
+B4	Precio	1.05
+F4		largo
+G4	largo	alto
+H4	alto	ancho
+I4	ancho	YY
+A5	Precio	Seguro
+B5	Seguro	0.01
+F5	largo	0.01
+G5	alto	0.01
+H5	ancho	0.01
+A6	Seguro	Costo flete  x kg
+B6	Costo flete  x kg	15
+D6	Costo flete  x kg	2
+B7		CIF
+F8	largo	YY
+G8	YY	fact conversion univ
+H8	fact conversion univ	 
+I8		PESO VOLUMETRICO
+G9	fact conversion univ	167
+H9		 
+A10	Costo flete  x kg	Derechos
+A11	Derechos	Estadistica
+D11	Estadistica	#N/A
+I11	PESO VOLUMETRICO	COSTO x PESO (despacho)
+K11	COSTO x PESO (despacho)	Atlas kg
+L11	Atlas kg	LAN kg
+M11	LAN kg	ANYX kg
+A12	Estadistica	IVA
+D12	IVA	#N/A
+K12	Atlas kg	3.8
+L12	LAN kg	3.5
+M12	ANYX kg	4.5
+A13	IVA	imp. interno
+D13	imp. interno	#N/A
+A14	imp. interno	Gastos varios
+B14	Gastos varios	0.06
+D14	Gastos varios	19862.271000000001
+A15	Gastos varios	Transferencia
+B15	Transferencia	1.4999999999999999E-2
+D15	1.4999999999999999E-2	4279.2749999999996
+F15	1.4999999999999999E-2	El peso volumetrico es una unidad de medida que se usa para calcular el espacio que un paquete ocupa en relación con su peso real. Se usa para determinar el costo de envio teniendo en cuenta que un paquete livianopero muy voluminoso puede ocupar mucho espacio en relacion con su peso.
+A16	Transferencia	imp pais
+B16	imp pais	0
+D16	imp pais	0
+A18	imp pais	COSTO TOTAL
+A19	COSTO TOTAL	Variación % en costos
+A21	Variación % en costos	TC
+B21	TC	1430
+F21		KG
+G21	KG	0.5
+H21	KG	1
+I21	KG	1.5
+J21	KG	2
+K21		2.5
+L21		3
+M21		3.5
+N21		4
+O21		4.5
+P21		5
+Q21		5.5
+R21		6
+S21		6.5
+T21		7
+U21		7.5
+V21		8
+W21		8.5
+X21		9
+Y21		9.5
+Z21		10
+AA21		10.5
+AB21		11
+AC21		11.5
+AD21		12
+AE21		12.5
+AF21		13
+AG21		13.5
+AH21		14
+AI21		14.5
+AJ21		15
+AK21		15.5
+AL21		16
+AM21		16.5
+AN21		17
+AO21		17.5
+AP21		18
+AQ21		18.5
+AR21		19
+AS21		19.5
+AT21		20
+AU21		20.5
+AV21		21
+AW21		21.5
+AX21		22
+AY21		22.5
+AZ21		23
+BA21		23.5
+BB21		24
+BC21		24.5
+BD21		25
+BE21		25.5
+BF21		26
+BG21		26.5
+BH21		27
+BI21		27.5
+BJ21		28
+BK21		28.5
+BL21		29
+BM21		29.5
+BN21		30
+BO21		31
+BP21		32
+BQ21		33
+BR21		34
+BS21		35
+BT21		36
+FORMULAS
+C4	Precio	+C3*B4
+C5	Seguro	C4*B5
+I5	YY	+F5*G5*H5
+C6	Costo flete  x kg	+B6*D6
+C7	CIF	SUM(C4:C6)
+F9	YY	I5
+I9		+F9*G9
+B10	Derechos	VLOOKUP(C1,AUXILIAR!K3:V184,2,0)
+C10	Derechos	$C$7*B10
+D10	Derechos	C10*$B$21
+B11	Estadistica	VLOOKUP(C1,AUXILIAR!K6:V187,3,0)
+C11	Estadistica	$C$7*B11
+B12	IVA	VLOOKUP(C1,AUXILIAR!K6:V188,4,0)
+C12	IVA	($C$7+C10+C11)*B12
+I12	COSTO x PESO (despacho)	+I9*M12
+B13	imp. interno	VLOOKUP(C1,AUXILIAR!K6:V187,8,0)
+C13	imp. interno	$C$7*B13
+C14	Gastos varios	$C$7*B14
+C15	1.4999999999999999E-2	$C$4*B15
+C16	imp pais	$C$4*B16
+C18	COSTO TOTAL	SUM(C7:C17)
+D18	COSTO TOTAL	C18*B21
+B19	Variación % en costos	+$C$18/$C$3-1
+C19	Variación % en costos	+$C$18-$C$3
+D19	Variación % en costos	+$C$19*$B$21
+B24	Factura courier	SUM(C5:C6,C10:C14)*B21
+C24	Factura courier	+B24/B21
+C26	VENTA	+C18*B26
+D26	VENTA	+C26*B21
+B28	Beneficio	-1+B26
+C28	Beneficio	C26-C18
+D28	Beneficio	D26-D18
+E49		IF(D49=10.5%,"10%","20%")
+E81	Conector de empalme tipo adaptador	IF(D81=10.5%,"10%","20%")
+E113	MEDIA CONVERTER	IF(D113=10.5%,"10%","20%")
+E140	SFP	IF(D140=10.5%,"10%","20%")

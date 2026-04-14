@@ -1,0 +1,62 @@
+import { NextResponse } from "next/server";
+import { ModuleKey } from "@prisma/client";
+import { z } from "zod";
+
+import { requireModuleAccess } from "@/lib/auth/session";
+import { prisma } from "@/lib/prisma";
+import { operationScenarioToCreatePayload } from "@/modules/operation-profit/mappers";
+
+const schema = z.object({
+  name: z.string(),
+  exchangeRate: z.number(),
+  billingAmount: z.number(),
+  markup: z.number(),
+  variableCosts: z.array(z.object({
+    lineKey: z.string(),
+    label: z.string(),
+    rate: z.number()
+  })),
+  fixedCosts: z.array(z.object({
+    lineKey: z.string(),
+    label: z.string(),
+    formulaMode: z.enum(["manual", "usd_to_ars", "usd_to_ars_monthly"]),
+    amount: z.number().optional(),
+    inputA: z.number().optional(),
+    inputB: z.number().optional()
+  }))
+});
+
+export async function PUT(
+  request: Request,
+  { params }: { params: Promise<{ scenarioId: string }> }
+) {
+  const user = await requireModuleAccess(ModuleKey.OPERATION_PROFIT);
+  const { scenarioId } = await params;
+  const parsed = schema.safeParse(await request.json());
+  if (!parsed.success) {
+    return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
+  }
+
+  const payload = operationScenarioToCreatePayload(parsed.data);
+  const existing = await prisma.operationProfitScenario.findFirst({
+    where: { id: scenarioId, createdById: user.id },
+    select: { id: true }
+  });
+  if (!existing) {
+    return NextResponse.json({ error: "Escenario no encontrado" }, { status: 404 });
+  }
+  await prisma.$transaction([
+    prisma.operationProfitFixedCostLine.deleteMany({ where: { scenarioId } }),
+    prisma.operationProfitVariableCostLine.deleteMany({ where: { scenarioId } }),
+    prisma.operationProfitScenario.update({
+      where: { id: scenarioId },
+      data: {
+        ...payload.scenario,
+        fixedCostLines: { createMany: { data: payload.fixedCosts } },
+        variableCostLines: { createMany: { data: payload.variableCosts } }
+      }
+    })
+  ]);
+
+  return NextResponse.json({ id: scenarioId });
+}

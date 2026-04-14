@@ -1,0 +1,290 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum AppRole {
+  ADMIN
+  SELLER
+}
+
+enum ModuleKey {
+  QUOTE
+  BREAK_EVEN
+  OPERATION_PROFIT
+  ADMIN
+}
+
+enum ScenarioStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+enum QuoteItemStatus {
+  COTIZACION
+  COMPRAS
+  VENCIDO
+}
+
+model AppUser {
+  id                  String             @id @default(cuid())
+  authUserId          String             @unique
+  email               String             @unique
+  fullName            String
+  role                AppRole            @default(SELLER)
+  isActive            Boolean            @default(true)
+  mustChangePassword  Boolean            @default(false)
+  createdAt           DateTime           @default(now())
+  updatedAt           DateTime           @updatedAt
+  permissions         ModulePermission[]
+  quoteScenarios      QuoteScenario[]    @relation("QuoteScenarioCreator")
+  breakEvenScenarios  BreakEvenScenario[] @relation("BreakEvenScenarioCreator")
+  operationScenarios  OperationProfitScenario[] @relation("OperationScenarioCreator")
+  auditLogs           AuditLog[]         @relation("AuditActor")
+}
+
+model ModulePermission {
+  id         String    @id @default(cuid())
+  userId     String
+  moduleKey  ModuleKey
+  canAccess  Boolean   @default(false)
+  canManage  Boolean   @default(false)
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  user       AppUser   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, moduleKey])
+}
+
+model SystemSetting {
+  id          String   @id @default(cuid())
+  namespace   String
+  key         String
+  valueJson   Json
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([namespace, key])
+}
+
+model QuoteScenario {
+  id                   String              @id @default(cuid())
+  name                 String
+  status               ScenarioStatus      @default(DRAFT)
+  createdById          String
+  sellerName           String?
+  globalMarkupFactor   Float
+  insuranceRate        Float
+  advanceVatEnabled    Boolean             @default(false)
+  countryTaxRate       Float
+  notes                String?
+  createdAt            DateTime            @default(now())
+  updatedAt            DateTime            @updatedAt
+  createdBy            AppUser             @relation("QuoteScenarioCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  items                QuoteItem[]
+  costLines            QuoteCostProfile[]
+}
+
+model QuoteItem {
+  id             String          @id @default(cuid())
+  scenarioId     String
+  lineNumber     Int
+  status         QuoteItemStatus
+  quoteDate      DateTime?
+  sellerName     String?
+  quantity       Float
+  partNumber     String
+  description    String
+  productTypeKey String
+  fobUnitCost    Float
+  weightKg       Float
+  lineMarkup     Float
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  scenario       QuoteScenario   @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, lineNumber])
+}
+
+model QuoteCostProfile {
+  id           String         @id @default(cuid())
+  scenarioId   String
+  section      String
+  lineKey      String
+  label        String
+  mode         String
+  amount       Float?
+  rate         Float?
+  metadataJson Json?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  scenario     QuoteScenario  @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, section, lineKey])
+}
+
+model QuoteProductRule {
+  id                     String   @id @default(cuid())
+  productTypeKey         String   @unique
+  dutyRate               Float
+  statisticsRate         Float
+  vatRate                Float
+  advanceVatRate         Float
+  grossIncomeRate        Float
+  advanceIncomeTaxRate   Float
+  internalTaxRate        Float
+  ncmCode                String?
+  description            String?
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+}
+
+model BreakEvenScenario {
+  id                     String                     @id @default(cuid())
+  name                   String
+  status                 ScenarioStatus             @default(DRAFT)
+  createdById            String
+  salesAmount            Float
+  markup                 Float
+  exchangeRate           Float
+  realBillingPesos       Float
+  realBillingMarkup      Float
+  realBillingExchangeRate Float
+  altBillingPesos        Float
+  altBillingMarkup       Float
+  altBillingExchangeRate Float
+  notes                  String?
+  createdAt              DateTime                   @default(now())
+  updatedAt              DateTime                   @updatedAt
+  createdBy              AppUser                    @relation("BreakEvenScenarioCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  fixedCostLines         BreakEvenFixedCostLine[]
+  variableCostLines      BreakEvenVariableCostLine[]
+  salesHistory           BreakEvenSalesHistory[]
+  salespersonProfiles    BreakEvenSalespersonProfile[]
+}
+
+model BreakEvenFixedCostLine {
+  id           String             @id @default(cuid())
+  scenarioId   String
+  lineKey      String
+  label        String
+  formulaMode  String
+  amount       Float?
+  inputA       Float?
+  inputB       Float?
+  inputC       Float?
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+  scenario     BreakEvenScenario  @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, lineKey])
+}
+
+model BreakEvenVariableCostLine {
+  id           String             @id @default(cuid())
+  scenarioId   String
+  lineKey      String
+  label        String
+  rate         Float
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+  scenario     BreakEvenScenario  @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, lineKey])
+}
+
+model BreakEvenSalesHistory {
+  id             String             @id @default(cuid())
+  scenarioId     String
+  periodLabel    String
+  salesAmount    Float?
+  collections    Float?
+  loans          Float?
+  cashOut        Float?
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  scenario       BreakEvenScenario  @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, periodLabel])
+}
+
+model BreakEvenSalespersonProfile {
+  id                    String             @id @default(cuid())
+  scenarioId            String
+  label                 String
+  salaryAmount          Float
+  burdenAmount          Float
+  salaryShare           Float?
+  allocatedFixedCost    Float?
+  contributionMargin    Float
+  createdAt             DateTime           @default(now())
+  updatedAt             DateTime           @updatedAt
+  scenario              BreakEvenScenario  @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, label])
+}
+
+model OperationProfitScenario {
+  id                 String                           @id @default(cuid())
+  name               String
+  status             ScenarioStatus                   @default(DRAFT)
+  createdById        String
+  exchangeRate       Float
+  billingAmount      Float
+  markup             Float
+  notes              String?
+  createdAt          DateTime                         @default(now())
+  updatedAt          DateTime                         @updatedAt
+  createdBy          AppUser                          @relation("OperationScenarioCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  variableCostLines  OperationProfitVariableCostLine[]
+  fixedCostLines     OperationProfitFixedCostLine[]
+}
+
+model OperationProfitVariableCostLine {
+  id           String                    @id @default(cuid())
+  scenarioId   String
+  lineKey      String
+  label        String
+  rate         Float
+  createdAt    DateTime                  @default(now())
+  updatedAt    DateTime                  @updatedAt
+  scenario     OperationProfitScenario   @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, lineKey])
+}
+
+model OperationProfitFixedCostLine {
+  id            String                    @id @default(cuid())
+  scenarioId    String
+  lineKey       String
+  label         String
+  formulaMode   String                    @default("manual")
+  amount        Float?
+  derivedAmount Float?
+  rate          Float?
+  inputA        Float?
+  inputB        Float?
+  createdAt     DateTime                  @default(now())
+  updatedAt     DateTime                  @updatedAt
+  scenario      OperationProfitScenario   @relation(fields: [scenarioId], references: [id], onDelete: Cascade)
+
+  @@unique([scenarioId, lineKey])
+}
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  actorUserId String?
+  entityType  String
+  entityId    String
+  action      String
+  payloadJson Json?
+  createdAt   DateTime @default(now())
+  actor       AppUser? @relation("AuditActor", fields: [actorUserId], references: [id], onDelete: SetNull)
+}

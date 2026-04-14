@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-alt: #eef2ff;
+  --text: #122033;
+  --muted: #61708a;
+  --line: #d5dded;
+  --brand: #0f766e;
+  --brand-strong: #115e59;
+  --warning: #b45309;
+}
+
+body {
+  background: radial-gradient(circle at top right, #dbeafe, transparent 32%),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+

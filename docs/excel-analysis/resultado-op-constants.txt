@@ -1,0 +1,127 @@
+F2		TC
+B3		Rubro
+C3	Rubro	Pesos
+D3	Pesos	USD
+E3	USD	%
+F3	%	1420
+B5	Rubro	Facturacion
+C5	Facturacion	1000000
+B6	Facturacion	Markup
+C6	Markup	1.2
+B7	Markup	CMV
+B8	CMV	Utilidad Bruta
+F8	Utilidad Bruta	MARGEN BRUTO
+B9	Utilidad Bruta	GASTOS OPERATIVOS
+B10	GASTOS OPERATIVOS	TOTAL
+B11	TOTAL	Resultado operativo
+B12	Resultado operativo	MARGEN DE CONTRIBUCION
+B13	MARGEN DE CONTRIBUCION	MARGEN DE SEGURIDAD
+B14	MARGEN DE SEGURIDAD	Gastos variables sobre ventas
+B15	Gastos variables sobre ventas	IIBB
+E15	IIBB	0.05
+B16	IIBB	Imp al cheque
+D16	Imp al cheque	0.18309859154929578
+E16	Imp al cheque	2.5999999999999998E-4
+B17	Imp al cheque	Fletes
+D17	Fletes	8.3802816901408459
+E17	Fletes	1.1900000000000001E-2
+B18	Fletes	Consultoria
+D18	Consultoria	7.042253521126761
+E18	Consultoria	0.01
+B19	Consultoria	Comisiones
+D19	Comisiones	7.042253521126761
+E19	Comisiones	0.01
+B21	Comisiones	TT
+B22	TT	Gastos fijos
+B23	Gastos fijos	Sueldos
+C23	Sueldos	18760000
+B24	Sueldos	Cargas sociales
+D24	Cargas sociales	5000
+B25	Cargas sociales	Sindicatos
+C25	Sindicatos	700000
+D25	Sindicatos	492.95774647887322
+E25	Sindicatos	#DIV/0!
+B26	Sindicatos	Alquiler
+D26	Alquiler	3000
+E26	Alquiler	#DIV/0!
+B27	Alquiler	Estudio contable
+C27	Estudio contable	450000
+E27	Estudio contable	#DIV/0!
+B28	Estudio contable	Abogados
+C28	Abogados	250000
+D28	Abogados	176.05633802816902
+E28	Abogados	#DIV/0!
+B29	Abogados	Bancos
+C29	Bancos	50000
+D29	Bancos	35.2112676056338
+E29	Bancos	#DIV/0!
+B30	Bancos	Mant ctas bancarias
+C30	Mant ctas bancarias	300000
+D30	Mant ctas bancarias	211.26760563380282
+E30	Mant ctas bancarias	#DIV/0!
+B31	Mant ctas bancarias	Seguro
+C31	Seguro	213000
+D31	Seguro	150
+E31	Seguro	#DIV/0!
+B32	Seguro	Alarma
+C32	Alarma	90000
+D32	Alarma	63.380281690140848
+E32	Alarma	#DIV/0!
+B33	Alarma	Limpieza
+C33	Limpieza	160000
+D33	Limpieza	112.67605633802818
+E33	Limpieza	#DIV/0!
+B34	Limpieza	Capacitaciones
+C34	Capacitaciones	400000
+D34	Capacitaciones	281.6901408450704
+E34	Capacitaciones	#DIV/0!
+B35	Capacitaciones	Vituallas
+C35	Vituallas	280000
+D35	Vituallas	197.18309859154928
+E35	Vituallas	#DIV/0!
+B36	Vituallas	Swiss Medical
+C36	Swiss Medical	2000000
+D36	Swiss Medical	1408.4507042253522
+E36	Swiss Medical	#DIV/0!
+B37	Swiss Medical	Posnet
+C37	Posnet	1000
+D37	Posnet	0.70422535211267601
+E37	Posnet	#DIV/0!
+B38	Posnet	Fibertel
+C38	Fibertel	370000
+D38	Fibertel	260.56338028169012
+E38	Fibertel	#DIV/0!
+B39	Fibertel	Lineas telefonicas
+C39	Lineas telefonicas	280000
+D39	Lineas telefonicas	197.18309859154928
+E39	Lineas telefonicas	#DIV/0!
+B40	Lineas telefonicas	ABL
+C40	ABL	216000
+D40	ABL	152.11267605633802
+E40	ABL	#DIV/0!
+B41	ABL	AYSA
+C41	AYSA	70000
+D41	AYSA	49.29577464788732
+E41	AYSA	#DIV/0!
+B42	AYSA	GCBA
+C42	GCBA	97867
+D42	GCBA	68.920422535211273
+E42	GCBA	#DIV/0!
+B43	GCBA	EDENOR
+C43	EDENOR	850000
+D43	EDENOR	598.5915492957746
+E43	EDENOR	#DIV/0!
+B44	EDENOR	Oppen
+D44	Oppen	750
+E44	Oppen	#DIV/0!
+B45	Oppen	Pipedrive
+D45	Pipedrive	350
+E45	Pipedrive	#DIV/0!
+B46	Pipedrive	Licencias microsoft
+D46	Licencias microsoft	600
+E46	Licencias microsoft	#DIV/0!
+B47	Licencias microsoft	Innovexa
+C47	Innovexa	1500000
+E47	Innovexa	#DIV/0!
+B48	Innovexa	TT
+C48	TT	0

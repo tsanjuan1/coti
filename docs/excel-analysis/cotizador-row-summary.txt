@@ -1,0 +1,1482 @@
+row 3: formulas=0 constants=1 unlocked=0 labels=S3==buscarv(Tabla25[@;[P/N]];'COTIZADOR ACTUAL'!B13:AF346
+row 7: formulas=0 constants=4 unlocked=2 labels=N7=MARKUP | S7=SEGURO | Y7=Adelanto? | AD7=Imp Pais
+row 8: formulas=0 constants=4 unlocked=0 labels=N8=1.05 | S8=0.01 | Y8=NO | AD8=0
+row 11: formulas=5 constants=0 unlocked=0 labels=
+row 12: formulas=8 constants=0 unlocked=0 labels=
+row 13: formulas=0 constants=32 unlocked=1 labels=B13=Status | C13=FECHA | D13=VENDEDOR | E13=CANTIDAD | H13=PART NUMBER | I13=DESCRIPTION
+row 14: formulas=21 constants=9 unlocked=0 labels=B14=COMPRAS | D14=FABRICIO | E14=1 | H14=WD22TB4 | I14=Dell WD22TB4 Thunderbolt 4 Dock - 2 puertos Thunderbolt 4, hasta 5120 x 2880 Res, HDMI 2.0, DP 1.4, USB-C, USB-A, puerto LAN Gigabit Ethernet | J14=DOCKING
+row 15: formulas=7 constants=23 unlocked=0 labels=B15=COMPRAS | D15=FABRICIO | E15=1 | H15=DELL-DA300 | I15=Dell Adaptador móvil USB-C (DA300), negro, DELL-DA300 | J15=DOCKING
+row 16: formulas=7 constants=23 unlocked=0 labels=B16=COMPRAS | D16=FABRICIO | E16=80 | H16=KTD-PE426E/16G | I16=Memory Kingston 16GB DDR4 SDRAM 2666MHz ECC CL19 | J16=MEMORIA RAM
+row 17: formulas=7 constants=23 unlocked=0 labels=B17=VENCIDO | D17=FABRICIO | E17=40 | H17=JDF1M | I17=Dell 16GB 1600MHz DDR3 PC3-12800R ECC Registered RAM RDIMM Memory Module (1x16GB) | J17=MEMORIA RAM
+row 18: formulas=7 constants=23 unlocked=0 labels=B18=COMPRAS | D18=FABRICIO | E18=45 | H18=SEDC600M/960G | I18=KINGSTON DC600M 2,5" SATA REV 3.0 (6GB/S) | J18=DISCO SSD
+row 19: formulas=7 constants=23 unlocked=0 labels=B19=COMPRAS | D19=FABRICIO | E19=50 | H19=SEDC600M/960G | I19=KINGSTON DC600M 2,5" SATA REV 3.0 (6GB/S) | J19=DISCO SSD
+row 20: formulas=7 constants=23 unlocked=0 labels=B20=COMPRAS | D20=FABRICIO | E20=1 | H20=Kamvas 13 | I20=HUION KAMVAS - Tableta de dibujo 13 con pantalla, tableta de arte digital totalmente laminada con lápiz táctil PenTech 3.0 inclinable y soporte ajustable para Mac, PC, Linux y Android | J20=NOTEBOOK
+row 21: formulas=7 constants=23 unlocked=0 labels=B21=COMPRAS | D21=PABLO | E21=10 | H21=GLC-LH-SMD | I21=1000BASE-LX/LH SFP TRANSCEIVER MODULE FOR MMF AND SMF, 1300-NM WAVELENGTH (NEW BULK) | J21=SFP
+row 22: formulas=7 constants=23 unlocked=0 labels=B22=COMPRAS | D22=PABLO | E22=20 | H22=GLC-LH-SMD | I22=1000BASE-LX/LH SFP TRANSCEIVER MODULE FOR MMF AND SMF, 1300-NM WAVELENGTH (NEW BULK) | J22=SFP
+row 23: formulas=7 constants=24 unlocked=0 labels=B23=COMPRAS | C23=45470 | D23=PABLO | E23=1 | H23=5D10V82396 | I23=PANTALLA 14" WUXGA IPS NON TOUCH
+row 24: formulas=12 constants=19 unlocked=0 labels=B24=VENCIDO | C24=45474 | D24=FABRICIO | E24=0 | H24=GIPD-024-BLK | I24=Survivor All-Terrain para iPad 10.2" (9ª, 8ª y 7ª generación)
+row 25: formulas=11 constants=20 unlocked=0 labels=B25=COMPRAS | C25=45474 | D25=PABLO | E25=4 | H25=453154-B21-OPSTRAN | I25=Opstran 1000BASE-T SFP Transceiver for HP - 453154-B21, 453156-001
+row 26: formulas=7 constants=24 unlocked=0 labels=B26=COMPRAS | C26=45475 | D26=PABLO | E26=10 | H26=901703 | I26=VisionTek DLX4 1 TB Solid State Drive - M.2 2242 Internal - PCI Express NVMe
+row 27: formulas=7 constants=24 unlocked=0 labels=B27=COMPRAS | C27=45478 | D27=PEPE | E27=1 | H27=BLITZ AIR BIKE | I27=BLITZ AIR BIKE
+row 28: formulas=7 constants=24 unlocked=0 labels=B28=VENCIDO | C28=45481 | D28=FABRICIO | E28=3 | H28=‎1450G2D-2USB-1 | I28=HONEYWELL 1450G2D-2USB-1 Handheld Barcode Scanner USB QR Code Reader + Stand
+row 29: formulas=7 constants=24 unlocked=0 labels=B29=COMPRAS | C29=45481 | D29=FABRICIO | E29=5 | H29=TECKM7321WGY | I29=Dell Teclado y mouse Bluetooth inalámbricos multidispositivo Premier - KM7321W
+row 30: formulas=7 constants=24 unlocked=0 labels=B30=VENCIDO | C30=45484 | D30=PABLO | E30=18 | H30=SLPHIRCTPSR2 | I30=HIGH PWR CONN, RCPT, THREADED, 350A, RED
+row 31: formulas=7 constants=24 unlocked=0 labels=B31=VENCIDO | C31=45484 | D31=PABLO | E31=18 | H31=SLPHIRCTPNB1 | I31=HIGH PWR CONN, RCPT, THREADED, 350A, BLK
+row 32: formulas=7 constants=24 unlocked=0 labels=B32=VENCIDO | C32=45484 | D32=PABLO | E32=18 | H32=SLPHPC95BSR2 | I32=HIGH PWR CONN, R/A PLUG, CRIMP, 350A/RED
+row 33: formulas=7 constants=24 unlocked=0 labels=B33=VENCIDO | C33=45484 | D33=PABLO | E33=18 | H33=SLPHPC95BSB1 | I33=HIGH PWR CONN, R/A PLUG, CRIMP, 350A/BLK
+row 34: formulas=7 constants=24 unlocked=0 labels=B34=VENCIDO | C34=45484 | D34=FABRICIO | E34=1 | H34=WDS500G3X0G | I34=WD_BLACK SN770M WDS500G3X0G - SSD - 500 GB
+row 35: formulas=7 constants=24 unlocked=0 labels=B35=COMPRAS | C35=45485 | D35=FABRICIO | E35=1 | H35=A1289011 | I35=Batería externa Anker 737
+row 36: formulas=7 constants=24 unlocked=0 labels=B36=VENCIDO | C36=45485 | D36=PABLO | E36=1 | H36=40470 | I36=Bloqueador de puertos RJ45 (10 unidades bloqueadores) con llave
+row 37: formulas=7 constants=24 unlocked=0 labels=B37=VENCIDO | C37=45485 | D37=PABLO | E37=1 | H37=40452 | I37=Bloqueador de puertos USB (4 unidades bloqueadores) con llave
+row 38: formulas=7 constants=23 unlocked=0 labels=B38=COMPRAS | D38=MATIAS | E38=1 | H38=5325A | I38=PROBE/MULTI-STACK BANANA PLUG | J38=SFP
+row 39: formulas=7 constants=24 unlocked=0 labels=B39=COMPRAS | C39=45488 | D39=FABRICIO | E39=1 | H39=JBLT720BTBLKAM | I39=JBL TUNE 720BT - Auriculares inalámbricos sobre la oreja sonido Pure Bass, Bluetooth 5.3, batería de hasta 76 horas de duración y carga de velocidad, diseño ligero, cómodo y plegable (negro)
+row 40: formulas=7 constants=24 unlocked=0 labels=B40=COMPRAS | C40=45489 | D40=PABLO | E40=20 | H40=GLC-LH-SMD | I40=1000BASE-LX/LH SFP TRANSCEIVER MODULE FOR MMF AND SMF, 1300-NM WAVELENGTH (NEW BULK)
+row 41: formulas=7 constants=24 unlocked=0 labels=B41=VENCIDO | C41=45490 | D41=FABRICIO | E41=1 | H41=MU-PG4T0B/EU | I41=SAMSUNG SSD portátil T9 4To
+row 42: formulas=12 constants=19 unlocked=0 labels=B42=VENCIDO | C42=45490 | D42=FABRICIO | E42=1 | H42=W1105A | I42=Cartucho De Tóner HP 105a Negro Original Laserjet W1105A
+row 43: formulas=7 constants=24 unlocked=0 labels=B43=VENCIDO | C43=45491 | D43=PABLO | E43=28 | H43=J9150D-AO | I43=AddOn 10GBase-SR SFP+ 850nm 300m LC MM Transceiver (Aruba HPE J9150D)
+row 44: formulas=7 constants=24 unlocked=0 labels=B44=VENCIDO | C44=45491 | D44=PABLO | E44=28 | H44=SFP-10GSR-85 | I44=FS J9150D HPE Aruba Compatible SFP+ 10GBASE-SR 850nm 300m DOM
+row 45: formulas=7 constants=24 unlocked=0 labels=B45=VENCIDO | C45=45491 | D45=PABLO | E45=36 | H45=SFP-10G-SR-S-AO | I45=AddOn Cisco SFP-10G-SR-S Compatible TAA Compliant 10GBase-SR SFP+ Transceiver
+row 46: formulas=8 constants=23 unlocked=0 labels=B46=VENCIDO | C46=45491 | D46=PABLO | E46=36 | H46=SFP-10G-SR-S | I46=Cisco SFP-10G-SR-S 10GBase-SR SFP+ Transceiver (MMF, 850nm, 300m, LC, DOM)
+row 47: formulas=7 constants=24 unlocked=0 labels=B47=COMPRAS | C47=45492 | D47=PABLO | E47=10 | H47=Y-2172A | I47=USB Charging Station 10 Port QC 3.0 x 1 60W
+row 48: formulas=7 constants=24 unlocked=0 labels=B48=COMPRAS | C48=45492 | D48=PABLO | E48=10 | H48=CC-PSAD | I48=Short Lighting Cable, 10 Pack 7-Inch iPhone Cord Data Sync USB Portable Fast Charger for iPhone X XS Max XR / 8/8 Plus / 7/7 Plus / 6/6 Plus / 5S / iPad/iPod, White
+row 49: formulas=8 constants=23 unlocked=0 labels=B49=VENCIDO | C49=22/07/2024 | D49=GUSTAVO | E49=1 | H49=M8Y54 | I49=Lat 5550 AI U5 125U 8GB 256SSD SP 3Y
+row 50: formulas=8 constants=23 unlocked=0 labels=B50=VENCIDO | C50=22/07/2024 | D50=GUSTAVO | E50=1 | H50=JWXPX | I50=Lat 5550 AI U5 125U 16GB 512GB SSD SP 3Y
+row 51: formulas=8 constants=23 unlocked=0 labels=B51=VENCIDO | C51=22/07/2024 | D51=GUSTAVO | E51=1 | H51=DRJ78 | I51=Lat 5550 AI U7 155U 16GB 512GB SSD SP 3Y
+row 52: formulas=7 constants=24 unlocked=0 labels=B52=VENCIDO | C52=45595 | D52=PABLO | E52=1 | H52=FI1000-KIT | I52=FI-1000 USB Fiber Inspection Video Probe and Tip Set
+row 53: formulas=7 constants=24 unlocked=0 labels=B53=VENCIDO | C53=45595 | D53=PABLO | E53=1 | H53=CFP-SM-ADD | I53=Certifiber Pro Quad Add-On Kit (modules and SC/LC TRCs)
+row 54: formulas=7 constants=24 unlocked=0 labels=B54=VENCIDO | C54=45595 | D54=PABLO | E54=1 | H54=CFP-Q-ADD | I54=Certifiber Pro Quad Add-On Kit w/ Remote (module and SC/LC launch cords)
+row 55: formulas=7 constants=24 unlocked=0 labels=B55=COMPRAS | C55=45495 | D55=PABLO | E55=3 | H55=P1058930-080 | I55=Replacement Platen Roller for ZT410
+row 56: formulas=7 constants=24 unlocked=0 labels=B56=VENCIDO | C56=45496 | D56=PABLO | E56=2 | H56=MS842-2UCB00-SG | I56=UNITECH, MS852, 2D, SE4107, STANDARD RANGE, USB, OPOS, JPOS, NO AUTO SENSING, NO STAND,WILL REPLACE
+row 57: formulas=8 constants=23 unlocked=0 labels=B57=VENCIDO | C57=45496 | D57=FABRICIO | E57=1 | H57=21KCCTO1WW | I57=ThinkPad X1 Carbon Gen 12 Intel (14ʺ)
+row 58: formulas=7 constants=24 unlocked=0 labels=B58=COMPRAS | C58=45496 | D58=MATIAS | E58=1 | H58=U717K | I58=Dell 500-GB 6G 7.2K 3.5 SAS w/F238F
+row 59: formulas=7 constants=24 unlocked=0 labels=B59=VENCIDO | C59=45496 | D59=PABLO | E59=1 | H59=C930WM-001 | I59=Soporte para webcam Brio 23 cms
+row 60: formulas=7 constants=24 unlocked=0 labels=B60=VENCIDO | C60=45497 | D60=PABLO | E60=20 | H60=901558 | I60=DLX4 512 GB Solid State Drive - M.2 2230 Internal - PCI Express NVMe (PCI Express NVMe 4.0 x4)
+row 61: formulas=7 constants=24 unlocked=0 labels=B61=VENCIDO | C61=45497 | D61=PABLO | E61=7 | H61=SFP-10G-PC05 | I61=5m (16ft) Cisco SFP-H10GB-CU5M Compatible 10G SFP+ Passive Direct Attach Copper Twinax Cable
+row 62: formulas=7 constants=24 unlocked=0 labels=B62=VENCIDO | C62=45497 | D62=PABLO | E62=100 | H62=MW150BT | I62=V7 Bluetooth 5.2 Compact Mouse - Black
+row 63: formulas=7 constants=24 unlocked=0 labels=B63=VENCIDO | C63=45499 | D63=PABLO | E63=4 | H63=WXPCX | I63=Dell 1.2TB 2.5-inch SFF SAS 12Gb/s 10K RPM
+512n Dual Port (DP) Enterprise (ENT) Hot-Plug Hard Drive
+In Dell G176J 2.5-inch SFF Hot-Plug Hard Drive Tray
+row 64: formulas=7 constants=24 unlocked=0 labels=B64=VENCIDO | C64=45501 | D64=PABLO | E64=1 | H64=KWH3G | I64=Pantalla 15.6" FHD Touch screen LCD LED
+row 65: formulas=7 constants=24 unlocked=0 labels=B65=VENCIDO | C65=45501 | D65=PABLO | E65=4 | H65=WXPCX | I65=Disco Rigido 1.2TB 10K 12G 2.5" SAS
+row 66: formulas=7 constants=24 unlocked=0 labels=B66=VENCIDO | C66=45501 | D66=PABLO | E66=1 | H66=X4E75AA + MOH50AA | I66=Cabezal Negro X4E75AA + Cabezal Color M0H50AA
+row 67: formulas=7 constants=24 unlocked=0 labels=B67=VENCIDO | C67=45502 | D67=FABRICIO | E67=2 | H67=MZ-V8P2T0B | I67=980 PRO SSD 2TB PCIe NVMe Gen 4 Gaming M.2 Internal Solid State Hard Drive Memory Card, Maximum Speed, Thermal Control,
+row 68: formulas=7 constants=24 unlocked=0 labels=B68=VENCIDO | C68=45502 | D68=GUSTAVO | E68=16 | H68=400-AMCU | I68=400-AMCU Dell 960-GB 12G 2.5 SAS RI SSD w/G176J
+row 69: formulas=7 constants=24 unlocked=0 labels=B69=VENCIDO | C69=45502 | D69=GUSTAVO | E69=60 | H69=NC10MD-LX-B | I69=XLR Connectors Receptacle DLX series 10 pin male - solder - black/gold
+row 70: formulas=7 constants=24 unlocked=0 labels=B70=VENCIDO | C70=45502 | D70=GUSTAVO | E70=121 | H70=907102 | I70=VisionTek DLX4 512 GB Solid State Drive - M.2 2242 Internal - PCI Express NVMe (PCI Express NVMe 4.0 X4)
+row 71: formulas=7 constants=24 unlocked=0 labels=B71=VENCIDO | C71=45503 | D71=MATIAS | E71=1 | H71=TK-5240 K | I71=Kyocera TK-5240 K Cartucho de tóner - Negro - 4.000 Páginas
+row 72: formulas=8 constants=23 unlocked=0 labels=B72=VENCIDO | C72=45504 | D72=GUSTAVO | E72=1 | H72=400-BCNV | I72=400-BCNV Dell G14-G16 960-GB 12G 2.5 SAS MU SSD w/DXD9H
+row 73: formulas=7 constants=24 unlocked=0 labels=B73=VENCIDO | C73=45504 | D73=GUSTAVO | E73=1 | H73=X810 | I73=Samsung Galaxy Tab S9 Plus X810 12.4in 12+512GB Wi-Fi Gray
+row 74: formulas=7 constants=24 unlocked=0 labels=B74=VENCIDO | C74=45504 | D74=LUCIO | E74=20 | H74=GLC-SX-MMD= | I74=Cisco GLC-SX-MMD SFP (mini-GBIC) Module - 1 x LC/PC Duplex 1000Base-SX Network
+row 75: formulas=7 constants=21 unlocked=0 labels=B75=VENCIDO | C75=45504 | D75=LUCIO | E75=4 | H75=SFP-10G-SR | I75=Cisco SFP-10G-SR SFP+ Transceiver Module - 10GigE
+row 76: formulas=8 constants=23 unlocked=0 labels=B76=VENCIDO | C76=45505 | D76=MATIAS | E76=6 | H76=MRW23LL/A | I76=Apple 16" MacBook Pro (M3 Pro, Space Black) 36GB\512GB\18C
+row 77: formulas=7 constants=24 unlocked=0 labels=B77=VENCIDO | C77=45505 | D77=GUSTAVO | E77=4 | H77=C9200L-STACK-KIT= | I77=Cisco Catalyst 9200L Stack Module
+row 78: formulas=19 constants=12 unlocked=0 labels=B78=VENCIDO | C78=45505 | D78=GUSTAVO | E78=8 | H78=C9200-STACK | I78=Catalyst 9200 Stack Module
+row 79: formulas=8 constants=23 unlocked=0 labels=B79=VENCIDO | C79=45505 | D79=GUSTAVO | E79=4 | H79=STACK-T4-50CM | I79=50CM Type 4 Stacking Cable
+row 80: formulas=7 constants=24 unlocked=0 labels=B80=VENCIDO | C80=45505 | D80=GUSTAVO | E80=2 | H80=STACK-T1-50CM= | I80=50CM Type 1 Stacking Cable
+row 81: formulas=7 constants=24 unlocked=0 labels=B81=VENCIDO | C81=45505 | D81=FABRICIO | E81=1 | H81=‎FWIN 232 Plus N2 | I81=Fusion5 10" Windows 11 FWIN232 Plus N4020 Intel Dual-Core Ultra Slim Windows Tablet PC - 4GB RAM, USB 3.0, Micro HDMI, IPS HD Display, 5MP and 2MP Cameras, Bluetooth (64GB)
+row 82: formulas=8 constants=23 unlocked=0 labels=B82=VENCIDO | C82=45505 | D82=MATIAS | E82=6 | H82=MRW33LL/A | I82=M3 Max 14-C Chip 30-C GPU /36GB /1TB (INGLES) - SPACE BLACK
+row 83: formulas=7 constants=24 unlocked=0 labels=B83=VENCIDO | C83=45505 | D83=GUSTAVO | E83=2 | H83=CF-TF65BR | I83=Bandeja de conectividad para el SAMSUNG Flip 2 WM55R y WM65R
+row 84: formulas=7 constants=24 unlocked=0 labels=B84=COMPRAS | C84=45506 | D84=FABRICIO | E84=2 | H84=88003-001U.are.u | I84=Digital Persona 88003-001U.are.u 4500 Reader 70" Cable
+row 85: formulas=7 constants=24 unlocked=0 labels=B85=COMPRAS | C85=45506 | D85=PABLO | E85=2 | H85=CY-TF65BBC | I85=Bandeja de conectividad para el SAMSUNG Flip Pro WM55B and WM65B
+row 86: formulas=7 constants=23 unlocked=0 labels=B86=VENCIDO | C86=45506 | D86=LUCIO | E86=6 | H86=C9200-48P-E | I86=Catalyst 9200 48-port PoE+, Network Essentials
+row 87: formulas=7 constants=24 unlocked=0 labels=B87=VENCIDO | C87=45506 | D87=LUCIO | E87=1 | H87=452-bduy | I87=Dell Wall/Under-The-Desk VESA Mount with PSU Sleeve - MFF/TC/CFF
+row 88: formulas=7 constants=24 unlocked=0 labels=B88=VENCIDO | C88=45506 | D88=PABLO | E88=1 | H88=TM2000B | I88=GPS NTP+PTP Network Time Server
+row 89: formulas=7 constants=24 unlocked=0 labels=B89=VENCIDO | C89=45509 | D89=PABLO | E89=22 | H89=SFP-H10GB-CU5M= | I89=Systems 5M 10GBASE-CU SFP+ Cable
+row 90: formulas=7 constants=24 unlocked=0 labels=B90=VENCIDO | C90=45510 | D90=PABLO | E90=1 | H90=7ZT7A00544 | I90=ThinkSystem 1GB 2-Port RJ45 LOM PCI
+row 91: formulas=7 constants=24 unlocked=0 labels=B91=COMPRAS | C91=45510 | D91=PABLO | E91=1 | H91=PFI-107 (6 PACK) | I91=Juego de 6 Pfi-107 Genuino Paquete de 6 Tanques de Tinta de Colores 2 Pfi-107mbk, y 1 Pfi107bk Pfi107c Pfi107y Pfi107m
+row 92: formulas=7 constants=24 unlocked=0 labels=B92=COMPRAS | C92=45510 | D92=PABLO | E92=1 | H92=1320B014 | I92=Maintenance Cartridge
+row 93: formulas=7 constants=24 unlocked=0 labels=B93=VENCIDO | C93=45510 | D93=PABLO | E93=1 | H93=PFI-007MBK (2 PACK) | I93=Pigment Matte Black Ink Tanks - 90ml 2-Pack
+row 94: formulas=7 constants=24 unlocked=0 labels=B94=VENCIDO | C94=45510 | D94=LUCIO | E94=1 | H94=Fydun34kb2vhwap | I94=Duplicador de M.2 Ssd, estación de acoplamiento del clon para 2230 22242 2260 2280 22110
+row 95: formulas=7 constants=24 unlocked=0 labels=B95=VENCIDO | C95=45510 | D95=PABLO | E95=48 | H95=KTD-PE426/32G | I95=Kingston 32GB DDR4 SDRAM Memory Module
+row 96: formulas=7 constants=24 unlocked=0 labels=B96=VENCIDO | C96=45510 | D96=PABLO | E96=48 | H96=A8711888 | I96=Dell 32GB 2400MHz DDR4 PC4-19200 ECC Registered RAM RDIMM
+row 97: formulas=7 constants=24 unlocked=0 labels=B97=VENCIDO | C97=45510 | D97=PABLO | E97=32 | H97=3NKW7 | I97=Dell 300-GB 12G 10K 2.5 SAS w/G176J
+row 98: formulas=7 constants=24 unlocked=0 labels=B98=VENCIDO | C98=45511 | D98=LUCIO | E98=1 | H98=VCNRTXA6000-PB | I98=NVIDIA RTX A6000 Graphics Card 48GB GDDR6 300W PCIE 3.0 Retail Box
+row 99: formulas=7 constants=24 unlocked=0 labels=B99=VENCIDO | C99=45511 | D99=MATIAS | E99=1 | H99=4X90U90619 | I99=Cable USB-C a USB-C LENOVO
+row 100: formulas=7 constants=23 unlocked=0 labels=B100=VENCIDO | C100=45512 | D100=GUSTAVO | E100=1 | I100=SILLA GAMER | J100=BICICLETA
+row 101: formulas=7 constants=24 unlocked=0 labels=B101=VENCIDO | C101=45512 | D101=PABLO | E101=1 | H101=2WS-00001 | I101=Microsoft Surface Dial
+row 102: formulas=7 constants=24 unlocked=0 labels=B102=VENCIDO | C102=45512 | D102=PABLO | E102=1 | H102=A6UN0UT#ABA | I102=HP ZBook Fury 16 G11 - Intel - Core i9 - 13950HX - 16Inch - No Touch Screen - 3840 x 2400 - DDR5 - 64GB RAM - PCIe NVMe - No Hard Drive Capacity / HDD HDD - 2TB SSD / Spindle Speed - NVIDIA RTX 4000 Ada - AC Adapters - 230Watt - 8-cell - 5 MP IR camera - Microsoft Windows 11 Professional - Bluetooth - Camera - 1 year warranty
+row 103: formulas=7 constants=24 unlocked=0 labels=B103=VENCIDO | C103=45512 | D103=PABLO | E103=1 | H103=A6UL9UT#ABA | I103=HP ZBook Fury 16 G11 Mobile Workstation PC,16IN WUXGA WLED UWVA 800N Sure View G5 Anti-Glare Low Blue Light (1920 x 1200, 1.6 (16:10)),Intel Core i9-13950HX (4.00 GHz, up to 5.50 GHz, 24 cores - 13th Generation) with Intel UHD Graphics,1TB M.2 PCIe NVMe 2280 TLC 4X4 SSD,32GB 5600MHz DDR5 (1X32GB) SODIMM,Clickpad,Backlit Spill Resistant,Intel Wi-Fi 7 BE200 (2x2) vProand Bluetooth 5.4 Wireless Technology,No WWAN module, NVIDIA Quadro RTX 2000 Ada Generation (8GB), 32X No Discrete Graphics,Hybrid 5MP+IR Camera,Windows 11 Pro High-end,1/1/0
+row 104: formulas=7 constants=24 unlocked=0 labels=B104=VENCIDO | C104=45513 | D104=PABLO | E104=70 | H104=50H55AA | I104=HP Universal USB-C Multiport Hub 7 in 1
+row 105: formulas=7 constants=24 unlocked=0 labels=B105=VENCIDO | C105=45513 | D105=FABRICIO | E105=6 | H105=APCA.4IRD.X.H6.U3L.D3L.STD | I105=AssetPack Satellite Gateway: Versatile, solar-powered, ruggedized tracking and sensor monitoring device, two-way asset tracking, GPS, and sensor monitoring solution designed for unpowered assets
+row 106: formulas=7 constants=24 unlocked=0 labels=B106=VENCIDO | C106=45513 | D106=PABLO | E106=6 | H106=5181-1519 | I106=CAN Cable, 1m long
+row 107: formulas=7 constants=24 unlocked=0 labels=B107=VENCIDO | C107=45513 | D107=PABLO | E107=70 | H107=50H55AA-AAAAAA | I107=HP Universal USB-C Multiport Hub 7 in 1
+row 108: formulas=8 constants=22 unlocked=0 labels=B108=VENCIDO | C108=45516 | D108=PEPE | E108=150 | I108=Sillas Gamer AFA | J108=DOCKING
+row 109: formulas=7 constants=24 unlocked=0 labels=B109=VENCIDO | C109=45516 | D109=PABLO | E109=30 | H109=FN-TRAN-SFP+LR | I109=10GE SFP+ transceiver module, long range 10GE SFP+ transceiver module, 10km long range for systems with SFP+ and SFP/SFP+ slots
+row 110: formulas=7 constants=24 unlocked=0 labels=B110=VENCIDO | C110=45517 | D110=LUCIO | E110=1 | H110=41351 | I110=C2G HDMI to VGA Adapter Converter
+row 111: formulas=7 constants=24 unlocked=0 labels=B111=VENCIDO | C111=45517 | D111=LUCIO | E111=1 | H111=40AY0090US | I111=Accessories
+Lenovo ThinkPad Universal USB-C Dock
+row 112: formulas=7 constants=24 unlocked=0 labels=B112=COMPRAS | C112=45517 | D112=PABLO | E112=2 | H112=GLC-SX-MMD= | I112=SFP transceiver module, MMF, 850nm, DOM
+row 113: formulas=7 constants=24 unlocked=0 labels=B113=COMPRAS | C113=45531 | D113=PABLO | E113=4 | H113=CV211 | I113=USB KVM Console Crash Cart Adapter for Laptop
+row 114: formulas=7 constants=24 unlocked=0 labels=B114=VENCIDO | C114=45517 | D114=PABLO | E114=4 | H114=SFP-10G-SR | I114=10GBASE-SR SFP+ Module for MMF
+row 115: formulas=7 constants=24 unlocked=0 labels=B115=VENCIDO | C115=45517 | D115=FABRICIO | E115=4 | H115=400-BDWE | I115=400-BDWE Dell G14-G16 480-GB 2.5 SATA 6G TLC MU SSD w/DXD9H
+row 116: formulas=7 constants=24 unlocked=0 labels=B116=VENCIDO | C116=45518 | D116=PABLO | E116=1 | H116=DA310 | I116=Dell USB-C 7-in-1 Mobile Adapter DA310
+row 117: formulas=7 constants=24 unlocked=0 labels=B117=VENCIDO | C117=45519 | D117=PABLO | E117=1 | H117=UD2100002-01 | I117=Lantronix 2 Port Serial (RS232/ RS422/ RS485) to IP Ethernet Device Server
+row 118: formulas=7 constants=24 unlocked=0 labels=B118=VENCIDO | C118=45519 | D118=PABLO | E118=3 | H118=MS838 | I118=SCANNER 2D CON CABLE MS838
+row 119: formulas=7 constants=24 unlocked=0 labels=B119=COMPRAS | C119=45519 | D119=PABLO | E119=4 | H119=MS838B | I119=SCANNER 2D INALAMBRICO MS838B
+row 120: formulas=7 constants=24 unlocked=0 labels=B120=COMPRAS | C120=45520 | D120=PABLO | E120=5 | H120=ELPLP91 | I120=Replacement Projector Lamp V13H010L91
+row 121: formulas=7 constants=22 unlocked=0 labels=B121=VENCIDO | C121=45520 | D121=PABLO | E121=3 | J121=Sirenas / Timbres /avisador contra robo o incendio | L121=199
+row 122: formulas=7 constants=24 unlocked=0 labels=B122=VENCIDO | C122=45520 | D122=FABRICIO | E122=4 | H122=400-BDWE | I122=Accortec Dell 400-BDSD compatible 480GB 256-bit Encryption Standard SSD SATA Mixed Use 6Gbps 512e 2.5in Hot Plug S4610 Drive, R9445, 400-BDWE, 3GWTH- 5 Year Warranty
+row 123: formulas=7 constants=24 unlocked=0 labels=B123=VENCIDO | C123=45523 | D123=PABLO | E123=4 | H123=PAN-SFP-Plus-SR | I123=10GBASE-SR SFP+ módulo óptico del transmisor-receptor compatible con Palo Alto 10Gbps 850nm 984.3 ft DDM Duplex LC MMF
+row 124: formulas=7 constants=24 unlocked=0 labels=B124=VENCIDO | C124=45523 | D124=PABLO | E124=1 | H124=516828-B21 | I124=600GB 6G 15K 3.5" DP SAS
+row 125: formulas=7 constants=24 unlocked=0 labels=B125=VENCIDO | C125=45523 | D125=PABLO | E125=10 | H125=8451-0101000 | I125=Belden 22-1P STR TNC PP FOIL SHIELDED PVC JACKET CM BLACK ROHS
+row 126: formulas=7 constants=24 unlocked=0 labels=B126=VENCIDO | C126=45523 | D126=LUCIO | E126=6 | H126=FN-TRAN-SFP+GC-AX | I126=Axiom 10GBASE-T SFP+ Transceiver for Fortinet - FN-TRAN-SFP+GC
+row 127: formulas=7 constants=24 unlocked=0 labels=B127=VENCIDO | C127=45523 | D127=LUCIO | E127=10 | H127=GP-10GSFP-1T-AX | I127=Axiom 10GBASE-T SFP+ Transceiver for Force 10 - GP-10GSFP-1T
+row 128: formulas=7 constants=24 unlocked=0 labels=B128=VENCIDO | C128=45523 | D128=LUCIO | E128=10 | H128=AXG95657 | I128=Axiom 1000BASE-T SFP Transceiver for Dell - 407-BBOS - TAA Compliant
+row 129: formulas=7 constants=24 unlocked=0 labels=B129=VENCIDO | C129=45523 | D129=LUCIO | E129=6 | H129=QSFP-100G-SR-BD-AX | I129=Axiom 100GBASE-SR-BiDi QSFP28 Transceiver for Cisco - QSFP-100G-SR-BD
+row 130: formulas=7 constants=24 unlocked=0 labels=B130=VENCIDO | C130=45523 | D130=LUCIO | E130=4 | H130=407-BBYM-AX | I130=AXIOM 100GBASE-SR-BIDI QSFP28 TRANSCEIVER FOR DELL - 407-BBYM
+row 131: formulas=8 constants=23 unlocked=0 labels=B131=VENCIDO | C131=45524 | D131=LUCIO | E131=36 | H131=E693022 | I131=ESY 22i5- 2UWB - 0 -MT-ZB-8G-1S-W1-64-BK
+row 132: formulas=7 constants=24 unlocked=0 labels=B132=VENCIDO | C132=45524 | D132=LUCIO | E132=36 | H132=E989127 | I132=ELO-STAND-SELF-SERV-22-24-27-COUNTER
+row 133: formulas=7 constants=24 unlocked=0 labels=B133=VENCIDO | C133=45524 | D133=LUCIO | E133=36 | H133=E245047 | I133=KIT, 2DBCR, USB, SE4107
+row 134: formulas=7 constants=24 unlocked=0 labels=B134=VENCIDO | C134=45524 | D134=LUCIO | E134=36 | H134=E990282 | I134=Verifone P400
+row 135: formulas=7 constants=24 unlocked=0 labels=B135=VENCIDO | C135=45524 | D135=FABRICIO | E135=110 | H135=KCP426NS8/8 | I135=Kingston 8GB DDR4 SDRAM Memory Module - 8 GB (1 x 8GB) - DDR4-2666/PC4-21300 DDR4 SDRAM - 2666 MHz - CL19 - 1.20 V - Non-ECC - Unbuffered - 288-pin - DIMM
+row 136: formulas=8 constants=23 unlocked=0 labels=B136=VENCIDO | C136=45525 | D136=PABLO | E136=1 | H136=xctox9340mmcla | I136=Laptop XPS13 Processor Edit
+Intel® Core™ Ultra 7 Processor 155H (24MB Cache, 16 cores, up to 4.8 GHz)
+Operating System Edit
+Windows 11 Pro, English, French, Spanish
+Microsoft Office Edit
+Activate Your Microsoft 365 For A 30 Day Trial
+Memory Edit
+16GB, LPDDR5X, 7467MT/s, integrated, dual channel
+Keyboard Edit
+Platinum Backlit Spanish Keyboard with Fingerprint Reader
+Color
+Platinum
+Display Edit
+13.4", FHD+ 1920 x 1200, 30-120Hz, Non-Touch, Anti-Glare, 500 nit, EyeSafe, InfinityEdge
+Storage Edit
+512 GB, M.2, PCIe NVMe, SSD
+Wireless
+Intel® Killer™ Wi-Fi 7 1750 (BE200) 2x2 + Bluetooth 5.4 Wireless Card
+Graphics
+Intel® Arc™ Graphics
+Cable Edit
+Power Cord (US)
+Systems Management Edit
+Intel® ME Disabled, No Out-of-Band System Management
+Primary Battery
+3 Cell, 55 Wh, integrated
+Power Supply
+60W AC adapter, USB Type-C
+Services & Support
+Service Edit
+1 Year Carry-In Service-LA
+Home and Small Business Security solutions Edit
+No anti-virus software
+row 137: formulas=7 constants=24 unlocked=0 labels=B137=VENCIDO | C137=45525 | D137=FABRICIO | E137=3 | H137=‎1450G2D-2USB-1 | I137=HONEYWELL 1450G2D-2USB-1 Handheld Barcode Scanner USB QR Code Reader + Stand
+row 138: formulas=7 constants=24 unlocked=0 labels=B138=VENCIDO | C138=45526 | D138=PABLO | E138=1 | H138=CX3400FMA-DH762T-S | I138=Chromebook Flip CX3, 14" Touchscreen FHD NanoEdge Display, Intel Core i7-1160G7 Processor, 512GB SSD, 16GB RAM, Garaged Stylus, Backlit Keyboard, Wi-Fi 6, Chrome OS, AI Blue
+row 139: formulas=7 constants=24 unlocked=0 labels=B139=VENCIDO | C139=45527 | D139=LUCIO | E139=3 | H139=6A6618 | I139=AddOn Cisco GLC-TE Compatible TAA Compliant 10/100/1000Base-TX SFP Transceiver (Copper, 100m, RJ-45, Rugged)
+row 140: formulas=7 constants=24 unlocked=0 labels=B140=VENCIDO | C140=45527 | D140=FABRICIO | E140=75 | H140=KBA-M3632C-KMA-SP-RC | I140=TG3, NCNR, PRICING SUBJECT TO CHANGE, CALL FOR QUOTE, BLACK MCDONALDS RXD/TXD W/ KMA SPANISH
+row 141: formulas=7 constants=24 unlocked=0 labels=B141=VENCIDO | C141=45527 | D141=FABRICIO | E141=10 | H141=3320G-4USB-0-N | I141=Honeywell 3320G-4USB-0-N Usb Kit 1d Pdf417 2d Ivory Scancabl 3320g-4 2.9m 9.5 Usb A Cabl
+row 142: formulas=19 constants=12 unlocked=0 labels=B142=VENCIDO | C142=45527 | D142=LUCIO | E142=6 | H142=QSFP-100G-PSM4-S-AX | I142=Axiom 100GBASE-PSM4 QSFP28 Transceiver for Cisco - QSFP-100G-PSM4-S
+row 143: formulas=8 constants=23 unlocked=0 labels=B143=VENCIDO | C143=45527 | D143=LUCIO | E143=4 | H143=QSFP-100G-PSM4-DL-AX | I143=AXIOM 100GBASE-PSM4 QSFP28 Transceiver for Dell
+row 144: formulas=7 constants=24 unlocked=0 labels=B144=VENCIDO | C144=45527 | D144=LUCIO | E144=10 | H144=407-BBXZ-AX | I144=Axiom 25GBASE-LR SFP28 Transceiver for Dell - 407-BBX
+row 145: formulas=7 constants=24 unlocked=0 labels=B145=VENCIDO | C145=45530 | D145=LUCIO | E145=0 | H145=9VR633 | I145=CODi Rugged Carrying Case Apple iPad Mini 6 Tablet
+row 146: formulas=7 constants=24 unlocked=0 labels=B146=COMPRAS | C146=45530 | D146=PABLO | E146=1 | H146=Z19N00009 | I146=CTO iMac 24IN M3 8C CPU 10C GPU 16GB 512GB MM MKB TOUCH ID ENET PINK SPA
+row 147: formulas=7 constants=24 unlocked=0 labels=B147=COMPRAS | C147=45530 | D147=PABLO | E147=10 | H147=CET3-AR-CRA-AH-50X-SG-109401 | I147=CET3-AR-CRA-AH-50X-SG-109401 Safety Switch Euchner
+row 148: formulas=7 constants=24 unlocked=0 labels=B148=COMPRAS | C148=45530 | D148=PABLO | E148=10 | H148=CET-A-BWK-50X | I148=CET-A-BWK-50X Pneumatic Safety Switch Euchner
+row 149: formulas=7 constants=24 unlocked=0 labels=B149=VENCIDO | C149=45530 | D149=PABLO | E149=4 | H149=641552-004 | I149=G0900FBVFQ 900GB 2.5" SFF SAS 6Gb/s 10K RPM
+row 150: formulas=7 constants=24 unlocked=0 labels=B150=VENCIDO | C150=45530 | D150=LUCIO | E150=10 | H150=FN-TRAN-SFP28-LR-AX | I150=Axiom 25GBASE-LR SFP28 Transceiver for Fortinet - FN-TRAN-SFP28-LR-AX
+row 151: formulas=7 constants=24 unlocked=0 labels=B151=VENCIDO | C151=45531 | D151=PABLO | E151=3 | H151=L17655-001 | I151=For 280 G3 SFF 290 G1 SFF Desktop Motherboard L17655-001 L17655-601 942033-001 348.0A902.0011 17519-1
+row 152: formulas=8 constants=23 unlocked=0 labels=B152=VENCIDO | C152=45531 | D152=LUCIO | E152=3 | H152=xctolr7330usvi | I152=Latitude 7330 Rugged Extreme Laptop
+row 153: formulas=7 constants=24 unlocked=0 labels=B153=COMPRAS | C153=45531 | D153=PABLO | E153=1 | H153=4XB7A83215 | I153=ThinkSystem 2.5" Nytro 3750 800GB Write Intensive SAS 12Gb HS SSD
+row 154: formulas=7 constants=24 unlocked=0 labels=B154=COMPRAS | C154=45531 | D154=PABLO | E154=2 | H154=NPort 5150 | I154=Moxa Device Server NPort 5150
+row 155: formulas=7 constants=24 unlocked=0 labels=B155=VENCIDO | C155=45531 | D155=LUCIO | E155=36 | H155=E989314 | I155=ELO Soportes
+row 156: formulas=7 constants=24 unlocked=0 labels=B156=VENCIDO | C156=45531 | D156=LUCIO | E156=36 | H156=E989512 | I156=ELO Soportes
+row 157: formulas=7 constants=24 unlocked=0 labels=B157=VENCIDO | C157=45531 | D157=LUCIO | E157=36 | H157=E990468 | I157=ELO Base para EMV
+row 158: formulas=9 constants=23 unlocked=0 labels=B158=VENCIDO | C158=45531 | D158=LUCIO | E158=1 | H158=MLQ83LZ/A | I158=iPhone 13 256GB STARLIGHT
+row 159: formulas=7 constants=24 unlocked=0 labels=B159=VENCIDO | C159=45531 | D159=FABRICIO | E159=1 | H159=‎TESCZSXT2010BL-1PC | I159=BOSS Audio Systems CAM21 Car Rearview Reverse Backup Camera - License Plate Mount, 170° Wide Angle Rear View, Low Light Friendly, Cam For Truck
+row 160: formulas=7 constants=24 unlocked=0 labels=B160=VENCIDO | C160=45531 | D160=FABRICIO | E160=5 | H160=F7G-Pro | I160=HEIGAOLA Rugged Tablet Windows 11 Pro,Celeron Quad-Core 8GB RAM/128 GB ROM,4G LTE GPS FHD 10.1 INCH Touchscreen HDMI2.0 Tablet PC IP67 Waterproof,16000mAh Battery,BT 5.2 WiFi 5 Ethernet (F7G Pro)
+row 161: formulas=7 constants=24 unlocked=0 labels=B161=VENCIDO | C161=45531 | D161=PABLO | E161=2 | H161=P48820-B21 | I161=DL380/DL560 G11 2U High Performance Fan Kit
+row 162: formulas=7 constants=24 unlocked=0 labels=B162=VENCIDO | C162=45531 | D162=PABLO | E162=2 | H162=S0K89C | I162=NVIDIA L4 24GB PCIE Accelerator
+row 163: formulas=8 constants=23 unlocked=0 labels=B163=VENCIDO | C163=45532 | D163=FABRICIO | E163=500 | H163=T-S460-HSB-R | I163=TOPAZ, SIGLITE 1X5 (HID USB) ELECTRONIC SIGNATURE PAD, WITH SOFTWARE, 2-YEAR FACTORY WARRANTY
+row 164: formulas=8 constants=23 unlocked=0 labels=B164=VENCIDO | C164=45532 | D164=FABRICIO | E164=500 | H164=T-LBK750-BHSB-R | I164=TOPAZ, SIGLITE LCD 4X3 (DUAL SERIAL/USB BACKLIT) ELECTRONIC SIGNATURE PAD, WITH SOFTWARE, 2-YEAR FACTORY WARRANTY
+row 165: formulas=7 constants=24 unlocked=0 labels=B165=VENCIDO | C165=45532 | D165=MATIAS | E165=6 | H165=345-BDSG | I165=Dell 345-BDSG 1.92TB SATA-6Gbps
+row 166: formulas=8 constants=23 unlocked=0 labels=B166=VENCIDO | C166=45532 | D166=MATIAS | E166=1 | H166=‎TS3420DN3204 | I166=BUFFALO TeraStation 3420DN NAS de escritorio SMB de 4 bahías de 32 TB (4 x 8 TB) con discos duros incluidos
+row 167: formulas=7 constants=24 unlocked=0 labels=B167=COMPRAS | C167=45532 | D167=PABLO | E167=2 | H167=S0G21A | I167=Transceptor Networking Instant On Aruba, 10G, LR, SFP+, LC, 10 km, SMF
+row 168: formulas=7 constants=24 unlocked=0 labels=B168=VENCIDO | C168=45532 | D168=PABLO | E168=8 | H168=KTL-TS432/64G | I168=Kingston 64GB DDR4 SDRAM Memory Module
+row 169: formulas=7 constants=24 unlocked=0 labels=B169=VENCIDO | C169=45532 | D169=MATIAS | E169=1 | H169=4X90U90619 | I169=Lenovo Cable USB-C de 3.3 ft
+row 170: formulas=7 constants=24 unlocked=0 labels=B170=VENCIDO | C170=45533 | D170=PABLO | E170=1 | H170=xctop5860mmcla | I170=Precision 5860 Tower	Precision 5860 Tower XCTO Base	G7ML1W4	[210-BFNP]	1
+Processor	Intel® Xeon® W3-2423 (15 MB cache, 6 cores, 12 threads, up to 4.2 GHz Turbo, 120 W)	GF4CNZ7	[338-CKZS]	146
+Operating System	Windows 11 Pro for Workstations (6 cores), English, French, Spanish, Brazilian Portuguese	GACD1H8	[619-ARSO]	11
+System Management	Intel® vPro Technology Enabled	GPL48RB	[631-BBHL]	49
+Memory	64 GB: 2 x 32 GB, DDR5, 4800 MT/s, RDIMM, ECC	GT49HJL	[370-AHHG]	3
+Graphics	NVIDIA® RTX™ A5500, 24 GB GDDR6, 4 DP	G8BCXLV	[490-BJJT]	6
+Storage Configuration (Boot Drive and Flexbay)	[C3] Flexbay M.2 SSD Boot with Dual M.2 NVME Flexbay	GNZO3BH	[449-BCCC]	276
+Storage Controllers	Integrated Storage Controller	GDTFOK3	[403-BCVC]	9
+Storage	512 GB, M.2, PCIe NVMe, SSD, Class 40	GP7IYHQ	[400-BOGY]	8
+Lower Flexbay	512 GB, M.2, PCIe NVMe, SSD, Class 40	GP7IYHQ	[400-BOGY]	637
+First Internal SATA	2 TB, 7200 RPM, 3.5-inch, SATA, HDD, AG-Enterprise Class	GS6071T	[400-BOGR]	54
+Second Internal SATA	2 TB, 7200 RPM, 3.5-inch, SATA, HDD, AG-Enterprise Class	GS6071T	[400-BOGR]	51
+Optical Drive	No Optical Drive	GX7JTRL	[429-ABMS]	16
+Optical Software	PowerDVD Software not included	GI5LS2C	[632-BBBJ]	597
+First Internal M.2 SSD	512 GB, M.2, PCIe NVMe, SSD, Class 40	GP7IYHQ	[400-BOGY]	102
+Second Internal M.2 SSD	512 GB, M.2, PCIe NVMe, SSD, Class 40	GP7IYHQ	[400-BOGY]	202
+SATA RAID Configuration	RAID 1 for SATA HDD	G91I2F8	[780-BBCL]	1009
+NVMe RAID Configuration	M.2 NVME Flexbay RAID1 Boot + Internal RAID1 (C3)	GB3VXYI	[780-BCTH] [780-BCVP] [780-BCVR]	391
+VROC	Virtual RAID on CPU software driver and Standard license key for Windows	GNWT4IK	[409-BCXD] [780-BCIP]	143
+Dell Ultra Speed SSD (on PCIe slot)	Dell Ultra-Speed Drive Duo M.2 NVME SSD x8 PCIe Card with 2x 512GB Class 40 SSD	GEWP2IS	[400-BOGY] [400-BOGY] [414-BBIY]	200240
+RAID Configurations for Dell Ultra-Speed Drives	RAID 1 on Dell UltraSpeed Card	GXGOQ69	[780-BCIK]	1540
+Chassis Options	Precision 5860 Tower 1350W Performance Chassis (DAO Open Flexbay L5.5)	G74PBTW	[321-BHYQ] [412-BBDQ]	116
+Power Cord	System Power Cord (Argentina 250V 16A)	GK49J23	[450-AMEF]	20
+Network Card	No Additional Network Card Selected (Integrated NIC included)	GPQ31WV	[555-BBJO]	13
+PCIe I/O Add-in-cards	Not selected in this configuration	GY2RECF	[817-BBBC]	666
+Wireless	Qualcomm WCN6856-DBS, 2x2, 802.11ax, Bluetooth® wireless card	G2AEBFW	[555-BHHS] [555-BIDG]	19
+Optional Integrated Video or USB Ports	No Additional Port	GH2ILWN	[492-BCLP]	36
+Keyboard	Spanish non-backlit Dell keyboard KB216	GB0JO6I	[580-AECM]	4
+Mouse	Dell Optical Mouse - MS116 (Black)	GWDQT3O	[570-ABIE]	12
+Microsoft Office	Activate Your Microsoft 365 For A 30 Day Trial	GC7OFJV	[658-BCSB]	1002
+Home and Small Business Security Solutions	No anti-virus software	GD4K19S	[650-AAAM]	1014
+E-Star	ENERGY STAR Qualified	G6J34SM	[387-BBLW]	122
+EPEAT	EPEAT 2018 Registered (Gold)	GBU8CHM	[379-BDZB]	200331
+TPM Security	Dell Precision TPM	G1MEH6P	[340-ACBY]	297
+Driver	Firmware and Driver for Qualcomm® WCN6856-DBS + Bluetooth module	G1AHY7K	[555-BJNM]	7
+Documentation	Safety/Environment and Regulatory Guide (English/Spanish)	GEPGU1O	[340-AGIN]	21
+Placemat	Quick Start Guide placemat, 5860 Tower	G4RBJS7	[340-DJVF]	60
+Shipping Material	Shipping Material (Precision 5860, 7865)	G6SG2XW	[340-CBUU] [340-DCJU]	465
+Label	5860T 1350W Regulatory Label (DAO)	GK0G4A8	[389-FDBB]	676
+Stands and Mounts	No Stand	GK0645E	[575-BBCH]	558
+Cables and Dongles	No Accessories	GM0AKUV	[461-AABV]	592
+Resource DVD	Resource DVD not Included	GP34FJB	[430-XXYU]	50
+External Speakers	No External Speaker	GTNM7E2	[817-BBBC]	200095
+Non-Microsoft Application Software	Dell Additional Software	GCUA4G1	[658-BFPP]	1003
+Windows AutoPilot	No AutoPilot	GYEO2AP	[340-CKSZ]	291
+Operating System Recovery Options	OS-Windows Media Not Included	GLA9OQ1	[620-AALW]	200013
+Dell Premier Color	Premier Color 6.1	GLO0XKJ	[640-BBSS]	451
+External Optical Device	No External ODD	GVTOW4N	[429-ABGY]	317
+Dell Services: Hardware Support	3Y ProSupport Next Business Day Onsite Service after remote diagnosis with HW-SW Support	LPN3	[916-4839] [998-1606] [998-1626] [998-1658]
+row 171: formulas=7 constants=24 unlocked=0 labels=B171=VENCIDO | C171=45533 | D171=comprar | E171=1 | H171=RX-RDP+ | I171=RX-RDP+ (Pi3B+,1.4GHz, 1GB,16GB SD) for Microsoft AVD, RDS, VERDE and vSpace (connection license sold separately). HDMI, 4 USB, WiFi, Gigabit LAN, Manageable by PMC. 1 Year HW Warranty. 1 Year SW maintenance and update included. 5.1V PWR adapter with VESA bracket
+row 172: formulas=8 constants=23 unlocked=0 labels=B172=VENCIDO | C172=45533 | D172=LUCIO | E172=1 | H172=‎QIM-00001 | I172=Microsoft Tablet Surface Pro 9 de 13 pulgadas, Core i7
+row 173: formulas=7 constants=24 unlocked=0 labels=B173=COMPRAS | C173=45533 | D173=PABLO | E173=10 | H173=848Z8AA | I173=Poly CCX 400 Business Media Phone. Microsoft Teams/SFB. PoE. Ships without power supply
+row 174: formulas=7 constants=23 unlocked=0 labels=B174=VENCIDO | C174=45533 | D174=PABLO | E174=1 | I174=300GB 15K RPM SAS 12Gbps 2.5” Hot Plug HDD (nuevo bulk) | J174=DISCO RIGIDO
+row 175: formulas=7 constants=23 unlocked=0 labels=B175=VENCIDO | C175=45533 | D175=PABLO | E175=1 | I175=300GB 15K RPM SAS 12Gbps 2.5” Hot Plug HDD (nuevo sellado) | J175=DISCO RIGIDO
+row 176: formulas=7 constants=23 unlocked=0 labels=B176=VENCIDO | C176=45533 | D176=PABLO | E176=2 | I176=8TB 7.2K RPM SAS 12Gbps 3.5” Hot Plug (nuevo bulk) | J176=DISCO RIGIDO
+row 177: formulas=7 constants=23 unlocked=0 labels=B177=VENCIDO | C177=45533 | D177=PABLO | E177=2 | I177=8TB 7.2K RPM SAS 12Gbps 3.5” Hot Plug (nuevo sellado) | J177=DISCO RIGIDO
+row 178: formulas=7 constants=24 unlocked=0 labels=B178=VENCIDO | C178=45534 | D178=FABRICIO | E178=1 | H178=010-02863-20 | I178=Garmin Forerunner 165, Running Smartwatch, Colorful AMOLED Display, Training Metrics and Recovery Insights, Black
+row 179: formulas=7 constants=24 unlocked=0 labels=B179=VENCIDO | C179=45534 | D179=PABLO | E179=1 | H179=24B6025 | I179=Unidad de imagen M5163
+row 180: formulas=8 constants=23 unlocked=0 labels=B180=VENCIDO | C180=45534 | D180=FABRICIO | E180=1 | H180=https://www.dell.com/purchase/cart/share/7SO8BsGhYU-dSmzTkHCvCA~001/en-us | I180=Dell G16 7630 I9-13900hx RTX 4070 1tb SSD 32 GB 16qhd 165hz
+row 181: formulas=7 constants=24 unlocked=0 labels=B181=VENCIDO | C181=45534 | D181=FABRICIO | E181=4 | H181=SDSSDE81-4T00-G25 | I181=SanDisk 4TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive
+row 182: formulas=8 constants=23 unlocked=0 labels=B182=VENCIDO | C182=45534 | D182=PABLO | E182=1 | H182=40x8421 | I182=Kit de mantenimiento MS810
+row 183: formulas=7 constants=24 unlocked=0 labels=B183=VENCIDO | C183=45534 | D183=PABLO | E183=1 | H183=40X7744 | I183=Fusor MS810
+row 184: formulas=7 constants=24 unlocked=0 labels=B184=VENCIDO | C184=45534 | D184=PABLO | E184=1 | H184=614203-B21 | I184=HP NC552SFP 10Gb DP Ethernet Adapter
+row 185: formulas=7 constants=24 unlocked=0 labels=B185=VENCIDO | C185=45534 | D185=PABLO | E185=1 | H185=669279-001 | I185=HP Ethernet 10Gb DP 560SFP+
+row 186: formulas=7 constants=24 unlocked=0 labels=B186=VENCIDO | C186=45534 | D186=PABLO | E186=1 | H186=652503-B21 | I186=HP Ethernet 10Gb DP 530SFP Adapter
+row 187: formulas=18 constants=13 unlocked=0 labels=B187=VENCIDO | C187=45534 | D187=LUCIO | E187=1 | H187=MX250-HW + LIC-MX250-SEC-3YR | I187=Meraki MX250 Router/Security Appliance
+row 188: formulas=21 constants=10 unlocked=0 labels=B188=VENCIDO | C188=45534 | D188=LUCIO | E188=1 | H188=MX105-HW + LIC-MX105-SEC-3Y | I188=Meraki MX105 Router/Security Appliance
+row 189: formulas=20 constants=11 unlocked=0 labels=B189=VENCIDO | C189=45534 | D189=PABLO | E189=1 | H189=P08446-B21 | I189=HP Ethernet 10Gb DP 524SFP+
+row 190: formulas=21 constants=10 unlocked=0 labels=B190=VENCIDO | C190=45534 | D190=LUCIO | E190=8 | H190=MX85-HW + LIC-MX85-SEC-3Y | I190=Meraki MX85 Router/Security Appliance
+row 191: formulas=10 constants=21 unlocked=0 labels=B191=VENCIDO | C191=45534 | D191=PABLO | E191=1 | H191=727055-B21 | I191=HP Ethernet 10Gb DP 562SFP+
+row 192: formulas=7 constants=24 unlocked=0 labels=B192=VENCIDO | C192=45537 | D192=PABLO | E192=4 | H192=SDSSDE61-4T00-G25 | I192=SanDisk 4TB Extreme Portable SSD V2 (Black)
+row 193: formulas=8 constants=23 unlocked=0 labels=B193=VENCIDO | C193=45538 | D193=LUCIO | E193=1 | H193=ZLT-00026 | I193=Microsoft Surface Laptop 6 15" Touchscreen Notebook i7 32GB 512GB SSD W11 Pro - Platinum
+row 194: formulas=7 constants=24 unlocked=0 labels=B194=VENCIDO | C194=45539 | D194=MATIAS | E194=1 | H194=40AY0090 | I194=Lenovo Base universal USB-C ThinkPad
+row 195: formulas=8 constants=21 unlocked=0 labels=B195=VENCIDO | C195=45538 | D195=LUCIO | E195=1 | H195=MX85-HW | I195=Meraki MX85 Router/Security Appliance
+row 196: formulas=7 constants=24 unlocked=0 labels=B196=VENCIDO | C196=45538 | D196=PABLO | E196=1 | H196=T95Z | I196=SET TOP BOX 95Z Plus Android TV Box
+row 197: formulas=7 constants=24 unlocked=0 labels=B197=VENCIDO | C197=45538 | D197=PABLO | E197=1 | H197=xctop5860mmcla | I197=Dell Precision 5860 Tower desktop Dell Processor Edit
+Intel® Xeon® W7-2495X (45 MB cache, 24 cores, 48 threads, up to 4.8 GHz Turbo, 225 W)
+Operating System Edit
+Windows 11 Pro for Workstations (6 cores plus), English, French, Spanish, Brazilian Portuguese
+System Management Edit
+No Out-of-Band Systems Management
+Memory Edit
+128 GB: 2 x 64 GB, DDR5, 4800 MT/s, RDIMM, ECC
+Graphics Edit
+NVIDIA® RTX™ A4000, 16 GB GDDR6, 4 DP
+Storage Configuration (Boot Drive and Flexbay) Edit
+[C6] Internal M.2 SSD Boot with Dual SAS/SATA Flexbay
+Storage Controllers Edit
+MegaRAID SAS 9540-8i 12Gb/s PCIe SATA/SAS SW RAID controller
+Storage Edit
+2.4 TB, 10,000 RPM, 2.5-inch, SAS, HDD, AG-Enterprise Class
+Lower Flexbay Edit
+2.4 TB, 10,000 RPM, 2.5-inch, SAS, HDD, AG-Enterprise Class
+First Internal SATA Edit
+2.4 TB, 10,000 RPM, 2.5-inch, SAS, HDD, AG-Enterprise Class
+Second Internal SATA Edit
+2.4 TB, 10,000 RPM, 2.5-inch, SAS, HDD, AG-Enterprise Class
+Optical Drive Edit
+No Optical Drive
+Optical Software Edit
+PowerDVD Software not included
+First Internal M.2 SSD Edit
+1 TB, M.2, PCIe NVMe, SSD, Class 40
+Second Internal M.2 SSD Edit
+1 TB, M.2, PCIe NVMe, SSD, Class 40
+SATA RAID Configuration Edit
+No SATA RAID
+NVMe RAID Configuration Edit
+M.2 NVME Internal RAID1 Boot (C1, C2, C6)
+VROC Edit
+Virtual RAID on CPU software driver and Standard license key for Windows
+Chassis Options Edit
+Precision 5860 Tower 1350W Performance Chassis (DAO Open Flexbay L5.5)
+Power Cord Edit
+System Power Cord (Argentina 250V 16A)
+Network Card Edit
+Intel® X710 10GbE NIC, Dual Port, Copper
+PCIe I/O Add-in-cards Edit
+Not selected in this configuration
+Wireless Edit
+No Wireless LAN Card (no WiFi enablement)
+Optional Integrated Video or USB Ports Edit
+No Additional Port
+Keyboard Edit
+Spanish non-backlit Dell keyboard KB216
+Mouse Edit
+Dell Optical Mouse - MS116 (Black)
+Microsoft Office Edit
+Activate Your Microsoft 365 For A 30 Day Trial
+Home and Small Business Security Solutions Edit
+No anti-virus software
+E-Star Edit
+ENERGY STAR Qualified
+EPEAT Edit
+Not EPEAT Registered
+TPM Security
+Dell Precision TPM
+Windows AutoPilot Edit
+No AutoPilot
+Dell Premier Color
+Premier Color 6.1
+External Optical Device Edit
+No External ODD
+Services & Support
+Dell Services: Hardware Support Edit
+5Y ProSupport Next Business Day Onsite Service after remote diagnosis with HW-SW Support
+Dell Services: Absolute Security - Standard Edit
+Absolute Resilience for Latin America 5 Years
+row 198: formulas=8 constants=23 unlocked=0 labels=B198=VENCIDO | C198=45540 | D198=LUCIO | E198=24 | H198=W1105A | I198=toner hp 105a
+row 199: formulas=8 constants=23 unlocked=0 labels=B199=VENCIDO | C199=45534 | D199=LUCIO | E199=2 | H199=MX105-HW | I199=Meraki MX105 Router/Security Appliance
+row 200: formulas=8 constants=23 unlocked=0 labels=B200=VENCIDO | C200=45534 | D200=LUCIO | E200=2 | H200=LIC-MX105-SEC-3Y | I200=licencia
+row 201: formulas=7 constants=24 unlocked=0 labels=B201=VENCIDO | C201=45541 | D201=PABLO | E201=1 | H201=H700-IGNN-S0 | I201=Gabinete HAF 700THE BERSERKER
+row 202: formulas=7 constants=24 unlocked=0 labels=B202=VENCIDO | C202=45541 | D202=PABLO | E202=1 | H202=PRO WS WRX90E-SAGE SE | I202=Motherboard Asus EEB sTR5 AMD
+row 203: formulas=7 constants=24 unlocked=0 labels=B203=VENCIDO | C203=45541 | D203=PABLO | E203=1 | H203=100-100000885 | I203=Procesador Threadripper™ PRO 7965WX 24-Core, 48-Thread Processor
+row 204: formulas=7 constants=24 unlocked=0 labels=B204=VENCIDO | C204=45541 | D204=PABLO | E204=1 | H204=RL-KN36E-B1 | I204=WaterCooler Kraken Elite 360
+row 205: formulas=7 constants=24 unlocked=0 labels=B205=VENCIDO | C205=45541 | D205=PABLO | E205=2 | H205=KSM56R46BD4PMI-64MDI | I205=Memoria ECC Register 64GB DDR5
+row 206: formulas=18 constants=13 unlocked=0 labels=B206=VENCIDO | C206=45541 | D206=PABLO | E206=2 | H206=SFYRD/4000G | I206=Disco SSD M.2 NVME 4TB Fury Renegade
+row 207: formulas=8 constants=23 unlocked=0 labels=B207=VENCIDO | C207=45541 | D207=PABLO | E207=1 | H207=VCNRTXA4000-PB | I207=Nvidia RTX A4000 16GB GDDR6
+row 208: formulas=7 constants=24 unlocked=0 labels=B208=VENCIDO | C208=45544 | D208=PABLO | E208=48 | H208=KCS-UC548S8-16G | I208=16GB DDR5 4800MT/s ECC Reg 1Rx8 Module
+row 209: formulas=7 constants=24 unlocked=0 labels=B209=VENCIDO | C209=45544 | D209=PABLO | E209=24 | H209=KCS-UC548S4-32G | I209=32GB DDR5 4800MT/s ECC Reg 1Rx4 Module
+row 210: formulas=7 constants=24 unlocked=0 labels=B210=VENCIDO | C210=45544 | D210=FABRICIO | E210=6 | H210=SM-X810/X816B/X818U | I210=Keyboard Case for Samsung Galaxy Tab S9+ Plus 12.4 inch - 7 Colors Backlit, Magnetic Detachable, Bluetooth Connection, Auto Sleep/Wake Up Smart Case (Black)
+row 211: formulas=7 constants=24 unlocked=0 labels=B211=VENCIDO | C211=45544 | D211=PABLO | E211=25 | H211=xctol5350mmcla | I211=Laptop Latitude 5350 CTO
+row 212: formulas=7 constants=24 unlocked=0 labels=B212=COMPRAS | C212=45544 | D212=PABLO | E212=3 | H212=SC173-HD-56 | I212=17.3 Inch Monitor 1RU Pull Out Rack Mount Monitor Full HD 1920x1080 SC173-HD-56(HDMI)
+row 213: formulas=7 constants=24 unlocked=0 labels=B213=VENCIDO | C213=45545 | D213=FABRICIO | E213=170 | H213=GENERICO | I213=AIRTAG GENERICO
+row 214: formulas=7 constants=24 unlocked=0 labels=B214=COMPRAS | C214=45545 | D214=PABLO | E214=2 | H214=CASE SAMSUNG ACTIVE 5 | I214=Case for Samsung Galaxy Tab Active 5 8" X300 X306B, Protective Rugged Kids Case with Hand Strap, 306° Rotating Kickstand, Pencil Holder
+row 215: formulas=7 constants=24 unlocked=0 labels=B215=COMPRAS | C215=45545 | D215=PABLO | E215=6 | H215=P00924-B21 | I215=HPE 32GB 2Rx4 PC4-2933Y-R Smart Kit
+row 216: formulas=7 constants=24 unlocked=0 labels=B216=VENCIDO | C216=45545 | D216=PABLO | E216=15 | H216=la_cuosfflbmlkn2 | I216=Dell Optiplex SFF Processor Edit
+12th Gen Intel® Core™ i5-12500 (18 MB cache, 6 cores, 12 threads, up to 4.60 GHz Turbo, 65 W)
+Operating System Edit
+Windows 11 Pro, English, Brazilian Portuguese, French, Spanish
+Graphics Edit
+Intel® Graphics
+Windows AutoPilot Edit
+No AutoPilot
+Microsoft Office Edit
+Activate Your Microsoft 365 For A 30 Day Trial
+Software Stack
+Dell Additional Software
+Memory Edit
+16 GB: 1 x 16 GB, DDR5
+Storage Edit
+256GB M.2 PCIe NVMe Class 35 Solid State Drive
+Additional Storage Edit
+No Additional Hard Drive
+Systems Management Edit
+No vPro® support
+Keyboard Edit
+Spanish non-backlit Dell keyboard KB216
+Mouse Edit
+Dell MS116 Wired Mouse Black
+Wireless Edit
+Intel® Wi-Fi 6E AX210, 2x2, 802.11ax, Bluetooth® wireless card, external antenna
+Wireless Driver
+Wireless Driver, Intel® Wi-Fi 6E AX210 2x2 and Bluetooth® wireless card
+Power Cord Edit
+Power Cord (Argentina) for 240W Adapter
+Security Software and PC Protection Edit
+No anti-virus software
+Intel Responsiveness Technologies
+Intel® Rapid Storage Technology Driver
+ICPS
+Intel® Connectivity Performance Suite
+Processor Label
+Intel® Core™ i5 Processor Label
+Shipping Material
+Shipping Material
+Optical Software
+No CyberLink Media Suite Essentials
+Label
+Regulatory Label for OptiPlex SFF 180W PSU DAO
+Serial Port Adapter Edit
+No PCIe add-in-card
+Cable Cover Edit
+No Cable Cover
+System Monitoring Options Edit
+Watch Dog SRV
+Optical Drive Edit
+No Optical Drive
+Chassis Options Edit
+OptiPlex SFF with 180W Bronze Power Supply
+Stands and Mounts Edit
+No Stand or Mount
+TPM Security
+Trusted Platform Module (Discrete TPM Enabled)
+Dust Protection Edit
+Dust Filter
+Additional Video Ports Edit
+No Additional Video Ports
+Speakers Edit
+No Internal Speaker
+Chassis Intrusion Switch Edit
+Chassis Intrusion Switch
+Add-in Cards Edit
+No Additional Add In Cards
+Hard Drive Cables and Brackets
+M.2 Caddy
+3rd Storage Edit
+No Additional Hard Drive
+row 217: formulas=7 constants=24 unlocked=0 labels=B217=VENCIDO | C217=45545 | D217=PABLO | E217=15 | H217=7W74G + N_OPTL3_N3_P3 + KCP432NS8/8 | I217=Dell Optiplex 7010 Procesador
+Familia de procesador	Intel® Core™ i5
+Fabricante de procesador	Intel
+Modelo del procesador	i5-12500
+Generación del procesador	Intel® Core™ i5 de 12ma Generación
+Número de núcleos de procesador	6
+Número de hilos de ejecución	12
+Frecuencia del procesador turbo	4,6 GHz
+Núcleos de rendimiento	6
+Frecuencia turbo máxima del núcleo de rendimiento	4,6 GHz
+Frecuencia base de núcleo de rendimiento	3 GHz
+Caché del procesador	18 MB
+Tipo de cache en procesador	Smart Cache
+Número de procesadores instalados	1
+Potencia base del procesador	65 W
+Potencia turbo máxima	117 W
+Memoria
+Memoria interna	8 GB
+Memoria interna máxima	64 GB
+Tipo de memoria interna	DDR4-SDRAM
+Disposición de la memoria	1 x 8 GB
+Ranuras de memoria	2x DIMM
+Velocidad de memoria del reloj	3200 MHz
+Medios de almacenaje
+Capacidad total de almacenaje	512 GB
+Tipo de unidad óptica	No
+Unidad de almacenamiento	SSD
+Capacidad total de SSD	512 GB
+Número de unidades SSD instalados	1
+SDD, capacidad	512 GB
+Interfaces del SDD	PCI Express
+NVMe	Si
+Factor de forma de disco SSD	M.2
+Clase de rendimiento de SSD	25
+Gráficos
+Adaptador de gráficos discreto	No
+Adaptador gráfico incorporado	Si
+Modelo de adaptador de gráficos discretos	No disponible
+Modelo de adaptador gráfico incorporado	Intel UHD Graphics 770
+Fabricante de GPU (unidad de procesamiento gráfico) integrada	Intel
+Familia de adaptador gráfico incorporado	Intel® UHD Graphics
+Conexión
+Ethernet	Si
+Wifi	Si
+Ethernet LAN, velocidad de transferencia de datos	10,100,1000 Mbit/s
+Tecnología de cableado	10/100/1000Base-T(X)
+Estándar Wi-Fi	Wi-Fi 6 (802.11ax)
+Wi-Fi estándares	Wi-Fi 6 (802.11ax)
+Fabricante del controlador WLAN	Realtek
+Modelo de controlador WLAN	Realtek RTL8852BE
+Tipo de antena	2x2
+Bluetooth	Si
+Puertos e Interfaces
+Cantidad de puertos USB 2.0	4
+Cantidad de puertos tipo A USB 3.2 Gen 1 (3.1 Gen 1)	4
+Número de puertos HDMI	1
+Cantidad de DisplayPorts	1
+Versión de DisplayPort	1.4a
+Ethernet LAN (RJ-45) cantidad de puertos	1
+Combo de salida de auriculares / micrófono del puerto	Si
+Ranuras de expansión
+PCI Express x1 (Gen 3.x) ranuras	1
+PCI Express x16 Gen (3.x) ranuras	1
+Diseño
+Tipo de chasis	SFF
+Color del producto	Negro
+Colocación soportada	Vertical
+Ranura para cable de seguridad	Si
+Tipo de ranura de bloqueo del cable	Kensington
+Desempeño
+Tipo de producto	PC
+Chipset	Intel Q670
+Chip de sonido	Realtek ALC3246-CG
+Sistema de audio	Audio de alta definición
+Módulo de plataforma confiable (TPM)	Si
+Software
+Sistema operativo instalado	Windows 11 Pro
+Arquitectura del sistema operativo	64 bits
+Idioma del sistema operativo	Inglés, Español, Francés, POR-BRA
+Software de prueba	No Microsoft Office Licence Included - 30 day Trial Offer Only OPTIPLEX 7000, OPTIPLEX 7410- Upgrade from 3Y Next Bus Day to 3Y ProSpt
+row 218: formulas=7 constants=21 unlocked=0 labels=B218=VENCIDO | C218=45545 | D218=MATIAS | E218=1 | H218=TZE | I218=Cinta
+row 219: formulas=7 constants=24 unlocked=0 labels=B219=VENCIDO | C219=45545 | D219=PABLO | E219=15 | H219=WD22TB4 | I219=Dell Thunderbolt™ Dock – WD22TB4 - Arg
+row 220: formulas=7 constants=24 unlocked=0 labels=B220=VENCIDO | C220=45546 | D220=PABLO | E220=200 | H220=209744-101 | I220=Headset Blackwire C3210 USB-A
+row 221: formulas=7 constants=24 unlocked=0 labels=B221=VENCIDO | C221=45546 | D221=PABLO | E221=2 | H221=SLSP30-1200P88 | I221=Safety Light Curtains EZ-SCREEN Pair
+row 222: formulas=7 constants=24 unlocked=0 labels=B222=VENCIDO | C222=45546 | D222=PABLO | E222=2 | H222=EZA-MBK-20 | I222=EZ SCREEN Accessory Retrofit Bracket TO Mount
+row 223: formulas=7 constants=24 unlocked=0 labels=B223=VENCIDO | C223=45546 | D223=PABLO | E223=2 | H223=QDE-815D | I223=Cordset: Single Ended M12
+8-pin Straight Female
+4.57 m 8x22 Yellow PVC Jacket
+Nickel-Plated Brass Coupling Nut
+row 224: formulas=7 constants=24 unlocked=0 labels=B224=COMPRAS | C224=45546 | D224=PABLO | E224=1 | H224=4XC0R41416 | I224=Intel I350-T4 4-Port Ethernet Expansion Card
+row 225: formulas=7 constants=24 unlocked=0 labels=B225=VENCIDO | C225=45547 | D225=LUCIO | E225=1 | H225=VCNRTXA6000-PB | I225=NVIDIA RTX A6000 Graphics Card 48GB GDDR6 300W PCIE 3.0 Retail Box
+row 226: formulas=7 constants=24 unlocked=0 labels=B226=COMPRAS | C226=45547 | D226=PABLO | E226=32 | H226=4X77A08633 | I226=ThinkSystem 32GB TruDDR4 3200MHz (2Rx4 1.2V) RDIMM
+row 227: formulas=7 constants=24 unlocked=0 labels=B227=VENCIDO | C227=45547 | D227=PABLO | E227=32 | H227=4X77A08635 | I227=ThinkSystem 64GB TruDDR4 3200MHz (2Rx4 1.2V) RDIMM
+row 228: formulas=8 constants=23 unlocked=0 labels=B228=COMPRAS | C228=45547 | D228=PABLO | E228=8 | H228=4XB7A80321 | I228=ThinkSystem 2.5" PM1653 7.68TB Read Intensive SAS 24Gb HS SSD
+row 229: formulas=7 constants=24 unlocked=0 labels=B229=VENCIDO | C229=45547 | D229=PABLO | E229=8 | H229=4XB7A80322 | I229=ThinkSystem 2.5" PM1653 15.36TB Read Intensive SAS 24Gb HS SSD
+row 230: formulas=7 constants=24 unlocked=0 labels=B230=COMPRAS | C230=45547 | D230=PABLO | E230=2 | H230=4XB7A17129 | I230=ThinkSystem 2.5" U.2 P5620 1.6TB Mixed Use NVMe PCIe 4.0 x4 HS SSD
+row 231: formulas=7 constants=24 unlocked=0 labels=B231=VENCIDO | C231=45547 | D231=PABLO | E231=2 | H231=2072-24G | I231=IBM FlashSystem 5000 SFF Expansion Enclosure
+row 232: formulas=7 constants=24 unlocked=0 labels=B232=VENCIDO | C232=45547 | D232=PABLO | E232=56 | H232=AL6B | I232=2.4 TB 10,000 rpm 12 Gb SAS 2.5 Inch HDD
+row 233: formulas=7 constants=24 unlocked=0 labels=B233=VENCIDO | C233=45548 | D233=PABLO | E233=4 | H233=Aurora R16 Gaming Desktop | I233=Aurora R16 Gaming Desktop - Intel Core i7-14700F Processor, 16GB DDR5 RAM, 512GB SSD + 1TB HDD, NVIDIA GeForce RTX 4060 8GB GDDR6, Windows 11 Home, Onsite Service - Black
+row 234: formulas=7 constants=24 unlocked=0 labels=B234=VENCIDO | C234=45548 | D234=PABLO | E234=4 | H234=KCP556US8-16 | I234=16GB DDR5 5600MT/s Non-ECC Unbuffered DIMM
+row 235: formulas=7 constants=24 unlocked=0 labels=B235=VENCIDO | C235=45548 | D235=PABLO | E235=1 | H235=P00928-B21 | I235=128GB (1x128GB) Octal Rank x4 DDR4-2933
+row 236: formulas=7 constants=24 unlocked=0 labels=B236=VENCIDO | C236=45548 | D236=PABLO | E236=1 | H236=P11040-B21 | I236=128GB (1 x 128GB) Quad Rank x4 DDR4-2933
+row 237: formulas=7 constants=24 unlocked=0 labels=B237=VENCIDO | C237=45548 | D237=PABLO | E237=1 | H237=815102-B21 | I237=128GB (1 x 128GB) Octal Rank x4 DDR4-2666
+row 238: formulas=7 constants=24 unlocked=0 labels=B238=VENCIDO | C238=45548 | D238=PABLO | E238=2 | H238=W2120A | I238=Standard Yield Black Toner Cartridge
+row 239: formulas=7 constants=24 unlocked=0 labels=B239=VENCIDO | C239=45548 | D239=PABLO | E239=2 | H239=W2121A | I239=Standard Yield Cyan Toner Cartridge
+row 240: formulas=7 constants=24 unlocked=0 labels=B240=VENCIDO | C240=45548 | D240=PABLO | E240=1 | H240=ROG Zephyrus G16 GU605MZ | I240=Notebook ROG Zephyrus G16 GU605MZ [Gray] 16" WQXGA 240Hz, 3.8 GHz Ultra 9-185H, RTX 4080, 32 GB LPDDR5X RAM, 4 TB PCIe SSD, Windows 11 Pro
+row 241: formulas=7 constants=24 unlocked=0 labels=B241=VENCIDO | C241=45548 | D241=PABLO | E241=1 | H241=‎NP964XGL-XG2US | I241=Galaxy Book4 Ultra - Intel Ultra 9-185H / up to 5.1 GHz - Evo - Win 11 Pro - GeForce RTX 4070-32 GB RAM - 1 TB SSD NVMe - 16" AMOLED Touchscreen 2880 x 1800 (WQXGA+)
+row 242: formulas=7 constants=24 unlocked=0 labels=B242=VENCIDO | C242=45548 | D242=PABLO | E242=1 | H242=Q1H47A | I242=HPE MSA 900GB 12G SAS 15K SFF (2.5in) Enterprise 3yr Warranty Hard Drive
+row 243: formulas=7 constants=19 unlocked=0 labels=B243=VENCIDO | C243=45548 | D243=MATIAS | E243=1 | H243=Legion Gen9 | M243=0
+row 244: formulas=7 constants=24 unlocked=0 labels=B244=VENCIDO | C244=45548 | D244=PABLO | E244=3 | H244=EF-DX815UBEGWW | I244=Funda de teclado con trackpad para Galaxy Tab S9+
+row 245: formulas=7 constants=24 unlocked=0 labels=B245=VENCIDO | C245=45548 | D245=PABLO | E245=1 | H245=TVS-H674-I5-32G | I245=QNAP TVS-h674 i5 32GB 6-Bay NAS Enclosure
+row 246: formulas=7 constants=24 unlocked=0 labels=B246=VENCIDO | C246=45548 | D246=PABLO | E246=1 | H246=KVR32S22D8/32 | I246=32GB DDR4 3200MT/s Non-ECC Unbuffered SODIMM
+row 247: formulas=7 constants=24 unlocked=0 labels=B247=VENCIDO | C247=45548 | D247=PABLO | E247=6 | H247=WD8003FFBX | I247=8TB WD Red Pro SATA 6Gb s 3.5" Internal Hard Drive
+row 248: formulas=7 constants=24 unlocked=0 labels=B248=VENCIDO | C248=45548 | D248=FABRICIO | E248=7 | H248=759208-B21 | I248=759208-B21 HP G8 G9 300-GB 12G 15K 2.5 SAS
+row 249: formulas=7 constants=24 unlocked=0 labels=B249=VENCIDO | C249=45548 | D249=PABLO | E249=2 | H249=MZ7L3960HCJR | I249=SSD MZ7L3960HCJR Data Center PM893 SATA 6Gb/s TCG Opal JXTC304Q 960 GB
+row 250: formulas=7 constants=24 unlocked=0 labels=B250=VENCIDO | C250=45551 | D250=PABLO | E250=10 | H250=500-0213 | I250=RX300+ TH CLIENT W/ PERPETUAL PI3+ 1.4GHZ 1GB 32GB SD 5GHZ WIFI
+row 251: formulas=7 constants=24 unlocked=0 labels=B251=VENCIDO | C251=45551 | D251=PABLO | E251=2 | H251=P12 | I251=Lenovo Tab P12-2024
+row 252: formulas=7 constants=24 unlocked=0 labels=B252=VENCIDO | C252=45551 | D252=PABLO | E252=2 | H252=WXPCX | I252=Disco Rigido 1.2TB 10K 12G 2.5" SAS
+row 253: formulas=7 constants=24 unlocked=0 labels=B253=VENCIDO | C253=45552 | D253=PABLO | E253=10 | H253=21LK002VUS | I253=ThinkPad X12 Detachable G2 AI PC - Intel Core Ultra 7 164U vPro (E-cores up to 3.80GHz 12MB) - 12.3in 1920 x 1280 Touch - Windows 11 Pro 64 - 16.0GB - 1x512GB SSD
+row 254: formulas=7 constants=24 unlocked=0 labels=B254=VENCIDO | C254=45552 | D254=PABLO | E254=10 | H254=4X81H95633 | I254=Lenovo Digital Pen 2
+row 255: formulas=8 constants=23 unlocked=0 labels=B255=VENCIDO | C255=45552 | D255=LUCIO | E255=1 | H255=B0CRDF25TQ | I255=ASUS TUF Gaming A15
+row 256: formulas=7 constants=24 unlocked=0 labels=B256=VENCIDO | C256=45552 | D256=PABLO | E256=10 | H256=xctolr7230mmcla | I256=cto Latitude Rugged Tablet 7230
+row 257: formulas=7 constants=24 unlocked=0 labels=B257=VENCIDO | C257=45552 | D257=PABLO | E257=10 | H257=78652217 | I257=Infocase Rugged Snap-On Case for ThinkPad X12
+row 258: formulas=8 constants=23 unlocked=0 labels=B258=VENCIDO | C258=45552 | D258=LUCIO | E258=3 | H258=xctolr7330usvi | I258=Latitude 7330 Rugged Extreme Laptop
+row 259: formulas=7 constants=24 unlocked=0 labels=B259=VENCIDO | C259=45553 | D259=PABLO | E259=1 | H259=SDSDXXO-032G-GN4IN | I259=Tarjeta SanDisk Extreme PRO SDHC™ y SDXC™ UHS-I - 32GB
+row 260: formulas=7 constants=24 unlocked=0 labels=B260=VENCIDO | C260=45554 | D260=MATIAS | E260=10 | H260=BX8071513400 | I260=Intel Core I5-13400 10 núcleos (6 núcleos P + 4 núcleos E) Caché de 20 MB, hasta 4,6 GHz
+row 261: formulas=8 constants=23 unlocked=0 labels=B261=VENCIDO | C261=45555 | D261=LUCIO | E261=8 | H261=Ipads explosion proof | I261=Ipads explosion proof
+row 262: formulas=7 constants=24 unlocked=0 labels=B262=COMPRAS | C262=45555 | D262=PABLO | E262=3 | H262=X710-DA2 | I262=Intel® X710-DA2 10GbE SFP+ Dual Port NIC
+row 263: formulas=7 constants=24 unlocked=0 labels=B263=COMPRAS | C263=45555 | D263=PABLO | E263=6 | H263=E10GSFPSR | I263=10GBase-SR SFP+ Transceiver
+row 264: formulas=9 constants=22 unlocked=0 labels=B264=VENCIDO | C264=45558 | D264=LUCIO | E264=1 | H264=A6TA7UT#ABA | I264=HP EliteBook 845 G11 14" Notebook
+row 265: formulas=7 constants=24 unlocked=0 labels=B265=VENCIDO | C265=45558 | D265=LUCIO | E265=1 | H265=63B31AA | I265=Essential Nano Combo Cab Lk
+row 266: formulas=7 constants=24 unlocked=0 labels=B266=COMPRAS | C266=45558 | D266=PABLO | E266=2 | H266=09225VA-24Q-BL | I266=Cooler de enfriamiento 24V 0.49A 90 x 90 x 25mm
+row 267: formulas=7 constants=24 unlocked=0 labels=B267=VENCIDO | C267=45558 | D267=PABLO | E267=2 | H267=C9200-STACK-KIT= | I267=Cisco C9200 Stack Kit Spare
+row 268: formulas=7 constants=24 unlocked=0 labels=B268=VENCIDO | C268=45558 | D268=PABLO | E268=2 | H268=STACK-T1-50CM= | I268=50CM Type 1 Stacking Cable
+row 269: formulas=7 constants=24 unlocked=0 labels=B269=VENCIDO | C269=45558 | D269=LUCIO | E269=1 | H269=DS9308-SR4U2100AZW | I269=SCAN LA DS9308-SR BLK USB KIT
+row 270: formulas=18 constants=13 unlocked=0 labels=B270=VENCIDO | C270=45558 | D270=PABLO | E270=1 | H270=P215MS11NA/P11N/0 | I270=METER MP NPT VIT PULSE
+row 271: formulas=8 constants=23 unlocked=0 labels=B271=VENCIDO | C271=45558 | D271=PABLO | E271=1 | H271=181-294-060 | I271=CABLE ASSY TURCK 5-COND 7M RA
+row 272: formulas=8 constants=23 unlocked=0 labels=B272=VENCIDO | C272=9/23/20244 | D272=LUCIO | E272=1 | H272=wd22 | I272=DOCK DELL WD22
+row 273: formulas=7 constants=24 unlocked=0 labels=B273=VENCIDO | C273=45559 | D273=PABLO | E273=50 | H273=3DDDG | I273=Dell Latitude 42Wh 3DDDG Battery
+row 274: formulas=7 constants=24 unlocked=0 labels=B274=VENCIDO | C274=45559 | D274=PABLO | E274=4 | H274=C9200-STACK | I274=Catalyst 9200 Stack Module
+row 275: formulas=7 constants=24 unlocked=0 labels=B275=VENCIDO | C275=45559 | D275=PABLO | E275=2 | H275=STACK-T4-50CM | I275=50CM Type 3 Stacking Cable
+row 276: formulas=8 constants=23 unlocked=0 labels=B276=VENCIDO | C276=9/24/20244 | D276=LUCIO | E276=57 | H276=846V7LT#ABM | I276=NOT HP 840G10 I7 16G 1T 14 W11
+row 277: formulas=8 constants=23 unlocked=0 labels=B277=VENCIDO | C277=9/24/20244 | D277=LUCIO | E277=23 | H277=21FC003WFJ | I277=Lenovo ThinkPad P16v - Notebook - 16"
+row 278: formulas=8 constants=23 unlocked=0 labels=B278=VENCIDO | C278=9/24/20244 | D278=LUCIO | E278=17 | H278=827P6LA#ABM | I278=HP OMEN 16-xf0002la - Notebook - 16"
+row 279: formulas=7 constants=24 unlocked=0 labels=B279=VENCIDO | C279=45560 | D279=PABLO | E279=5 | H279=MRW33E/A | I279=SPA 16-inch MacBook Pro: Apple M3 Max chip with 14 core CPU and 30 core GPU, 36GB,1TB SSD - Space Black A2991
+row 280: formulas=7 constants=24 unlocked=0 labels=B280=VENCIDO | C280=45560 | D280=PABLO | E280=5 | H280=MXCT3E/A | I280=SPA LA 13-inch MacBook Air: Apple M3 chip with 8-core CPU and 10-core GPU, 16GB, 512GB SSD - Silver A3113
+row 281: formulas=7 constants=24 unlocked=0 labels=B281=VENCIDO | C281=45560 | D281=PABLO | E281=5 | H281=MRXP3E/A | I281=SPA LA 13-inch MacBook Air: Apple M3 chip with 8-core CPU and 10-core GPU, 8GB, 512GB SSD - Space Grey A3113
+row 282: formulas=7 constants=24 unlocked=0 labels=B282=VENCIDO | C282=45560 | D282=PABLO | E282=1 | H282=C7978A | I282=LTO Ultrium Universal Cleaning Cartridge
+row 283: formulas=8 constants=23 unlocked=0 labels=B283=VENCIDO | C283=45560 | D283=GUSTAVO | E283=1 | H283=82WK00M7US | I283=Legion Pro 5 16IRX8 - Intel - Core i9 - 13900HX - 16Inch - No Touch Screen - 2560 x 1600 - DDR5 - 32GB RAM - M.2, PCIe NVMe
+row 284: formulas=7 constants=24 unlocked=0 labels=B284=VENCIDO | C284=45561 | D284=PABLO | E284=1 | H284=MU-PE1T0S/AM | I284=Samsung T7 Shield SSD 1TB portátil
+row 285: formulas=7 constants=24 unlocked=0 labels=B285=VENCIDO | C285=45561 | D285=PABLO | E285=10 | H285=NM9889 | I285=Dell 7-in-1 USB-C Multiport Adapter - DA310
+row 286: formulas=7 constants=24 unlocked=0 labels=B286=VENCIDO | C286=45561 | D286=PABLO | E286=10 | H286=F8FVV | I286=OptiPlex Small Form Factor Dust Filter, Kit
+row 287: formulas=7 constants=24 unlocked=0 labels=B287=VENCIDO | C287=45562 | D287=FABRICIO | E287=10 | H287=ZQ62
+AUWA004-00 | I287=LA DT PRNT ZQ620 PLUS
+3IN/72MM PRNT ENG
+FONTS DUAL 80
+row 288: formulas=7 constants=24 unlocked=0 labels=B288=VENCIDO | C288=45562 | D288=FABRICIO | E288=50 | H288=HQLN320-LI | I288=GLOBAL TECHNOLOGY SYSTEMS, GTS, ALL PRODUCTS, ZEBRA, ZQ520 / QLN220 / QLN320, OEM PART # P1023901 / P1023901-LF, CAPACITY 2500, VOLTAGE 7.4
+row 289: formulas=7 constants=24 unlocked=0 labels=B289=VENCIDO | C289=9/27/20244 | D289=LUCIO | E289=2 | H289=605474-001 | I289=HP 1-TB 6G 7.2K 3.5 DP MDL SAS
+row 290: formulas=7 constants=24 unlocked=0 labels=B290=VENCIDO | C290=45562 | D290=FABRICIO | E290=1 | H290=EM08F | I290=Eyoyo Monitor pequeño de 8 pulgadas, 1024 x 768 4:3 IPS Mini HDMI, compatible con entrada HDMI/VGA/AV/BNC
+row 291: formulas=7 constants=24 unlocked=0 labels=B291=VENCIDO | C291=45565 | D291=FABRICIO | E291=4 | H291=VS182A | I291=Aten Technologies ATEN 2-Port HDMI Splitter - 1 x HDMI In - 2 x HDMI Out
+row 292: formulas=8 constants=23 unlocked=0 labels=B292=VENCIDO | C292=45565 | D292=FABRICIO | E292=1 | H292=VS184A | I292=Aten Technologies ATEN 4-Port HDMI Splitter - 1 x HDMI In - 4 x HDMI Out
+row 293: formulas=8 constants=23 unlocked=0 labels=B293=VENCIDO | C293=45565 | D293=LUCIO | E293=1 | H293=B0B4JQNC28 | I293=pack bateria cam
+row 294: formulas=7 constants=24 unlocked=0 labels=B294=VENCIDO | C294=45565 | D294=PABLO | E294=1 | H294=101R00474 | I294=WorkCentre 3215 - drum cartridge
+row 295: formulas=7 constants=24 unlocked=0 labels=B295=VENCIDO | C295=45566 | D295=PABLO | E295=1 | H295=108R00988 | I295=Genuino Xerox 108R00988 Tinta Negra para ColorQube 8870 / 8880 Paquete de 6 Totalmente Nuevo
+row 296: formulas=7 constants=24 unlocked=0 labels=B296=COMPRAS | C296=45567 | D296=PABLO | E296=5 | H296=6GK5615-0AA00-2AA2 | I296=6GK5615-0AA00-2AA2 Siemens ROUTER
+row 297: formulas=7 constants=24 unlocked=0 labels=B297=VENCIDO | C297=45567 | D297=LUCIO | E297=1 | H297=ST3300657SS | I297=Seagate ST3300657SS (SAS 300GB) [3.5 Inch]
+row 298: formulas=8 constants=23 unlocked=0 labels=B298=VENCIDO | C298=45567 | D298=MATIAS | E298=14 | H298=MRW23LL/A | I298=MacBook Pro 16" Apple M3 Pro / 12 core CPU / 18 core GPU / 36GB / 512GBSSD
+row 299: formulas=7 constants=24 unlocked=0 labels=B299=COMPRAS | C299=45568 | D299=PABLO | E299=3 | H299=ELPLP96 | I299=Lampara ELPLP96
+row 300: formulas=7 constants=24 unlocked=0 labels=B300=COMPRAS | C300=45568 | D300=PABLO | E300=6 | H300=ELPLP78 | I300=Lampara ELPLP78
+row 301: formulas=7 constants=24 unlocked=0 labels=B301=COMPRAS | C301=45568 | D301=PABLO | E301=6 | H301=ELPLP88 | I301=Lampara ELPLP88
+row 302: formulas=7 constants=24 unlocked=0 labels=B302=VENCIDO | C302=45568 | D302=PABLO | E302=1 | H302=SIAGO | I302=Electric Standing Desk Adjustable 24"D x 48"W x 46"H
+row 303: formulas=7 constants=24 unlocked=0 labels=B303=COMPRAS | C303=45568 | D303=PABLO | E303=4 | H303=400-ASHI | I303=G14-G16 1.2-TB 12G 10K 2.5 SAS w/DXD9H
+row 304: formulas=7 constants=24 unlocked=0 labels=B304=VENCIDO | C304=45568 | D304=PABLO | E304=4 | H304=400-ASGS | I304=G14-G16 600-GB 12G 10K 2.5 SAS w/DXD9H
+row 305: formulas=7 constants=24 unlocked=0 labels=B305=VENCIDO | C305=45568 | D305=PABLO | E305=8 | H305=GLC-LH-SMD | I305=1000BASE-LX/LH SFP TRANSCEIVER MODULE FOR MMF AND SMF, 1300-NM WAVELENGTH (NEW BULK)
+row 306: formulas=7 constants=24 unlocked=0 labels=B306=VENCIDO | C306=45568 | D306=PABLO | E306=1 | H306=48121-70 | I306=Reposapiés estándar Tamaño de la plataforma: 42.5 x 30cms Ajustes de altura: 8.5/10.5cm Rango de inclinación: hasta 25° (Aproximado)
+row 307: formulas=7 constants=24 unlocked=0 labels=B307=VENCIDO | C307=45568 | D307=LUCIO | E307=10 | H307=MK7M3LL/A | I307=Apple 8.3" iPad mini (6th Gen, 64GB, Wi-Fi Only, Space Gray)
+row 308: formulas=7 constants=24 unlocked=0 labels=B308=VENCIDO | C308=45568 | D308=LUCIO | E308=1 | H308=FG-100F-BDL-950-12 | I308=FortiGate-100F - Hardware Plus 1 año 24x7
+row 309: formulas=8 constants=23 unlocked=0 labels=B309=VENCIDO | C309=45568 | D309=GUSTAVO | E309=1 | H309=WD19s | I309=Docking
+row 310: formulas=7 constants=24 unlocked=0 labels=B310=VENCIDO | C310=45569 | D310=FABRICIO | E310=4 | H310=ZD42042-T01E00EZ | I310=ZEBRA AIT, PRINTER, ZD411, TT, 203 DPI, USB, USB HOST, ETHERNET, BTLE5, US CORD, EZPL
+row 311: formulas=7 constants=24 unlocked=0 labels=B311=VENCIDO | C311=45569 | D311=FABRICIO | E311=4 | H311=SG-TC2L-SCRNPT1-01 | I311=ZEBRA EVM, TC22/TC27 TEMPERED GLASS SCREEN PROTECTOR
+row 312: formulas=7 constants=24 unlocked=0 labels=B312=VENCIDO | C312=45569 | D312=FABRICIO | E312=4 | H312=SG-TC2L-HLSTR1-01 | I312=ZEBRA EVM/EMC, TC22/TC27 HOLSTER, SUPPORTS DEVICE WITH BOOT AND TRIGGER HANDLE
+row 313: formulas=7 constants=24 unlocked=0 labels=B313=VENCIDO | C313=45569 | D313=FABRICIO | E313=1 | H313=SAC-TC2L-4SCHG
+01 | I313=ZEBRA EVM/EMC, TC22/TC27 4-SLOT
+BATTERY CHARGER, REQUIRES POWER
+SUPPLY, DC CABLE AND AC LINE
+row 314: formulas=7 constants=24 unlocked=0 labels=B314=VENCIDO | C314=45569 | D314=FABRICIO | E314=4 | H314=50-12500-066 | I314=ZEBRA EVM/DCS, WRIST LANYARD FOR SCANNERS, LI4278, LS4278, MT2000
+row 315: formulas=7 constants=24 unlocked=0 labels=B315=VENCIDO | C315=45569 | D315=FABRICIO | E315=6 | H315=WLMT0-T22B6CBC2-A6 | I315=ZEBRA EVM, TC22, WLAN, WIFI 6, ADVANCED RANGE 2D IMAGER (SE5500), 6" DISPLAY, 6GB/64GB, 16MP RFC, 5MP FFC, 2-PIN BACK I/O, STANDARD BATTERY, NFC, BT, USB-C, ANDROID GMS, ROW
+row 316: formulas=7 constants=24 unlocked=0 labels=B316=VENCIDO | C316=45569 | D316=PABLO | E316=1 | H316=W2030A | I316=Toner original 415A negro (2400 paginas) para LaserJet Pro MFP M479fdn
+row 317: formulas=7 constants=24 unlocked=0 labels=B317=VENCIDO | C317=45572 | D317=PABLO | E317=1 | H317=40X8420 | I317=Lexmark 40X8420 Fuser Maintenance Kit
+row 318: formulas=8 constants=23 unlocked=0 labels=B318=VENCIDO | C318=45572 | D318=LUCIO | E318=37 | H318=E693022 | I318=ESY 22i5- 2UWB - 0 -MT-ZB-8G-1S-W1-64-BK
+row 319: formulas=7 constants=24 unlocked=0 labels=B319=VENCIDO | C319=45572 | D319=LUCIO | E319=37 | H319=E989127 | I319=ELO-STAND-SELF-SERV-22-24-27-COUNTER
+row 320: formulas=7 constants=24 unlocked=0 labels=B320=VENCIDO | C320=45572 | D320=LUCIO | E320=37 | H320=E245047 | I320=KIT, 2DBCR, USB, SE4107
+row 321: formulas=7 constants=24 unlocked=0 labels=B321=VENCIDO | C321=45572 | D321=LUCIO | E321=37 | H321=E990468 | I321=ELO Base para EMV
+row 322: formulas=7 constants=24 unlocked=0 labels=B322=VENCIDO | C322=45573 | D322=LUCIO | E322=1 | H322=ST8000NM0205 | I322=Seagate 8-TB 7.2K 3.5 6G SATA HD
+row 323: formulas=7 constants=24 unlocked=0 labels=B323=COMPRAS | C323=45574 | D323=PABLO | E323=10 | H323=BHR4680GL | I323=Kit Destornilladores Xiaomi Precisión 24 Puntas Magnéticas
+row 324: formulas=7 constants=24 unlocked=0 labels=B324=VENCIDO | C324=45574 | D324=PABLO | E324=14 | H324=BCD702C1 | I324=Taladro Inalambrico 20V MAX* Litio
+row 325: formulas=7 constants=24 unlocked=0 labels=B325=VENCIDO | C325=45574 | D325=PABLO | E325=5 | H325=DS-K4H250D | I325=Pro Series Magnetic Lock
+row 326: formulas=7 constants=24 unlocked=0 labels=B326=VENCIDO | C326=45574 | D326=LUCIO | E326=1 | H326=CORE X | I326=Caja Chasis de Expansión Thunderbolt 3 a PCI Express
+row 327: formulas=7 constants=24 unlocked=0 labels=B327=VENCIDO | C327=45574 | D327=PABLO | E327=1 | H327=28N93A | I327=Color LaserJet Pro 550 Sheet Paper Tray
+row 328: formulas=8 constants=23 unlocked=0 labels=B328=VENCIDO | C328=45574 | D328=PABLO | E328=5 | H328=40709-02 | I328=Almohadillas Plantronics Supra Plus
+row 329: formulas=7 constants=21 unlocked=0 labels=B329=VENCIDO | C329=45574 | D329=LUCIO | E329=1 | H329=KM7321W | I329=Teclado y Mouse KM7321W WLS Negro Ingles
+row 330: formulas=7 constants=22 unlocked=0 labels=B330=COMPRAS | C330=45558 | D330=PABLO | E330=2 | H330=09225VA-24Q-BL | I330=Cooler de enfriamiento 24V 0.49A 90 x 90 x 25mm
+row 331: formulas=8 constants=23 unlocked=0 labels=B331=VENCIDO | C331=45575 | D331=LUCIO | E331=4 | H331=MXE03E/A | I331=MacBook Pro 14 M3
+row 332: formulas=7 constants=24 unlocked=0 labels=B332=VENCIDO | C332=45575 | D332=FABRICIO | E332=1 | H332=C520K-1XFMU6P_x0002_A6 | I332=zEBRA EVM, TC52X, WLAN, 5" DISPLAY, 2D
+SE4720 IMAGER, 4/32 GB, 13MP REAR
+CAMERA AND 5MP FFC, NFC, ANDROID GMS,
+4150 MAH BATTERY, ROW
+row 333: formulas=7 constants=24 unlocked=0 labels=B333=VENCIDO | C333=45575 | D333=FABRICIO | E333=1 | H333=520K-1PEZU4P_x0002_A6 | I333=ZEBRA EVM, DISCONTINUED, NOT FOR SALE
+IN THE US, TC52, WLAN, NFC, 5.0" DISPLAY,
+2D SE4710 IMAGER, 4GB RAM, 32GB FLASH,
+5MP FRONT CAMERA, 13MP REAR CAMERA,
+3.5MM AUDIO JACK, 4150 MAH BATTERY, PTT,
+VOIP READY, ANDROID, GMS, REST OF
+WORLD
+row 334: formulas=18 constants=13 unlocked=0 labels=B334=VENCIDO | C334=45575 | D334=LUCIO | E334=1 | H334=RPLIDAR S2E | I334=Slamtec RPLIDAR S2E Lidar Sensor 2D 360 grados 98.4 ft de radio de escaneo
+row 335: formulas=9 constants=22 unlocked=0 labels=B335=VENCIDO | C335=45575 | D335=LUCIO | E335=1 | H335=W10E10101 | I335=Tableta Minno Challenger W10E10101 10 pulg
+row 336: formulas=7 constants=23 unlocked=0 labels=B336=VENCIDO | C336=45579 | D336=FABRICIO | E336=1 | H336=LH55OMNDSGBXZA | I336=SAMSUNG 55 IN OMN-D
+row 337: formulas=7 constants=24 unlocked=0 labels=B337=VENCIDO | C337=45579 | D337=FABRICIO | E337=1 | H337=MX101-SR00004ZZWR | I337=Zebra MP6000 Barcode Scanner (Scanner Only) - MX101-SR00004ZZWR
+row 338: formulas=7 constants=24 unlocked=0 labels=B338=VENCIDO | C338=45579 | D338=PABLO | E338=1 | H338=774502 Pilz | I338=PNOZ XV2 3/24VDC 2n/o 2n/o t
+row 339: formulas=7 constants=24 unlocked=0 labels=B339=VENCIDO | C339=45579 | D339=PABLO | E339=1 | H339=750134 Pilz | I339=PNOZ s4 48-240VACDC 3 n/o 1 n/c
+row 340: formulas=7 constants=24 unlocked=0 labels=B340=VENCIDO | C340=45580 | D340=PABLO | E340=4 | H340=4ZC7A08710 | I340=ThinkSystem 64GB TruDDR4 2933 MHz (2Rx4 1.2V) RDIMM
+row 341: formulas=7 constants=24 unlocked=0 labels=B341=VENCIDO | C341=45580 | D341=PABLO | E341=2 | H341=7XB7A00050 | I341=ThinkSystem 2TB 3.5" SATA 7.2K 6GB Hot Swap 512N Hard Disk Drive
+row 342: formulas=7 constants=24 unlocked=0 labels=B342=VENCIDO | C342=45580 | D342=PABLO | E342=8 | H342=90Y3105 | I342=32GB (1x32GB) ECC PC3L-10600 Registered Memory
+row 343: formulas=7 constants=24 unlocked=0 labels=B343=VENCIDO | C343=45580 | D343=PABLO | E343=6 | H343=00AD075 | I343=1.2TB SCSI (SAS) 2.5" 6Gb/s 10K SFF G2HS Hot-Swap Hard Drive
+row 344: formulas=7 constants=24 unlocked=0 labels=B344=VENCIDO | C344=45580 | D344=PABLO | E344=8 | H344=46W0833 | I344=32GB (2Rx4) PC4-19200 CL17 ECC TruDDR4 Memory 2400MHz LP RDIMM
+row 345: formulas=7 constants=24 unlocked=0 labels=B345=VENCIDO | C345=45580 | D345=PABLO | E345=4 | H345=95Y4808 | I345=32-GB PC4-17000 TruDDR4 Memory RDIMM
+row 346: formulas=7 constants=24 unlocked=0 labels=B346=VENCIDO | C346=45580 | D346=PABLO | E346=4 | H346=00NA262 | I346=1.2TB SCSI (SAS) 2.5" 6Gb/s 10K SFF G3HS 512e Hot-Swap Hard Drive
+row 347: formulas=7 constants=24 unlocked=0 labels=B347=COMPRAS | C347=45580 | D347=PABLO | E347=4 | H347=SFP-10G-SR-S | I347=Cisco SFP-10G-SR-S 10GBase-SR SFP+ Transceiver (MMF, 850nm, 300m, LC, DOM) NEW BULK
+row 348: formulas=7 constants=24 unlocked=0 labels=B348=COMPRAS | C348=45580 | D348=PABLO | E348=2 | H348=GLC-SX-MM | I348=SFP transceiver module, MMF, 850nm, DOM
+row 349: formulas=7 constants=24 unlocked=0 labels=B349=VENCIDO | C349=45581 | D349=PABLO | E349=6 | H349=25599-989-999-01 | I349=Auricular Wireless Evolve2 55 UC
+row 350: formulas=7 constants=24 unlocked=0 labels=B350=VENCIDO | C350=45581 | D350=PABLO | E350=6 | H350=1001134 | I350=Auricular Impact 1060
+row 351: formulas=8 constants=23 unlocked=0 labels=B351=VENCIDO | C351=45581 | D351=LUCIO | E351=20 | H351=NJ2367 | I351=Dell Alienware m16 R2 16" Gaming Notebook - QHD+ - Intel Core Ultra 7 155H - 16 GB - 1 TB SSD
+row 352: formulas=7 constants=24 unlocked=0 labels=B352=VENCIDO | C352=45581 | D352=PABLO | E352=2 | H352=939-001490 | I352=Group 15M Extender Cable
+row 353: formulas=8 constants=23 unlocked=0 labels=B353=VENCIDO | C353=45582 | D353=LUCIO | E353=26 | H353=W10E10101 | I353=Tableta Minno Challenger W10E10101 10 pulg con soporte
+row 354: formulas=7 constants=24 unlocked=0 labels=B354=VENCIDO | C354=45582 | D354=GUSTAVO | E354=4 | H354=8Y6Q8LA | I354=HP Z4 G5 WORKSTATION
+row 355: formulas=7 constants=24 unlocked=0 labels=B355=VENCIDO | C355=45583 | D355=PABLO | E355=8 | H355=49Y1563 | I355=16 GB DDR3L 1333 MHz 1.35V 240-pin DIMM (NUEVO BLISTER SELLADO)
+row 356: formulas=8 constants=23 unlocked=0 labels=B356=VENCIDO | C356=45583 | D356=PABLO | E356=3 | H356=49Y6195 | I356=1.6TB 6G 2.5" MLC Ent SAS SSD
+row 357: formulas=7 constants=24 unlocked=0 labels=B357=COMPRAS | C357=45586 | D357=PABLO | E357=1 | H357=SD10Z34932 | I357=LCD WideScreen 14" FHD+ Matte 30pin IPS
+row 358: formulas=7 constants=24 unlocked=0 labels=B358=COMPRAS | C358=45586 | D358=PABLO | E358=1 | H358=Flex paraLenovo T14 P14s G3/4 | I358=Flex paraLenovo T14 P14s G3/4
+row 359: formulas=8 constants=23 unlocked=0 labels=B359=VENCIDO | C359=45586 | D359=LUCIO | E359=150 | H359=83AJ0000UX | I359=IdeaPad Flex 5i Chromebook
+row 360: formulas=7 constants=24 unlocked=0 labels=B360=VENCIDO | C360=45586 | D360=MATIAS | E360=3 | H360=FAP-433G-A | I360=FortiAP-433G Indoor Wireless AP
+row 361: formulas=7 constants=24 unlocked=0 labels=B361=VENCIDO | C361=45586 | D361=MATIAS | E361=1 | H361=H7604JI-DS96T | I361=ASUS Laptop ProArt StudioBook 16 OLED / Intel i9-13980HX / RTX 4070 / DDR5 de 32 GB / 1TB SSD / W11H
+row 362: formulas=7 constants=24 unlocked=0 labels=B362=VENCIDO | C362=45587 | D362=PABLO | E362=9 | H362=IKB107 | I362=Industrial Waterproof Keyboard with Built-in Touchpad Sealed IP68
+row 363: formulas=8 constants=23 unlocked=0 labels=B363=VENCIDO | C363=45587 | D363=LUCIO | E363=1 | H363=83DX009RUS | I363=LEGION 15AHP9 Gaming Notebook
+row 364: formulas=7 constants=24 unlocked=0 labels=B364=VENCIDO | C364=45588 | D364=PABLO | E364=5 | H364=W1470X | I364=147X Black LaserJet Toner Cartridge
+row 365: formulas=7 constants=24 unlocked=0 labels=B365=VENCIDO | C365=45588 | D365=PABLO | E365=5 | H365=L0H25A | I365=LaserJet 220v maint kit
+row 366: formulas=8 constants=23 unlocked=0 labels=B366=VENCIDO | C366=45588 | D366=LUCIO | E366=1 | H366=ROG Zephyrus M16 | I366=ASUS ROG Zephyrus M16
+row 367: formulas=7 constants=24 unlocked=0 labels=B367=VENCIDO | C367=45588 | D367=PABLO | E367=6 | H367=E534869 | I367=Monitor táctil de 15,6" 1509L
+row 368: formulas=7 constants=24 unlocked=0 labels=B368=VENCIDO | C368=45588 | D368=FABRICIO | E368=2 | H368=88003-001U.are.u | I368=Digital Persona 88003-001U.are.u 4500 Reader 70" Cable
+row 369: formulas=7 constants=24 unlocked=0 labels=B369=COMPRAS | C369=45588 | D369=PABLO | E369=1 | H369=XTO2-F2408F | I369=Extensor KVM Etio 2 F2408
+row 370: formulas=7 constants=24 unlocked=0 labels=B370=VENCIDO | C370=45588 | D370=PABLO | E370=1 | H370=XTO2-F2208F | I370=Extensor KVM Etio 2 F2208
+row 371: formulas=7 constants=24 unlocked=0 labels=B371=VENCIDO | C371=45589 | D371=MATIAS | E371=14 | H371=FN-TRAN-SFP+LR | I371=10GE SFP+ transceiver module, long range 10GE SFP+ transceiver module
+row 372: formulas=7 constants=24 unlocked=0 labels=B372=VENCIDO | C372=45590 | D372=PABLO | E372=11 | H372=ECHODOT5CLOCK | I372=ECHO DOT 5TH GEN CON RELOJ
+row 373: formulas=7 constants=24 unlocked=0 labels=B373=VENCIDO | C373=45590 | D373=PABLO | E373=6 | H373=P00924-B21 | I373=32GB Dual Rank x4 DDR4 2933 Mhz CAS-21-21-21 Registered Smart Memory Kit
+row 374: formulas=7 constants=24 unlocked=0 labels=B374=VENCIDO | C374=45590 | D374=PABLO | E374=11 | H374=ECHODOT5CLOCK | I374=ECHO DOT 5TH GEN CON RELOJ
+row 375: formulas=7 constants=24 unlocked=0 labels=B375=COMPRAS | C375=45590 | D375=PABLO | E375=12 | H375=8WKDY | I375=Dell 32-GB 2933MHz PC4-23400 CL21 Memory
+row 376: formulas=7 constants=24 unlocked=0 labels=B376=COMPRAS | C376=45590 | D376=PABLO | E376=2 | H376=540-BDQZ | I376=Intel X710 Dual Port 10GbE SFP+ Adapter, PCIe Low Profile, V2
+row 377: formulas=7 constants=24 unlocked=0 labels=B377=COMPRAS | C377=45590 | D377=PABLO | E377=4 | H377=0WTRD1 | I377=Dell 10G SFP+ SR 850NM Transceiver
+row 378: formulas=7 constants=24 unlocked=0 labels=B378=VENCIDO | C378=45593 | D378=LUCIO | E378=2 | H378=00AD075 | I378=00AD075 IBM 1.2-TB 10K 6G 2.5 SAS G2HS
+row 379: formulas=7 constants=24 unlocked=0 labels=B379=VENCIDO | C379=45593 | D379=FABRICIO | E379=1 | H379=Echo Spot - 2024 release | I379=All-new Amazon Echo Spot (2024 release), Smart alarm clock with vibrant sound + Alexa, Black
+row 380: formulas=8 constants=23 unlocked=0 labels=B380=VENCIDO | C380=45593 | D380=LUCIO | E380=11 | H380=KY7142 | I380=Dell Latitude 3400 3450 14" Clamshell Notebook - Full HD - Intel Core i5 13th Gen i5-1335U - 8 GB - 512 GB SSD
+row 381: formulas=8 constants=23 unlocked=0 labels=B381=VENCIDO | C381=45593 | D381=LUCIO | E381=9 | H381=JX5666 | I381=Dell LA LATITUDE 3450 I7-1355U 13TH GEN 16GB 512GB SSD W11P SPA 1YR
+row 382: formulas=8 constants=23 unlocked=0 labels=B382=VENCIDO | C382=45593 | D382=LUCIO | E382=25 | H382=V2PNR | I382=Dell Latitude 5450 - Notebook - 14" - Intel Ultra 7 155U - 16 GB - 512 GB SSD - Windows 11 Pro - Spanish
+row 383: formulas=7 constants=24 unlocked=0 labels=B383=VENCIDO | C383=45593 | D383=PABLO | E383=30 | H383=‎GA01331 | I383=Google Nest Hub (2nd Generation)
+row 384: formulas=7 constants=24 unlocked=0 labels=B384=VENCIDO | C384=45593 | D384=PABLO | E384=30 | H384=B07PF1Y28C | I384=Amazon Echo Show 8 (3rd Generation)
+row 385: formulas=7 constants=24 unlocked=0 labels=B385=VENCIDO | C385=45593 | D385=PABLO | E385=1 | H385=PB-AIR4-APB | I385=Sengbirch Magic Keyboard P/ iPad Air 11 1 2 3 4 5 6 Gen
+row 386: formulas=7 constants=24 unlocked=0 labels=B386=VENCIDO | C386=45593 | D386=PABLO | E386=2 | H386=CF258A | I386=HP 58A Black LaserJet Toner Cartridge
+row 387: formulas=7 constants=24 unlocked=0 labels=B387=VENCIDO | C387=45593 | D387=PABLO | E387=1 | H387=NP964XGL-XG2US | I387=Galaxy BOOK4 Ultra 16 I9-185H (32GB 1TB) Moonstone Gray
+row 388: formulas=7 constants=24 unlocked=0 labels=B388=VENCIDO | C388=45595 | D388=PABLO | E388=1 | H388=W2300A | I388=230A Black Original LaserJet Toner Cartridge
+row 389: formulas=7 constants=24 unlocked=0 labels=B389=VENCIDO | C389=45595 | D389=PABLO | E389=1 | H389=W2301A | I389=230A Cyan Original LaserJet Toner Cartridge
+row 390: formulas=7 constants=24 unlocked=0 labels=B390=VENCIDO | C390=45595 | D390=PABLO | E390=1 | H390=W2302A | I390=230A Yellow Original LaserJet Toner Cartridge
+row 391: formulas=7 constants=24 unlocked=0 labels=B391=VENCIDO | C391=45595 | D391=PABLO | E391=1 | H391=W2303A | I391=230A Magenta Original LaserJet Toner Cartridge
+row 392: formulas=8 constants=23 unlocked=0 labels=B392=VENCIDO | C392=45595 | D392=PABLO | E392=1 | H392=CF287A | I392=HP 87A Black LaserJet Toner Cartridge
+row 393: formulas=7 constants=24 unlocked=0 labels=B393=VENCIDO | C393=45595 | D393=FABRICIO | E393=1 | H393=CK65-L0N-BSC210F | I393=HONEYWELL, CK65, 4GB/32GB, MEMORY,
+ALPHANUMERIC, N6703SR STANDARD
+RANGE IMAGER ,CAMERA, SOFTWARE
+CLIENT PACK, GMS, STANDARD
+ENVIRONMENT, FCC + HONEYWELL,SERVICE
+CONTRACT,CK65,EDGE SERVICE,GOLD,5
+DAY,3 YEAR, NEW CONTRACT
+row 394: formulas=7 constants=24 unlocked=0 labels=B394=VENCIDO | C394=45595 | D394=FABRICIO | E394=1 | H394=203-879-003 | I394=HONEYWELL, ACCESSORY, PISTOL GRIP
+KIT, CK65/CK3/EDA60K, FIELD ATTACHABLE
+SCAN HANDLE (REPLACES THE HAND
+STRAP) NOT COMPATIBLE WITH STYLUS,
+REPLACES 203-879-001
+row 395: formulas=7 constants=24 unlocked=0 labels=B395=VENCIDO | C395=45595 | D395=FABRICIO | E395=1 | H395=318-063-001 | I395=HONEYWELL, ACCESSORY, BATTERY, LI-ION, CK65, ONE EXTENDED CAPACITY
+RECHARGEABLE 25.2 WATT HRS, 7000 MAH
+SMART BATTERY PACK,STANDARD TEMP
+RANGE
+row 396: formulas=7 constants=24 unlocked=0 labels=B396=COMPRAS | C396=45595 | D396=PABLO | E396=4 | H396=ICUSB2324 | I396=Hub Concentrador USB a 4 Puertos Serie RS232
+row 397: formulas=8 constants=23 unlocked=0 labels=B397=VENCIDO | C397=45595 | D397=LUCIO | E397=10 | H397=21HES14B00 | I397=Lenovo C14 TOUCH 14" i7-1265U 16GB 256GB Abyss Blue Chromebook Laptop
+row 398: formulas=19 constants=12 unlocked=0 labels=B398=VENCIDO | C398=45596 | D398=LUCIO | E398=1 | H398=9SIA7ABKC20987 | I398=Alienware x16 Gaming & Entertainment Laptop (Intel i9-13900HK 14-Core, 16.0" 480 Hz Wide UXGA (1920x1200), GeForce RTX 4080
+row 399: formulas=8 constants=23 unlocked=0 labels=B399=COMPRAS | C399=45596 | D399=PABLO | E399=1 | H399=EEG32CH56CM | I399=FLEX 2 Gel - 32 Channel Wireless EEG Head Cap System (56 cms)
+row 400: formulas=7 constants=24 unlocked=0 labels=B400=VENCIDO | C400=45596 | D400=PABLO | E400=1 | H400=EPOC FLEX Cap | I400=EPOC FLEX Cap (54, 56 or 58 cms)
+row 401: formulas=8 constants=23 unlocked=0 labels=B401=VENCIDO | C401=45596 | D401=FABRICIO | E401=1 | H401=XU0129 | I401=GN Netcom Jabra Evolve 20 Microsoft Lync Stereo - Stereo - USB - Wired - Over-the-head - Binaural - Supra-aural - Noise Cancelling Microphone - Noise Canceling
+row 402: formulas=7 constants=24 unlocked=0 labels=B402=VENCIDO | C402=45596 | D402=PABLO | E402=8 | H402=12R9914 | I402=Patchcord External Fibre Channel Cable, LC LC, 5.0 mts
+row 403: formulas=8 constants=23 unlocked=0 labels=B403=VENCIDO | C403=45597 | D403=LUCIO | E403=20 | H403=m16 R2 | I403=Alienware M16 R2 (2024) - 16.0" QHD+ ULTRA 7 155H 16GB 1TB RTX4060 8GB (2560X1600) 240Hz DARK METALLIC mOON
+row 404: formulas=7 constants=24 unlocked=0 labels=B404=VENCIDO | C404=45597 | D404=PABLO | E404=5 | H404=RDR-6381AKU-15652 | I404=RF IDEAS WAVE ID SINGLE FRECUENCY USB CARD READER
+row 405: formulas=7 constants=24 unlocked=0 labels=B405=VENCIDO | C405=45597 | D405=PABLO | E405=1 | H405=1XZ201-150 | I405=1.8TB 2.5-inch SFF SAS 12Gb/s 10K RPM
+512e Dual Port (DP) Enterprise (ENT) Hot-Plug Hard Drive
+row 406: formulas=7 constants=25 unlocked=0 labels=B406=VENCIDO | C406=45597 | D406=LUCIO | E406=5 | H406=KM7321 | I406=TEC Y MOUSE 7321
+row 407: formulas=7 constants=23 unlocked=0 labels=B407=COMPRAS | C407=45600 | D407=PABLO | E407=2 | H407=CASE SAMSUNG ACTIVE 5 | I407=Case for Samsung Galaxy Tab Active 5 8" X300 X306B, Protective Rugged Kids Case with Hand Strap, 306° Rotating Kickstand, Pencil Holder
+row 408: formulas=8 constants=24 unlocked=0 labels=B408=VENCIDO | C408=45393 | D408=GUSTAVO | E408=1 | H408=MXCT3LL/A | I408=MACBOOK AIR M3 13” 8C CPU/10C GPU 16GB 512 GB
+row 409: formulas=7 constants=24 unlocked=0 labels=B409=VENCIDO | C409=45600 | D409=PABLO | E409=1 | H409=SP-LFF3CLAXXZA | I409=Proyector FHD para interior o exterior portable The Freestyle 2da generacion (Sin fuente)
+row 410: formulas=7 constants=24 unlocked=0 labels=B410=VENCIDO | C410=45600 | D410=PABLO | E410=1 | H410=VG-FBB3BA/ZA | I410=Bateria + base para proyector Feestyle
+row 411: formulas=7 constants=24 unlocked=0 labels=B411=COMPRAS | C411=45601 | D411=PABLO | E411=2 | H411=KTD-PN432E/32G | I411=32 GB - DDR4-3200/PC4-25600 DDR4 SDRAM - 3200 MHz Dual-rank Memory - CL22 - 1.20 V - ECC - Unbuffered - 260-pin - SoDIMM
+row 412: formulas=8 constants=23 unlocked=0 labels=B412=VENCIDO | C412=45601 | D412=LUCIO | E412=25 | H412=5440 i5 | I412=5440I5
+row 413: formulas=7 constants=24 unlocked=0 labels=B413=VENCIDO | C413=45601 | D413=LUCIO | E413=1 | H413=MP600 | I413=1TB M.2 NVMe PCIe x4 Gen4 2 SSD - M.2 2242
+row 414: formulas=7 constants=24 unlocked=0 labels=B414=VENCIDO | C414=45602 | D414=PABLO | E414=1 | H414=5102097 | I414=Fluke Networks FI2-7300 FiberInspector Pro V2, w/WIFI
+row 415: formulas=7 constants=24 unlocked=0 labels=B415=VENCIDO | C415=45602 | D415=PABLO | E415=2 | H415=5317262 | I415=FIBERLERT-125 - Live Fiber Detector
+row 416: formulas=7 constants=24 unlocked=0 labels=B416=VENCIDO | C416=45602 | D416=PABLO | E416=1 | H416=4955724 | I416=CFP2-100-Q CertiFiber Pro Quad OLTS V2 with Wi-Fi
+row 417: formulas=7 constants=24 unlocked=0 labels=B417=VENCIDO | C417=45602 | D417=PABLO | E417=2 | H417=Signalfire AI-9 Fiber Optic Splicer | I417=Signalfire AI-9 Fiber Optic Splicer
+row 418: formulas=7 constants=24 unlocked=0 labels=B418=VENCIDO | C418=45602 | D418=PABLO | E418=1 | H418=DSX2-5-IE-K1 | I418=DSX2-5-IE-K1 - Industrial Ethernet Cable Validation and Troubleshooting Kit
+row 419: formulas=7 constants=24 unlocked=0 labels=B419=VENCIDO | C419=45602 | D419=PABLO | E419=2 | H419=LiteVNA-64 | I419=LiteVNA-64 VNA Analyzer 50KHz-6.3GHz
+row 420: formulas=8 constants=23 unlocked=0 labels=B420=VENCIDO | C420=45602 | D420=PABLO | E420=6 | H420=872485-B21 | I420=2 TB 3.5" LFF SAS 12Gb/s 7.2K RPM 512n Midline (MDL) Digitally Signed (DS) HP Hard Drive with smart carrier
+row 421: formulas=7 constants=24 unlocked=0 labels=B421=VENCIDO | C421=45603 | D421=PABLO | E421=20 | H421=SK-1000189-01 | I421=Meta Quest 3 Advanced All-in-One VR Headset with Batman: Arkham Shadow (512GB) Incluye: 2 x Touch Plus Controllers with Batteries
+2 x Touch Plus Wrist Straps
+Charging Cable
+18W Power Adapter
+row 422: formulas=7 constants=24 unlocked=0 labels=B422=VENCIDO | C422=45603 | D422=FABRICIO | E422=1 | H422=sm-x205 | I422=SAMSUNG Galaxy Tab A8 2022 LTE Calls + WiFi 10.5 7040 mAh 8MP SM-X205 International Version Dual Cam (Not Verizon Boost At&t Cricket Metro PCS) + (w/Fast Car Charger Bundle) (Gray, 32GB + 3 GB)
+row 423: formulas=7 constants=24 unlocked=0 labels=B423=VENCIDO | C423=45604 | D423=FABRICIO | E423=30 | H423=GLC-LH-SMD | I423=NEW 3rd party – 100% compatible like Cisco. Lifetime warranty. Overnight to FL
+row 424: formulas=8 constants=23 unlocked=0 labels=B424=VENCIDO | C424=45604 | D424=FABRICIO | E424=5 | H424=P1424H | I424=Dell 14-Inch FHD LED Portable Monitor with Dual-Screen Productivity, in-Plane Switching, USB-C Connectivity, Low Blue Light, and Display Manager Software
+row 425: formulas=7 constants=24 unlocked=0 labels=B425=VENCIDO | C425=45607 | D425=FABRICIO | E425=2 | H425=DS-2CD2143G2-IU | I425=Hikvision IP Camera DS-2CD2143G2-IU 2.8mm Lens 4MP Vandal Built-in Mic Fixed Dome Network Camera Poe Security Camera Outdoor Indoor H.265+,IP67, Human/Vehicle Detection Original English Version
+row 426: formulas=8 constants=23 unlocked=0 labels=B426=VENCIDO | C426=45607 | D426=LUCIO | E426=30 | H426=5450 i5 | I426=Dell Latitude 5450 - Notebook - 14"
+row 427: formulas=7 constants=24 unlocked=0 labels=B427=VENCIDO | C427=45607 | D427=PABLO | E427=1 | H427=07KRV | I427=58Wh 3625mAh Battery Replacement for Dell Latitude 5430 5530
+row 428: formulas=7 constants=23 unlocked=0 labels=B428=VENCIDO | C428=45607 | D428=GUSTAVO | E428=1 | H428=DELL5430R | J428=NOTEBOOK
+row 429: formulas=7 constants=23 unlocked=0 labels=B429=VENCIDO | C429=45607 | D429=GUSTAVO | E429=1 | H429=DELL7330R | J429=NOTEBOOK
+row 430: formulas=7 constants=24 unlocked=0 labels=B430=VENCIDO | C430=45607 | D430=PABLO | E430=10 | H430=FN-TRAN-SFP+SR | I430=Fortinet FN-TRAN-SFP+SR Compatible SFP+ 10GBASE-SR 850nm 300m DOM Duplex LC/UPC MMF Optical Transceiver Module
+row 431: formulas=8 constants=22 unlocked=0 labels=B431=VENCIDO | C431=45608 | D431=LUCIO | E431=45 | H431=82WK00M7US | I431=Legion Pro 5 16IRX8 - Intel - Core i9
+row 432: formulas=8 constants=22 unlocked=0 labels=B432=VENCIDO | C432=45608 | D432=LUCIO | E432=45 | H432=82WK00M7US | I432=Legion Pro 5 16IRX8 - Intel - Core i9 + EXT GTIA 5WS0T73723
+row 433: formulas=7 constants=24 unlocked=0 labels=B433=VENCIDO | C433=45608 | D433=PABLO | E433=2 | H433=WDS192T1D0D | I433=WD Gold™ Enterprise Class NVMe™ SSD - 1.92TB
+row 434: formulas=8 constants=22 unlocked=0 labels=B434=VENCIDO | C434=45608 | D434=LUCIO | E434=59 | H434=JX5672 | I434=Dell Latitude 3000 3550 15.6" Notebook - Full HD - Intel Core i7 13th Gen i7-1355U - 16 GB - 512 GB SSD - Spanish Keyboard
+row 435: formulas=8 constants=22 unlocked=0 labels=B435=VENCIDO | C435=45608 | D435=LUCIO | E435=59 | H435=846V7LT#AC8 | I435=NOT HP 840G10 I7 16G 1T 14 W11
+row 436: formulas=8 constants=22 unlocked=0 labels=B436=VENCIDO | C436=45608 | D436=LUCIO | E436=45 | H436=DELL G15 | I436=I9 RTX 4060 + 3Y PS
+row 437: formulas=8 constants=22 unlocked=0 labels=B437=VENCIDO | C437=45608 | D437=LUCIO | E437=45 | H437=DELL G16 | I437=I9 RTX 4070 + 3Y PS
+row 438: formulas=8 constants=22 unlocked=0 labels=B438=VENCIDO | C438=45608 | D438=LUCIO | E438=59 | H438=7Z7H4LT#ABM | I438=HP ProBook 440 G10 + 3ygtia
+row 439: formulas=7 constants=24 unlocked=0 labels=B439=VENCIDO | C439=45609 | D439=PABLO | E439=6 | H439=xctoo3000tcusr | I439=OptiPlex 3000 Thin Client CTO
+row 440: formulas=7 constants=24 unlocked=0 labels=B440=VENCIDO | C440=45609 | D440=PABLO | E440=1 | H440=LP-E6NH | I440=Lithium-Ion Battery (7.2V, 2130mAh)
+row 441: formulas=8 constants=22 unlocked=0 labels=B441=VENCIDO | C441=45609 | D441=GUSTAVO | E441=1 | H441=G15 | I441=I9 RTX4060 32GB 1TB
+row 442: formulas=7 constants=24 unlocked=0 labels=B442=COMPRAS | C442=45609 | D442=PABLO | E442=6 | H442=S011DO3000TCUS | I442=sor
+Intel® Pentium® N6005 (4 MB cache, 4 cores, 4 threads)
+Operating System
+Dell ThinOS
+Memoryi
+8 GB: 1 x 8 GB, DDR4
+Storage
+64GB eMMC, on-board
+Graphics Card
+Intel® Graphics
+Wirelessi
+No Wireless LAN Card (no WiFi enablement)
+Chassis Options
+OptiPlex 3000 Thin Client, Intel Pentium N6005 Fiber capable, 64GB eMMC
+Keyboard Edit
+Dell Multimedia Wired Keyboard - KB216 Black - US English
+Mouse Edit
+Dell Optical Mouse - MS116 (Black)
+ENERGY STAR
+ENERGY STAR LABEL Digital Label for Thin OS and Ubuntu + DHC
+System Monitoring Options
+System Monitoring not selected in this configuration
+Optical Software
+PowerDVD Software not included
+Speakers
+Internal Speaker
+Systems Management
+No Systems Management
+Power Supply
+65 Watt A/C Adapter
+EPEAT 2018
+EPEAT 2018 Registered (Gold)
+Services
+Protect your purchasei - View Support offers below Edit
+3Y Basic Onsite Service after remote diagnosis with Hardware-Only Support
+row 443: formulas=7 constants=24 unlocked=0 labels=B443=VENCIDO | C443=45609 | D443=PABLO | E443=1 | H443=xctop7780mmcla | I443=Mobile Precision 7780 CTO Processor Edit
+row 444: formulas=8 constants=22 unlocked=0 labels=B444=VENCIDO | C444=45609 | D444=GUSTAVO | E444=1 | H444=iphone 13 128gb | I444=iphone 13 128gb cotizacion de sbox llc
+row 445: formulas=7 constants=24 unlocked=0 labels=B445=VENCIDO | C445=45610 | D445=PABLO | E445=1 | H445=DELL G15 5530 CTO | I445=I9-13900HX 32GB SSD 1TB RTX 4060 W11PRO
+row 446: formulas=7 constants=24 unlocked=0 labels=B446=VENCIDO | C446=45610 | D446=PABLO | E446=7 | H446=WWCLPA001 | I446=SATO, CL6NX PLUS, 203DPI 6.5" THERMAL
+TRANSFER PRINTER, LAN/USB/SER
+row 447: formulas=8 constants=23 unlocked=0 labels=B447=VENCIDO | C447=45610 | D447=LUCIO | E447=10 | H447=ZA5T0382US | I447=Lenovo Tab M10 Plus
+row 448: formulas=7 constants=24 unlocked=0 labels=B448=VENCIDO | C448=14/11/2024 | D448=FABRICIO | E448=40 | H448=KTD-PE426E/16G | I448=Kingston 16GB DDR4 SDRAM Memory Module - For Server, Desktop PC, Workstation - 16 GB (1 x 16GB) - DDR4-2666/PC4-21300 DDR4 SDRAM - 2666 MHz - CL19 - 1.20 V - ECC - Unbuffered - 288-pin - DIMM - Lifetime Warranty
+row 449: formulas=8 constants=23 unlocked=0 labels=B449=VENCIDO | C449=45611 | D449=LUCIO | E449=1 | H449=AXG98113 | I449=Axiom 40GBASE-LR4 QSFP+ for Cisco
+row 450: formulas=7 constants=24 unlocked=0 labels=B450=VENCIDO | C450=45611 | D450=FABRICIO | E450=1 | H450=ZEJ-00001 | I450=Microsoft Surface Pro 2-in-1 Laptop/Tablet (2024), Windows 11 Copilot+ PC, 13" Touchscreen LCD Display, Snapdragon X Plus (10 Core), 16GB RAM, 256GB Storage, 5G Connectivity, Platinum
+row 451: formulas=8 constants=23 unlocked=0 labels=B451=VENCIDO | C451=45611 | D451=LUCIO | E451=4 | H451=MW2V3E/A | I451=MacBook Pro: Apple M4
+row 452: formulas=7 constants=22 unlocked=0 labels=B452=VENCIDO | C452=45611 | D452=LUCIO | E452=1 | J452=MOUSE | L452=44
+row 453: formulas=7 constants=24 unlocked=0 labels=B453=VENCIDO | C453=45615 | D453=PABLO | E453=1 | H453=Sidekick 2 | I453=Sidekick 2 ESK-2 Network Testing Device
+row 454: formulas=7 constants=24 unlocked=0 labels=B454=VENCIDO | C454=45615 | D454=PABLO | E454=60 | H454=100-92200901-02 | I454=Jabra TALK 15 SE
+row 455: formulas=7 constants=24 unlocked=0 labels=B455=VENCIDO | C455=45615 | D455=PABLO | E455=3 | H455=TM2000B | I455=GPS NTP+PTP Network Time Server
+row 456: formulas=8 constants=23 unlocked=0 labels=B456=VENCIDO | C456=45615 | D456=PABLO | E456=3 | H456=760-023-000 | I456=Double Rack Mount for Time Servers
+row 457: formulas=7 constants=24 unlocked=0 labels=B457=VENCIDO | C457=45615 | D457=PABLO | E457=3 | H457=760-602-000 | I457=2 Way GPS Splitter
+row 458: formulas=7 constants=24 unlocked=0 labels=B458=VENCIDO | C458=45615 | D458=PABLO | E458=3 | H458=760-022-000 | I458=Single Rack Mount for Time Servers
+row 459: formulas=7 constants=24 unlocked=0 labels=B459=VENCIDO | C459=45615 | D459=PABLO | E459=3 | H459=760-906-000 | I459=Outdoor Timing Antenna
+row 460: formulas=8 constants=23 unlocked=0 labels=B460=VENCIDO | C460=45615 | D460=PABLO | E460=24 | H460=MK8H3LE | I460=ipad mini
+row 461: formulas=7 constants=24 unlocked=0 labels=B461=COMPRAS | C461=45616 | D461=PABLO | E461=2 | H461=WDBPKJ0040BBK | I461=Western Digital 4TB My Passport Portable Black
+row 462: formulas=18 constants=13 unlocked=0 labels=B462=VENCIDO | C462=45616 | D462=PABLO | E462=60 | H462=EKVANBEL | I462=Bluetooth Headset V5.3, Wireless Earpiece with 1000mAh Charging Case, 96H Talktime, Hands Free Noise Canceling Headphones with Dual-Mic for Computer Cell Phones Trucker Home Office Work
+row 463: formulas=8 constants=23 unlocked=0 labels=B463=VENCIDO | C463=45616 | D463=PABLO | E463=18 | H463=JBL | I463=JBL Go 4 Blue
+row 464: formulas=7 constants=24 unlocked=0 labels=B464=VENCIDO | C464=45617 | D464=FABRICIO | E464=175 | H464=KVR32S22S8/16 | I464=Kingston ValueRAM 16GB DDR4 SDRAM Memory Module - For Mini PC, Notebook - 16 GB - DDR4-3200/PC4-25600 DDR4 SDRAM - 3200 MHz - CL22 - 1.20 V - Non-ECC - Unbuffered - 260-pin - SoDIMM - Lifetime Warranty
+row 465: formulas=7 constants=24 unlocked=0 labels=B465=VENCIDO | C465=45617 | D465=PABLO | E465=10 | H465=IPHONE 16 128GB | I465=Apple Iphone 16 128 GB
+row 466: formulas=7 constants=24 unlocked=0 labels=B466=VENCIDO | C466=45618 | D466=PABLO | E466=1 | H466=R9861510NA | I466=Barco CS-100 ClickShare Wireless Presentation System
+row 467: formulas=7 constants=24 unlocked=0 labels=B467=VENCIDO | C467=45618 | D467=PABLO | E467=1 | H467=GIGABYTE TRX50 AI TOP | I467=MOTHER GIGABYTE TRX50 AI TOP
+row 468: formulas=8 constants=23 unlocked=0 labels=B468=VENCIDO | C468=45618 | D468=LUCIO | E468=3 | H468=8MGKV | I468=atitude 5530 I5 8GB 256G 15.6" WIN10P
+row 469: formulas=7 constants=24 unlocked=0 labels=B469=VENCIDO | C469=45618 | D469=PABLO | E469=1 | H469=100-000000454 | I469=Ryzen Threadripper PRO 7985WX 3.20GHz 64-Core Processor
+row 470: formulas=7 constants=24 unlocked=0 labels=B470=VENCIDO | C470=45618 | D470=PABLO | E470=10 | H470=LDEL-CGMXC##LA | I470=LA OPTIPLEX 7020 MFF I5 14500T vPro 8GB 512GB SSD SP 3Y
+row 471: formulas=7 constants=24 unlocked=0 labels=B471=VENCIDO | C471=45621 | D471=PABLO | E471=20 | H471=QSFP-100G-ER4L-S | I471=100G ER4-Lite QSFP Transceiver, 40KM reach over SMF, Duplex LC (nuevo sellado)
+row 472: formulas=7 constants=24 unlocked=0 labels=B472=VENCIDO | C472=45621 | D472=PABLO | E472=20 | H472=QSFP-ER4L-100G | I472=MARCA FS 100G ER4-Lite QSFP Transceiver, 40KM reach over SMF, Duplex LC (nuevo sellado)
+row 473: formulas=7 constants=24 unlocked=0 labels=B473=COMPRAS | C473=45621 | D473=PABLO | E473=5 | H473=SFP-10G-T-X | I473=10GBASE-T SFP+ Module for CAT6A cables (up to 30 meters) nuevo sellado
+row 474: formulas=7 constants=24 unlocked=0 labels=B474=VENCIDO | C474=45622 | D474=PABLO | E474=1 | H474=SM-X808UZAAXAU | I474=Tab S8+ Tablet - 12.4" WQXGA+ - Qualcomm SM8450 Snapdragon 8 Gen 1 Octa-core - 8 GB - 128 GB Storage - 5G - Graphite
+row 475: formulas=7 constants=24 unlocked=0 labels=B475=VENCIDO | C475=45622 | D475=PABLO | E475=1 | H475=SM-X808UZAAXAU | I475=Tab S8+ Tablet - 12.4" WQXGA+ - Qualcomm SM8450 Snapdragon 8 Gen 1 Octa-core - 8 GB - 128 GB Storage - 5G - Graphite
+row 476: formulas=7 constants=24 unlocked=0 labels=B476=VENCIDO | C476=45622 | D476=PABLO | E476=1 | H476=ZADG0016US | I476=Tab K11 - MediaTek - Cortex A55,Cortex A75 - MediaTek Helio G88 - 8-Core - 2GHz - 11Inch - 10-Point Multi-Touch - 1920 x 1200 - LPDDR4X - 8GB RAM - ARM Mali-G52 MC2 - AC Adapters - 10Watt - IEEE 802.11 ac,BT5.1 - Android 13 - 1 Year Warranty
+row 477: formulas=7 constants=24 unlocked=0 labels=B477=VENCIDO | C477=45622 | D477=PABLO | E477=1 | H477=ZADG0016US | I477=Tab K11 - MediaTek - Cortex A55,Cortex A75 - MediaTek Helio G88 - 8-Core - 2GHz - 11Inch - 10-Point Multi-Touch - 1920 x 1200 - LPDDR4X - 8GB RAM - ARM Mali-G52 MC2 - AC Adapters - 10Watt - IEEE 802.11 ac,BT5.1 - Android 13 - 1 Year Warranty
+row 478: formulas=7 constants=24 unlocked=0 labels=B478=VENCIDO | C478=45623 | D478=PABLO | E478=4 | H478=90Y8878 | I478=300GB serial Attached SCSI (SAS) 2.5-inch 6Gb/s 10K SFF G2HS Hot-Swap Hard Drive
+row 479: formulas=7 constants=24 unlocked=0 labels=B479=VENCIDO | C479=45623 | D479=PABLO | E479=2 | H479=42D0708 | I479=500GB serial Attached SCSI 2 (SAS-2) 6Gb/s 7.2K 2.5-inch Slim Hot-Swap Hard Drive
+row 480: formulas=7 constants=24 unlocked=0 labels=B480=VENCIDO | C480=45623 | D480=PABLO | E480=4 | H480=00Y2434 | I480=1TB 7.2K 6Gb/s 2.5 HS SAS
+Hot-Swap Drive with Tray included
+row 481: formulas=7 constants=24 unlocked=0 labels=B481=VENCIDO | C481=45623 | D481=PABLO | E481=4 | H481=- | I481=1TB 7.2K SAS DRIVE COMPATIBLE WITH RAID DELL
+POWEREDGE R320
+row 482: formulas=7 constants=24 unlocked=0 labels=B482=VENCIDO | C482=45623 | D482=PABLO | E482=6 | H482=- | I482=500GB 7.2K SATA DISKS COMPATIBLE WITH SERVER
+RAID CONTROLLER PERC H310 DELL POWEREDGE
+R620
+row 483: formulas=7 constants=24 unlocked=0 labels=B483=VENCIDO | C483=45623 | D483=PABLO | E483=3 | H483=661530-B21 | I483=DL360e/p Gen8 Redundant Fan Kit
+row 484: formulas=9 constants=22 unlocked=0 labels=B484=VENCIDO | C484=45623 | D484=LUCIO | E484=15 | H484=AWM18-A537BLK-PUS | I484=Alienware m18 Gaming Laptop (AMD Ryzen 9 7945HX 16-Core, 18" 480 Hz Wide UXGA (1920x1200), Radeon RX 7900M, 32GB DDR5 5200MHz RAM, 1TB SSD, Backlit KB, Wifi, Webcam, Win 11 Home)
+row 485: formulas=7 constants=24 unlocked=0 labels=B485=VENCIDO | C485=45623 | D485=PABLO | E485=20 | H485=QSFP-100G-ER4L-S-AX | I485=100G ER4-Lite QSFP Transceiver, 40KM reach over SMF, Duplex LC (nuevo sellado)
+row 486: formulas=7 constants=24 unlocked=0 labels=B486=VENCIDO | C486=45623 | D486=PABLO | E486=20 | H486=SFP-10G-T-X-AX | I486=10GBASE-T SFP+ Module for CAT6A cables (up to 30 meters) nuevo sellado
+row 487: formulas=7 constants=24 unlocked=0 labels=B487=VENCIDO | C487=45623 | D487=PABLO | E487=8 | H487=2409-720-209 | I487=JABRA BIZ 2400 II DUO UNC QD
+row 488: formulas=7 constants=24 unlocked=0 labels=B488=VENCIDO | C488=45623 | D488=PABLO | E488=70 | H488=CT250MX500SSD1 | I488=250GB MX500 2.5" Internal SATA SSD
+row 489: formulas=7 constants=24 unlocked=0 labels=B489=VENCIDO | C489=45623 | D489=PABLO | E489=70 | H489=CT500MX500SSD1 | I489=500GB MX500 2.5" Internal SATA SSD
+row 490: formulas=7 constants=24 unlocked=0 labels=B490=VENCIDO | C490=45625 | D490=PABLO | E490=10 | H490=IPHONE16PROMAX256G | I490=IPHONE 16 PRO MAX 256G
+row 491: formulas=7 constants=24 unlocked=0 labels=B491=VENCIDO | C491=45628 | D491=PABLO | E491=1 | H491=R9861622USB2 | I491=ClickShare CX-50 Gen 2 Conferencing Solution
+row 492: formulas=7 constants=24 unlocked=0 labels=B492=VENCIDO | C492=45628 | D492=PABLO | E492=1 | H492=R9861522US | I492=ClickShare CX-50 Conferencing Solution
+row 493: formulas=7 constants=24 unlocked=0 labels=B493=VENCIDO | C493=45628 | D493=PABLO | E493=9 | H493=KTL-TS548D8-32G | I493=32GB DDR5 4800MT/s ECC Registered DIMM
+row 494: formulas=7 constants=24 unlocked=0 labels=B494=VENCIDO | C494=45628 | D494=PABLO | E494=3 | H494=7ZT7A00537 | I494=Placa de fibra X710-DA2 10GbE SFP+ Dual Port NIC
+row 495: formulas=7 constants=24 unlocked=0 labels=B495=VENCIDO | C495=45628 | D495=PABLO | E495=6 | H495=46C3447 | I495=SFP+ 10G SR Transceiver
+row 496: formulas=7 constants=24 unlocked=0 labels=B496=VENCIDO | C496=45628 | D496=PABLO | E496=1 | H496=Meta quest 3s 128GB | I496=Meta Quest 3s 128GB
+row 497: formulas=7 constants=24 unlocked=0 labels=B497=VENCIDO | C497=45628 | D497=PABLO | E497=5 | H497=25089-999-999 | I497=Netcom Jabra Evolve2 50 Headset
+row 498: formulas=7 constants=24 unlocked=0 labels=B498=VENCIDO | C498=45628 | D498=PABLO | E498=3 | H498=862130-001 | I498=G10-G11 1-TB 6G 7.2K 3.5 SATA LPc
+row 499: formulas=7 constants=24 unlocked=0 labels=B499=VENCIDO | C499=45628 | D499=PABLO | E499=10 | H499=P09914-001 | I499=G10-G11 1.92-TB 3.5 SATA 6G MU LPc SSD
+row 500: formulas=7 constants=24 unlocked=0 labels=B500=VENCIDO | C500=45628 | D500=PABLO | E500=6 | H500=862133-001 | I500=G10-G11 4-TB 6G 7.2K 3.5 SATA LPc
+row 501: formulas=7 constants=24 unlocked=0 labels=B501=VENCIDO | C501=45628 | D501=PABLO | E501=3 | H501=P18478-001 | I501=G8-G10 960-GB 2.5 SATA 6G MU SSD
+row 502: formulas=7 constants=24 unlocked=0 labels=B502=VENCIDO | C502=45628 | D502=PABLO | E502=2 | H502=P08692-001 | I502=G8-G10 960-GB 2.5 SATA 6G MU SSD
+row 503: formulas=7 constants=24 unlocked=0 labels=B503=VENCIDO | C503=45628 | D503=PABLO | E503=2 | H503=862128-001 | I503=G8-G10 1-TB 6G 7.2K 3.5 SATA
+row 504: formulas=7 constants=24 unlocked=0 labels=B504=VENCIDO | C504=45628 | D504=PABLO | E504=52 | H504=P18484-001 | I504=G8-G10 1.92-TB 2.5 SATA 6G RI MV SSD
+row 505: formulas=7 constants=24 unlocked=0 labels=B505=VENCIDO | C505=45628 | D505=PABLO | E505=4 | H505=872772-001 | I505=G8-G10 4-TB 6G 7.2K 3.5 SATA SC
+row 506: formulas=7 constants=24 unlocked=0 labels=B506=VENCIDO | C506=45628 | D506=PABLO | E506=9 | H506=P18483-001 | I506=G8-G10 960-GB 2.5 SATA 6G RI MV SSD
+row 507: formulas=7 constants=24 unlocked=0 labels=B507=VENCIDO | C507=45628 | D507=PABLO | E507=3 | H507=90Y8878 | I507=300GB serial Attached SCSI (SAS) 2.5-inch 6Gb/s 10K SFF G2HS Hot-Swap Hard Drive
+row 508: formulas=7 constants=24 unlocked=0 labels=B508=VENCIDO | C508=45628 | D508=PABLO | E508=3 | H508=- | I508=Intel(R) Xeon(R) Processor Silver 4208 CPU @ 2.10GHz + heatsink for HPE Proliant DL380 Gen 10 Server
+row 509: formulas=7 constants=24 unlocked=0 labels=B509=VENCIDO | C509=45628 | D509=PABLO | E509=6 | H509=- | I509=HPE FAN for Proliant DL380 Gen10 Server
+row 510: formulas=7 constants=24 unlocked=0 labels=B510=VENCIDO | C510=45628 | D510=PABLO | E510=22 | H510=P00920-B21 | I510=16-GB (1x16GB) Single Rank x4 DDR4-2933
+row 511: formulas=7 constants=24 unlocked=0 labels=B511=VENCIDO | C511=45628 | D511=PABLO | E511=3 | H511=- | I511=HPE SAS Expander HPE Proliant DL380 Gen10
+row 512: formulas=7 constants=24 unlocked=0 labels=B512=VENCIDO | C512=45628 | D512=PABLO | E512=8 | H512=815098-B21 | I512=16-GB (1 x 16GB) Single Rank x4 DDR4-2666
+row 513: formulas=7 constants=24 unlocked=0 labels=B513=VENCIDO | C513=45628 | D513=PABLO | E513=34 | H513=840758-091 | I513=32-GB (1 x 32GB) Dual Rank x4 DDR4-2666
+row 514: formulas=7 constants=24 unlocked=0 labels=B514=VENCIDO | C514=45628 | D514=PABLO | E514=14 | H514=P00922-B21 | I514=16-GB (1 x 16GB) Dual Rank x8 DDR4-2933
+row 515: formulas=7 constants=24 unlocked=0 labels=B515=VENCIDO | C515=45628 | D515=PABLO | E515=48 | H515=P03052-091 | I515=32-GB (1x32GB) Dual Rank x4 DDR4-2933
+row 516: formulas=7 constants=24 unlocked=0 labels=B516=VENCIDO | C516=45628 | D516=PABLO | E516=1 | H516=W2300A | I516=230A Black Original LaserJet Toner Cartridge
+row 517: formulas=7 constants=24 unlocked=0 labels=B517=VENCIDO | C517=45628 | D517=PABLO | E517=1 | H517=W2301A | I517=230A Cyan Original LaserJet Toner Cartridge
+row 518: formulas=7 constants=24 unlocked=0 labels=B518=VENCIDO | C518=45628 | D518=PABLO | E518=1 | H518=W2302A | I518=230A Yellow Original LaserJet Toner Cartridge
+row 519: formulas=7 constants=24 unlocked=0 labels=B519=VENCIDO | C519=45628 | D519=PABLO | E519=1 | H519=W2303A | I519=230A Magenta Original LaserJet Toner
+row 520: formulas=8 constants=23 unlocked=0 labels=B520=COMPRAS | C520=45629 | D520=PABLO | E520=20 | H520=KM7321WGY-LTN | I520=KM7321W Keyboard & Mouse - Wireless Keyboard - Spanish - Wireless Mouse
+row 521: formulas=7 constants=24 unlocked=0 labels=B521=VENCIDO | C521=45629 | D521=PABLO | E521=10 | H521=9P373LA#ABM | I521=HP Elite Mini 800 G9 i513500 8GB/512 PC Latin America-(120-240V) Spanish loc
+row 522: formulas=7 constants=24 unlocked=0 labels=B522=VENCIDO | C522=45629 | D522=PABLO | E522=10 | H522=9Z078LA#ABM | I522=HP Elite Mini 800 G9 i514500 8GB/512 PC Latin America-(120-240V) Spanish loc
+row 523: formulas=7 constants=24 unlocked=0 labels=B523=VENCIDO | C523=45629 | D523=PABLO | E523=10 | H523=9P378LA#ABM | I523=HP Elite Mini 600 G9 i513500 8GB/512 PC Latin America-(120-240V) Spanish loc
+row 524: formulas=7 constants=24 unlocked=0 labels=B524=VENCIDO | C524=45629 | D524=PABLO | E524=1 | H524=Sony FDR-AX43A UHD 4K Handycam | I524=Sony FDR-AX43A UHD 4K Handycam
+row 525: formulas=7 constants=24 unlocked=0 labels=B525=VENCIDO | C525=45630 | D525=PABLO | E525=8 | H525=507283-001 | I525=HP 146GB 6G SAS 10K SFF HDD
+row 526: formulas=19 constants=12 unlocked=0 labels=B526=VENCIDO | C526=45630 | D526=LUCIO | E526=1 | H526=1824c | I526=PreSonus Studio 1824c Rackmount 18x20 USB Type-C Audio/MIDI Interface
+row 527: formulas=8 constants=23 unlocked=0 labels=B527=VENCIDO | C527=45630 | D527=PABLO | E527=2 | H527=500223-001 | I527=SAS&SATA HDD Tray Compatible for G5 G6 G7 DL380 DL360 DL580 BL460c ML350 ML370 ML570 378343-002 Server Series
+row 528: formulas=7 constants=24 unlocked=0 labels=B528=VENCIDO | C528=45630 | D528=PABLO | E528=9 | H528=46W0674 | I528=16GB PC3-12800 DDR3-1600MHz ECC Registered CL11 240-Pin DIMM 1.35V
+row 529: formulas=7 constants=24 unlocked=0 labels=B529=VENCIDO | C529=45630 | D529=PABLO | E529=3 | H529=- | I529=Honeywell LXE VX89A031RAMBALL
+row 530: formulas=7 constants=24 unlocked=0 labels=B530=VENCIDO | C530=45630 | D530=PABLO | E530=3 | H530=- | I530=Honeywell Kit de Montaje VX89A501RAMARM
+row 531: formulas=7 constants=24 unlocked=0 labels=B531=VENCIDO | C531=45630 | D531=PABLO | E531=3 | H531=- | I531=Havis PKG-DS-DELL-701-Z1 para Dell
+row 532: formulas=7 constants=24 unlocked=0 labels=B532=COMPRAS | C532=45630 | D532=PABLO | E532=10 | H532=SFP-10GSR-85 | I532=Modulo Transceiver SFP+ 10Gbps Multimodo 850nm
+row 533: formulas=7 constants=24 unlocked=0 labels=B533=COMPRAS | C533=45630 | D533=PABLO | E533=5 | H533=25089-999-899 | I533=Headset EVOLVE 2 50 USB-C MS BLACK
+row 534: formulas=7 constants=24 unlocked=0 labels=B534=COMPRAS | C534=45630 | D534=PABLO | E534=8 | H534=981-001198 | I534=Logitech Zone Vibe Wireless
+row 535: formulas=8 constants=23 unlocked=0 labels=B535=VENCIDO | C535=45630 | D535=LUCIO | E535=20 | H535=ALIENWARE M16 R2 U9 | I535=16.0" QHD+ ULTRA 9 185H 64GB 2TB RTX4070 8GB (2560X1600) 240Hz DARK METALLIC MOON
+row 536: formulas=7 constants=24 unlocked=0 labels=B536=VENCIDO | C536=45630 | D536=PABLO | E536=2 | H536=CRD-TC51-1SCU-01 + PWR-BGA12V50W0WW | I536=ZEBRA EVM/EMC, TC51/56 1-SLOT
+USB/CHARGE CRADLE, INCLUDES POWER
+PWR-BGA12V50W0WW AND DC CORD CBL
+DC-388A1-01, REQUIRES AC CORD 23844-00
+00R AND USB 25-124330-01R + ZEBRA EVM/EMC, POWER SUPPLY ADAPTER, POWER BRICK;AC;DC;4.16 A;12V;50W,
+REQUIRES DC LINE CORD (VARIES) AND
+23844-00-00R
+row 537: formulas=8 constants=23 unlocked=0 labels=B537=VENCIDO | C537=45630 | D537=PABLO | E537=2 | H537=BTRY-TC51-43MA101 | I537=ZEBRA EVM/EMC, TC51/56
+POWERPRECISION+ SPARE LITHIUM ION
+BATTERY, 4300 MAH, SINGLE
+row 538: formulas=8 constants=23 unlocked=0 labels=B538=VENCIDO | C538=45630 | D538=PABLO | E538=3 | H538=SG-TC51-HLSTR1-01 | I538=ZEBRA EVM/EMC, TC51/56 SOFT HOLSTER
+row 539: formulas=7 constants=24 unlocked=0 labels=B539=VENCIDO | C539=45630 | D539=PABLO | E539=1 | H539=EDA50-HB-R | I539=HONEYWELL, ACCESSORY, HOMEBASE,
+SINGLE CHARGING DOCK FOR SCANPAL
+EDA50/EDA51/EDA52/EDA56 WIFI 6
+row 540: formulas=7 constants=24 unlocked=0 labels=B540=VENCIDO | C540=45630 | D540=PABLO | E540=1 | H540=50134176-001 | I540=Honeywell 3.8 V DC 4000 mAh 50134176-001 Battery
+row 541: formulas=7 constants=24 unlocked=0 labels=B541=VENCIDO | C541=45630 | D541=PABLO | E541=3 | H541=KT-TC51-SCRNP1-01 | I541=Zebra - Carrying and Protective Accessories, Zebra, TC5X Tempered Glass Screen Protector (3-Pack), Includes Alcohol Wipes, Cleaning Cloth, And Tools Needed For Screen Protector Installation.
+row 542: formulas=7 constants=24 unlocked=0 labels=B542=VENCIDO | C542=45630 | D542=PABLO | E542=3 | H542=EDA51-SP-10PK | I542=EDA51 SCREEN PROTECTOR, 10PCS/PACK
+row 543: formulas=7 constants=24 unlocked=0 labels=B543=VENCIDO | C543=45632 | D543=PABLO | E543=1 | H543=SGX5150000US | I543=SGX 5150 IoT Device Gateway Dual Band Wireless and Ethernet Router Lantronix
+row 544: formulas=7 constants=24 unlocked=0 labels=B544=VENCIDO | C544=45632 | D544=PABLO | E544=5 | H544=MDS19 | I544=Soporte para monitor dual Dell
+row 545: formulas=7 constants=24 unlocked=0 labels=B545=VENCIDO | C545=45632 | D545=PABLO | E545=1 | H545=LPS8N Indoor LoRaWAN Gateway | I545=LPS8N Indoor LoRaWAN Gateway
+row 546: formulas=7 constants=24 unlocked=0 labels=B546=VENCIDO | C546=45635 | D546=PABLO | E546=4 | H546=ST16000NT001 | I546=IronWolf Pro, 16 TB, Enterprise NAS Internal HDD
+row 547: formulas=7 constants=24 unlocked=0 labels=B547=VENCIDO | C547=45635 | D547=PABLO | E547=3 | H547=VFX1G | I547=Dell PowerVault MD3200I Controller
+row 548: formulas=8 constants=23 unlocked=0 labels=B548=VENCIDO | C548=45636 | D548=PABLO | E548=10 | H548=WTJVY | I548=Dell PowerVault 2TB Hot-plug HDD Disk
+row 549: formulas=7 constants=24 unlocked=0 labels=B549=VENCIDO | C549=45636 | D549=PABLO | E549=12 | H549=ST2000NM0001 | I549=HP MSA2 2TB Hot-plug HDD Disk
+row 550: formulas=7 constants=24 unlocked=0 labels=B550=VENCIDO | C550=45636 | D550=PABLO | E550=14 | H550=GPM03 | I550=6-Cell 97Wh Extended Battery for Dell Precision 5520 notebook
+row 551: formulas=7 constants=24 unlocked=0 labels=B551=VENCIDO | C551=45636 | D551=PABLO | E551=7 | H551=79VRK | I551=4-cell 62Wh Battery for Dell Latitude E5570 notebook
+row 552: formulas=7 constants=24 unlocked=0 labels=B552=VENCIDO | C552=45636 | D552=PABLO | E552=7 | H552=Y3F7Y | I552=42Wh 3-cell Battery for Dell Latitude 3580 notebook
+row 553: formulas=7 constants=24 unlocked=0 labels=B553=VENCIDO | C553=45636 | D553=PABLO | E553=10 | H553=SPATIUM S270 960 GB | I553=MSI SATA Class 20 960 GB SSD (Solid State Drive) 2.5"
+row 554: formulas=7 constants=24 unlocked=0 labels=B554=VENCIDO | C554=45636 | D554=PABLO | E554=7 | H554=SNP821PJC/16G | I554=Dell 16GB PC4-19200 DDR4-2400MHz Non ECC 2Rx8 Memory
+row 555: formulas=7 constants=24 unlocked=0 labels=B555=VENCIDO | C555=45636 | D555=PABLO | E555=5 | H555=SNPCRXJ6C/16G | I555=Dell 16GB PC4-2666Mhz DDR4-2666Mhz 2RX8 Non ECC
+row 556: formulas=7 constants=24 unlocked=0 labels=B556=VENCIDO | C556=45636 | D556=PABLO | E556=6 | H556=SNPMKYF9C/8G | I556=Dell 8GB DDR4-2400/PC4-19200 SODIMM 260-Pin CL17 Single Rank x8 Non-ECC
+row 557: formulas=7 constants=24 unlocked=0 labels=B557=VENCIDO | C557=45636 | D557=PABLO | E557=16 | H557=HNDJ7 | I557=Dell 16GB 2400MHz DDR4 PC4-19200 CL17 ECC Registered
+row 558: formulas=7 constants=24 unlocked=0 labels=B558=VENCIDO | C558=45636 | D558=PABLO | E558=12 | H558=HNDJ7 | I558=Dell 16GB 2400MHz DDR4 PC4-19200 CL17 ECC Registered
+row 559: formulas=7 constants=24 unlocked=0 labels=B559=VENCIDO | C559=45636 | D559=PABLO | E559=5 | H559=SPATIUM S270 960 GB | I559=MSI SATA Class 20 960 GB SSD (Solid State Drive) 2.5"
+row 560: formulas=7 constants=24 unlocked=0 labels=B560=VENCIDO | C560=45636 | D560=PABLO | E560=4 | H560=DGS25-A28D81BC1QC | I560=Innodisk Standard Grade (0°C ~ +70°C) SSD 128GB 2.5" SATA SSD 3MG2-P MLC
+row 561: formulas=7 constants=24 unlocked=0 labels=B561=VENCIDO | C561=45636 | D561=PABLO | E561=4 | H561=DGS25-A28D81BW3Q | I561=Innodisk Industrial Grade (-40°C ~ +85°C) SSD 128GB 2.5" SATA SSD 3MG2-P MLC
+row 562: formulas=7 constants=24 unlocked=0 labels=B562=VENCIDO | C562=45636 | D562=PABLO | E562=1 | H562=872772-001 | I562=HP G8-G10 4-TB 6G 7.2K 3.5 SATA SC
+row 563: formulas=7 constants=24 unlocked=0 labels=B563=VENCIDO | C563=45636 | D563=PABLO | E563=1 | H563=0XPJ47 | I563=Dell G14-G16 4-TB 6G 7.2K 3.5 SATA w/X7K8W
+row 564: formulas=7 constants=24 unlocked=0 labels=B564=COMPRAS | C564=45531 | D564=PABLO | E564=1 | H564=4XB7A83215 | I564=ThinkSystem 2.5" Nytro 3750 800GB Write Intensive SAS 12Gb HS SSD
+row 565: formulas=8 constants=23 unlocked=0 labels=B565=VENCIDO | C565=45636 | D565=LUCIO | E565=1 | H565=XHU-00001 | I565=Microsoft Surface Go 4 Tablet - 10.5" - 8 GB - 128 GB
+row 566: formulas=8 constants=23 unlocked=0 labels=B566=VENCIDO | C566=45636 | D566=LUCIO | E566=15 | H566=G07YY | I566=Dell Alienware Gaming Services m16 R2 - Notebook - 16"
+row 567: formulas=7 constants=24 unlocked=0 labels=B567=VENCIDO | C567=45636 | D567=PABLO | E567=6 | H567=5962917281 | I567=Premium Lightweight Wireless Bluetooth Extra Bass Noise-Isolating Stereo Headphones
+row 568: formulas=7 constants=18 unlocked=0 labels=B568=VENCIDO | C568=45637 | D568=LUCIO | E568=1 | M568=0 | N568=0
+row 569: formulas=7 constants=24 unlocked=0 labels=B569=VENCIDO | C569=45638 | D569=PABLO | E569=1 | H569=SFP-10G-SR | I569=10GBASE-SR SFP Module
+row 570: formulas=7 constants=24 unlocked=0 labels=B570=VENCIDO | C570=45638 | D570=PABLO | E570=14 | H570=QSFP-H40G-CU3M= | I570=40GBASE-CR4 Passive Copper Cable, 3m
+row 571: formulas=7 constants=24 unlocked=0 labels=B571=VENCIDO | C571=45638 | D571=PABLO | E571=22 | H571=GLC-TE= | I571=1000BASE-T SFP transceiver module for Category 5 copper wire
+row 572: formulas=8 constants=23 unlocked=0 labels=B572=VENCIDO | C572=45638 | D572=LUCIO | E572=45 | H572=G15 I9 | I572=G15 I9
+row 573: formulas=7 constants=24 unlocked=0 labels=B573=VENCIDO | C573=45639 | D573=PABLO | E573=4 | H573=470-ABPY | I573=Esg Dell QSFP28 Network Cable - 3.28 ft QSFP28 Network Cable
+row 574: formulas=7 constants=24 unlocked=0 labels=B574=VENCIDO | C574=45642 | D574=PABLO | E574=1 | H574=DV9NT | I574=Original Latitude 5480 / 5580 / 5280 4-Cell 68Wh Battery
+row 575: formulas=7 constants=24 unlocked=0 labels=B575=VENCIDO | C575=45642 | D575=FABRICIO | E575=1 | H575=VCQP4000-PB | I575=PNY NVIDIA Quadro P4000
+row 576: formulas=7 constants=24 unlocked=0 labels=B576=VENCIDO | C576=45643 | D576=PABLO | E576=4 | H576=ST1200MM0099 | I576=Seagate 1.2-TB 10K 2.5 12G DP SAS
+row 577: formulas=7 constants=24 unlocked=0 labels=B577=VENCIDO | C577=45643 | D577=PABLO | E577=2 | H577=ST10000VX0004 | I577=1ZE101-300 10TB 7,2K SATA 3GB 256 3,5 “HDD
+row 578: formulas=7 constants=24 unlocked=0 labels=B578=VENCIDO | C578=45643 | D578=PABLO | E578=2 | H578=AL15SEB18EQ | I578=Toshiba HDEBL11L1A51 1,8TB 10.5K SAS 12GB HOTSWAP 128 2.5 “HDD
+row 579: formulas=7 constants=24 unlocked=0 labels=B579=VENCIDO | C579=45643 | D579=PABLO | E579=2 | H579=EG001200JWJNQ | I579=1.2TB 10K SAS 12GB HOT SWAP 512N 2.5 “HDD
+row 580: formulas=7 constants=24 unlocked=0 labels=B580=VENCIDO | C580=45643 | D580=PABLO | E580=2 | H580=ST1800MM0129 | I580=1XJ203-076 1.8TB 10K SAS 12GB HOT SWAP 512E 2.5 “HDD
+row 581: formulas=7 constants=24 unlocked=0 labels=B581=VENCIDO | C581=45643 | D581=PABLO | E581=2 | H581=ST10000VX0004 | I581=1ZE101-300 10TB 7,2K SATA 3GB 256 3,5 “HDD NEW
+row 582: formulas=7 constants=24 unlocked=0 labels=B582=VENCIDO | C582=45643 | D582=PABLO | E582=2 | H582=AL15SEB18EQ | I582=HDEBL11L1A51 1,8TB 10.5K SAS 12GB HOTSWAP 128 2.5 “HDD
+row 583: formulas=7 constants=24 unlocked=0 labels=B583=VENCIDO | C583=45643 | D583=PABLO | E583=2 | H583=EG001200JWJNQ | I583=1.2TB 10K SAS 12GB HOT SWAP 512N 2.5 “HDD
+row 584: formulas=8 constants=23 unlocked=0 labels=B584=VENCIDO | C584=45643 | D584=FABRICIO | E584=1 | H584=mx2f3ll/a | I584=APPLE Macbook PRO 14,2" MX2F3LL/A - M4 PRO 14-Core CPU 20-Core GPU /24GB /1TB (INGLES) - SILVER
+row 585: formulas=8 constants=23 unlocked=0 labels=B585=VENCIDO | C585=45643 | D585=LUCIO | E585=12 | H585=G167630 | I585=DELL G16 7630 I9
+row 586: formulas=8 constants=23 unlocked=0 labels=B586=VENCIDO | C586=45643 | D586=LUCIO | E586=3 | H586=m18 | I586=Alienware m18 R2 18" 165Hz WQXGA Gaming Laptop (24-Core Intel i9-14900HX, 32GB DDR5 RAM, 1TB
+row 587: formulas=7 constants=24 unlocked=0 labels=B587=VENCIDO | C587=45649 | D587=PABLO | E587=1 | H587=USR-TCP232-410s | I587=Modbus Serial to Ethernet Converters
+row 588: formulas=7 constants=24 unlocked=0 labels=B588=VENCIDO | C588=45527 | D588=FABRICIO | E588=10 | H588=3320G-4USB-0-N | I588=Honeywell 3320G-4USB-0-N Usb Kit 1d Pdf417 2d Ivory Scancabl 3320g-4 2.9m 9.5 Usb A Cabl
+row 589: formulas=7 constants=24 unlocked=0 labels=B589=VENCIDO | C589=45607 | D589=FABRICIO | E589=2 | H589=DS-2CD2143G2-IU | I589=Hikvision IP Camera DS-2CD2143G2-IU 2.8mm Lens 4MP Vandal Built-in Mic Fixed Dome Network Camera Poe Security Camera Outdoor Indoor H.265+,IP67, Human/Vehicle Detection Original English Version
+row 590: formulas=18 constants=13 unlocked=0 labels=B590=VENCIDO | C590=45649 | D590=PABLO | E590=16 | H590=ST600MM0238 | I590=Model: 600GB 10K SAS 12Gbps 2.5“ + Tray
+row 591: formulas=8 constants=23 unlocked=0 labels=B591=VENCIDO | C591=45653 | D591=PABLO | E591=2 | H591=EX3400-48P | I591=EX3400-48P - Switch - L3 - managed - 48 x 10/100/1000 (PoE+) + 4 x Gigabit SFP / 10 Gigabit SFP+ + 2 x 40 Gigabit QSFP+ - front to back airflow - rack-mountable - PoE+ (740 W)
+row 592: formulas=7 constants=21 unlocked=0 labels=B592=VENCIDO | C592=45527 | D592=FABRICIO | E592=75 | H592=KBA-M3632C-KMA-SP-RC | I592=TG3, NCNR, PRICING SUBJECT TO CHANGE, CALL FOR QUOTE, BLACK MCDONALDS RXD/TXD W/ KMA SPANISH
+row 593: formulas=7 constants=24 unlocked=0 labels=B593=VENCIDO | C593=45659 | D593=FABRICIO | E593=1 | H593=WTRD1 | I593=Dell 10Gb SFP Transceiver Module WTRD1
+row 594: formulas=7 constants=24 unlocked=0 labels=B594=VENCIDO | C594=45660 | D594=FABRICIO | E594=80 | H594=TG3-KBA-M3632C-KMA-SP-RC | I594=BLACK McDonalds RxD/TxD w/ KMA Spanish
+row 595: formulas=7 constants=24 unlocked=0 labels=B595=VENCIDO | C595=45663 | D595=PABLO | E595=30 | H595=xctol5350mmcla | I595=Dell Latitude 5350 XCTO BaseProcessor Edit
+13th Gen Intel® Core™ i5-1345U, vPro® (12 MB cache, 10 cores, 12 threads, up to 4.7 GHz Turbo)
+Operating System Edit
+Windows 11 Pro, English, Brazilian Portuguese, French, Spanish
+Windows AutoPilot Edit
+No AutoPilot
+Microsoft Office Edit
+Activate Your Microsoft 365 For A 30 Day Trial
+Memory Edit
+16 GB: LPDDR5x, 6400 MT/s (4800 MT/s with 13th Gen Intel® Core™ processors), dual-channel (onboard)
+Graphics and Memory
+Integrated Intel® Iris® Xe graphics for Intel® Core™ i5-1345U vPro® processor, 16 GB LPDDR5x memory
+Power Supply Edit
+65W AC adapter, USB Type-C, EcoDesign
+Systems Management Edit
+Intel® vPro® Management Disabled
+Storage Edit
+512 GB, M.2 2230, TLC PCIe Gen 4 NVMe, SSD
+PalmRest Edit
+No Fingerprint Reader
+Displays Edit
+Laptop, 13.3", FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC, FHD Cam
+Keyboard Edit
+Spanish (Latin America) backlit Copilot key keyboard, 80-key
+External Mouse
+No Mouse
+Power Cord Edit
+E4 Power Cord 1M for Argentina
+Protect your new PC Edit
+No anti-virus software
+Wireless Edit
+Intel® Wi-Fi 6E (6 where 6E unavailable) AX211, 2x2, 802.11ax, Bluetooth® 5.3 wireless card
+Primary Battery Edit
+3-cell, 42 Wh, ExpressCharge™ Capable, ExpressCharge™ Boost Capable
+Mobile Broadband Edit
+No Mobile Broadband Card
+ENERGY STAR
+ENERGY STAR Qualified
+Resource Media
+No Resource USB Media
+Intel Responsiveness Technologies
+Intel® Rapid Storage Technology Driver
+Transportation from ODM to region
+Standard Shipment (VS)
+ICPS
+No Intel® Connectivity Performance Suite
+Camera
+FHD HDR RGB Camera, TNR, Camera Shutter, Microphone
+EPEAT 2018
+EPEAT 2018 Registered (Gold)
+Removable CD/DVD Drives Edit
+No Removable CD/DVD Drive
+Services & Support
+Standard Hardware Support Service Edit
+3Y ProSupport Next Business Day Onsite Service after remote diagnosis with HW-SW Support
+row 596: formulas=7 constants=24 unlocked=0 labels=B596=VENCIDO | C596=45664 | D596=PABLO | E596=30 | H596=xctol5450mmcla | I596=Dell Latitude 5450 XCTOProcessor Edit
+13th Gen Intel® Core™ i5-1345U, vPro® (12 MB cache, 10 cores, 12 threads, up to 4.7 GHz Turbo)
+Operating System Edit
+Windows 11 Pro, English, Brazilian Portuguese, French, Spanish
+Windows AutoPilot Edit
+No AutoPilot
+Microsoft Office Edit
+Activate Your Microsoft 365 For A 30 Day Trial
+Base Options
+Integrated Intel® Iris® Xe or UHD graphics for Intel® Core™ i5-1345U vPro® processor
+AC Adapter Edit
+65W AC adapter, USB Type-C, EcoDesign
+Memory Edit
+16 GB: 2 x 8 GB, DDR5, 5600 MT/s (5200 MT/s with 13th Gen Intel® Core™ processors)
+Systems Management Edit
+Intel® vPro® Management Disabled
+Storage Edit
+512 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD
+PalmRest Edit
+No Security
+Displays Edit
+14.0", FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC, FHD Cam
+Keyboard Edit
+Spanish (Latin America) backlit Copilot key keyboard, 80-key
+Power Cord Edit
+E4 Power Cord 1M for Argentina
+Security Software Edit
+No anti-virus software
+Wireless Edit
+Intel® Wi-Fi 6E (6 where 6E unavailable) AX211, 2x2, 802.11ax, Bluetooth® 5.3 wireless card
+Primary Battery Edit
+3-cell, 42 Wh, ExpressCharge™ Capable, ExpressCharge™ Boost Capable
+Mobile Broadband Edit
+No Mobile Broadband Card
+Wireless Driver
+Intel AX211 WLAN Driver
+ENERGY STAR
+ENERGY STAR Qualified
+Resource Media
+No Resource USB Media
+Camera
+FHD HDR RGB Camera, TNR, Camera Shutter, Microphone
+EPEAT 2018
+EPEAT 2018 Registered (Gold)
+Services & Support
+Standard Hardware Support Service Edit
+3Y Basic Onsite Service after remote diagnosis with Hardware-Only Support
+row 597: formulas=7 constants=24 unlocked=0 labels=B597=VENCIDO | C597=45664 | D597=PABLO | E597=33 | H597=WM126 | I597=Mouse-WM126 - Black - Optical - Wireless - Radio Frequency - Black - USB Type A - 1000 dpi - Scroll Wheel - 3 Button(s)
+row 598: formulas=7 constants=24 unlocked=0 labels=B598=VENCIDO | C598=45666 | D598=PABLO | E598=15 | H598=ET45CA-101D1B0-A6 | I598=ZEBRA EVM, ET45 TABLET, 8" DISPLAY, 5G
+WWAN, WIFI6, STANDARD RANGE 1D/2D
+IMAGER (SE4710), 4GB/64GB, 5MP/13MP
+CAMERAS, ANDROID GMS, 6100 MAH
+BATTERY, ROW SKU
+row 599: formulas=7 constants=24 unlocked=0 labels=B599=VENCIDO | C599=45666 | D599=FABRICIO | E599=1 | H599=SFP-10G-SR | I599=SFP-10G-SR
+row 600: formulas=7 constants=24 unlocked=0 labels=B600=VENCIDO | C600=45666 | D600=GUSTAVO | E600=50 | H600=920-008659 | I600=mk850 logitech k+m
+row 601: formulas=7 constants=24 unlocked=0 labels=B601=VENCIDO | C601=45667 | D601=FABRICIO | E601=1 | H601=SFP-10G-ZR | I601=SFP-10G-ZR
+row 602: formulas=7 constants=24 unlocked=0 labels=B602=VENCIDO | C602=45667 | D602=FABRICIO | E602=1 | H602=SFP-10G-ZR | I602=Cisco SFP-10G-ZR-S Compatible 10GBASE-ZR SFP+ 80km DOM Duplex LC/UPC SMF Optical Transceiver Module
+row 603: formulas=7 constants=24 unlocked=0 labels=B603=VENCIDO | C603=45672 | D603=FABRICIO | E603=1 | H603=LDEL-4WY15 | I603=LA OPTIPLEX 7010 MFF I7 13700 13th 16GB 512GB SSD SP 3Y
+row 604: formulas=7 constants=24 unlocked=0 labels=B604=VENCIDO | C604=45673 | D604=FABRICIO | E604=1 | H604=RX-RDP+ | I604=RX-RDP+ (Pi3B+,1.4GHz, 1GB,16GB SD) for Microsoft AVD, RDS, VERDE and vSpace (connection license sold separately). HDMI, 4 USB, WiFi, Gigabit LAN, Manageable by PMC. 1 Year HW Warranty. 1 Year SW maintenance and update included. 5.1V PWR adapter with VESA bracket
+row 605: formulas=7 constants=24 unlocked=0 labels=B605=VENCIDO | C605=16/01/2025 | D605=MATIAS | E605=12 | H605=SM-A556E/DS 128GB | I605=Samsung Galaxy A55 5G A556E 128GB Dual-SIM GSM Desbloqueado Android Smartphone (variante latino/LTE compatible con EE. UU.) - Azul hielo impresionante
+row 606: formulas=7 constants=24 unlocked=0 labels=B606=VENCIDO | C606=45678 | D606=PABLO | E606=10 | H606=39YVT | I606=PC OPTIPLEX 7020 MFF I7 14700T vPro 16GB 512GB SSD SP 3Y
+row 607: formulas=7 constants=24 unlocked=0 labels=B607=VENCIDO | C607=45678 | D607=PABLO | E607=10 | H607=CGMXC | I607=PC OPTIPLEX 7020 MFF I5 14500T vPro 8GB 512GB SSD SP 3Y
+row 608: formulas=8 constants=23 unlocked=0 labels=B608=VENCIDO | C608=45678 | D608=MATIAS | E608=1 | H608=8300 base tnsr | I608=Netgate 8300 BASE TNSR Secure Router
+row 609: formulas=8 constants=23 unlocked=0 labels=B609=VENCIDO | C609=45678 | D609=MATIAS | E609=1 | H609=8300 max | I609=Netgate 8300 MAX pfSense+ Security Gateway
+row 610: formulas=8 constants=23 unlocked=0 labels=B610=VENCIDO | C610=45678 | D610=MATIAS | E610=1 | H610=8300 max TNSR | I610=Netgate 8300 MAX TNSR Secure Router
+row 611: formulas=7 constants=24 unlocked=0 labels=B611=VENCIDO | C611=45679 | D611=LUCIO | E611=7 | H611=MM903JBL62 | I611=JBL Speaker Flip 6 BT Black S. Ame
+row 612: formulas=9 constants=22 unlocked=0 labels=B612=VENCIDO | C612=45679 | D612=PEPE | E612=1 | H612=FG-80F | I612=FortiGate FortiWiFi 80F Series
+row 613: formulas=7 constants=24 unlocked=0 labels=B613=VENCIDO | C613=45679 | D613=PABLO | E613=20 | H613=KM5221W | I613=Teclado y Mouse KM5221W WLS Negro Español
+row 614: formulas=7 constants=24 unlocked=0 labels=B614=VENCIDO | C614=45680 | D614=PABLO | E614=1 | H614=M08-E24PU-STELH1X | I614=Secretlab TITAN Evo XL
+row 615: formulas=8 constants=23 unlocked=0 labels=B615=VENCIDO | C615=45679 | D615=PEPE | E615=1 | H615=FG-120G | I615=FortiGate FortiWiFi 120G Series
+row 616: formulas=7 constants=24 unlocked=0 labels=B616=VENCIDO | C616=45680 | D616=MATIAS | E616=2 | H616=197497506228 | I616=Teléfono Poly CCX 350
+row 617: formulas=7 constants=24 unlocked=0 labels=B617=VENCIDO | C617=45684 | D617=PABLO | E617=1 | H617=IR Fluke 62 MAX+ | I617=Termometro infrarrojo 60 Max+
+row 618: formulas=7 constants=24 unlocked=0 labels=B618=VENCIDO | C618=45684 | D618=PABLO | E618=1 | H618=4991049 | I618=710 mA Loop Valve Tester
+row 619: formulas=7 constants=24 unlocked=0 labels=B619=VENCIDO | C619=45684 | D619=PABLO | E619=1 | H619=3362365 | I619=Pinza amperimétrica mA para procesos modelo 773
+row 620: formulas=7 constants=24 unlocked=0 labels=B620=VENCIDO | C620=45684 | D620=PABLO | E620=2 | H620=3045646 | I620=TLK289 Industrial Master Test Lead Set
+row 621: formulas=7 constants=24 unlocked=0 labels=B621=VENCIDO | C621=45684 | D621=PABLO | E621=2 | H621=1610103 | I621=AC220 Alligator Clips
+row 622: formulas=9 constants=22 unlocked=0 labels=B622=VENCIDO | C622=45684 | D622=PABLO | E622=2 | H622=1274382 | I622=TL71 Premium Test Lead Set
+row 623: formulas=7 constants=24 unlocked=0 labels=B623=VENCIDO | C623=45684 | D623=PABLO | E623=2 | H623=NanoVNA-F V3 | I623=Analizador de red vectorial NanoVNA-F V3
+row 624: formulas=7 constants=24 unlocked=0 labels=B624=VENCIDO | C624=45685 | D624=MATIAS | E624=1 | H624=8200 MAX | I624=Netgate 8200 MAX pfSense+ Security Gateway
+row 625: formulas=7 constants=24 unlocked=0 labels=B625=VENCIDO | C625=45685 | D625=MATIAS | E625=1 | H625=8300 BASE | I625=Netgate 8300 BASE pfSense+ Security Gateway
+row 626: formulas=7 constants=24 unlocked=0 labels=B626=VENCIDO | C626=45685 | D626=MATIAS | E626=1 | H626=8300 max | I626=Netgate 8300 MAX pfSense+ Security Gateway
+row 627: formulas=7 constants=24 unlocked=0 labels=B627=VENCIDO | C627=45685 | D627=PABLO | E627=2 | H627=EX3400-48P | I627=48PORT EX3400
+10/100/1000BASET PERP POE+
+4X1/10G SFP/SFP+ 2X40G QSFP+
+row 628: formulas=8 constants=23 unlocked=0 labels=B628=VENCIDO | C628=45686 | D628=LUCIO | E628=1 | H628=ipad | I628=ipad
+row 629: formulas=8 constants=23 unlocked=0 labels=B629=VENCIDO | C629=45688 | D629=LUCIO | E629=1 | H629=IPHONE 15 | I629=IPHONE 15
+row 630: formulas=7 constants=24 unlocked=0 labels=B630=VENCIDO | C630=45688 | D630=PABLO | E630=4 | H630=‎OUKITEL RT9 | I630=RT9 Tablet rugged 4G LTE 24 GB RAM 256GB ROM
+row 631: formulas=7 constants=19 unlocked=0 labels=B631=VENCIDO | C631=45691 | D631=PABLO | E631=1 | J631=FORTINET | M631=0
+row 632: formulas=7 constants=24 unlocked=0 labels=B632=VENCIDO | C632=45691 | D632=MATIAS | E632=1 | H632=SAMSUNG TAB A9 X110 | I632=Samsung Tablet Tab A9 X110 8.7in 8+128GB Wi-Fi Gray
+row 633: formulas=7 constants=20 unlocked=0 labels=B633=VENCIDO | C633=45691 | D633=LUCIO | E633=90 | H633=OPT 7010 | I633=OPT 7010 MFF
+row 634: formulas=7 constants=21 unlocked=0 labels=B634=VENCIDO | C634=45692 | D634=PABLO | E634=1 | H634=WRK P17 | L634=3434
+row 635: formulas=7 constants=24 unlocked=0 labels=B635=VENCIDO | C635=45692 | D635=LUCIO | E635=70 | H635=KTD-PE426E/16G | I635=Memory Kingston 16GB DDR4 SDRAM 2666MHz ECC CL19
+row 636: formulas=7 constants=24 unlocked=0 labels=B636=VENCIDO | C636=45695 | D636=PABLO | E636=4 | H636=AM100 | I636=Premier Mounts AM100 - mounting kit - for flat panel
+row 637: formulas=7 constants=24 unlocked=0 labels=B637=VENCIDO | C637=45698 | D637=PABLO | E637=2 | H637=AM300-B | I637=Soporte TV 86" Premier
+row 638: formulas=7 constants=24 unlocked=0 labels=B638=VENCIDO | C638=45698 | D638=PABLO | E638=1 | H638=Thinkpad P17 | I638=ThinkPad P17 Gen 1 i9 Quadro RTX 4000 32GB RAM
+row 639: formulas=7 constants=24 unlocked=0 labels=B639=VENCIDO | C639=45699 | D639=LUCIO | E639=1 | H639=ROG-STRIX-RTX4090-24G-GAMING | I639=ASUS ROG Strix GeForce RTX 4090 Gaming
+row 640: formulas=7 constants=24 unlocked=0 labels=B640=VENCIDO | C640=45701 | D640=PABLO | E640=3 | H640=CP52-512E-HW | I640=Verkada CP52-E PTZ Camera
+row 641: formulas=7 constants=24 unlocked=0 labels=B641=VENCIDO | C641=45701 | D641=PABLO | E641=3 | H641=ACC-MNT-XLARM-1 | I641=Brazo de montaje grande
+row 642: formulas=7 constants=24 unlocked=0 labels=B642=VENCIDO | C642=45701 | D642=PABLO | E642=3 | H642=CF81-30E-HW | I642=Verkada CF81-E Fisheye Camera 512GB onboard storage for 30 days max retention and 5 years Cloud License
+row 643: formulas=7 constants=24 unlocked=0 labels=B643=VENCIDO | C643=45701 | D643=PABLO | E643=3 | H643=ACC-MNT-7 | I643=Verkada ACC-MNT-7 Angle Mount
+row 644: formulas=7 constants=24 unlocked=0 labels=B644=VENCIDO | C644=45701 | D644=PABLO | E644=3 | H644=ACC-MNT-8 | I644=Verkada ACC-MNT-8 Pendant Cap Mount
+row 645: formulas=7 constants=24 unlocked=0 labels=B645=VENCIDO | C645=45701 | D645=PABLO | E645=3 | H645=ACC-MNT-3 | I645=Verkada ACC-MNT-3 L Bracket Mount
+row 646: formulas=7 constants=24 unlocked=0 labels=B646=VENCIDO | C646=45701 | D646=PABLO | E646=0 | H646=CB52-256E-HW | I646=Verkada CB52-E Bullet Camera
+row 647: formulas=18 constants=13 unlocked=0 labels=B647=VENCIDO | C647=45701 | D647=PABLO | E647=24 | H647=ACC-MNT-CORNER-1 | I647=Accesorio opcional para montaje: Verkada ACC-MNT-CORNER-1 Corner Mount
+row 648: formulas=8 constants=23 unlocked=0 labels=B648=VENCIDO | C648=45701 | D648=PABLO | E648=24 | H648=ACC-MNT-POLE-1 | I648=Accesorio opcional para montaje: Verkada ACC-MNT-POLE-1 Mount
+row 649: formulas=7 constants=24 unlocked=0 labels=B649=VENCIDO | C649=45701 | D649=PABLO | E649=24 | H649=ACC-MNT-SJBOX-1 | I649=Accesorio opcional para montaje: Verkada ACC-MNT-SJBOX-1 Square Junction Box Mount
+row 650: formulas=7 constants=24 unlocked=0 labels=B650=VENCIDO | C650=45705 | D650=PABLO | E650=5 | H650=RTK-AM1 | I650=RemoteTableKit + 5 years parts and labor international
+row 651: formulas=8 constants=23 unlocked=0 labels=B651=VENCIDO | C651=20/02/2025 | D651=GUSTAVO | E651=1 | H651=MQM8790-HS2F | I651=MQM8790-HS2F, NVIDIA® 40-Port 200G InfiniBand Data Center Switch, 40 x HDR QSFP56, Unmanaged, NVIDIA Quantum™ Chip, P2C Airflow
+row 652: formulas=8 constants=22 unlocked=0 labels=B652=VENCIDO | C652=45709 | D652=MATIAS | E652=1 | H652=Vm55b-u | I652=1 paquete x 20
+Pantalla Profesional Samsung 55 - LFD Video Wall 55-inch Ultra-Narrow Bezel Commercial LED LCD Display - Samsung VMB-U Series - LED Display - Flat - 55Inch - 1920 x 1080 - 0.63 x 0.63 - 1200:1 - 500 nit - 16:9 - 72% - Haze 25% - 600 x 400 mm
+row 653: formulas=8 constants=23 unlocked=0 labels=B653=VENCIDO | C653=45709 | D653=LUCIO | E653=1 | H653=DEL PRO | I653=New Dell Pro Rugged 14 Laptop
+row 654: formulas=18 constants=13 unlocked=0 labels=B654=VENCIDO | C654=45713 | D654=MATIAS | E654=1 | H654=U3223QZ | I654=Dell U3223QZ UltraSharp 32 Monitor de videoconferencia - Pantalla de 31.5 pulgadas (3840 x 2160) 60Hz, tiempo de respuesta de 5 ms, cámara incorporada, altavoz integrado
+row 655: formulas=8 constants=23 unlocked=0 labels=B655=VENCIDO | C655=45715 | D655=MATIAS | E655=20 | H655=‎SM-X216B | I655=SAMSUNG Galaxy Tab A9+ Plus 5G SM-X216B 128GB 8GB WiFi + 5G LTE tableta GSM desbloqueada de fábrica celular, versión internacional (negro grafito)
+row 656: formulas=7 constants=24 unlocked=0 labels=B656=VENCIDO | C656=45729 | D656=LUCIO | E656=14 | H656=RTX5070 | I656=rtx5070
+row 657: formulas=12 constants=19 unlocked=0 labels=B657=VENCIDO | C657=45733 | D657=GUSTAVO | E657=10 | H657=OPTIPLEX MFF | I657=OPTIPLEX MFF
+row 658: formulas=8 constants=22 unlocked=0 labels=B658=VENCIDO | C658=45735 | D658=MATIAS | E658=3 | H658=PTA0157-432 | I658=3nStar Android Fanless All-in-One 15.6" All-in-One, Android 11, Quad-Core, 4GB RAM, 32GB Storage, Capacitive, Wifi, BT PTA0157-432
+row 659: formulas=7 constants=23 unlocked=0 labels=B659=VENCIDO | C659=45735 | D659=MATIAS | E659=3 | H659=PTA0157-432 | I659=3nStar Android Fanless All-in-One 15.6" All-in-One, Android 11, Quad-Core, 4GB RAM, 32GB Storage, Capacitive, Wifi, BT PTA0157-432 + ACCESORIES 13.3" LCD DISPLAY
+row 660: formulas=7 constants=23 unlocked=0 labels=B660=VENCIDO | C660=45735 | D660=MATIAS | E660=5 | H660=RPT008 | I660=3nStar 80mm Direct Thermal Receipt Printer RPT008 USB SERIAL ETHERNET
+row 661: formulas=8 constants=23 unlocked=0 labels=B661=VENCIDO | C661=45737 | D661=MATIAS | E661=2 | H661=CBS220-8T-E-2G-NA | I661=Cisco Interruptor inteligente Business CBS220-8T-E-2G | GE de 8 puertos | 2 x 1G de factor de forma pequeño enchufable (SFP) | Garantía limitada de hardware de 3 años
+row 662: formulas=7 constants=24 unlocked=0 labels=B662=VENCIDO | C662=45741 | D662=PABLO | E662=1 | H662=VCNRTXA6000-PB | I662=VIDIA RTX A6000 Graphics Card 48GB GDDR6 300W PCIE 3.0
+row 663: formulas=7 constants=24 unlocked=0 labels=B663=VENCIDO | C663=45743 | D663=MATIAS | E663=1 | H663=1740-000-110 | I663=Pelican 1740 Transport Long Case with Foam, Watertight, Dustproof and Crushproof, Black
+row 664: formulas=7 constants=23 unlocked=0 labels=B664=VENCIDO | C664=45743 | D664=MATIAS | E664=82 | H664=4XH0N04098 | I664=ThinkCentre Tiny Sandwich Mount II
+row 665: formulas=7 constants=23 unlocked=0 labels=B665=VENCIDO | C665=45743 | D665=MATIAS | E665=82 | H665=4XH0N23158 | I665=ThinkCentre Tiny Power Cage II
+row 666: formulas=7 constants=23 unlocked=0 labels=B666=VENCIDO | C666=45747 | D666=MATIAS | E666=1 | H666=TS-h1277AXU-RP-R7-32G-US | I666=QNAP TS-H1277AXU-RP-R7-32G 12-Bay, Ryzen7 CPU,32 GB DDR5, 550W RP Enterprise NAS
+row 667: formulas=7 constants=24 unlocked=0 labels=B667=VENCIDO | C667=45748 | D667=PABLO | E667=10 | H667=E351600 | I667=ELO, 2202L 22-INCH WIDE LCD DESKTOP,
+FULL HD, PROJECTED CAPACITIVE 10
+TOUCH, USB CONTROLLER, CLEAR, ZERO
+BEZEL, STAND, VGA AND HDMI VIDEO
+INTERFACE, BLACK, WORLDWIDE
+row 668: formulas=7 constants=24 unlocked=0 labels=B668=VENCIDO | C668=45748 | D668=PABLO | E668=10 | H668=E126096 | I668=ELO, 2202L 22-INCH WIDE LCD MONITOR,
+FULL HD, PROJECTED CAPACITIVE 10
+TOUCH, USB CONTROLLER, CLEAR, ZERO
+BEZEL, NO STAND, VGA AND HDMI VIDEO
+INTERFACE, BLACK, WW
+row 669: formulas=7 constants=24 unlocked=0 labels=B669=VENCIDO | C669=45748 | D669=PABLO | E669=1 | H669=C12C933151 | I669=Epson 24" Optional Stand for SureColor T3170 Wireless Printer
+row 670: formulas=8 constants=21 unlocked=0 labels=B670=VENCIDO | C670=45750 | D670=GUSTAVO | I670=rtx5090 | J670=PLACA DE VIDEO | L670=2420
+row 671: formulas=8 constants=21 unlocked=0 labels=B671=VENCIDO | C671=45750 | D671=GUSTAVO | I671=rtx5080 | J671=PLACA DE VIDEO | L671=1211
+row 672: formulas=7 constants=22 unlocked=0 labels=B672=VENCIDO | C672=45750 | D672=GUSTAVO | E672=5 | I672=rtx5070 | J672=PLACA DE VIDEO
+row 673: formulas=7 constants=22 unlocked=0 labels=B673=VENCIDO | C673=45750 | D673=GUSTAVO | E673=5 | I673=rtx5070 | J673=PLACA DE VIDEO
+row 674: formulas=7 constants=22 unlocked=0 labels=B674=VENCIDO | C674=45750 | D674=GUSTAVO | E674=5 | I674=rtx5070 | J674=PLACA DE VIDEO
+row 675: formulas=7 constants=22 unlocked=0 labels=B675=VENCIDO | C675=45750 | D675=GUSTAVO | E675=5 | I675=rtx5070 | J675=PLACA DE VIDEO
+row 676: formulas=8 constants=21 unlocked=0 labels=B676=VENCIDO | C676=45750 | D676=MATIAS | E676=1 | I676=Netgate 6100 BASE pfSense+ Security Gateway | J676=ROUTERS CON FTE EXTERNA
+row 677: formulas=7 constants=23 unlocked=0 labels=B677=VENCIDO | C677=45751 | D677=PABLO | E677=1 | I677=ASUS ProArt B760-CREATOR WiFi 6 | J677=PLACA DE VIDEO
+row 678: formulas=8 constants=22 unlocked=0 labels=B678=VENCIDO | C678=45751 | D678=GUSTAVO | E678=55 | H678=21m7s0ba00 | I678=Lenovo TP e14 U5 16gb 512 w11pro
+row 679: formulas=7 constants=23 unlocked=0 labels=B679=VENCIDO | C679=45842 | D679=GUSTAVO | E679=1 | H679=6PXRK or 338-CLVZ | I679=Procesador Intel Xeon Gold 6438Y+,
+row 680: formulas=8 constants=22 unlocked=0 labels=B680=VENCIDO | C680=45842 | D680=GUSTAVO | E680=1 | H680=PGDT5 or 338-CHDB | I680=Procesador Intel Xeon Platinum 8452Y 2G
+row 681: formulas=7 constants=22 unlocked=0 labels=B681=VENCIDO | C681=45842 | D681=GUSTAVO | E681=2 | I681=High Performance Heat Sink (Above 185W CPU’s) | J681=COOLER
+row 682: formulas=7 constants=23 unlocked=0 labels=B682=VENCIDO | C682=45754 | D682=MATIAS | E682=1 | H682=65TR3DK-B | I682=LG CreateBoard 65TR3DK-B - Pantalla LCD retroiluminada por LED de 65 pulgadas de clase diagonal serie TR3DK - Educación/Negocios - con pantalla táctil (Multi Touch) - Android - 4K UHD (2160p) 3840 x
+row 683: formulas=7 constants=24 unlocked=0 labels=B683=VENCIDO | C683=45755 | D683=PABLO | E683=1 | H683=BBP-85 | I683=Rotuladora mediante transferencia termica
+row 684: formulas=7 constants=24 unlocked=0 labels=B684=VENCIDO | C684=45756 | D684=PABLO | E684=1 | H684=13562 | I684=Etiqueta de Vinilo Brady 13562
+row 685: formulas=7 constants=24 unlocked=0 labels=B685=VENCIDO | C685=45756 | D685=PABLO | E685=1 | H685=13563 | I685=Etiqueta de Vinilo amarilla Brady 13563
+row 686: formulas=7 constants=24 unlocked=0 labels=B686=VENCIDO | C686=45756 | D686=PABLO | E686=1 | H686=13510 | I686=Ribbon de impresora Brady 13510
+row 687: formulas=7 constants=24 unlocked=0 labels=B687=VENCIDO | C687=45782 | D687=MATIAS | E687=10 | H687=MX2U3E/A | I687=SPA 16-inch MacBook Pro: Apple M4 Pro chip with 14 core CPU and 20 core GPU, 48GB, 512GB SSD - Silver A3403
+row 688: formulas=7 constants=23 unlocked=0 labels=B688=VENCIDO | C688=45786 | D688=TOMAS | E688=1 | H688=NVL40TCGPU-KIT | I688=PNY NVIDIA L40 Graphic Card - 48 GB GDDR6
+row 689: formulas=8 constants=21 unlocked=0 labels=B689=VENCIDO | C689=45786 | D689=GUSTAVO | E689=200 | I689=dell pro 14 | J689=NOTEBOOK
+row 690: formulas=8 constants=22 unlocked=0 labels=B690=VENCIDO | C690=45789 | D690=LUCIO | E690=200 | H690=19T84 | I690=LA DELL PRO 14 PC14250 U5 235U	16GB 512GB W11P SPA 3Y
+row 691: formulas=7 constants=24 unlocked=0 labels=B691=VENCIDO | C691=45806 | D691=LUCIO | E691=35 | H691=AP9631 | I691=Tarjeta de gestión de red de UPS AP9631
+row 692: formulas=8 constants=23 unlocked=0 labels=B692=VENCIDO | C692=45806 | D692=LUCIO | E692=4 | H692=7020 | I692=PC 7020
+row 693: formulas=7 constants=23 unlocked=0 labels=B693=VENCIDO | C693=45806 | D693=PABLO | E693=48 | I693=Bmax Mini PC B6 Pro, Intel Core i5-1030NG7 (hasta 3.5 GHz), 16 GB LPDDR4/512 GB NVMe SSD, mini computadora de escritorio WiFi5 4K/60Hz triple pantalla BT4.2 Gigabit Ethernet tipo-C/HDMI Mini | J693=MINI PC/ OPTIPLEX
+row 694: formulas=7 constants=24 unlocked=0 labels=B694=VENCIDO | C694=45810 | D694=PABLO | E694=22 | H694=20UW000LUS | I694=Lenovo ThinkPad X12 detachable Intel Core i7-1160G7 16GB RAM SSD 512GB Windows 11 Pro Gtia 12 meses Carry ON INCLUYE:
+row 695: formulas=7 constants=24 unlocked=0 labels=B695=VENCIDO | C695=45810 | D695=TOMAS | E695=26 | H695=65TR3DK-B.MUSQ | I695=LG CreateBoard 65TR3DK-B Collaboration Display - LCD - ARM Cortex A55 - 4 GB - Touchscreen - 16:9 Aspect Ratio - 3840 x 2160 - Direct LED - 440 Nit - 1,200:1 Contrast Ratio - 2160p - USB - HDMI - VGA - Bluetooth - Android 11, Windows 7, Windows 8, Windows 10 - TAA Compliant
+row 696: formulas=7 constants=24 unlocked=0 labels=B696=VENCIDO | C696=45722 | D696=TOMAS | E696=21 | H696=BLX288/SM58 | I696=Sistema de micrófono inalámbrico UHF BLX288/SM58, rango de 300 pies, (2) micrófonos de mano SM58, receptor de doble canal, banda J11
+row 697: formulas=7 constants=24 unlocked=0 labels=B697=VENCIDO | C697=45722 | D697=GUSTAVO | E697=1 | H697=PLS-4K | I697=Analog Way Pulse 4K 10-Input Multi-Layer Mixer & Seamless Switcher
+row 698: formulas=7 constants=24 unlocked=0 labels=B698=VENCIDO | C698=45812 | D698=TOMAS | E698=6 | H698=BLX24/SM58 | I698=Shure Sistema de micrófono inalámbrico BLX24/SM58 – Duración de la batería de 14 horas, rango de 300 pies, UHF | Incluye micrófono vocal de mano SM58, receptor de un solo canal | Banda H9
+row 699: formulas=8 constants=23 unlocked=0 labels=B699=VENCIDO | C699=45812 | D699=TOMAS | E699=21 | H699=EON715 | I699=JBL Professional EON715 - Sistema de altavoces Bluetooth - 650 W RMS - Negro, 28.2 x 17.2 x 14.1 pulgadas
+row 700: formulas=7 constants=24 unlocked=0 labels=B700=VENCIDO | C700=45813 | D700=TOMAS | E700=48 | H700=B6 Power | I700=Bmax Mini PC B6, Intel Core i7-1060NG7, 16GB LPDDR4 RAM/1TB NVMe SSD, mini computadora de escritorio WiFi6 4K/60Hz triple pantalla BT5.2 Gigabit Ethernet tipo-C/HDMI Micro PC Mini computadora
+row 701: formulas=17 constants=14 unlocked=0 labels=B701=VENCIDO | C701=45814 | D701=GUSTAVO | E701=1 | H701=FG-120G | I701=FortiGate-120G 18 x GE RJ45 ports (including 1 x MGMT port, 1 X HA port, 16 x switch ports), 8 x GE SFP slots, 4 x 10GE SFP+ slots, SP5 hardware accelerated, dual AC power supplies
+row 702: formulas=7 constants=24 unlocked=0 labels=B702=VENCIDO | C702=45814 | D702=GUSTAVO | E702=1 | H702=FG-100 | I702=FortiGate-100F 22 x GE RJ45 ports (including 2 x WAN ports, 1 x DMZ port, 1 x Mgmt port, 2 x HA ports, 16 x switch ports with 4 SFP port shared media), 4 SFP ports, 2x 10G SFP+ FortiLinks, dual power supplies redundancy.
+row 703: formulas=7 constants=24 unlocked=0 labels=B703=VENCIDO | C703=45819 | D703=TOMAS | E703=21 | H703=EON715 | I703=JBL EON 715
+row 704: formulas=8 constants=24 unlocked=0 labels=B704=VENCIDO | C704=45820 | D704=LUCIO | E704=6 | H704=A1NU1UT | I704=Z2 SFF G9 i914900K
+row 705: formulas=20 constants=11 unlocked=0 labels=B705=VENCIDO | C705=45826 | D705=PABLO | E705=20 | H705=12HD7 | I705=Beetronics Monitor 12"
+row 706: formulas=7 constants=23 unlocked=0 labels=B706=VENCIDO | C706=26/06/2025 | D706=GUSTAVO | E706=1 | H706=bluevary kit | J706=CERRADURA ELECTRONICA
+row 707: formulas=8 constants=22 unlocked=0 labels=B707=VENCIDO | C707=45834 | D707=TOMAS | E707=1 | H707=B0DJPW2LPF | I707=MSI PRO MP275 E2 - Monitor de oficina para juegos IPS 1920 x 1080 (FHD) de 27 pulgadas, 120Hz, sincronización libre, HDMI, DisplayPort, puerto VGA, montaje VESA, inclinación, altavoz,
+row 708: formulas=7 constants=24 unlocked=0 labels=B708=VENCIDO | C708=45839 | D708=PABLO | E708=1 | H708=bundle | I708=Neat Bar Generation 2 bundled with Neat pad
+row 709: formulas=7 constants=24 unlocked=0 labels=B709=VENCIDO | C709=04/07/20258 | D709=GUSTAVO | E709=2 | H709=RMWAP8 | I709=AP WLS POE YAMAHA
+row 710: formulas=7 constants=24 unlocked=0 labels=B710=VENCIDO | C710=45846 | D710=PABLO | E710=1 | H710=Puget	Workstation	Threadripper	PRO	WRX90	T140-XL | I710=CTO
+row 711: formulas=7 constants=20 unlocked=0 labels=B711=VENCIDO | E711=1 | J711=IMPRESORA TERMICA | L711=2950 | M711=3097.5 | N711=0
+row 712: formulas=7 constants=24 unlocked=0 labels=B712=VENCIDO | C712=45860 | D712=PABLO | E712=30 | H712=CF281X | I712=TONER 81X HP
+row 713: formulas=8 constants=23 unlocked=0 labels=B713=VENCIDO | C713=45860 | D713=LUCIO | E713=100 | H713=21SG008RFJ | I713=ThinkBook 14 G8 IRL
+row 714: formulas=8 constants=22 unlocked=0 labels=B714=VENCIDO | C714=45860 | D714=TOMAS | E714=1 | I714=16 inch MacBook Pro Apple M4 Pro chip with 14 core CPU, 20 core GPU, 16 core Neural Engine 48GB Unified Memory 1TB SSD Storage
+
+ | J714=NOTEBOOK
+row 715: formulas=8 constants=22 unlocked=0 labels=B715=VENCIDO | C715=45860 | D715=TOMAS | E715=1 | I715=14 inch MacBook Pro Apple M4 Pro chip with 14 core CPU, 20 core GPU, 16 core Neural Engine 48GB Unified Memory 1TB SSD Storage
+ | J715=NOTEBOOK
+row 716: formulas=7 constants=23 unlocked=0 labels=B716=VENCIDO | C716=45866 | D716=GABRIEL | E716=1 | H716=S/PN | I716=HigolePC - Tablet Rugged N100, 8 GB; SSD-126GB, 
+row 717: formulas=7 constants=24 unlocked=0 labels=B717=VENCIDO | C717=45867 | D717=PABLO | E717=2 | H717=MW1C-I | I717=Aegex 100M WIFI CON CAMARA
+row 718: formulas=7 constants=24 unlocked=0 labels=B718=VENCIDO | C718=45867 | D718=PABLO | E718=2 | H718=ML10C-I | I718=Aegex 100M WIFI+LTE CON CAMARA
+row 719: formulas=7 constants=24 unlocked=0 labels=B719=VENCIDO | C719=45867 | D719=GABRIEL | E719=1 | H719=EAP653 | I719=Omada - Access point AX3000 wifi 6 - de techo -
+row 720: formulas=7 constants=23 unlocked=0 labels=B720=VENCIDO | C720=45877 | D720=TOMAS | E720=1 | H720=A2QH1UA | I720=HP ZBook Fury 16 inch G11 Mobile Workstation PC 3 Yr Wolf Pro Security & 3 Yr Warranty Windows 11 Pro Procesador Intel® Core™ i9 de 14.ª generación Memoria :64 GB DDR5-5600 MT/s (2 x 32 GB) Pantalla de 16" Discreto: GPU para laptop NVIDIA RTX™ 4000 de generación Ada (12 GB GDDR6 dedicados)
+row 721: formulas=7 constants=24 unlocked=0 labels=B721=VENCIDO | C721=45882 | D721=TOMAS | E721=1 | H721=B2-W | I721=Unitree B2-W
+row 722: formulas=7 constants=24 unlocked=0 labels=B722=VENCIDO | C722=45889 | D722=PABLO | E722=1 | H722=C050045A002B | I722=PMP 450i AP
+row 723: formulas=7 constants=23 unlocked=0 labels=B723=VENCIDO | C723=45889 | D723=TOMAS | E723=2 | H723=MT343 | I723=SLIM SWING TURNSTILE GATE
+row 724: formulas=7 constants=23 unlocked=0 labels=B724=VENCIDO | C724=45951 | D724=TOMAS | E724=7 | H724=CT45-L0N-27D100G | I724=CT45: WIFI5 - Single BT, No Sim, 5.0´ Screen, Full Touchscreen, 4GB/64GB, Standard Range Engine-Red Laser, Front & Rear Camera, Standard Battery, GMS, IP65/68, Standard Environment & Battery, No Gov Cert., Launcher/Browser/BasicTE, Global
+row 725: formulas=7 constants=23 unlocked=0 labels=B725=VENCIDO | C725=45951 | D725=TOMAS | E725=7 | H725=CT4X-BTSC-001 | I725=CT45 / CT47 Standard Battery Pack, 4775mAh
+row 726: formulas=7 constants=23 unlocked=0 labels=B726=VENCIDO | C726=45951 | D726=TOMAS | E726=2 | H726=CT45-5CB-UVB-BAT-0 | I726=5 bay universal dock, charge up to 4pcs of booted CT40/CT40XP/CT45/ CT45XP/CT47 and 4pcs of CT4X batteries. Kit includes 5 bay universal dock and power adaptor. Power cord must be orderred separately.
+row 727: formulas=7 constants=23 unlocked=0 labels=B727=VENCIDO | C727=45951 | D727=TOMAS | E727=7 | H727=CT45-HS-FM | I727=CT45 HAND STRAP FOR FIELD MOBILITY,3PCS
+row 728: formulas=7 constants=23 unlocked=0 labels=B728=VENCIDO | C728=45951 | D728=TOMAS | E728=7 | H728=CT45-PB-XP | I728=CT45 protective boot with extra protection of the side keys
+row 729: formulas=7 constants=24 unlocked=0 labels=B729=VENCIDO | C729=45959 | D729=PABLO | E729=1 | H729=Kobetron GI-4000 Pro | I729=Kobetron GI-4000 Pro AIO Casino Verification Tool
+row 730: formulas=7 constants=23 unlocked=0 labels=B730=VENCIDO | C730=45966 | D730=TOMAS | E730=3 | H730=NVH100NVLTCGPU-KIT | I730=NVIDIA H100 NVL PCIE RETAIL SCB
+row 731: formulas=7 constants=23 unlocked=0 labels=B731=VENCIDO | C731=45967 | D731=TOMAS | E731=1 | H731=T560 | I731=1 × Intel Xeon Silver 4510Y 2.4 GHz (12C/32T) con 16 GB + 3×16 GB DDR5 ECC, almacenamiento 2×480 GB SSD SATA + 2×2.4 TB SAS 10K, incluye licencia Windows Server 2025 Standard ROK 16-core
+row 732: formulas=7 constants=24 unlocked=0 labels=B732=VENCIDO | C732=45968 | D732=PABLO | E732=1 | H732=Roland EU-1000MF | I732=Roland EU-1000MF
+row 733: formulas=7 constants=22 unlocked=0 labels=B733=VENCIDO | C733=18/11/2025 | D733=GUSTAVO | E733=1 | I733=NOTEBOOKS BONDED MIAMI | J733=NOTEBOOK
+row 734: formulas=7 constants=24 unlocked=0 labels=B734=vencido | C734=46008 | D734=TOMAS | E734=1 | H734=BP302RCTCKB | I734=BluePrint BP302RCTCKB 302 Cruiser Crate Engine, Dlx Dressed, Carb
+row 735: formulas=7 constants=24 unlocked=0 labels=B735=vencido | C735=46021 | D735=TOMAS | E735=1 | H735=CPAPSG9200PLUSSNBT | I735=Check Point Quantum Force 9200 Plus Applia
+row 736: formulas=7 constants=24 unlocked=0 labels=B736=vencido | C736=46021 | D736=TOMAS | E736=1 | H736=CPAP-SG6200-PLUS-SNBT | I736=Check Point Quantum 6200 Plus - security appliance - with 1 year SandBlast (SNBT) Security Subscription Package
+row 737: formulas=7 constants=24 unlocked=0 labels=B737=vencido | C737=46050 | D737=PABLO | E737=1 | H737=EKA-ESK-2 | I737=Ekahau Sidekick 2 Wi-Fi Tester
+row 738: formulas=7 constants=23 unlocked=0 labels=B738=vencido | D738=PABLO | E738=1 | H738=ESK-2 | I738=Ekahau Sidekick 2 - network tester | J738=CAMARAS WEB
+row 739: formulas=7 constants=24 unlocked=0 labels=B739=vencido | C739=46055 | D739=PABLO | E739=1 | H739=T140-XL | I739=Puget	Workstation	Threadripper	PRO	WRX90	T140-XL
+row 740: formulas=7 constants=24 unlocked=0 labels=B740=vencido | C740=46064 | D740=PABLO | E740=5 | H740=IE-3300-8P2S-E | I740=Cisco Catalyst IE3300 Managed L2 10G Ethernet (100/1000/10000) Black
+row 741: formulas=7 constants=24 unlocked=0 labels=B741=vencido | C741=46064 | D741=PABLO | E741=2 | H741=Dell Pro Max Tower T2 FCT2250 | I741=workstation dell
+row 742: formulas=7 constants=24 unlocked=0 labels=B742=vencido | C742=46076 | D742=PABLO | E742=1 | H742=8601472752 | I742=SUPERMICRO COMPUTER: OPTIMIZED A+ 2U Remote Workstation 
+row 743: formulas=8 constants=22 unlocked=0 labels=B743=vencido | C743=46115 | D743=GUSTAVO | E743=50 | J743=NOTEBOOK | L743=1556
+row 744: formulas=20 constants=10 unlocked=0 labels=B744=vencido | C744=46115 | D744=GUSTAVO | E744=6 | J744=NOTEBOOK | L744=1070
+row 745: formulas=8 constants=22 unlocked=0 labels=B745=vencido | C745=46115 | D745=GUSTAVO | E745=12 | J745=NOTEBOOK | L745=2195
+row 746: formulas=8 constants=22 unlocked=0 labels=B746=vencido | C746=46115 | D746=GUSTAVO | E746=5 | J746=NOTEBOOK | L746=3105
+row 747: formulas=7 constants=24 unlocked=0 labels=B747=vencido | C747=46086 | D747=PABLO | E747=1 | H747=
+ZE52163-R010000Z | I747=
+ZEBRA AIT, PRINTER, ZE521, 6", 300 DPI, RH, 
+US CORD, USB, SERIAL, ETHERNET, 
+BLUETOOTH 4.1, DUAL USB HOST, COLOR 
+TOUCH, ZPL
+row 748: formulas=7 constants=18 unlocked=0 labels=B748=vencido | C748=46091 | D748=PABLO | E748=1 | M748=0 | N748=0
+row 749: formulas=7 constants=21 unlocked=0 labels=B749=vencido | C749=46092 | D749=TOMAS | E749=1 | J749=SWITCH | L749=4520
+row 750: formulas=8 constants=22 unlocked=0 labels=B750=vencido | C750=46100 | D750=TOMAS | E750=5 | H750=Comunicador display | J750=CAMARAS WEB
+row 751: formulas=7 constants=23 unlocked=0 labels=B751=vencido | C751=46100 | D751=TOMAS | E751=410 | H751=pantalla 6" | J751=ANTENAS
+row 752: formulas=7 constants=22 unlocked=0 labels=B752=vencido | C752=46106 | D752=TOMAS | E752=1 | J752=IMPRESORA 3d | L752=4850
+row 753: formulas=7 constants=14 unlocked=0 labels=M753=0 | N753=0 | O753=- | Q753=0 | R753=- | S753=0
+row 754: formulas=7 constants=14 unlocked=0 labels=M754=0 | N754=0 | O754=- | Q754=0 | R754=- | S754=0
+row 755: formulas=7 constants=14 unlocked=0 labels=M755=0 | N755=0 | O755=- | Q755=0 | R755=- | S755=0
+row 756: formulas=7 constants=14 unlocked=0 labels=M756=0 | N756=0 | O756=- | Q756=0 | R756=- | S756=0
+row 757: formulas=7 constants=14 unlocked=0 labels=M757=0 | N757=0 | O757=- | Q757=0 | R757=- | S757=0
+row 758: formulas=7 constants=14 unlocked=0 labels=M758=0 | N758=0 | O758=- | Q758=0 | R758=- | S758=0
+row 759: formulas=7 constants=14 unlocked=0 labels=M759=0 | N759=0 | O759=- | Q759=0 | R759=- | S759=0
+row 760: formulas=7 constants=14 unlocked=0 labels=M760=0 | N760=0 | O760=- | Q760=0 | R760=- | S760=0
+row 761: formulas=7 constants=14 unlocked=0 labels=M761=0 | N761=0 | O761=- | Q761=0 | R761=- | S761=0
+row 762: formulas=7 constants=14 unlocked=0 labels=M762=0 | N762=0 | O762=- | Q762=0 | R762=- | S762=0
+row 763: formulas=7 constants=14 unlocked=0 labels=M763=0 | N763=0 | O763=- | Q763=0 | R763=- | S763=0
+row 764: formulas=7 constants=14 unlocked=0 labels=M764=0 | N764=0 | O764=- | Q764=0 | R764=- | S764=0
+row 765: formulas=7 constants=14 unlocked=0 labels=M765=0 | N765=0 | O765=- | Q765=0 | R765=- | S765=0
+row 766: formulas=7 constants=14 unlocked=0 labels=M766=0 | N766=0 | O766=- | Q766=0 | R766=- | S766=0
+row 767: formulas=7 constants=14 unlocked=0 labels=M767=0 | N767=0 | O767=- | Q767=0 | R767=- | S767=0
+row 768: formulas=7 constants=14 unlocked=0 labels=M768=0 | N768=0 | O768=- | Q768=0 | R768=- | S768=0
+row 769: formulas=9 constants=12 unlocked=0 labels=M769=0 | N769=0 | O769=- | Q769=0 | R769=- | S769=0
+row 770: formulas=7 constants=14 unlocked=0 labels=M770=0 | N770=0 | O770=- | Q770=0 | R770=- | S770=0
+row 771: formulas=7 constants=14 unlocked=0 labels=M771=0 | N771=0 | O771=- | Q771=0 | R771=- | S771=0
+row 772: formulas=7 constants=14 unlocked=0 labels=M772=0 | N772=0 | O772=- | Q772=0 | R772=- | S772=0
+row 773: formulas=7 constants=14 unlocked=0 labels=M773=0 | N773=0 | O773=- | Q773=0 | R773=- | S773=0
+row 774: formulas=7 constants=14 unlocked=0 labels=M774=0 | N774=0 | O774=- | Q774=0 | R774=- | S774=0
+row 775: formulas=7 constants=14 unlocked=0 labels=M775=0 | N775=0 | O775=- | Q775=0 | R775=- | S775=0
+row 776: formulas=18 constants=3 unlocked=0 labels=Q776=0 | T776=#VALUE! | AC776=-
+row 777: formulas=7 constants=14 unlocked=0 labels=M777=0 | N777=0 | O777=- | Q777=0 | R777=- | S777=0
+row 778: formulas=7 constants=14 unlocked=0 labels=M778=0 | N778=0 | O778=- | Q778=0 | R778=- | S778=0
+row 779: formulas=7 constants=14 unlocked=0 labels=M779=0 | N779=0 | O779=- | Q779=0 | R779=- | S779=0
+row 780: formulas=7 constants=14 unlocked=0 labels=M780=0 | N780=0 | O780=- | Q780=0 | R780=- | S780=0
+row 781: formulas=7 constants=14 unlocked=0 labels=M781=0 | N781=0 | O781=- | Q781=0 | R781=- | S781=0
+row 782: formulas=8 constants=13 unlocked=0 labels=M782=0 | N782=0 | O782=- | R782=- | S782=0 | T782=#VALUE!
+row 783: formulas=7 constants=14 unlocked=0 labels=M783=0 | N783=0 | O783=- | Q783=0 | R783=- | S783=0
+row 784: formulas=7 constants=14 unlocked=0 labels=M784=0 | N784=0 | O784=- | Q784=0 | R784=- | S784=0
+row 785: formulas=7 constants=14 unlocked=0 labels=M785=0 | N785=0 | O785=- | Q785=0 | R785=- | S785=0
+row 786: formulas=7 constants=14 unlocked=0 labels=M786=0 | N786=0 | O786=- | Q786=0 | R786=- | S786=0
+row 787: formulas=7 constants=14 unlocked=0 labels=M787=0 | N787=0 | O787=- | Q787=0 | R787=- | S787=0
+row 788: formulas=7 constants=14 unlocked=0 labels=M788=0 | N788=0 | O788=- | Q788=0 | R788=- | S788=0
+row 789: formulas=7 constants=14 unlocked=0 labels=M789=0 | N789=0 | O789=- | Q789=0 | R789=- | S789=0
+row 790: formulas=7 constants=14 unlocked=0 labels=M790=0 | N790=0 | O790=- | Q790=0 | R790=- | S790=0
+row 791: formulas=7 constants=14 unlocked=0 labels=M791=0 | N791=0 | O791=- | Q791=0 | R791=- | S791=0
+row 792: formulas=7 constants=14 unlocked=0 labels=M792=0 | N792=0 | O792=- | Q792=0 | R792=- | S792=0
+row 793: formulas=7 constants=14 unlocked=0 labels=M793=0 | N793=0 | O793=- | Q793=0 | R793=- | S793=0
+row 794: formulas=7 constants=14 unlocked=0 labels=M794=0 | N794=0 | O794=- | Q794=0 | R794=- | S794=0
+row 795: formulas=7 constants=14 unlocked=0 labels=M795=0 | N795=0 | O795=- | Q795=0 | R795=- | S795=0
+row 796: formulas=7 constants=14 unlocked=0 labels=M796=0 | N796=0 | O796=- | Q796=0 | R796=- | S796=0
+row 797: formulas=7 constants=14 unlocked=0 labels=M797=0 | N797=0 | O797=- | Q797=0 | R797=- | S797=0
+row 798: formulas=7 constants=14 unlocked=0 labels=M798=0 | N798=0 | O798=- | Q798=0 | R798=- | S798=0
+row 799: formulas=7 constants=14 unlocked=0 labels=M799=0 | N799=0 | O799=- | Q799=0 | R799=- | S799=0
+row 800: formulas=7 constants=14 unlocked=0 labels=M800=0 | N800=0 | O800=- | Q800=0 | R800=- | S800=0
+row 801: formulas=7 constants=14 unlocked=0 labels=M801=0 | N801=0 | O801=- | Q801=0 | R801=- | S801=0
+row 802: formulas=7 constants=14 unlocked=0 labels=M802=0 | N802=0 | O802=- | Q802=0 | R802=- | S802=0
+row 803: formulas=7 constants=14 unlocked=0 labels=M803=0 | N803=0 | O803=- | Q803=0 | R803=- | S803=0
+row 804: formulas=7 constants=14 unlocked=0 labels=M804=0 | N804=0 | O804=- | Q804=0 | R804=- | S804=0
+row 805: formulas=7 constants=14 unlocked=0 labels=M805=0 | N805=0 | O805=- | Q805=0 | R805=- | S805=0
+row 806: formulas=7 constants=14 unlocked=0 labels=M806=0 | N806=0 | O806=- | Q806=0 | R806=- | S806=0
+row 807: formulas=7 constants=14 unlocked=0 labels=M807=0 | N807=0 | O807=- | Q807=0 | R807=- | S807=0
+row 808: formulas=18 constants=3 unlocked=0 labels=Q808=0 | T808=#VALUE! | AC808=-
+row 809: formulas=7 constants=14 unlocked=0 labels=M809=0 | N809=0 | O809=- | Q809=0 | R809=- | S809=0
+row 810: formulas=7 constants=14 unlocked=0 labels=M810=0 | N810=0 | O810=- | Q810=0 | R810=- | S810=0
+row 811: formulas=7 constants=14 unlocked=0 labels=M811=0 | N811=0 | O811=- | Q811=0 | R811=- | S811=0
+row 812: formulas=7 constants=14 unlocked=0 labels=M812=0 | N812=0 | O812=- | Q812=0 | R812=- | S812=0
+row 813: formulas=7 constants=14 unlocked=0 labels=M813=0 | N813=0 | O813=- | Q813=0 | R813=- | S813=0
+row 814: formulas=8 constants=13 unlocked=0 labels=M814=0 | N814=0 | O814=- | R814=- | S814=0 | T814=#VALUE!
+row 815: formulas=7 constants=14 unlocked=0 labels=M815=0 | N815=0 | O815=- | Q815=0 | R815=- | S815=0
+row 816: formulas=7 constants=14 unlocked=0 labels=M816=0 | N816=0 | O816=- | Q816=0 | R816=- | S816=0
+row 817: formulas=7 constants=14 unlocked=0 labels=M817=0 | N817=0 | O817=- | Q817=0 | R817=- | S817=0
+row 818: formulas=7 constants=14 unlocked=0 labels=M818=0 | N818=0 | O818=- | Q818=0 | R818=- | S818=0
+row 819: formulas=7 constants=14 unlocked=0 labels=M819=0 | N819=0 | O819=- | Q819=0 | R819=- | S819=0
+row 820: formulas=7 constants=14 unlocked=0 labels=M820=0 | N820=0 | O820=- | Q820=0 | R820=- | S820=0
+row 821: formulas=7 constants=14 unlocked=0 labels=M821=0 | N821=0 | O821=- | Q821=0 | R821=- | S821=0
+row 822: formulas=7 constants=14 unlocked=0 labels=M822=0 | N822=0 | O822=- | Q822=0 | R822=- | S822=0
+row 823: formulas=7 constants=14 unlocked=0 labels=M823=0 | N823=0 | O823=- | Q823=0 | R823=- | S823=0
+row 824: formulas=7 constants=14 unlocked=0 labels=M824=0 | N824=0 | O824=- | Q824=0 | R824=- | S824=0
+row 825: formulas=7 constants=14 unlocked=0 labels=M825=0 | N825=0 | O825=- | Q825=0 | R825=- | S825=0
+row 826: formulas=7 constants=14 unlocked=0 labels=M826=0 | N826=0 | O826=- | Q826=0 | R826=- | S826=0
+row 827: formulas=7 constants=14 unlocked=0 labels=M827=0 | N827=0 | O827=- | Q827=0 | R827=- | S827=0
+row 828: formulas=7 constants=14 unlocked=0 labels=M828=0 | N828=0 | O828=- | Q828=0 | R828=- | S828=0
+row 829: formulas=7 constants=14 unlocked=0 labels=M829=0 | N829=0 | O829=- | Q829=0 | R829=- | S829=0
+row 830: formulas=7 constants=14 unlocked=0 labels=M830=0 | N830=0 | O830=- | Q830=0 | R830=- | S830=0
+row 831: formulas=7 constants=14 unlocked=0 labels=M831=0 | N831=0 | O831=- | Q831=0 | R831=- | S831=0
+row 832: formulas=7 constants=14 unlocked=0 labels=M832=0 | N832=0 | O832=- | Q832=0 | R832=- | S832=0
+row 833: formulas=9 constants=12 unlocked=0 labels=M833=0 | N833=0 | O833=- | Q833=0 | R833=- | S833=0
+row 834: formulas=7 constants=14 unlocked=0 labels=M834=0 | N834=0 | O834=- | Q834=0 | R834=- | S834=0
+row 835: formulas=7 constants=14 unlocked=0 labels=M835=0 | N835=0 | O835=- | Q835=0 | R835=- | S835=0
+row 836: formulas=7 constants=14 unlocked=0 labels=M836=0 | N836=0 | O836=- | Q836=0 | R836=- | S836=0
+row 837: formulas=7 constants=14 unlocked=0 labels=M837=0 | N837=0 | O837=- | Q837=0 | R837=- | S837=0
+row 838: formulas=7 constants=14 unlocked=0 labels=M838=0 | N838=0 | O838=- | Q838=0 | R838=- | S838=0
+row 839: formulas=7 constants=14 unlocked=0 labels=M839=0 | N839=0 | O839=- | Q839=0 | R839=- | S839=0
+row 840: formulas=18 constants=3 unlocked=0 labels=Q840=0 | T840=#VALUE! | AC840=-
+row 841: formulas=7 constants=14 unlocked=0 labels=M841=0 | N841=0 | O841=- | Q841=0 | R841=- | S841=0
+row 842: formulas=7 constants=14 unlocked=0 labels=M842=0 | N842=0 | O842=- | Q842=0 | R842=- | S842=0
+row 843: formulas=7 constants=14 unlocked=0 labels=M843=0 | N843=0 | O843=- | Q843=0 | R843=- | S843=0
+row 844: formulas=7 constants=14 unlocked=0 labels=M844=0 | N844=0 | O844=- | Q844=0 | R844=- | S844=0
+row 845: formulas=7 constants=14 unlocked=0 labels=M845=0 | N845=0 | O845=- | Q845=0 | R845=- | S845=0
+row 846: formulas=8 constants=13 unlocked=0 labels=M846=0 | N846=0 | O846=- | R846=- | S846=0 | T846=#VALUE!
+row 847: formulas=7 constants=14 unlocked=0 labels=M847=0 | N847=0 | O847=- | Q847=0 | R847=- | S847=0
+row 848: formulas=7 constants=14 unlocked=0 labels=M848=0 | N848=0 | O848=- | Q848=0 | R848=- | S848=0
+row 849: formulas=7 constants=14 unlocked=0 labels=M849=0 | N849=0 | O849=- | Q849=0 | R849=- | S849=0
+row 850: formulas=7 constants=14 unlocked=0 labels=M850=0 | N850=0 | O850=- | Q850=0 | R850=- | S850=0
+row 851: formulas=7 constants=14 unlocked=0 labels=M851=0 | N851=0 | O851=- | Q851=0 | R851=- | S851=0
+row 852: formulas=7 constants=14 unlocked=0 labels=M852=0 | N852=0 | O852=- | Q852=0 | R852=- | S852=0
+row 853: formulas=7 constants=14 unlocked=0 labels=M853=0 | N853=0 | O853=- | Q853=0 | R853=- | S853=0
+row 854: formulas=7 constants=14 unlocked=0 labels=M854=0 | N854=0 | O854=- | Q854=0 | R854=- | S854=0
+row 855: formulas=7 constants=14 unlocked=0 labels=M855=0 | N855=0 | O855=- | Q855=0 | R855=- | S855=0
+row 856: formulas=7 constants=14 unlocked=0 labels=M856=0 | N856=0 | O856=- | Q856=0 | R856=- | S856=0
+row 857: formulas=7 constants=14 unlocked=0 labels=M857=0 | N857=0 | O857=- | Q857=0 | R857=- | S857=0
+row 858: formulas=7 constants=14 unlocked=0 labels=M858=0 | N858=0 | O858=- | Q858=0 | R858=- | S858=0
+row 859: formulas=7 constants=14 unlocked=0 labels=M859=0 | N859=0 | O859=- | Q859=0 | R859=- | S859=0
+row 860: formulas=7 constants=14 unlocked=0 labels=M860=0 | N860=0 | O860=- | Q860=0 | R860=- | S860=0
+row 861: formulas=7 constants=14 unlocked=0 labels=M861=0 | N861=0 | O861=- | Q861=0 | R861=- | S861=0
+row 862: formulas=7 constants=14 unlocked=0 labels=M862=0 | N862=0 | O862=- | Q862=0 | R862=- | S862=0
+row 863: formulas=7 constants=14 unlocked=0 labels=M863=0 | N863=0 | O863=- | Q863=0 | R863=- | S863=0
+row 864: formulas=7 constants=14 unlocked=0 labels=M864=0 | N864=0 | O864=- | Q864=0 | R864=- | S864=0
+row 865: formulas=7 constants=14 unlocked=0 labels=M865=0 | N865=0 | O865=- | Q865=0 | R865=- | S865=0
+row 866: formulas=7 constants=14 unlocked=0 labels=M866=0 | N866=0 | O866=- | Q866=0 | R866=- | S866=0
+row 867: formulas=7 constants=14 unlocked=0 labels=M867=0 | N867=0 | O867=- | Q867=0 | R867=- | S867=0
+row 868: formulas=7 constants=14 unlocked=0 labels=M868=0 | N868=0 | O868=- | Q868=0 | R868=- | S868=0
+row 869: formulas=7 constants=14 unlocked=0 labels=M869=0 | N869=0 | O869=- | Q869=0 | R869=- | S869=0
+row 870: formulas=7 constants=14 unlocked=0 labels=M870=0 | N870=0 | O870=- | Q870=0 | R870=- | S870=0
+row 871: formulas=7 constants=14 unlocked=0 labels=M871=0 | N871=0 | O871=- | Q871=0 | R871=- | S871=0
+row 872: formulas=18 constants=3 unlocked=0 labels=Q872=0 | T872=#VALUE! | AC872=-
+row 873: formulas=7 constants=14 unlocked=0 labels=M873=0 | N873=0 | O873=- | Q873=0 | R873=- | S873=0
+row 874: formulas=7 constants=14 unlocked=0 labels=M874=0 | N874=0 | O874=- | Q874=0 | R874=- | S874=0
+row 875: formulas=7 constants=14 unlocked=0 labels=M875=0 | N875=0 | O875=- | Q875=0 | R875=- | S875=0
+row 876: formulas=7 constants=14 unlocked=0 labels=M876=0 | N876=0 | O876=- | Q876=0 | R876=- | S876=0
+row 877: formulas=7 constants=14 unlocked=0 labels=M877=0 | N877=0 | O877=- | Q877=0 | R877=- | S877=0
+row 878: formulas=8 constants=13 unlocked=0 labels=M878=0 | N878=0 | O878=- | R878=- | S878=0 | T878=#VALUE!
+row 879: formulas=7 constants=14 unlocked=0 labels=M879=0 | N879=0 | O879=- | Q879=0 | R879=- | S879=0
+row 880: formulas=7 constants=14 unlocked=0 labels=M880=0 | N880=0 | O880=- | Q880=0 | R880=- | S880=0
+row 881: formulas=7 constants=14 unlocked=0 labels=M881=0 | N881=0 | O881=- | Q881=0 | R881=- | S881=0
+row 882: formulas=7 constants=14 unlocked=0 labels=M882=0 | N882=0 | O882=- | Q882=0 | R882=- | S882=0
+row 883: formulas=7 constants=14 unlocked=0 labels=M883=0 | N883=0 | O883=- | Q883=0 | R883=- | S883=0
+row 884: formulas=7 constants=14 unlocked=0 labels=M884=0 | N884=0 | O884=- | Q884=0 | R884=- | S884=0
+row 885: formulas=7 constants=14 unlocked=0 labels=M885=0 | N885=0 | O885=- | Q885=0 | R885=- | S885=0
+row 886: formulas=7 constants=14 unlocked=0 labels=M886=0 | N886=0 | O886=- | Q886=0 | R886=- | S886=0
+row 887: formulas=7 constants=14 unlocked=0 labels=M887=0 | N887=0 | O887=- | Q887=0 | R887=- | S887=0
+row 888: formulas=7 constants=14 unlocked=0 labels=M888=0 | N888=0 | O888=- | Q888=0 | R888=- | S888=0
+row 889: formulas=7 constants=14 unlocked=0 labels=M889=0 | N889=0 | O889=- | Q889=0 | R889=- | S889=0
+row 890: formulas=7 constants=14 unlocked=0 labels=M890=0 | N890=0 | O890=- | Q890=0 | R890=- | S890=0
+row 891: formulas=7 constants=14 unlocked=0 labels=M891=0 | N891=0 | O891=- | Q891=0 | R891=- | S891=0
+row 892: formulas=7 constants=14 unlocked=0 labels=M892=0 | N892=0 | O892=- | Q892=0 | R892=- | S892=0
+row 893: formulas=7 constants=14 unlocked=0 labels=M893=0 | N893=0 | O893=- | Q893=0 | R893=- | S893=0
+row 894: formulas=7 constants=14 unlocked=0 labels=M894=0 | N894=0 | O894=- | Q894=0 | R894=- | S894=0
+row 895: formulas=7 constants=14 unlocked=0 labels=M895=0 | N895=0 | O895=- | Q895=0 | R895=- | S895=0
+row 896: formulas=7 constants=14 unlocked=0 labels=M896=0 | N896=0 | O896=- | Q896=0 | R896=- | S896=0
+row 897: formulas=9 constants=12 unlocked=0 labels=M897=0 | N897=0 | O897=- | Q897=0 | R897=- | S897=0
+row 898: formulas=7 constants=14 unlocked=0 labels=M898=0 | N898=0 | O898=- | Q898=0 | R898=- | S898=0
+row 899: formulas=7 constants=14 unlocked=0 labels=M899=0 | N899=0 | O899=- | Q899=0 | R899=- | S899=0
+row 900: formulas=7 constants=14 unlocked=0 labels=M900=0 | N900=0 | O900=- | Q900=0 | R900=- | S900=0
+row 901: formulas=7 constants=14 unlocked=0 labels=M901=0 | N901=0 | O901=- | Q901=0 | R901=- | S901=0
+row 902: formulas=7 constants=14 unlocked=0 labels=M902=0 | N902=0 | O902=- | Q902=0 | R902=- | S902=0
+row 903: formulas=7 constants=14 unlocked=0 labels=M903=0 | N903=0 | O903=- | Q903=0 | R903=- | S903=0
+row 904: formulas=18 constants=3 unlocked=0 labels=Q904=0 | T904=#VALUE! | AC904=-
+row 905: formulas=7 constants=14 unlocked=0 labels=M905=0 | N905=0 | O905=- | Q905=0 | R905=- | S905=0
+row 906: formulas=7 constants=14 unlocked=0 labels=M906=0 | N906=0 | O906=- | Q906=0 | R906=- | S906=0
+row 907: formulas=7 constants=14 unlocked=0 labels=M907=0 | N907=0 | O907=- | Q907=0 | R907=- | S907=0
+row 908: formulas=7 constants=14 unlocked=0 labels=M908=0 | N908=0 | O908=- | Q908=0 | R908=- | S908=0
+row 909: formulas=7 constants=14 unlocked=0 labels=M909=0 | N909=0 | O909=- | Q909=0 | R909=- | S909=0
+row 910: formulas=8 constants=13 unlocked=0 labels=M910=0 | N910=0 | O910=- | R910=- | S910=0 | T910=#VALUE!
+row 911: formulas=7 constants=14 unlocked=0 labels=M911=0 | N911=0 | O911=- | Q911=0 | R911=- | S911=0
+row 912: formulas=7 constants=14 unlocked=0 labels=M912=0 | N912=0 | O912=- | Q912=0 | R912=- | S912=0
+row 913: formulas=7 constants=14 unlocked=0 labels=M913=0 | N913=0 | O913=- | Q913=0 | R913=- | S913=0
+row 914: formulas=7 constants=14 unlocked=0 labels=M914=0 | N914=0 | O914=- | Q914=0 | R914=- | S914=0
+row 915: formulas=7 constants=14 unlocked=0 labels=M915=0 | N915=0 | O915=- | Q915=0 | R915=- | S915=0
+row 916: formulas=7 constants=14 unlocked=0 labels=M916=0 | N916=0 | O916=- | Q916=0 | R916=- | S916=0
+row 917: formulas=7 constants=14 unlocked=0 labels=M917=0 | N917=0 | O917=- | Q917=0 | R917=- | S917=0
+row 918: formulas=7 constants=14 unlocked=0 labels=M918=0 | N918=0 | O918=- | Q918=0 | R918=- | S918=0
+row 919: formulas=7 constants=14 unlocked=0 labels=M919=0 | N919=0 | O919=- | Q919=0 | R919=- | S919=0
+row 920: formulas=7 constants=14 unlocked=0 labels=M920=0 | N920=0 | O920=- | Q920=0 | R920=- | S920=0
+row 921: formulas=7 constants=14 unlocked=0 labels=M921=0 | N921=0 | O921=- | Q921=0 | R921=- | S921=0
+row 922: formulas=7 constants=14 unlocked=0 labels=M922=0 | N922=0 | O922=- | Q922=0 | R922=- | S922=0
+row 923: formulas=7 constants=14 unlocked=0 labels=M923=0 | N923=0 | O923=- | Q923=0 | R923=- | S923=0
+row 924: formulas=7 constants=14 unlocked=0 labels=M924=0 | N924=0 | O924=- | Q924=0 | R924=- | S924=0
+row 925: formulas=7 constants=14 unlocked=0 labels=M925=0 | N925=0 | O925=- | Q925=0 | R925=- | S925=0
+row 926: formulas=7 constants=14 unlocked=0 labels=M926=0 | N926=0 | O926=- | Q926=0 | R926=- | S926=0
+row 927: formulas=7 constants=14 unlocked=0 labels=M927=0 | N927=0 | O927=- | Q927=0 | R927=- | S927=0
+row 928: formulas=7 constants=14 unlocked=0 labels=M928=0 | N928=0 | O928=- | Q928=0 | R928=- | S928=0
+row 929: formulas=15 constants=9 unlocked=0 labels=S929=0 | T929=#VALUE! | U929=0 | AA929=0 | AB929=0 | AC929=0
+row 930: formulas=1 constants=0 unlocked=0 labels=
+row 931: formulas=1 constants=0 unlocked=0 labels=
+row 940: formulas=0 constants=3 unlocked=0 labels=B940=Gastos en Origen | C940=Dato 1 | D940=Dato 2
+row 941: formulas=0 constants=2 unlocked=0 labels=B941=shipper declaration | D941=30
+row 942: formulas=0 constants=2 unlocked=0 labels=B942=handling fee | D942=20
+row 943: formulas=1 constants=2 unlocked=1 labels=B943=delivery airport | C943=0.1
+row 944: formulas=1 constants=2 unlocked=1 labels=B944=flete internacional | C944=5
+row 945: formulas=1 constants=1 unlocked=1 labels=B945=Manejo de doc origen
+row 946: formulas=1 constants=4 unlocked=4 labels=B946=afip resol 3244 | C946=x guia | H946=admin | I946=flete
+row 947: formulas=3 constants=1 unlocked=0 labels=C947=TOTAL
+row 949: formulas=0 constants=1 unlocked=1 labels=D949=TC
+row 950: formulas=0 constants=1 unlocked=1 labels=D950=1200
+row 951: formulas=0 constants=3 unlocked=0 labels=B951=Gastos en Destino | C951=Dato 1 | D951=Dato 2
+row 952: formulas=1 constants=2 unlocked=1 labels=B952=custodia | C952=145000
+row 953: formulas=1 constants=2 unlocked=1 labels=B953=gtos admin (sobre almacenaje) | C953=6.0000000000000001E-3
+row 954: formulas=1 constants=1 unlocked=0 labels=B954=digitalizacion
+row 955: formulas=1 constants=2 unlocked=1 labels=B955=acarreo interno | C955=146700
+row 956: formulas=1 constants=2 unlocked=1 labels=B956=gtos operativos | C956=19600
+row 957: formulas=1 constants=2 unlocked=0 labels=B957=honorarios | C957=7.0000000000000001E-3
+row 958: formulas=1 constants=2 unlocked=1 labels=B958=seguro destino | C958=3.0000000000000001E-3
+row 959: formulas=1 constants=2 unlocked=2 labels=B959=almacenaje TCA | C959=0.02
+row 960: formulas=1 constants=1 unlocked=1 labels=B960=varios
+row 961: formulas=1 constants=2 unlocked=2 labels=B961=IIBB CABA (gravados descontando linea custodia y res 3244) | C961=0.05
+row 962: formulas=1 constants=2 unlocked=2 labels=B962=IIBB PBA (gravados descontando linea custodia y res 3244) | C962=1.0999999999999999E-2
+row 963: formulas=1 constants=1 unlocked=1 labels=B963=manejo doc destino
+row 964: formulas=1 constants=1 unlocked=0 labels=C964=TOTAL
+row 967: formulas=0 constants=1 unlocked=1 labels=D967=TC
+row 968: formulas=0 constants=1 unlocked=1 labels=D968=940
+row 969: formulas=1 constants=3 unlocked=3 labels=B969=honorarios | C969=7.0000000000000001E-3 | E969=valor dependiente
+row 970: formulas=1 constants=2 unlocked=2 labels=B970=gastos operativos | C970=19600
+row 971: formulas=1 constants=1 unlocked=1 labels=B971=digitalizacion docu
+row 972: formulas=0 constants=2 unlocked=2 labels=B972=varios | D972=150
+row 973: formulas=1 constants=2 unlocked=2 labels=B973=custodia | C973=62500
+row 974: formulas=1 constants=3 unlocked=2 labels=B974=seguro destino | C974=3.0000000000000001E-3 | E974=valor dependiente
+row 975: formulas=1 constants=2 unlocked=1 labels=B975=acarreo interno | C975=146700
+row 976: formulas=1 constants=3 unlocked=3 labels=B976=gtos admin (sobre almacenaje) | C976=6.0000000000000001E-3 | E976=valor dependiente
+row 977: formulas=1 constants=3 unlocked=3 labels=B977=almacenaje TCA | C977=0.02 | E977=valor dependiente
+row 978: formulas=1 constants=2 unlocked=2 labels=B978=afip resol 3244 | C978=x guia
+row 979: formulas=1 constants=2 unlocked=2 labels=B979=Manejo de doc origen | C979=x guia
+row 980: formulas=1 constants=3 unlocked=2 labels=B980=flete internacional | C980=4.5 | E980=peso dependiente
+row 981: formulas=1 constants=2 unlocked=2 labels=B981=IIBB CABA (gravados descontando linea custodia y res 3244) | C981=0.05
+row 982: formulas=1 constants=2 unlocked=2 labels=B982=IIBB PBA (gravados descontando linea custodia y res 3244) | C982=1.0999999999999999E-2
+row 983: formulas=1 constants=2 unlocked=2 labels=B983=manejo doc destino | H983=remanente
+row 984: formulas=2 constants=1 unlocked=0 labels=C984=TOTAL
+row 989: formulas=0 constants=1 unlocked=1 labels=H989=hasta 30 kg
+row 990: formulas=0 constants=3 unlocked=3 labels=D990=4.5 | E990=flete | H990=150 x kg
+row 992: formulas=1 constants=1 unlocked=1 labels=I992=25000
+row 993: formulas=1 constants=3 unlocked=3 labels=D993=7.0000000000000001E-3 | E993=honorarios | H993=250

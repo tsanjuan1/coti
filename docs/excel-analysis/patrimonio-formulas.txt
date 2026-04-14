@@ -1,0 +1,261 @@
+== Punto de equilibrio FORMULAS ==
+D2	ventas	+C2/E6
+BM4	Franki	BL4/8
+C5	costo	+C2/C4
+BM5	Diego	BL5/8
+C6	total gastos	SUM(C9:C56)-150000-110000+260000
+AT6	PUNTO DE EQUILIBRIO	AT48/(1-1/AT5-AV21)
+AU6	PUNTO DE EQUILIBRIO	AT6/AW2
+AZ6	PUNTO DE EQUILIBRIO	AZ48/(1-1/AZ5-BB21)
+BA6	PUNTO DE EQUILIBRIO	AZ6/BC2
+BL6	Total	SUM(BL4:BL11)
+BM6	Total	SUM(BM4:BM11)
+C7	utilidad	+C2-C5
+AT7	CMV	AT6/AT5
+AU7	CMV	AT7/$AW$2
+AV7	CMV	AT7/AT6
+AZ7	CMV	AZ6/AZ5
+BA7	CMV	AZ7/$AW$2
+BB7	CMV	AZ7/AZ6
+BM7	Ruben	BL7/8
+C8	ganancia	+C7-C6
+D8	ganancia	+C8/C2
+AT8	Utilidad Bruta	AT6-AT7
+AU8	Utilidad Bruta	AT8/$AW$2
+AV8	Utilidad Bruta	AT8/AT6
+AZ8	Utilidad Bruta	AZ6-AZ7
+BA8	Utilidad Bruta	AZ8/$AW$2
+BB8	Utilidad Bruta	AZ8/AZ6
+BM8	Adolfo	BL8/8
+BL9	fletes TOTAL	57000000-BQ10
+BM9	fletes TOTAL	BL9/8
+C10	extra sueldos	+C2*D10
+H10	inicial	855000+180000
+I10	inicial	+H27
+J10	inicial	+I27
+Q10	febrero 20	+P27
+AT10	TOTAL	AT21+AT48
+AZ10	TOTAL	AZ21+AZ48
+BA10	TOTAL	AZ10/$AW$2
+BL10		BL9/BL18
+BM10		BM9/BM18
+BQ10	Tt	SUM(BQ1:BQ9)
+AT11	Resultado operativo	AT8-AT10
+AU11	Resultado operativo	AT11/$AW$2
+AZ11	Resultado operativo	AZ8-AZ10
+BA11	Resultado operativo	AZ11/$AW$2
+AT12	MARGEN DE CONTRIBUCION	1-1/AT5-AV21
+AU12	MARGEN DE CONTRIBUCION	AT12/AW2
+AV12	MARGEN DE CONTRIBUCION	1-1/AT5-AV21
+AZ12	MARGEN DE CONTRIBUCION	1-1/AZ5-BB21
+BA12	MARGEN DE CONTRIBUCION	AZ12/BC2
+BB12	MARGEN DE CONTRIBUCION	1-1/AZ5-BB21
+AT13	MARGEN DE SEGURIDAD	AT4-AT6
+AU13	MARGEN DE SEGURIDAD	AT13/AW2
+AV13	MARGEN DE SEGURIDAD	(AT4-AT6)/AT4
+AZ13	MARGEN DE SEGURIDAD	AZ4-AZ6
+BA13	MARGEN DE SEGURIDAD	AZ13/BC2
+BB13	MARGEN DE SEGURIDAD	(AZ4-AZ6)/AZ4
+C15	alquiler	+D15*$E$6
+H15	total	SUM(H10:H13)
+I15	total	SUM(I10:I13)
+P15		SUM(P10:P13)
+Q15		SUM(Q10:Q13)
+R15		SUM(R10:R13)
+S15		SUM(S10:S13)
+T15		SUM(T10:T13)
+U15		SUM(U10:U13)
+AC15		SUM(AC10:AC13)
+AD15		SUM(AD10:AD13)
+AE15		SUM(AE10:AE13)
+AP15		SUM(AP10:AP13)
+AQ15		SUM(AQ10:AQ13)
+AT15	IIBB	AT6*AV15
+AZ15	IIBB	AZ6*BB15
+BA15	IIBB	AZ15/$AW$2
+AT16	Imp al cheque	AT6*AV16
+AZ16	Imp al cheque	AZ6*BB16
+AT17	Fletes	AT6*AV17
+AZ17	Fletes	AZ6*BB17
+AT18	Consultoria	AT6*AV18
+AZ18	Consultoria	AZ6*BB18
+BM18	prom mensual	BL18/8
+AM19		+' prestamo y dife de cambio'!AB8
+AN19		+' prestamo y dife de cambio'!AH3
+AO19		+' prestamo y dife de cambio'!AH4
+AP19		+' prestamo y dife de cambio'!AI4
+AQ19		+' prestamo y dife de cambio'!AJ4
+AT19	Comisiones	AT6*AV19
+AZ19	Comisiones	AZ6*BB19
+AT21	TT	SUM(AT15:AT20)
+AV21	TT	SUM(AV15:AV19)
+AZ21	TT	SUM(AZ15:AZ20)
+BA21	TT	AZ21/$AW$2
+BB21	TT	SUM(BB15:BB19)
+AT23	Sueldos	15000000+AT59+AX59+BB59+1100000
+AU23	Sueldos	AT23/$AW$2
+AV23	Sueldos	AT23/$AT$48
+BA23	Sueldos	AZ23/$AW$2
+BB23	Sueldos	AZ23/$AZ$48
+AT24	Cargas sociales	5600000+1500000
+AV24	Cargas sociales	AT24/$AT$48
+H25	total	SUM(H18:H24)
+I25	total	SUM(I18:I24)
+P25		SUM(P18:P24)
+Q25		SUM(Q18:Q24)
+R25		SUM(R18:R24)
+S25		SUM(S18:S24)
+T25		SUM(T18:T24)
+U25		SUM(U18:U24)
+AC25		SUM(AC18:AC24)
+AD25		SUM(AD18:AD24)
+AE25		SUM(AE18:AE24)
+AP25		SUM(AP18:AP24)
+AQ25		SUM(AQ18:AQ24)
+AT26	Alquiler	AU26*AW2
+AZ26	Alquiler	BA26*BC2
+H27	disponibilidad	+H15-H25
+I27	disponibilidad	+I15-I25
+P27		+P15-P25
+Q27		+Q15-Q25
+R27		+R15-R25
+S27		+S15-S25
+T27		+T15-T25
+U27		+U15-U25
+AC27		+AC15-AC25
+AD27		+AD15-AD25
+AE27		+AE15-AE25
+AP27		+AP15-AP25
+AQ27		+AQ15-AQ25
+AU27	Estudio contable	AT27/$AW$2
+BA27	Estudio contable	AZ27/$AW$2
+C31	pp	+D31*$E$6
+H32	vtas $	+'Patrimonio anyx old'!B150
+J32	vtas U$S	+H32/I32
+L32	incidencia en $	+K32/H32
+AZ32	Alarma	45000+45000
+H33	vtas $	+'Patrimonio anyx old'!B169
+J33	vtas U$S	+H33/I33
+L33	incidencia en $	+K33/H33
+H34	vtas $	+'Patrimonio anyx old'!B189
+L34	incidencia en $	+K34/H34
+C35	consultoria	+C2*D35
+H35	vtas $	+'Patrimonio anyx old'!B209
+C36	oppen	+Tabla1[[#This Row],[Datos varios]]*$E$6
+F36	oppen	80/12
+H36		+'Patrimonio anyx old'!B232
+H37		+'Patrimonio anyx old'!B252
+C38	pipedrive	+D38*E6
+H38		+'Patrimonio anyx old'!B274
+H39		+'Patrimonio anyx old'!B296
+AZ39	Lineas telefonicas	200000+80000
+C40	fletes	+C2*D40
+D40	fletes	+L44
+H40		+'Patrimonio anyx old'!B318
+C41	iibb	+C2*D41
+H41		+'Patrimonio anyx old'!B340
+C42	imp al chq	+C2*D42
+H42	1.2E-2	+'Patrimonio anyx old'!B359
+C43	intereses	830000+100000-930000
+H43		+'Patrimonio anyx old'!B376
+C44	licencias microsoft	+D44*E6/12
+H44		SUM(H32:H43)
+J44		SUM(J32:J43)
+K44		SUM(K32:K43)
+AT44	Oppen	AU44*AW2
+AZ44	Oppen	BA44*BC2
+H45		+H44/G45
+J45		+J44/G45
+K45		SUM(K32:K43)/12
+AT45	Pipedrive	AU45*AW2
+AZ45	Pipedrive	BA45*BC2
+AT46	Licencias microsoft	AU46*AW2
+AZ46	Licencias microsoft	BA46*BC2
+AU47	Innovexa	AT47/$AW$2
+BB47	Innovexa	AZ47/$AZ$48
+AT48	TT	SUM(AT23:AT47)
+AU48	TT	AT48/$AW$2
+AV48	TT	SUM(AV23:AV47)
+AZ48	TT	SUM(AZ23:AZ47)
+BA48	TT	AZ48/$AW$2
+BB48	TT	SUM(BB23:BB47)
+K51	6.0000000000000001E-3	+J51*K50-1425000
+K52	6.0000000000000001E-3	+K51/J52
+AT52	Masa salarial vendedores	2200000+AT59+AX59
+AU52	Masa salarial vendedores	+AT52/$AW$2
+AT53	Cargas estimadas (%)	+AT24/AT23
+AT54	Estructura total	+AT48
+AU54	Estructura total	+AT54/$AW$2
+K55		+J55*$K$54
+J56		+I55+I56
+K56		+J56*$K$54
+J57		+J56+I57
+J58		+J57+I58
+J59		+J58+I59
+AU59	Sueldo	+AT59/$AW$2
+AY59	Sueldo	+AX59/$AW$2
+BC59	Sueldo	+BB59/$AW$2
+J60		+J59+I60
+AT60	Cargas	+AT59*$AT$53
+AU60	Cargas	+AT60/$AW$2
+AX60	Cargas	+AX59*$AT$53
+AY60	Cargas	+AX60/$AW$2
+BB60	Cargas	+BB59*$AT$53
+BC60	Cargas	+BB60/$AW$2
+J61		+J60+I61
+AT61	Proporcion masa salarial	+AT59/$AT$52
+AX61	Proporcion masa salarial	+AX59/$AT$52
+BB61	Proporcion masa salarial	+BB59/$AT$52
+AT62	Asigancion proporcional de CF	+$AT$54*AT61
+AX62	Asigancion proporcional de CF	+$AT$54*AX61
+AY62	Asigancion proporcional de CF	+AX62/$AW$2
+BB62	Asigancion proporcional de CF	+$AT$54*BB61
+BC62	Asigancion proporcional de CF	+BB62/$AW$2
+AT63	Margen de contribucion	+$AV$12
+AX63	Margen de contribucion	+$AV$12+0.005
+BB63	Margen de contribucion	+$AV$12
+AT65	Total minimo	+SUM(AT62)/AT63
+AX65	Total minimo	+SUM(AX62)/AX63
+AY65	Total minimo	+AX65/$AW$2
+BB65	Total minimo	+SUM(BB62)/BB63
+BC65	Total minimo	+BB65/$AW$2
+AT67	Solo sueldo	+(AT59+AT60)/AT63
+AX67	Solo sueldo	+(AX59+AX60)/AX63
+AY67	Solo sueldo	+AX67/$AW$2
+BB67	Solo sueldo	+(BB59+BB60)/BB63
+BC67	Solo sueldo	+BB67/$AW$2
+== resultado x op FORMULAS ==
+C7	CMV	C5/C6
+D7	CMV	C7/$F$3
+E7	CMV	C7/C5
+C8	Utilidad Bruta	C5-C7
+D8	Utilidad Bruta	C8/$F$3
+E8	Utilidad Bruta	C8/C5
+C10	TOTAL	C21+C48
+D10	TOTAL	C10/$F$3
+C11	Resultado operativo	C8-C10
+D11	Resultado operativo	C11/$F$3
+C12	MARGEN DE CONTRIBUCION	1-1/C6-E21
+D12	MARGEN DE CONTRIBUCION	C12/F3
+E12	MARGEN DE CONTRIBUCION	1-1/C6-E21
+C15	IIBB	C5*E15
+D15	IIBB	C15/$F$3
+C16	Imp al cheque	C5*E16
+C17	Fletes	C5*E17
+C18	Consultoria	C5*E18
+C19	Comisiones	C5*E19
+C21	TT	SUM(C15:C20)
+D21	TT	C21/$F$3
+E21	TT	SUM(E15:E19)
+D23	Sueldos	C23/$F$3
+E23	Sueldos	C23/$AT$47
+C24	Cargas sociales	5600000+1500000
+E24	Cargas sociales	C24/$AT$47
+C26	Alquiler	D26*F3
+D27	Estudio contable	C27/$F$3
+C44	Oppen	D44*F3
+C45	Pipedrive	D45*F3
+C46	Licencias microsoft	D46*F3
+D47	Innovexa	C47/$F$3
+D48	TT	C48/$F$3
+E48	TT	SUM(E23:E47)
