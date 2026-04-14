@@ -376,6 +376,47 @@ export function QuoteEditor({
           </div>
         </div>
       </section>
+
+      <section className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
+        <div className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold">Tasas arancelarias por producto</h2>
+          <p className="text-sm text-[color:var(--muted)]">
+            Tabla informativa del padron cargado para consultar derechos, estadistica, IVA,
+            impuesto interno y NCM de cada producto.
+          </p>
+        </div>
+
+        <div className="mt-4 overflow-x-auto">
+          <table className="min-w-[980px] text-sm">
+            <thead className="text-left text-[color:var(--muted)]">
+              <tr>
+                {["Producto", "Derecho", "Estadistica", "IVA", "Imp. interno", "NCM"].map((header) => (
+                  <th key={header} className="px-2 py-2">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {scenario.productRules.map((rule) => (
+                <tr
+                  key={rule.productTypeKey}
+                  className={`border-t border-[var(--line)] ${
+                    rule.productTypeKey === scenario.productTypeKey ? "bg-slate-50" : ""
+                  }`}
+                >
+                  <td className="px-2 py-2 font-medium">{rule.productTypeKey}</td>
+                  <td className="px-2 py-2">{formatPercentage(rule.dutyRate)}</td>
+                  <td className="px-2 py-2">{formatPercentage(rule.statisticsRate)}</td>
+                  <td className="px-2 py-2">{formatPercentage(rule.vatRate)}</td>
+                  <td className="px-2 py-2">{formatPercentage(rule.internalTaxRate)}</td>
+                  <td className="px-2 py-2">{rule.ncmCode || "-"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
     </div>
   );
 }

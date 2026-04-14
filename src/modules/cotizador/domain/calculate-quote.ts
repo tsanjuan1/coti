@@ -31,7 +31,8 @@ export function calculateQuoteScenario(input: QuoteScenarioInput): QuoteScenario
   const cifUsd = adjustedSupplierPriceUsd + insuranceUsd + freightUsd;
   const dutiesUsd = cifUsd * dutyRate;
   const statisticsUsd = cifUsd * statisticsRate;
-  const vatUsd = cifUsd * vatRate;
+  const vatTaxBaseUsd = cifUsd + dutiesUsd + statisticsUsd;
+  const vatUsd = vatTaxBaseUsd * vatRate;
   const internalTaxUsd = cifUsd * internalTaxRate;
   const miscellaneousUsd = cifUsd * input.miscellaneousRate;
   const transferUsd = adjustedSupplierPriceUsd * input.transferRate;

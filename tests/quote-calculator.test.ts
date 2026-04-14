@@ -11,5 +11,10 @@ describe("quote calculator", () => {
     expect(result.amounts.cifUsd).toBeGreaterThan(result.amounts.adjustedSupplierPriceUsd);
     expect(result.amounts.totalCostUsd).toBeGreaterThan(result.amounts.cifUsd);
     expect(result.amounts.salePriceUsd).toBeGreaterThan(result.amounts.totalCostUsd);
+    expect(result.amounts.vatUsd).toBeCloseTo(
+      (result.amounts.cifUsd + result.amounts.dutiesUsd + result.amounts.statisticsUsd) *
+        result.rates.vatRate,
+      4
+    );
   });
 });
