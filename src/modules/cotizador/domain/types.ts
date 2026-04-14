@@ -40,6 +40,15 @@ export interface QuoteScenarioHistoryEntry {
   summary: QuoteScenarioSummary;
   scenario: QuoteScenarioInput;
   result: QuoteScenarioResult;
+  modificationLog: QuoteModificationLogEntry[];
+}
+
+export interface QuoteModificationLogEntry {
+  id: string;
+  action: string;
+  actorName: string;
+  createdAt: string;
+  changedFields: string[];
 }
 
 export interface QuoteScenarioResult {

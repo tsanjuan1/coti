@@ -4,6 +4,8 @@ import { z } from "zod";
 
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
+import { defaultBreakEvenScenario } from "@/modules/break-even/defaults";
+import { breakEvenScenarioFromRecord } from "@/modules/break-even/mappers";
 import { breakEvenScenarioToCreatePayload } from "@/modules/break-even/mappers";
 
 const schema = z.object({
@@ -33,7 +35,38 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
   }
 
-  const payload = breakEvenScenarioToCreatePayload(parsed.data);
+  const latestScenario =
+    user.role === "ADMIN"
+      ? null
+      : await prisma.breakEvenScenario.findFirst({
+          where: { createdById: user.id },
+          include: {
+            fixedCostLines: true,
+            variableCostLines: true,
+            salespersonProfiles: true
+          },
+          orderBy: { updatedAt: "desc" }
+        });
+
+  const baselineScenario = latestScenario
+    ? breakEvenScenarioFromRecord({
+        scenario: latestScenario,
+        fixedCosts: latestScenario.fixedCostLines,
+        variableCosts: latestScenario.variableCostLines,
+        salespersonProfiles: latestScenario.salespersonProfiles
+      })
+    : defaultBreakEvenScenario;
+
+  const sanitizedInput =
+    user.role === "ADMIN"
+      ? parsed.data
+      : {
+          ...parsed.data,
+          fixedCosts: baselineScenario.fixedCosts,
+          variableCosts: baselineScenario.variableCosts
+        };
+
+  const payload = breakEvenScenarioToCreatePayload(sanitizedInput);
   const created = await prisma.breakEvenScenario.create({
     data: {
       ...payload.scenario,

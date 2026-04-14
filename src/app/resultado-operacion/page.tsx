@@ -25,7 +25,11 @@ export default async function OperationProfitPage() {
 
   return (
     <AppShell currentPath="/resultado-operacion" userLabel={user.fullName}>
-      <OperationProfitEditor initialScenario={initialScenario} scenarioId={latestScenario?.id} />
+      <OperationProfitEditor
+        initialScenario={initialScenario}
+        scenarioId={latestScenario?.id}
+        canEditCosts={user.role === "ADMIN"}
+      />
     </AppShell>
   );
 }

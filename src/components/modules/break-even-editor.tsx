@@ -11,10 +11,12 @@ import { formatCurrency, formatPercentage, toNumber } from "@/lib/utils";
 
 export function BreakEvenEditor({
   initialScenario,
-  scenarioId
+  scenarioId,
+  canEditCosts
 }: {
   initialScenario: BreakEvenScenarioInput;
   scenarioId?: string;
+  canEditCosts: boolean;
 }) {
   const router = useRouter();
   const [scenario, setScenario] = useState(initialScenario);
@@ -67,6 +69,11 @@ export function BreakEvenEditor({
               Version enfocada en separar gastos fijos de gastos variables y medir el
               punto de equilibrio sobre la facturacion analizada.
             </p>
+            {!canEditCosts ? (
+              <p className="mt-2 max-w-3xl text-sm text-amber-700">
+                Los gastos fijos y variables estan bloqueados para usuarios no administradores.
+              </p>
+            ) : null}
           </div>
           <button
             onClick={saveScenario}
@@ -140,6 +147,7 @@ export function BreakEvenEditor({
                   type="number"
                   step="0.01"
                   value={line.formulaMode === "manual" ? line.amount ?? 0 : line.inputA ?? 0}
+                  disabled={!canEditCosts}
                   onChange={(event) =>
                     setScenario((current) => {
                       const fixedCosts = current.fixedCosts.slice();
@@ -176,6 +184,7 @@ export function BreakEvenEditor({
                 </div>
                 <PercentageInput
                   value={line.rate}
+                  disabled={!canEditCosts}
                   onValueChange={(rate) =>
                     setScenario((current) => {
                       const variableCosts = current.variableCosts.slice();

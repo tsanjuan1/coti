@@ -11,10 +11,12 @@ import { formatCurrency, formatPercentage, toNumber } from "@/lib/utils";
 
 export function OperationProfitEditor({
   initialScenario,
-  scenarioId
+  scenarioId,
+  canEditCosts
 }: {
   initialScenario: OperationProfitScenarioInput;
   scenarioId?: string;
+  canEditCosts: boolean;
 }) {
   const router = useRouter();
   const [scenario, setScenario] = useState(initialScenario);
@@ -67,6 +69,11 @@ export function OperationProfitEditor({
               Calculadora puntual de operaciones sin adjudicar gastos de estructura.
               Solo descuenta CMV y costos variables sobre la venta.
             </p>
+            {!canEditCosts ? (
+              <p className="mt-2 max-w-3xl text-sm text-amber-700">
+                Los costos variables quedan bloqueados para usuarios no administradores.
+              </p>
+            ) : null}
           </div>
           <button
             onClick={saveScenario}
@@ -145,6 +152,7 @@ export function OperationProfitEditor({
               </div>
               <PercentageInput
                 value={line.rate}
+                disabled={!canEditCosts}
                 onValueChange={(rate) =>
                   setScenario((current) => {
                     const variableCosts = current.variableCosts.slice();

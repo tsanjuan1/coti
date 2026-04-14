@@ -27,6 +27,18 @@ export default async function CourierQuotePage({
       orderBy: { updatedAt: "desc" }
     })
   ]);
+  const auditLogs = await prisma.auditLog.findMany({
+    where: {
+      entityType: "QUOTE_SCENARIO",
+      entityId: { in: scenarios.map((scenario) => scenario.id) }
+    },
+    include: {
+      actor: {
+        select: { fullName: true }
+      }
+    },
+    orderBy: { createdAt: "desc" }
+  });
 
   const selectedScenario =
     scenarios.find((scenario) => scenario.id === scenarioId) ?? scenarios[0] ?? null;
@@ -52,7 +64,8 @@ export default async function CourierQuotePage({
       scenario,
       items: scenario.items,
       costLines: scenario.costLines,
-      productRules
+      productRules,
+      auditLogs: auditLogs.filter((log) => log.entityId === scenario.id)
     })
   );
 
@@ -63,6 +76,7 @@ export default async function CourierQuotePage({
         scenarioId={selectedScenario?.id}
         initialSavedScenarios={savedScenarios}
         initialHistoryEntries={historyEntries}
+        canEditProtectedFields={user.role === "ADMIN"}
       />
     </AppShell>
   );

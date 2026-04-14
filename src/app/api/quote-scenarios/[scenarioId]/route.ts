@@ -2,10 +2,13 @@ import { NextResponse } from "next/server";
 import { ModuleKey } from "@prisma/client";
 import { z } from "zod";
 
+import { createAuditLog } from "@/lib/audit";
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
+import { applyProtectedQuoteFields, getChangedQuoteFields } from "@/modules/cotizador/guardrails";
 import {
   quoteScenarioHistoryEntryFromRecord,
+  quoteScenarioFromRecord,
   quoteScenarioSummaryFromRecord,
   quoteScenarioToCreatePayload
 } from "@/modules/cotizador/mappers";
@@ -38,14 +41,36 @@ export async function PUT(
     return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
   }
 
-  const payload = quoteScenarioToCreatePayload(parsed.data);
-  const existing = await prisma.quoteScenario.findFirst({
-    where: { id: scenarioId, createdById: user.id },
-    select: { id: true }
-  });
+  const [productRules, existing] = await Promise.all([
+    prisma.quoteProductRule.findMany({ orderBy: { productTypeKey: "asc" } }),
+    prisma.quoteScenario.findFirst({
+      where: { id: scenarioId, createdById: user.id },
+      include: {
+        items: { orderBy: { lineNumber: "asc" } },
+        costLines: true
+      }
+    })
+  ]);
   if (!existing) {
     return NextResponse.json({ error: "Escenario no encontrado" }, { status: 404 });
   }
+
+  const previousScenario = quoteScenarioFromRecord({
+    scenario: existing,
+    items: existing.items,
+    costLines: existing.costLines,
+    productRules
+  });
+  const sanitizedInput = applyProtectedQuoteFields({
+    input: {
+      ...parsed.data,
+      productRules
+    },
+    baseline: previousScenario,
+    canEditProtectedFields: user.role === "ADMIN"
+  });
+  const changedFields = getChangedQuoteFields(previousScenario, sanitizedInput);
+  const payload = quoteScenarioToCreatePayload(sanitizedInput);
 
   await prisma.$transaction([
     prisma.quoteItem.deleteMany({ where: { scenarioId } }),
@@ -60,16 +85,37 @@ export async function PUT(
     })
   ]);
 
-  const [savedScenario, productRules] = await Promise.all([
-    prisma.quoteScenario.findUniqueOrThrow({
-      where: { id: scenarioId },
-      include: {
-        items: { orderBy: { lineNumber: "asc" } },
-        costLines: true
+  const savedScenario = await prisma.quoteScenario.findUniqueOrThrow({
+    where: { id: scenarioId },
+    include: {
+      items: { orderBy: { lineNumber: "asc" } },
+      costLines: true
+    }
+  });
+
+  await createAuditLog({
+    actorUserId: user.id,
+    entityType: "QUOTE_SCENARIO",
+    entityId: scenarioId,
+    action: "QUOTE_UPDATED",
+    payloadJson: {
+      changedFields,
+      scenarioName: savedScenario.name
+    }
+  });
+
+  const auditLogs = await prisma.auditLog.findMany({
+    where: {
+      entityType: "QUOTE_SCENARIO",
+      entityId: scenarioId
+    },
+    include: {
+      actor: {
+        select: { fullName: true }
       }
-    }),
-    prisma.quoteProductRule.findMany({ orderBy: { productTypeKey: "asc" } })
-  ]);
+    },
+    orderBy: { createdAt: "desc" }
+  });
 
   return NextResponse.json({
     id: scenarioId,
@@ -81,7 +127,8 @@ export async function PUT(
       scenario: savedScenario,
       items: savedScenario.items,
       costLines: savedScenario.costLines,
-      productRules
+      productRules,
+      auditLogs
     })
   });
 }

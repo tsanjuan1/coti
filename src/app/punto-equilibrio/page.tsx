@@ -26,7 +26,11 @@ export default async function BreakEvenPage() {
 
   return (
     <AppShell currentPath="/punto-equilibrio" userLabel={user.fullName}>
-      <BreakEvenEditor initialScenario={initialScenario} scenarioId={latestScenario?.id} />
+      <BreakEvenEditor
+        initialScenario={initialScenario}
+        scenarioId={latestScenario?.id}
+        canEditCosts={user.role === "ADMIN"}
+      />
     </AppShell>
   );
 }

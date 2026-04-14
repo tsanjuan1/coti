@@ -18,12 +18,14 @@ export function QuoteEditor({
   initialScenario,
   scenarioId,
   initialSavedScenarios,
-  initialHistoryEntries
+  initialHistoryEntries,
+  canEditProtectedFields
 }: {
   initialScenario: QuoteScenarioInput;
   scenarioId?: string;
   initialSavedScenarios: QuoteScenarioSummary[];
   initialHistoryEntries: QuoteScenarioHistoryEntry[];
+  canEditProtectedFields: boolean;
 }) {
   const router = useRouter();
   const [scenario, setScenario] = useState(initialScenario);
@@ -133,6 +135,12 @@ export function QuoteEditor({
               Esta version sigue la variante compacta del Excel: producto, costo proveedor,
               seguro, flete por kilo, tasas del padron y salida en USD/ARS.
             </p>
+            {!canEditProtectedFields ? (
+              <p className="mt-2 max-w-3xl text-sm text-amber-700">
+                En tu perfil, los campos de seguro, flete, gastos varios, transferencia e imp.
+                pais quedan bloqueados y solo puede modificarlos un administrador.
+              </p>
+            ) : null}
           </div>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -195,6 +203,11 @@ export function QuoteEditor({
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
             {savedScenarios.map((savedScenario) => {
               const active = savedScenario.id === persistedScenarioId;
+              const historyEntry =
+                historyEntries.find((entry) => entry.id === savedScenario.id) ?? null;
+              const modificationCount =
+                historyEntry?.modificationLog.filter((entry) => entry.action === "QUOTE_UPDATED")
+                  .length ?? 0;
               return (
                 <div
                   key={savedScenario.id}
@@ -213,6 +226,11 @@ export function QuoteEditor({
                   </div>
                   <div className="mt-3 text-sm font-medium">
                     {formatCurrency(savedScenario.supplierUnitPriceUsd)}
+                  </div>
+                  <div className="mt-2 text-xs text-[color:var(--muted)]">
+                    {modificationCount > 0
+                      ? `${modificationCount} modificaciones registradas`
+                      : "Sin modificaciones registradas"}
                   </div>
                   <div className="mt-4 flex gap-2">
                     <button
@@ -301,6 +319,7 @@ export function QuoteEditor({
               <PercentageInput
                 className="mt-2"
                 value={scenario.insuranceRate}
+                disabled={!canEditProtectedFields}
                 onValueChange={(insuranceRate) => setScenario({ ...scenario, insuranceRate })}
               />
             </label>
@@ -312,6 +331,7 @@ export function QuoteEditor({
                 type="number"
                 step="0.01"
                 value={scenario.freightRatePerKgUsd}
+                disabled={!canEditProtectedFields}
                 onChange={(event) =>
                   setScenario({ ...scenario, freightRatePerKgUsd: toNumber(event.target.value) })
                 }
@@ -336,6 +356,7 @@ export function QuoteEditor({
               <PercentageInput
                 className="mt-2"
                 value={scenario.miscellaneousRate}
+                disabled={!canEditProtectedFields}
                 onValueChange={(miscellaneousRate) =>
                   setScenario({ ...scenario, miscellaneousRate })
                 }
@@ -347,6 +368,7 @@ export function QuoteEditor({
               <PercentageInput
                 className="mt-2"
                 value={scenario.transferRate}
+                disabled={!canEditProtectedFields}
                 onValueChange={(transferRate) => setScenario({ ...scenario, transferRate })}
               />
             </label>
@@ -356,6 +378,7 @@ export function QuoteEditor({
               <PercentageInput
                 className="mt-2"
                 value={scenario.countryTaxRate}
+                disabled={!canEditProtectedFields}
                 onValueChange={(countryTaxRate) => setScenario({ ...scenario, countryTaxRate })}
               />
             </label>
@@ -705,6 +728,43 @@ export function QuoteEditor({
                   </table>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-4 rounded-[24px] border border-[var(--line)] p-5">
+              <h3 className="text-lg font-semibold">Historial de modificaciones</h3>
+              {selectedHistoryEntry.modificationLog.length === 0 ? (
+                <div className="mt-4 text-sm text-[color:var(--muted)]">
+                  No hay movimientos registrados para esta cotizacion.
+                </div>
+              ) : (
+                <div className="mt-4 space-y-3">
+                  {selectedHistoryEntry.modificationLog.map((log) => (
+                    <div
+                      key={log.id}
+                      className="rounded-2xl border border-[var(--line)] bg-slate-50 p-4"
+                    >
+                      <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
+                        <div className="font-medium">
+                          {log.action === "QUOTE_CREATED"
+                            ? "Creacion de la cotizacion"
+                            : "Actualizacion de la cotizacion"}
+                        </div>
+                        <div className="text-sm text-[color:var(--muted)]">
+                          {new Date(log.createdAt).toLocaleString("es-AR")}
+                        </div>
+                      </div>
+                      <div className="mt-2 text-sm text-[color:var(--muted)]">
+                        Usuario: {log.actorName}
+                      </div>
+                      {log.changedFields.length > 0 ? (
+                        <div className="mt-2 text-sm">
+                          Campos modificados: {log.changedFields.join(", ")}
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>

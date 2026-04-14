@@ -4,6 +4,7 @@ import { z } from "zod";
 
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
+import { breakEvenScenarioFromRecord } from "@/modules/break-even/mappers";
 import { breakEvenScenarioToCreatePayload } from "@/modules/break-even/mappers";
 
 const schema = z.object({
@@ -37,14 +38,33 @@ export async function PUT(
     return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
   }
 
-  const payload = breakEvenScenarioToCreatePayload(parsed.data);
   const existing = await prisma.breakEvenScenario.findFirst({
     where: { id: scenarioId, createdById: user.id },
-    select: { id: true }
+    include: {
+      fixedCostLines: true,
+      variableCostLines: true,
+      salespersonProfiles: true
+    }
   });
   if (!existing) {
     return NextResponse.json({ error: "Escenario no encontrado" }, { status: 404 });
   }
+
+  const baselineScenario = breakEvenScenarioFromRecord({
+    scenario: existing,
+    fixedCosts: existing.fixedCostLines,
+    variableCosts: existing.variableCostLines,
+    salespersonProfiles: existing.salespersonProfiles
+  });
+  const sanitizedInput =
+    user.role === "ADMIN"
+      ? parsed.data
+      : {
+          ...parsed.data,
+          fixedCosts: baselineScenario.fixedCosts,
+          variableCosts: baselineScenario.variableCosts
+        };
+  const payload = breakEvenScenarioToCreatePayload(sanitizedInput);
 
   await prisma.$transaction([
     prisma.breakEvenFixedCostLine.deleteMany({ where: { scenarioId } }),

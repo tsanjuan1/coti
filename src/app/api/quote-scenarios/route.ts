@@ -2,8 +2,12 @@ import { NextResponse } from "next/server";
 import { ModuleKey } from "@prisma/client";
 import { z } from "zod";
 
+import { createAuditLog } from "@/lib/audit";
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
+import { defaultQuoteScenario } from "@/modules/cotizador/defaults";
+import { quoteScenarioFromRecord } from "@/modules/cotizador/mappers";
+import { applyProtectedQuoteFields } from "@/modules/cotizador/guardrails";
 import {
   quoteScenarioHistoryEntryFromRecord,
   quoteScenarioSummaryFromRecord,
@@ -34,7 +38,44 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
   }
 
-  const payload = quoteScenarioToCreatePayload(parsed.data);
+  const [productRules, latestScenario] = await Promise.all([
+    prisma.quoteProductRule.findMany({ orderBy: { productTypeKey: "asc" } }),
+    user.role === "ADMIN"
+      ? Promise.resolve(null)
+      : prisma.quoteScenario.findFirst({
+          where: { createdById: user.id },
+          include: {
+            items: { orderBy: { lineNumber: "asc" } },
+            costLines: true
+          },
+          orderBy: { updatedAt: "desc" }
+        })
+  ]);
+
+  const baselineScenario =
+    latestScenario && productRules.length > 0
+      ? quoteScenarioFromRecord({
+          scenario: latestScenario,
+          items: latestScenario.items,
+          costLines: latestScenario.costLines,
+          productRules
+        })
+      : {
+          ...defaultQuoteScenario,
+          productRules: productRules.length > 0 ? productRules : defaultQuoteScenario.productRules
+        };
+
+  const sanitizedInput = applyProtectedQuoteFields({
+    input: {
+      ...parsed.data,
+      productRules:
+        productRules.length > 0 ? productRules : defaultQuoteScenario.productRules
+    },
+    baseline: baselineScenario,
+    canEditProtectedFields: user.role === "ADMIN"
+  });
+
+  const payload = quoteScenarioToCreatePayload(sanitizedInput);
   const created = await prisma.quoteScenario.create({
     data: {
       ...payload.scenario,
@@ -44,7 +85,7 @@ export async function POST(request: Request) {
     }
   });
 
-  const [savedScenario, productRules] = await Promise.all([
+  const [savedScenario, refreshedRules] = await Promise.all([
     prisma.quoteScenario.findUniqueOrThrow({
       where: { id: created.id },
       include: {
@@ -54,6 +95,30 @@ export async function POST(request: Request) {
     }),
     prisma.quoteProductRule.findMany({ orderBy: { productTypeKey: "asc" } })
   ]);
+
+  await createAuditLog({
+    actorUserId: user.id,
+    entityType: "QUOTE_SCENARIO",
+    entityId: created.id,
+    action: "QUOTE_CREATED",
+    payloadJson: {
+      changedFields: [],
+      scenarioName: savedScenario.name
+    }
+  });
+
+  const auditLogs = await prisma.auditLog.findMany({
+    where: {
+      entityType: "QUOTE_SCENARIO",
+      entityId: created.id
+    },
+    include: {
+      actor: {
+        select: { fullName: true }
+      }
+    },
+    orderBy: { createdAt: "desc" }
+  });
 
   return NextResponse.json({
     id: created.id,
@@ -65,7 +130,8 @@ export async function POST(request: Request) {
       scenario: savedScenario,
       items: savedScenario.items,
       costLines: savedScenario.costLines,
-      productRules
+      productRules: refreshedRules,
+      auditLogs
     })
   });
 }

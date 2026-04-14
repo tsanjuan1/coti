@@ -4,6 +4,7 @@ import { z } from "zod";
 
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
+import { operationScenarioFromRecord } from "@/modules/operation-profit/mappers";
 import { operationScenarioToCreatePayload } from "@/modules/operation-profit/mappers";
 
 const schema = z.object({
@@ -29,14 +30,26 @@ export async function PUT(
     return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
   }
 
-  const payload = operationScenarioToCreatePayload(parsed.data);
   const existing = await prisma.operationProfitScenario.findFirst({
     where: { id: scenarioId, createdById: user.id },
-    select: { id: true }
+    include: { fixedCostLines: true, variableCostLines: true }
   });
   if (!existing) {
     return NextResponse.json({ error: "Escenario no encontrado" }, { status: 404 });
   }
+  const baselineScenario = operationScenarioFromRecord({
+    scenario: existing,
+    fixedCosts: existing.fixedCostLines,
+    variableCosts: existing.variableCostLines
+  });
+  const sanitizedInput =
+    user.role === "ADMIN"
+      ? parsed.data
+      : {
+          ...parsed.data,
+          variableCosts: baselineScenario.variableCosts
+        };
+  const payload = operationScenarioToCreatePayload(sanitizedInput);
   await prisma.$transaction([
     prisma.operationProfitFixedCostLine.deleteMany({ where: { scenarioId } }),
     prisma.operationProfitVariableCostLine.deleteMany({ where: { scenarioId } }),

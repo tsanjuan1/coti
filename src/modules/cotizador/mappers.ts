@@ -1,9 +1,10 @@
 import { Prisma } from "@prisma/client";
-import type { QuoteCostProfile, QuoteItem, QuoteScenario } from "@prisma/client";
+import type { AuditLog, QuoteCostProfile, QuoteItem, QuoteScenario } from "@prisma/client";
 
 import { defaultQuoteScenario } from "@/modules/cotizador/defaults";
 import { calculateQuoteScenario } from "@/modules/cotizador/domain/calculate-quote";
 import type {
+  QuoteModificationLogEntry,
   QuoteScenarioHistoryEntry,
   QuoteProductRule,
   QuoteScenarioInput,
@@ -46,6 +47,19 @@ function readSnapshotMetadata<T>(costLines: QuoteCostProfile[], lineKey: string)
 
 function toJsonValue(value: unknown) {
   return JSON.parse(JSON.stringify(value)) as Prisma.InputJsonValue;
+}
+
+function readChangedFieldsFromPayload(payloadJson: unknown) {
+  if (!payloadJson || typeof payloadJson !== "object") {
+    return [];
+  }
+
+  const value = (payloadJson as { changedFields?: unknown }).changedFields;
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return value.filter((entry): entry is string => typeof entry === "string");
 }
 
 export function quoteScenarioFromRecord(args: {
@@ -180,6 +194,7 @@ export function quoteScenarioHistoryEntryFromRecord(args: {
   items: QuoteItem[];
   costLines: QuoteCostProfile[];
   productRules: QuoteProductRule[];
+  auditLogs?: Array<AuditLog & { actor: { fullName: string } | null }>;
 }): QuoteScenarioHistoryEntry {
   const scenario = quoteScenarioFromRecord({
     scenario: args.scenario,
@@ -201,6 +216,15 @@ export function quoteScenarioHistoryEntryFromRecord(args: {
     id: args.scenario.id,
     summary,
     scenario,
-    result: storedResult
+    result: storedResult,
+    modificationLog: (args.auditLogs ?? []).map(
+      (log): QuoteModificationLogEntry => ({
+        id: log.id,
+        action: log.action,
+        actorName: log.actor?.fullName ?? "Sistema",
+        createdAt: log.createdAt.toISOString(),
+        changedFields: readChangedFieldsFromPayload(log.payloadJson)
+      })
+    )
   };
 }

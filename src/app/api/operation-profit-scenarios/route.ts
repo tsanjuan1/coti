@@ -4,6 +4,8 @@ import { z } from "zod";
 
 import { requireModuleAccess } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
+import { defaultOperationProfitScenario } from "@/modules/operation-profit/defaults";
+import { operationScenarioFromRecord } from "@/modules/operation-profit/mappers";
 import { operationScenarioToCreatePayload } from "@/modules/operation-profit/mappers";
 
 const schema = z.object({
@@ -25,7 +27,32 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Payload invalido" }, { status: 400 });
   }
 
-  const payload = operationScenarioToCreatePayload(parsed.data);
+  const latestScenario =
+    user.role === "ADMIN"
+      ? null
+      : await prisma.operationProfitScenario.findFirst({
+          where: { createdById: user.id },
+          include: { fixedCostLines: true, variableCostLines: true },
+          orderBy: { updatedAt: "desc" }
+        });
+
+  const baselineScenario = latestScenario
+    ? operationScenarioFromRecord({
+        scenario: latestScenario,
+        fixedCosts: latestScenario.fixedCostLines,
+        variableCosts: latestScenario.variableCostLines
+      })
+    : defaultOperationProfitScenario;
+
+  const sanitizedInput =
+    user.role === "ADMIN"
+      ? parsed.data
+      : {
+          ...parsed.data,
+          variableCosts: baselineScenario.variableCosts
+        };
+
+  const payload = operationScenarioToCreatePayload(sanitizedInput);
   const created = await prisma.operationProfitScenario.create({
     data: {
       ...payload.scenario,
