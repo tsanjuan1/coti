@@ -1,0 +1,11 @@
+.git
+.next
+node_modules
+coverage
+dist
+.npm-cache
+tmp_fabricantes
+*.log
+.env
+.env.local
+.env.*.local
