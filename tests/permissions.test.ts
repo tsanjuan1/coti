@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { hasModuleAccess } from "@/lib/permissions";
+import { getAllowedModuleKeys, hasModuleAccess } from "@/lib/permissions";
 
 describe("permissions", () => {
   it("gives admins access to every module", () => {
@@ -21,5 +21,18 @@ describe("permissions", () => {
         moduleKey: "BREAK_EVEN"
       })
     ).toBe(false);
+  });
+
+  it("returns only enabled modules for sellers", () => {
+    expect(
+      getAllowedModuleKeys({
+        role: "SELLER",
+        permissions: [
+          { moduleKey: "QUOTE", canAccess: true },
+          { moduleKey: "MANUFACTURERS", canAccess: true },
+          { moduleKey: "ADMIN", canAccess: false }
+        ]
+      })
+    ).toEqual(["QUOTE", "MANUFACTURERS"]);
   });
 });

@@ -5,12 +5,19 @@ import { type AppRole, ModuleKey } from "@prisma/client";
 
 import { MODULE_LABELS } from "@/lib/permissions";
 
-const modules: ModuleKey[] = ["QUOTE", "BREAK_EVEN", "OPERATION_PROFIT", "ADMIN"];
+const modules: ModuleKey[] = [
+  "QUOTE",
+  "BREAK_EVEN",
+  "OPERATION_PROFIT",
+  "MANUFACTURERS",
+  "ADMIN"
+];
 
 const moduleDescriptions: Record<ModuleKey, string> = {
   QUOTE: "Cotizador compacto de importacion.",
   BREAK_EVEN: "Punto de equilibrio con costos fijos y variables.",
   OPERATION_PROFIT: "Resultado por operacion sin gastos de estructura.",
+  MANUFACTURERS: "Catalogo interno de marcas, contactos y material operativo.",
   ADMIN: "Gestion de usuarios y accesos."
 };
 
@@ -41,6 +48,7 @@ function createEmptyPermissionState(): PermissionState {
     QUOTE: { canAccess: false },
     BREAK_EVEN: { canAccess: false },
     OPERATION_PROFIT: { canAccess: false },
+    MANUFACTURERS: { canAccess: false },
     ADMIN: { canAccess: false }
   };
 }
@@ -50,6 +58,7 @@ function createAdminPermissionState(): PermissionState {
     QUOTE: { canAccess: true },
     BREAK_EVEN: { canAccess: true },
     OPERATION_PROFIT: { canAccess: true },
+    MANUFACTURERS: { canAccess: true },
     ADMIN: { canAccess: true }
   };
 }

@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 import { AppShell } from "@/components/app-shell";
-import { MODULE_LABELS } from "@/lib/permissions";
+import manufacturerCatalog from "@/modules/manufacturers/generated/catalog.json";
+import { getAllowedModuleKeys, MODULE_LABELS, MODULE_ROUTES } from "@/lib/permissions";
 import { prisma } from "@/lib/prisma";
 import { requireAppUser } from "@/lib/auth/session";
 
@@ -13,10 +14,10 @@ export default async function DashboardPage() {
     prisma.operationProfitScenario.count({ where: { createdById: user.id } })
   ]);
 
-  const allowedModules =
-    user.role === "ADMIN"
-      ? Object.entries(MODULE_LABELS)
-      : user.permissions.filter((entry) => entry.canAccess).map((entry) => [entry.moduleKey, MODULE_LABELS[entry.moduleKey]]);
+  const allowedModules = getAllowedModuleKeys({
+    role: user.role,
+    permissions: user.permissions
+  }).map((moduleKey) => [moduleKey, MODULE_LABELS[moduleKey]] as const);
 
   return (
     <AppShell currentPath="/dashboard" userLabel={user.fullName}>
@@ -30,11 +31,15 @@ export default async function DashboardPage() {
           </p>
         </section>
 
-        <section className="grid gap-4 md:grid-cols-3">
+        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {[
             { label: "Cotizaciones", value: quoteCount },
             { label: "Escenarios de equilibrio", value: breakEvenCount },
-            { label: "Operaciones guardadas", value: operationCount }
+            { label: "Operaciones guardadas", value: operationCount },
+            {
+              label: "Fabricantes indexados",
+              value: manufacturerCatalog.source.totalManufacturers
+            }
           ].map((card) => (
             <div
               key={card.label}
@@ -50,17 +55,10 @@ export default async function DashboardPage() {
           <h2 className="text-lg font-semibold">Modulos habilitados</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {allowedModules.map(([moduleKey, label]) => {
-              const hrefMap: Record<string, string> = {
-                QUOTE: "/cotizador",
-                BREAK_EVEN: "/punto-equilibrio",
-                OPERATION_PROFIT: "/resultado-operacion",
-                ADMIN: "/admin"
-              };
-
               return (
                 <Link
                   key={moduleKey}
-                  href={hrefMap[moduleKey]}
+                  href={MODULE_ROUTES[moduleKey]}
                   className="rounded-[22px] border border-[var(--line)] bg-[color:var(--surface-alt)] p-5 transition hover:-translate-y-0.5"
                 >
                   <div className="text-sm text-[color:var(--muted)]">Modulo</div>
@@ -75,4 +73,3 @@ export default async function DashboardPage() {
     </AppShell>
   );
 }
-

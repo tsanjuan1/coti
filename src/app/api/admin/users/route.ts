@@ -5,7 +5,13 @@ import { requireAdmin } from "@/lib/auth/session";
 import { prisma } from "@/lib/prisma";
 import { createSupabaseAdminClient } from "@/lib/supabase/admin";
 
-const moduleKeys = ["QUOTE", "BREAK_EVEN", "OPERATION_PROFIT", "ADMIN"] as const;
+const moduleKeys = [
+  "QUOTE",
+  "BREAK_EVEN",
+  "OPERATION_PROFIT",
+  "MANUFACTURERS",
+  "ADMIN"
+] as const;
 
 const schema = z.object({
   email: z.string().trim().email(),

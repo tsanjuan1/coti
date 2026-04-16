@@ -1,27 +1,47 @@
 import Link from "next/link";
+import { ModuleKey } from "@prisma/client";
 import {
   LayoutDashboard,
   Calculator,
   BarChart3,
   ShieldCheck,
-  UserCircle2
+  UserCircle2,
+  Building2
 } from "lucide-react";
 
 import { LogoutButton } from "@/components/auth/logout-button";
 import { AppNavLink } from "@/components/navigation/app-nav-link";
 import { RoutePrefetch } from "@/components/navigation/route-prefetch";
+import { getCurrentAppUser } from "@/lib/auth/session";
+import { hasModuleAccess } from "@/lib/permissions";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Resumen", icon: LayoutDashboard },
-  { href: "/cotizador", label: "Cotizador", icon: Calculator },
-  { href: "/punto-equilibrio", label: "Punto de equilibrio", icon: BarChart3 },
-  { href: "/resultado-operacion", label: "Utilidad por operacion", icon: BarChart3 },
-  { href: "/admin", label: "Administracion", icon: ShieldCheck },
+  { href: "/cotizador", label: "Cotizador", icon: Calculator, moduleKey: ModuleKey.QUOTE },
+  {
+    href: "/punto-equilibrio",
+    label: "Punto de equilibrio",
+    icon: BarChart3,
+    moduleKey: ModuleKey.BREAK_EVEN
+  },
+  {
+    href: "/resultado-operacion",
+    label: "Utilidad por operacion",
+    icon: BarChart3,
+    moduleKey: ModuleKey.OPERATION_PROFIT
+  },
+  {
+    href: "/fabricantes",
+    label: "Fabricantes",
+    icon: Building2,
+    moduleKey: ModuleKey.MANUFACTURERS
+  },
+  { href: "/admin", label: "Administracion", icon: ShieldCheck, moduleKey: ModuleKey.ADMIN },
   { href: "/perfil", label: "Perfil", icon: UserCircle2 }
 ];
 
-export function AppShell({
+export async function AppShell({
   children,
   currentPath,
   userLabel
@@ -30,13 +50,29 @@ export function AppShell({
   currentPath: string;
   userLabel: string;
 }) {
+  const currentUser = await getCurrentAppUser();
+  const visibleNavItems = navItems.filter((item) => {
+    if (!item.moduleKey || !currentUser) {
+      return true;
+    }
+
+    return hasModuleAccess({
+      role: currentUser.role,
+      permissions: currentUser.permissions,
+      moduleKey: item.moduleKey
+    });
+  });
   const warmedRoutes = [
-    ...navItems.map((item) => item.href),
-    "/cotizador/courier",
-    "/cotizador/despacho",
-    "/cotizador/china",
-    "/cotizador/europa",
-    "/cotizador/tasas-arancelarias"
+    ...visibleNavItems.map((item) => item.href),
+    ...(visibleNavItems.some((item) => item.moduleKey === ModuleKey.QUOTE)
+      ? [
+          "/cotizador/courier",
+          "/cotizador/despacho",
+          "/cotizador/china",
+          "/cotizador/europa",
+          "/cotizador/tasas-arancelarias"
+        ]
+      : [])
   ];
 
   return (
@@ -52,7 +88,7 @@ export function AppShell({
             <div className="mt-2 text-sm text-[color:var(--muted)]">{userLabel}</div>
           </div>
           <nav className="space-y-2">
-            {navItems.map((item) => {
+            {visibleNavItems.map((item) => {
               const Icon = item.icon;
               const active =
                 currentPath === item.href || currentPath.startsWith(`${item.href}/`);
@@ -96,7 +132,7 @@ export function AppShell({
             </div>
 
             <nav className="mt-4 flex gap-2 overflow-x-auto pb-1 lg:hidden">
-              {navItems.map((item) => {
+              {visibleNavItems.map((item) => {
                 const Icon = item.icon;
                 const active =
                   currentPath === item.href || currentPath.startsWith(`${item.href}/`);
