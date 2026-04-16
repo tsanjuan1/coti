@@ -1,0 +1,159 @@
+{
+  "source": {
+    "root": "Fabricantes",
+    "generatedAt": "2026-04-16T14:05:07.761Z",
+    "totalManufacturers": 23,
+    "note": "Estructura simplificada del modulo Fabricantes. Solo se conservan nombres de marcas y submodulos vacios."
+  },
+  "manufacturers": [
+    {
+      "slug": "4xem",
+      "name": "4XEM",
+      "relativePath": "4XEM",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "advantech",
+      "name": "Advantech",
+      "relativePath": "Advantech",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "cambium-networks",
+      "name": "Cambium Networks",
+      "relativePath": "Cambium Networks",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "cisco",
+      "name": "Cisco",
+      "relativePath": "Cisco",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "dell",
+      "name": "Dell",
+      "relativePath": "Dell",
+      "submodules": [{ "slug": "certificaciones", "name": "Certificaciones", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "energia-solar-huawei-gcl",
+      "name": "ENERGIA SOLAR HUAWEI + GCL",
+      "relativePath": "ENERGIA SOLAR HUAWEI + GCL",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "fortinet",
+      "name": "FORTINET",
+      "relativePath": "FORTINET",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "hikvision",
+      "name": "Hikvision",
+      "relativePath": "Hikvision",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "honeywell",
+      "name": "Honeywell",
+      "relativePath": "Honeywell",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "hp-inc",
+      "name": "HP inc",
+      "relativePath": "HP inc",
+      "submodules": [
+        { "slug": "insignias-y-logos", "name": "INSIGNIAS Y LOGOS", "description": "Sin contenido cargado por ahora." },
+        { "slug": "roadmap-productos", "name": "Roadmap productos", "description": "Sin contenido cargado por ahora." }
+      ]
+    },
+    {
+      "slug": "hpe",
+      "name": "HPE",
+      "relativePath": "HPE",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "kaptivo",
+      "name": "KAPTIVO",
+      "relativePath": "KAPTIVO",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "lenovo",
+      "name": "Lenovo",
+      "relativePath": "Lenovo",
+      "submodules": [
+        { "slug": "certificados-partner", "name": "Certificados Partner", "description": "Sin contenido cargado por ahora." },
+        { "slug": "cursos", "name": "Cursos", "description": "Sin contenido cargado por ahora." },
+        { "slug": "herramientas", "name": "Herramientas", "description": "Sin contenido cargado por ahora." }
+      ]
+    },
+    {
+      "slug": "logitech",
+      "name": "Logitech",
+      "relativePath": "Logitech",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "microsoft",
+      "name": "Microsoft",
+      "relativePath": "Microsoft",
+      "submodules": [{ "slug": "certificaciones", "name": "Certificaciones", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "poly",
+      "name": "POLY",
+      "relativePath": "POLY",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "proglove",
+      "name": "PROGLOVE",
+      "relativePath": "PROGLOVE",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "sonicwall",
+      "name": "SONICWALL",
+      "relativePath": "SONICWALL",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "startech-com",
+      "name": "Startech.com",
+      "relativePath": "Startech.com",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "teamviewer",
+      "name": "TeamViewer",
+      "relativePath": "TeamViewer",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "tp-link",
+      "name": "TP LINK",
+      "relativePath": "TP LINK",
+      "submodules": [{ "slug": "general", "name": "General", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "ubiquiti",
+      "name": "Ubiquiti",
+      "relativePath": "Ubiquiti",
+      "submodules": [{ "slug": "roadmap-productos", "name": "Roadmap productos", "description": "Sin contenido cargado por ahora." }]
+    },
+    {
+      "slug": "zebra",
+      "name": "Zebra",
+      "relativePath": "Zebra",
+      "submodules": [
+        { "slug": "certificados", "name": "Certificados", "description": "Sin contenido cargado por ahora." },
+        { "slug": "roadmap-productos", "name": "Roadmap productos", "description": "Sin contenido cargado por ahora." },
+        { "slug": "zebra", "name": "ZEBRA", "description": "Sin contenido cargado por ahora." }
+      ]
+    }
+  ]
+}

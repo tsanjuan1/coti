@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { AppShell } from "@/components/app-shell";
-import manufacturerCatalog from "@/modules/manufacturers/generated/catalog.json";
+import { manufacturerDirectory } from "@/modules/manufacturers/directory";
 import { getAllowedModuleKeys, MODULE_LABELS, MODULE_ROUTES } from "@/lib/permissions";
 import { prisma } from "@/lib/prisma";
 import { requireAppUser } from "@/lib/auth/session";
@@ -31,14 +31,18 @@ export default async function DashboardPage() {
           </p>
         </section>
 
-        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
           {[
             { label: "Cotizaciones", value: quoteCount },
             { label: "Escenarios de equilibrio", value: breakEvenCount },
             { label: "Operaciones guardadas", value: operationCount },
             {
-              label: "Fabricantes indexados",
-              value: manufacturerCatalog.source.totalManufacturers
+              label: "Fabricantes cargados",
+              value: manufacturerDirectory.source.totalManufacturers
+            },
+            {
+              label: "Canales mayoristas",
+              value: 2
             }
           ].map((card) => (
             <div
@@ -53,7 +57,7 @@ export default async function DashboardPage() {
 
         <section className="rounded-[28px] border border-[var(--line)] bg-white p-6 shadow-sm">
           <h2 className="text-lg font-semibold">Modulos habilitados</h2>
-          <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
             {allowedModules.map(([moduleKey, label]) => {
               return (
                 <Link

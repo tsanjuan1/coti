@@ -6,7 +6,8 @@ import {
   BarChart3,
   ShieldCheck,
   UserCircle2,
-  Building2
+  Building2,
+  Store
 } from "lucide-react";
 
 import { LogoutButton } from "@/components/auth/logout-button";
@@ -36,6 +37,12 @@ const navItems = [
     label: "Fabricantes",
     icon: Building2,
     moduleKey: ModuleKey.MANUFACTURERS
+  },
+  {
+    href: "/mayoristas",
+    label: "Mayoristas",
+    icon: Store,
+    moduleKey: ModuleKey.WHOLESALERS
   },
   { href: "/admin", label: "Administracion", icon: ShieldCheck, moduleKey: ModuleKey.ADMIN },
   { href: "/perfil", label: "Perfil", icon: UserCircle2 }
@@ -72,6 +79,9 @@ export async function AppShell({
           "/cotizador/europa",
           "/cotizador/tasas-arancelarias"
         ]
+      : []),
+    ...(visibleNavItems.some((item) => item.moduleKey === ModuleKey.WHOLESALERS)
+      ? ["/mayoristas/local", "/mayoristas/exterior"]
       : [])
   ];
 

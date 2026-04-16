@@ -10,6 +10,7 @@ const moduleKeys = [
   "BREAK_EVEN",
   "OPERATION_PROFIT",
   "MANUFACTURERS",
+  "WHOLESALERS",
   "ADMIN"
 ] as const;
 

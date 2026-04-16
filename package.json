@@ -8,7 +8,6 @@
     "start": "next start",
     "test": "vitest run",
     "test:watch": "vitest",
-    "manufacturers:sync": "node scripts/sync-manufacturer-files.mjs",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx prisma/seed.ts",

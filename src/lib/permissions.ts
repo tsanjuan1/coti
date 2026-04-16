@@ -5,7 +5,8 @@ export const MODULE_LABELS: Record<ModuleKey, string> = {
   BREAK_EVEN: "Punto de equilibrio",
   MANUFACTURERS: "Fabricantes",
   OPERATION_PROFIT: "Utilidad por operacion",
-  QUOTE: "Cotizador"
+  QUOTE: "Cotizador",
+  WHOLESALERS: "Mayoristas"
 };
 
 export const MODULE_ROUTES: Record<ModuleKey, string> = {
@@ -13,7 +14,8 @@ export const MODULE_ROUTES: Record<ModuleKey, string> = {
   BREAK_EVEN: "/punto-equilibrio",
   MANUFACTURERS: "/fabricantes",
   OPERATION_PROFIT: "/resultado-operacion",
-  QUOTE: "/cotizador"
+  QUOTE: "/cotizador",
+  WHOLESALERS: "/mayoristas"
 };
 
 export function hasModuleAccess(args: {

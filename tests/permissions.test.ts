@@ -30,9 +30,10 @@ describe("permissions", () => {
         permissions: [
           { moduleKey: "QUOTE", canAccess: true },
           { moduleKey: "MANUFACTURERS", canAccess: true },
+          { moduleKey: "WHOLESALERS", canAccess: true },
           { moduleKey: "ADMIN", canAccess: false }
         ]
       })
-    ).toEqual(["QUOTE", "MANUFACTURERS"]);
+    ).toEqual(["QUOTE", "MANUFACTURERS", "WHOLESALERS"]);
   });
 });

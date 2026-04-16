@@ -10,6 +10,7 @@ const modules: ModuleKey[] = [
   "BREAK_EVEN",
   "OPERATION_PROFIT",
   "MANUFACTURERS",
+  "WHOLESALERS",
   "ADMIN"
 ];
 
@@ -17,7 +18,8 @@ const moduleDescriptions: Record<ModuleKey, string> = {
   QUOTE: "Cotizador compacto de importacion.",
   BREAK_EVEN: "Punto de equilibrio con costos fijos y variables.",
   OPERATION_PROFIT: "Resultado por operacion sin gastos de estructura.",
-  MANUFACTURERS: "Catalogo interno de marcas, contactos y material operativo.",
+  MANUFACTURERS: "Indice interno de fabricantes con submodulos vacios por marca.",
+  WHOLESALERS: "Base de mayoristas dividida en canal local y exterior.",
   ADMIN: "Gestion de usuarios y accesos."
 };
 
@@ -49,6 +51,7 @@ function createEmptyPermissionState(): PermissionState {
     BREAK_EVEN: { canAccess: false },
     OPERATION_PROFIT: { canAccess: false },
     MANUFACTURERS: { canAccess: false },
+    WHOLESALERS: { canAccess: false },
     ADMIN: { canAccess: false }
   };
 }
@@ -59,6 +62,7 @@ function createAdminPermissionState(): PermissionState {
     BREAK_EVEN: { canAccess: true },
     OPERATION_PROFIT: { canAccess: true },
     MANUFACTURERS: { canAccess: true },
+    WHOLESALERS: { canAccess: true },
     ADMIN: { canAccess: true }
   };
 }
