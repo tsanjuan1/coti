@@ -6,7 +6,9 @@ import { Search, FolderOpen, Building2, FileText, ShieldAlert } from "lucide-rea
 import type {
   ManufacturerCatalog,
   ManufacturerCatalogEntry,
-  ManufacturerCatalogFile
+  ManufacturerCatalogFile,
+  ManufacturerStorageManifest,
+  ManufacturerStorageManifestFile
 } from "@/modules/manufacturers/types";
 
 function formatBytes(bytes: number | null) {
@@ -49,7 +51,46 @@ function matchesSearch(manufacturer: ManufacturerCatalogEntry, query: string) {
   return searchableFields.some((value) => value.toLowerCase().includes(normalizedQuery));
 }
 
-function FeaturedFileCard({ file }: { file: ManufacturerCatalogFile }) {
+function FileAction({
+  availability
+}: {
+  availability?: ManufacturerStorageManifestFile;
+}) {
+  if (!availability) {
+    return (
+      <div className="text-xs text-[color:var(--muted)]">Sin sincronizar</div>
+    );
+  }
+
+  if (availability.status === "uploaded") {
+    return (
+      <a
+        href={`/api/manufacturers/files/open?path=${encodeURIComponent(
+          availability.relativePath
+        )}`}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex rounded-xl border border-[var(--line)] px-3 py-2 text-sm font-medium hover:bg-slate-50"
+      >
+        Abrir
+      </a>
+    );
+  }
+
+  return (
+    <div className="text-xs text-[color:var(--muted)]">
+      {availability.reason ?? "No disponible online"}
+    </div>
+  );
+}
+
+function FeaturedFileCard({
+  file,
+  availability
+}: {
+  file: ManufacturerCatalogFile;
+  availability?: ManufacturerStorageManifestFile;
+}) {
   return (
     <div className="rounded-2xl border border-[var(--line)] bg-white p-4">
       <div className="flex items-start justify-between gap-3">
@@ -67,16 +108,32 @@ function FeaturedFileCard({ file }: { file: ManufacturerCatalogFile }) {
       <div className="mt-1 text-sm text-[color:var(--muted)]">
         Tamano: {formatBytes(file.sizeBytes)}
       </div>
+      <div className="mt-4">
+        <FileAction availability={availability} />
+      </div>
     </div>
   );
 }
 
-export function ManufacturersCatalog({ catalog }: { catalog: ManufacturerCatalog }) {
+export function ManufacturersCatalog({
+  catalog,
+  storageManifest
+}: {
+  catalog: ManufacturerCatalog;
+  storageManifest: ManufacturerStorageManifest;
+}) {
   const [search, setSearch] = useState("");
   const [selectedSlug, setSelectedSlug] = useState<string | null>(
     catalog.manufacturers[0]?.slug ?? null
   );
   const deferredSearch = useDeferredValue(search);
+  const storageIndex = useMemo(
+    () =>
+      new Map(
+        storageManifest.files.map((file) => [file.relativePath, file] as const)
+      ),
+    [storageManifest.files]
+  );
 
   const filteredManufacturers = useMemo(
     () =>
@@ -101,23 +158,25 @@ export function ManufacturersCatalog({ catalog }: { catalog: ManufacturerCatalog
         <p className="mt-3 max-w-4xl text-sm text-[color:var(--muted)]">
           Este modulo indexa todas las marcas cargadas en la carpeta fuente y destaca
           los archivos que parecen contener contactos, credenciales, insignias,
-          instructivos o documentacion clave. El paquete original pesa{" "}
-          {formatBytes(catalog.source.totalBytes)}, por eso en la web publicamos un
-          catalogo navegable y no los binarios completos.
+          instructivos o documentacion clave. El paquete original pesa {formatBytes(
+            catalog.source.totalBytes
+          )} y ahora los archivos sincronizados al storage privado se pueden abrir
+          directamente desde la web segun permisos.
         </p>
         <div className="mt-4 rounded-[22px] border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
           <div className="flex items-start gap-3">
             <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0" />
             <div>
-              El deploy contiene el indice operativo generado desde el ZIP completo.
-              Si mas adelante quieren abrir o descargar todos los archivos desde la
-              web, el paso siguiente es moverlos a un storage externo.
+              Disponibles online: {storageManifest.source.uploadedCount} archivos.
+              Pendientes o excluidos:{" "}
+              {storageManifest.source.skippedCount + storageManifest.source.failedCount}.
+              Los archivos demasiado grandes quedan marcados en el inventario.
             </div>
           </div>
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
         {[
           {
             label: "Fabricantes",
@@ -138,6 +197,11 @@ export function ManufacturersCatalog({ catalog }: { catalog: ManufacturerCatalog
             label: "Ultima actualizacion",
             value: formatDate(catalog.source.generatedAt),
             icon: Search
+          },
+          {
+            label: "Archivos online",
+            value: storageManifest.source.uploadedCount,
+            icon: FileText
           }
         ].map((card) => {
           const Icon = card.icon;
@@ -267,7 +331,11 @@ export function ManufacturersCatalog({ catalog }: { catalog: ManufacturerCatalog
                 {selectedManufacturer.featuredFiles.length > 0 ? (
                   <div className="mt-4 grid gap-4 xl:grid-cols-2">
                     {selectedManufacturer.featuredFiles.map((file) => (
-                      <FeaturedFileCard key={file.relativePath} file={file} />
+                      <FeaturedFileCard
+                        key={file.relativePath}
+                        file={file}
+                        availability={storageIndex.get(file.relativePath)}
+                      />
                     ))}
                   </div>
                 ) : (
@@ -300,11 +368,15 @@ export function ManufacturersCatalog({ catalog }: { catalog: ManufacturerCatalog
                           <th className="px-4 py-3 text-left font-medium">Carpeta</th>
                           <th className="px-4 py-3 text-left font-medium">Tipo</th>
                           <th className="px-4 py-3 text-left font-medium">Tamano</th>
+                          <th className="px-4 py-3 text-left font-medium">Accion</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[var(--line)] bg-white">
-                        {selectedManufacturer.files.map((file) => (
-                          <tr key={file.relativePath}>
+                        {selectedManufacturer.files.map((file) => {
+                          const availability = storageIndex.get(file.relativePath);
+
+                          return (
+                            <tr key={file.relativePath}>
                             <td className="px-4 py-3 align-top">
                               <div className="font-medium">{file.name}</div>
                               <div className="mt-1 text-xs text-[color:var(--muted)]">
@@ -320,8 +392,12 @@ export function ManufacturersCatalog({ catalog }: { catalog: ManufacturerCatalog
                             <td className="px-4 py-3 align-top text-[color:var(--muted)]">
                               {formatBytes(file.sizeBytes)}
                             </td>
-                          </tr>
-                        ))}
+                            <td className="px-4 py-3 align-top">
+                              <FileAction availability={availability} />
+                            </td>
+                            </tr>
+                          );
+                        })}
                       </tbody>
                     </table>
                   </div>

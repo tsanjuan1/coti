@@ -30,3 +30,27 @@ export type ManufacturerCatalog = {
   };
   manufacturers: ManufacturerCatalogEntry[];
 };
+
+export type ManufacturerStorageStatus = "uploaded" | "skipped" | "failed";
+
+export type ManufacturerStorageManifestFile = {
+  relativePath: string;
+  storagePath: string;
+  sizeBytes: number | null;
+  status: ManufacturerStorageStatus;
+  reason?: string;
+};
+
+export type ManufacturerStorageManifest = {
+  source: {
+    bucket: string;
+    generatedAt: string;
+    uploadedCount: number;
+    skippedCount: number;
+    failedCount: number;
+    uploadedBytes: number;
+    skippedBytes: number;
+    note: string;
+  };
+  files: ManufacturerStorageManifestFile[];
+};
